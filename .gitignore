@@ -1,0 +1,16 @@
+data*/
+raw*/
+cache*/
+tmp*/
+out*/
+*~
+*.bam
+*.bai
+.DS_Store
+*.Rdata
+*.RData
+*.Rhistory
+.ipynb_checkpoints
+.snakemake
+apikey.json
+*.npy
