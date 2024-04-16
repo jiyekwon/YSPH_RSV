@@ -1,0 +1,14 @@
+import os
+
+def get_value_col(search,fromcol,tocol):
+        #
+        continue
+
+def get_amplicon_panel_id(wildcards):
+        ampset=get_value_col(wildcards.sample, "sample","ampset")
+	return ampset
+
+def get_subsample_factor(fqsize,maxfqsize):
+        factor=(fqsize/maxfqsize)
+        if factor < 2: return 1
+        else: return round(factor)
