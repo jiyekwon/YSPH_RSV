@@ -14,7 +14,7 @@ rule all:
     input:
         "results/align/{target}_all_depths.txt",
         expand('results/summary/{site}_meancov.tsv',
-               site=["primers"]),
+               site=["primers"])
 
 
 
