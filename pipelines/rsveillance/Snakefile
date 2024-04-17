@@ -12,435 +12,89 @@ TARGETS = [line.strip() for line in open(config['refs'], 'r')]
 
 rule all:
     input:
-        "results/summary/virus_calls.tsv",
-        "results/summary/variant_plot.pdf"
+        "results/align/{target}_all_depths.txt",
+        expand('results/summary/{site}_{metric}.tsv',
+               site=["primers"],metric=["meandp","covpc","pi"]),
+
+
+
+include: "rules/mash.smk"
+
+include: "rules/bwa_align.smk"
+
+include: "rules/ivar.smk"
+
+include: "rules/bcf_call.smk"
 
 
 
 
-checkpoint mash_calltarget:
+# rule evorha:
+#     input:
+#         bam='results/align/{sample}_{target}.bam',
+#         idx='results/align/{sample}_{target}.bam.bai',
+#     params:
+#         ref=config['reference'],
+#         bamln='results/evorha/{sample}_sorted.bam',
+#         idxln='results/evorha/{sample}_sorted.bam.bai',
+#         prefix='results/evorha/',
+#     resources:
+#         mem_mb=8000,
+#         runtime=1440,
+#     container: "docker://sethnr/pgcoe_evorha:0.01"
+#     output:
+#         coreout = 'results/evorha/{sample}.hapfreq',
+#     log:
+#         stderr="logs/evorha/{sample}.err",
+#     message: "Running evorha"
+#     shell:
+#         """
+# 	    ln -f {input.bam} {params.bamln}
+#             ln -f {input.idx} {params.idxln}
+#             java -jar /jars/evorha.jar completeAnalysis {params.ref} {params.bamln} 2>&1 >> {log.stderr}
+#         """
+
+
+rule get_div_metrics:
     input:
-        msh = expand("{refs}/all.msh",refs=config["reference_directory"]),
-        read_location = os.path.join(config["indir"], "{sample}")
+        pileupvcfs=expand('results/bcftools/{target}_all_filt.vcf.gz',target=TARGETS),
+        depths='results/align/{target}_all_depths.txt',
+        primers='data/{target}.bed',
+        #amplicons='data/{target}.insert.bed',
     output:
-        mashout = "{outdir}/results/mash/{sample}_mash.txt",
-        mashcalls = "{outdir}/results/mash/{sample}_calls.txt"
-    resources:
-        partition="day",
-        mem_mb="8G",
-        cpus_per_task=1,
-        runtime=300
-    container: "docker://sethnr/pgcoe_anypipe:0.01"
-    params:
-        reads=10000, # compare top N reads to refs
-        bloom=10,    # bloom filter kmers with < N coverage (seq errors)
-        gsize="11k", # estimated genome size (for prob assignment)
-        prob=1e-50,  # max mash prob to call
-        dist=0.25,   # max mash dist to call
-        masher = "scripts/masher.sh",
-        prefix="{outdir}/results/mash/{sample}",
-        refdir=config["reference_directory"],
-    log:
-        "{outdir}/log_files/getstrain_{sample}.log",
-    shell:
-        """
-        {params.masher} -f {params.refdir}/all.msh \
-                -r {params.reads} -b {params.bloom} -g {params.gsize} \
-                -d {params.dist} -p {params.prob} \
-        -o {params.prefix} \
-        {input.read_location}
-        """
-
-
-def get_mash_calls(wildcards):
-    with checkpoints.mash_calltarget.get(sample=wildcards.sample,outdir=wildcards.outdir).output.mashcalls.open() as f:
-        mytargets = f.read().splitlines()
-    return mytargets
-
-def get_mash_bams(wildcards):
-    mytargets = get_mash_calls(wildcards)
-    return expand(os.path.join(wildcards.outdir,"bams","{sample}_{target}.bam",sample=wildcards.sample,target=mytargets))
-
-
-rule bwa_index:
-    input:
-        fasta = "{refs}/{target}.fasta"
-    output:
-        bwt = "{refs}/{target}.fasta.bwt"
-    log:
-        log = "/logs/bwa_index/{target}.log"
-    params:
-        idx_script = "scripts/indexer.sh",
-        primer_dir = config["primers_dir"],
-    resources:
-        partition="day",
-        mem_mb="40G",
-        cpus_per_task=4,
-        runtime=300
-    container: "docker://sethnr/pgcoe_anypipe:0.01"
-    shell:"""
-        {params.idx_script} \
-                -C {resources.cpus_per_task} \
-                {input.fasta} >> {log.log} 2>&1
-            """
-
-
-rule mash_index:
-    input:
-        fastas = expand("{refs}/{target}.fasta"),target=TARGETS),
-    output:
-        msh = "{refs}/all.msh"
-    log:
-        log = "logs/mash/all.mash.log"
-    params:
-        idx_script = "scripts/indexer.sh",
-        genome_size = "11k",
-        refdir=config["reference_directory"],
-        localfastas=expand("{target}.fasta",target=TARGETS)
-    resources:
-        partition="day",
-        mem_mb="40G",
-        cpus_per_task=4,
-        runtime=300
-    container: "docker://sethnr/pgcoe_anypipe:0.01"
-    shell:"""
-        cd {params.refdir};
-        {params.idx_script} \
-                -m {output.msh} -g {params.genome_size} \
-                {params.localfastas} >> {log.log} 2>&1
-            """
-
-
-
-rule bwa_align:
-    input:
-        read_location=os.path.join(config['readdir'],'{sample}'),
-        indexedref="data/reference.fasta.amb"
-    params:
-        ref=config['reference']
-    resources:
-            mem_mb=8000,
-            runtime=240,
-    output:
-        aligned = os.path.join(config['outdir'],'align/{sample}_aligned.bam') # .bam file output of aligned and sorted reads
-    log:
-        stdout="logs/bwa/{sample}_aln.out",
-        stderr="logs/bwa/{sample}_aln.err"
-    container: "docker://sethnr/pgcoe_bacseq:0.01"
-    message: "Aligning reads to H37Rv and sorting output for sample {wildcards.sample}"
-    shell:
-        """
-        echo "Aligning reads for {wildcards.sample} to H37Rv reference strain\n"
-        echo 'bwa mem {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* | samtools view -b -F 4 -F 2048 | samtools sort -o {wildcards.sample}_aln.bam\n' 
-        bwa mem {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* | samtools view -b -F 4 -F 2048 | samtools sort -o {output.aligned} >> {log.stdout} 2>> {log.stderr}
-        """
-
-
-rule ivar_primerclip:
-    input:
-        aligned = os.path.join(config['outdir'],'align/{sample}_aligned.bam'),
-        primers = config['primers']
-    output:
-        aln_trimmed= os.path.join(config['outdir'],'align/{sample}_aln_itrim.bam')
-    resources:
-            mem_mb=8000,
-            runtime=1440,
-    log:
-        stdout="logs/ivar/{sample}_trim.out",
-        stderr="logs/ivar/{sample}_trim.err"
-    message: "QC and soft-clipping primers using iVar"
-    shell:
-        """
-        ivar trim -i {input.aligned} -b {input.primers} -p {output.aln_trimmed} -e > {log.stdout} 2> {log.stderr}
-        """
-
-rule sort:
-    input:
-        aln_trimmed= os.path.join(config['outdir'],'align/{sample}_aln_itrim.bam')
-    output:
-        aln_itrim_sorted=os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam')
-    resources:
-        mem_mb=16000,
-        runtime=180,
-	cores=4,
-    log:
-        stdout="logs/align/{sample}_sort.out",
-        stderr="logs/align/{sample}_sort.err"
-    message: "Sorting and indexing reads"
-    shell:
-        """
-        samtools sort {input.aln_trimmed} -@ {resources.cores} -o {output.aln_itrim_sorted} > {log.stdout} 2> {log.stderr}
-        samtools index {output.aln_itrim_sorted} >> {log.stdout} 2>> {log.stderr}
-        """
-
-rule subsample:
-    input:
-        aln_itrim_sorted= os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam')
-    output:
-        subsamp=os.path.join(config['outdir'],'align/{sample}_subsamp{subsample}.bam')
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    log:
-        stdout="logs/align/{sample}_sub_{subsample}.out",
-        stderr="logs/align/{sample}_sub_{subsample}.err",
-    message: "Selecting subsample of reads from {wildcards.sample}: {wildcards.subsample}"
-    shell:
-        """
-        samtools view -b -s {wildcards.subsample} {input.aln_itrim_sorted} -o {output.subsamp} 1> {log.stdout} 2> {log.stderr}
-        """
-
-rule coverage:
-    input:
-        subsamp=os.path.join(config['outdir'],'align/{sample}_subsamp{subsample}.bam')
-    output:
-        coveragestats=os.path.join(config['outdir'],'align/{sample}_coverage_sub{subsample}.tsv')
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    params:
-        maxdepth=0,
-        minmapqual=60,
-        minbasequal=13
-    log:
-        stderr="logs/align/{sample}_sub{subsample}.err"
-    message: "Computing coverage of reference for sample {wildcards.sample} with a read subsample fraction of {wildcards.subsample}"
-    shell:
-        """
-        printf '%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\n' {wildcards.sample} {wildcards.subsample} `samtools coverage -d {params.maxdepth} -q {params.minmapqual} -Q {params.minbasequal} --no-header {input.subsamp}` > {output.coveragestats} 2> {log.stderr}
-        """
-
-rule mdepth:
-    input:
-        bams=expand(os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam'),sample=SAMPLES)
-    output:
-        config['outdir']+'/'+config['runname']+'/all_depth.txt'
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    params:
-        maxdepth=0,
-        minmapqual=60,
-        minbasequal=13
-    log:
-        stderr="logs/depth/"+config['runname']+".err"
-    shell:
-        """
-        samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
-        """
-
-
-rule combinedcoverage:
-    input:
-        coveragestats=expand(os.path.join(config['outdir'],'align/{sample}_coverage_sub{subsample}.tsv'),sample=SAMPLES,subsample=READ_SUBSAMPLES)
-    output:
-        combinedcoverage=os.path.join(config['outdir'],config['runname'],'combinedcoverage.tsv')
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    log:
-        stderr="logs/coverage.err"
-    shell:
-        """
-        {{ echo -e "sample\tsubsample\trname\tstartpos\tendpos\tnumreads\tcovbases\tcoverage\tmeandepth\tmeanbaseq\tmeanmapq";cat {input.coveragestats}; }} > {output.combinedcoverage} 2> {log.stderr}
-        """
-
-rule indexbam:
-    input:
-        bam = '{samplename}.bam'
-    output:
-        indexedbam = '{samplename}.bam.bai'
-    log:
-        stdout="logs/bamindex/{samplename}.out",
-        stderr="logs/bamindex/{samplename}.err"
-    message: "Indexing bam file: {wildcards.samplename}"
-    shell:
-        """
-        samtools index {input.bam} > {log.stdout} 2> {log.stderr}
-        """
-
-rule variantcalling:
-    input:
-        tocall=expand(os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam'),sample=SAMPLES),
-        indexed=expand(os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam.bai'),sample=SAMPLES)
-    params:
-        ref=config['reference']
-    resources:
-        mem_mb=8000,
-        runtime=240,
-    output:
-        vcf=os.path.join(config['outdir'],'pileup',"all_variants_unfilt.vcf.gz")
-    log:
-        stdout="logs/variantcalling.out",
-        stderr="logs/variantcalling.err"
-    message: "Calling variants for all samples"
-    shell:
-        """
-        bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 1> {log.stdout} 2> {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 1>> {log.stdout} 2>> {log.stderr}
-        tabix -p vcf {output.vcf} 1>> {log.stdout} 2>> {log.stderr}
-	        
-	"""
-
-rule variantfilter:
-    input:
-        vcf={rules.variantcalling.output.vcf}
-    output:
-        vcf_filt=os.path.join(config['outdir'],'pileup',"all_variants_filt.vcf.gz")
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    log:
-        stdout="logs/variantfilter.out",
-        stderr="logs/variantfilter.err"
-    shell:
-        """
-        bcftools filter -O z -o {output.vcf_filt} -i 'QUAL>10 & DP>10' {input.vcf} 1> {log.stdout} 2> {log.stderr}
-        """
-
-rule pileup:
-    input:
-        tocall=os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam'),
-        indexed=os.path.join(config['outdir'],'align/{sample}_aln_itrim_sorted.bam.bai')
-    params:
-        ref=config['reference'],
-        threshold=0.2,
-        depth=20,
-        prefix=os.path.join(config['outdir'],'ivar/{sample}_consensus')
-    output:
-        pileup=os.path.join(config['outdir'],'pileup/{sample}.pileup')
-    log:
-        stderr="logs/pileup/{sample}.err"
-    shell:
-        """
-        samtools mpileup -aa -A -d 0 -Q 0 -f {params.ref} {input.tocall} 1> {output.pileup} 2> {log.stderr}
-        """
-
-
-rule ivar_consensus:
-    input:
-        pileup=os.path.join(config['outdir'],'pileup/{sample}.pileup')
-    params:
-        ref=config['reference'],
-        threshold=0.2,
-        depth=20,
-        prefix=os.path.join(config['outdir'],'ivar/{sample}_consensus')
-    output:
-        consensus=os.path.join(config['outdir'],'ivar/{sample}_consensus.fa')
-    log:
-        stdout="logs/{sample}/consensus.out",
-        stderr="logs/{sample}/consensus.err"
-    shell:
-        """
-        cat {input.pileup} | ivar consensus -t {params.threshold} \
-           -m {params.depth} -p {params.prefix} -i {wildcards.sample} \
-           1> {log.stdout} 2> {log.stderr}
-        """
-
-rule ivar_variants:
-    input:
-        pileup=os.path.join(config['outdir'],'pileup/{sample}.pileup')
-    params:
-        ref=config['reference'],
-        threshold=0.2,
-        depth=20,
-        qual=20,
-        prefix=os.path.join(config['outdir'],'ivar/{sample}_ivariants')
-    output:
-        ivariants=os.path.join(config['outdir'],'ivar/{sample}_ivariants.tsv'),
-    resources:
-        mem_mb=8000,
-        runtime=240,
-    log:
-        stderr="logs/ivar/{sample}_consensus.err"
-    shell:
-        """
-        cat {input.pileup} | \
-         ivar variants -q {params.qual} -r {params.ref} -t {params.threshold} \
-           -m {params.depth} -p {params.prefix}  2>&1 >  {log.stderr}        
-        """
-
-
-rule evorha:
-    input:
-        bam=config['outdir']+'/align/{sample}_aln_itrim_sorted.bam',
-        idx=config['outdir']+'/align/{sample}_aln_itrim_sorted.bam.bai',
-    params:
-        ref=config['reference'],
-        bamln=config['outdir']+'/evorha/{sample}_sorted.bam',
-        idxln=config['outdir']+'/evorha/{sample}_sorted.bam.bai',
-        prefix=config['outdir']+'/evorha/',
-        indirs=expand(config['outdir']+'/snippy/snippy_{sample}',sample=SAMPLES)
-    resources:
-        mem_mb=8000,
-        runtime=1440,
-    container: "docker://sethnr/pgcoe_evorha:0.01"
-    output:
-        coreout = config['outdir']+'/evorha/{sample}.hapfreq',
-    log:
-        stderr="logs/evorha/{sample}.err",
-    message: "Running evorha"
-    shell:
-        """
-	    ln -f {input.bam} {params.bamln}
-            ln -f {input.idx} {params.idxln}
-            java -jar /jars/evorha.jar completeAnalysis {params.ref} {params.bamln} 2>&1 >> {log.stderr}
-        """
-
-
-rule get_metrics:
-    input:
-        pileupvcf=os.path.join(config['outdir'],'pileup',"all_variants_filt.vcf.gz"),
-        #snippyvcf=config['outdir']+'/snippy/core.vcf',
-        combinedcoverage=os.path.join(config['outdir'],config['runname'],'combinedcoverage.tsv'),
-        depth=config['outdir']+'/'+config['runname']+'/all_depth.txt',
-        primers='data/TBscheme.primer.bed',
-        amplicons='data/TBscheme.insert.bed',
-    output:
-        #expand(config['outdir']+'/'+config['runname']+'/'+config['runname']+'_{site}_{program}_{metric}.tsv',
-        #       program=["pileup","snippy"], site=["primers","amplicons"],metric=["meandp","covpc","pi"]),
-        #snippyvcf=config['outdir']+'/'+config['runname']+'/snippy_all_vars.vcf',
-        expand(config['outdir']+'/'+config['runname']+'/'+config['runname']+'_{site}_{program}_{metric}.tsv',
-               program=["pileup"], site=["primers","amplicons"],metric=["meandp","covpc","pi"]),
-        pileupvcf=config['outdir']+'/'+config['runname']+'/pileup_all_vars.vcf.gz',
+        expand('results/summary/{site}_{metric}.tsv',
+               site=["primers"],metric=["meandp","covpc","pi"]),
     container: "docker://sethnr/pgcoe_analysis:0.01"
     params:
-        spprefix=config['outdir']+'/'+config['runname']+'/'+config['runname']+'_primers_snippy',
-        saprefix=config['outdir']+'/'+config['runname']+'/'+config['runname']+'_amplicons_snippy',
-        ppprefix=config['outdir']+'/'+config['runname']+'/'+config['runname']+'_primers_pileup',
-        paprefix=config['outdir']+'/'+config['runname']+'/'+config['runname']+'_amplicons_pileup',
+        ppprefix='results/summary/{target}_primer_stats',
+        paprefix='results/summary/{target}_amplicon_stats',
     shell:
         """
-	#cp {{input.snippyvcf}} {{output.snippyvcf}}
-        #python scripts/get_pidp_ranges.py --vcf {{input.snippyvcf}} --depth {input.depth} --bed {input.primers} --out {params.spprefix}
-        #python scripts/get_pidp_ranges.py --vcf {{input.snippyvcf}} --depth {input.depth} --bed {input.amplicons} --out {params.saprefix}
-
-	cp {input.pileupvcf} {output.pileupvcf}
         python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.primers} --out {params.ppprefix}
-        python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.amplicons} --out {params.paprefix}
+        #python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.amplicons} --out {params.paprefix}
         """
 
 
-rule summary:
-    input:
-        bams = lambda wildcards: expand("results/bams/{{sample}}.{target}.bam",target=get_mash_calls(wildcards)),
-        mashcalls = "results/mash/{sample}_calls.txt",
-    output:
-        individual_all_virustype_info = "/results/align/{sample}_all_virustype_info.txt"
-    log:
-        log = "logs/summary.log"
-    params:
-        summary_script="scripts/write_summary.py
-    resources:
-        partition="day",
-        mem_mb="40G",
-        cpus_per_task=4,
-        runtime=300
-    container: "docker://sethnr/pgcoe_anypipe:0.01"
-    shell:"""
-        {params.summary_script}  -c {input.mashcalls}  -p {params.primer_dir} \
-                -n {wildcards.sample} -s {params.python_script} \
-                -e {params.python_script2} -d {params.depth} -t {params.threshold} \
-                -C {resources.cpus_per_task} -I {params.indir} -O {params.outdir} -L {log.log} \
-                 >> {log.log} 2>&1
+# rule summary:
+#     input:
+#         bams = lambda wildcards: expand("results/bams/{{sample}}.{target}.bam",target=get_mash_calls(wildcards)),
+#         mashcalls = "results/mash/{sample}_calls.txt",
+#     output:
+#         individual_all_virustype_info = "/results/align/{sample}_all_virustype_info.txt"
+#     log:
+#         log = "logs/summary.log"
+#     params:
+#         summary_script="scripts/write_summary.py
+#     resources:
+#         partition="day",
+#         mem_mb="40G",
+#         cpus_per_task=4,
+#         runtime=300
+#     container: "docker://sethnr/pgcoe_anypipe:0.01"
+#     shell:"""
+#         {params.summary_script}  -c {input.mashcalls}  -p {params.primer_dir} \
+#                 -n {wildcards.sample} -s {params.python_script} \
+#                 -e {params.python_script2} -d {params.depth} -t {params.threshold} \
+#                 -C {resources.cpus_per_task} -I {params.indir} -O {params.outdir} -L {log.log} \
+#                  >> {log.log} 2>&1
 

@@ -9,6 +9,6 @@ def get_amplicon_panel_id(wildcards):
 	return ampset
 
 def get_subsample_factor(fqsize,maxfqsize):
-        factor=(fqsize/maxfqsize)
-        if factor < 2: return 1
-        else: return round(factor)
+        factor=1/floor(fqsize/maxfqsize)
+        if factor > 0.5: return 1
+        else: return factor
