@@ -28,7 +28,7 @@ rule mash_index:
                 {params.localfastas} >> {log.log} 2>&1
         """
 
-checkpoint mash_calltarget:
+rule mash_calltarget:
     input:
         msh = expand("{refsdir}/all.msh",refsdir=config["refsdir"]),
         read_location = "{readsdir}/{sample}"
@@ -61,25 +61,38 @@ checkpoint mash_calltarget:
         {input.read_location}
         """
 
-rule: merge_mash_calls:
+checkpoint: mash_merge_calls:
     input:
         expand("results/mash/{sample}_calls.txt",sample=SAMPLES)
     output:
         "results/mash/all_calls.txt",
+    log:
+        "logs/mash/all_calls.err"
     shell:
-    """ cat {input} > {output} """
+    """ cat {input} 1> {output} 2> {log}"""
 
 
+
+# def get_mash_targets(wildcards):
+#     with checkpoints.mash_calltarget.get(sample=wildcards.sample,outdir=wildcards.outdir).output.mashcalls.open() as f:
+#         mytargets = f.read().splitlines()
+#     return mytargets
 
 def get_mash_targets(wildcards):
-    with checkpoints.mash_calltarget.get(sample=wildcards.sample,outdir=wildcards.outdir).output.mashcalls.open() as f:
-        mytargets = f.read().splitlines()
+    with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
+        mytargets = [L.split[1] for L in f.read().splitlines() if L.split[1] eq wildcards.sample]
     return mytargets
 
 def get_mash_samples(wildcards):
-    with checkpoints.mash_calltarget.get(sample=wildcards.target,outdir=wildcards.outdir).output.mashcalls.open() as f:
-        mytargets = f.read().splitlines()
-    return mytargets
+    with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
+        mysamples = [L.split[0] for L in f.read().splitlines() if L.split[1] eq wildcards.target]
+    return mysamples
+
+def get_valid_targets():
+    with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
+        alltargets = list(set([L.split[1] for L in f.read().splitlines()]))
+    return alltargets
+
 
 def get_mash_bams(wildcards):
     mytargets = get_mash_targets(wildcards)

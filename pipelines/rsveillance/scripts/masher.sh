@@ -7,12 +7,14 @@ BLOOM=10
 GSIZE=11k
 PREFIX="outfile"
 MASHREF="DENV_all.msh"
+SAMPLE="null"
 
 while getopts "f:p:d:b:r:g:T:o:" OPTION; do
     case $OPTION in
     f) MASHREF=$OPTARG ;;
     p) PROB=$OPTARG    ;;
     d) DIST=$OPTARG    ;;
+    s) SAMPLE=$OPTARG  ;;
     r) READS=$OPTARG   ;;
     b) BLOOM=$OPTARG   ;;
     g) GSIZE=$OPTARG   ;;
@@ -49,6 +51,9 @@ rm ${TEMPDIR}/*head.fastq
 echo "mashing ${READS} reads against hashes" >&2
 mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq > ${PREFIX}_mash.txt
 
+if [[ $? ]]; then
+    exit $?
+fi
 
 #filter for max prob / dist, print genome names
 echo "pulling matches below ${DIST} / ${PROB}" >&2
