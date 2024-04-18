@@ -54,7 +54,7 @@ checkpoint mash_calltarget:
         "logs/getstrain_{sample}.log",
     shell:
         """
-        {params.masher} -f {params.refdir}/all.msh \
+        {params.masher} -f {params.refdir}/all.msh -s {wildcards.sample}\
                 -r {params.reads} -b {params.bloom} -g {params.gsize} \
                 -d {params.dist} -p {params.prob} \
         -o {params.prefix} \
