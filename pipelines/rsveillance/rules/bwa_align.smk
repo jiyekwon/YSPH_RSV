@@ -146,3 +146,22 @@ rule flagstat:
         samtools flagstats -O tsv {input.bam} 1> {output} 2> {log.stderr}
         """
 
+rule mdepth:
+        bams= lambda wildcards: expand('results/align/{{sample}}_{target}.bam',target=get_mash_targets(wildcards)),
+    input:
+    output:
+        'results/align/{target}_all_depths.txt'
+    resources:
+        mem_mb=8000,
+        runtime=180,
+    params:
+        maxdepth=0,
+        minmapqual=60,
+        minbasequal=13
+    log:
+        stderr="logs/depth/{sample}_{target}.err"
+    shell:
+        """
+        samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
+        """
+
