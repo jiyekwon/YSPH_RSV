@@ -61,7 +61,7 @@ rule mash_calltarget:
         {input.read_location}
         """
 
-checkpoint: mash_merge_calls:
+checkpoint mash_merge_calls:
     input:
         expand("results/mash/{sample}_calls.txt",sample=SAMPLES)
     output:
