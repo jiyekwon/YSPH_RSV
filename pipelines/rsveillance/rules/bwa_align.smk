@@ -147,8 +147,8 @@ rule flagstat:
         """
 
 rule mdepth:
-        bams= lambda wildcards: expand('results/align/{{sample}}_{target}.bam',target=get_mash_targets(wildcards)),
     input:
+        bams=lambda wildcards: expand('results/align/{{sample}}_{target}.bam',target=get_mash_targets(wildcards)),
     output:
         'results/align/{target}_all_depths.txt'
     resources:
