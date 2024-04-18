@@ -69,7 +69,9 @@ checkpoint mash_merge_calls:
     log:
         "logs/mash/all_calls.err"
     shell:
-    """ cat {input} 1> {output} 2> {log}"""
+        """
+        cat {input} 1> {output} 2> {log}
+        """
 
 
 
