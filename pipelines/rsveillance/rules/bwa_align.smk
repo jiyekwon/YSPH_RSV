@@ -8,9 +8,9 @@ rule bwa_align_pipeline:
 
 rule bwa_index:
     input:
-        fasta = "{refs}/{target}.fasta"
+        fasta = config['refsdir']+"/{target}.fasta"
     output:
-        bwt = "{refs}/{target}.fasta.bwt"
+        bwt = config['refsdir']+"/{target}.fasta.bwt"
     log:
         log = "/logs/bwa/index_{target}.log"
     params:
@@ -28,17 +28,17 @@ rule bwa_index:
 
 rule bwa_align:
     input:
-        read_location='{readdir}/{sample}',
-        indexedref="{refsdir}/{target}.fasta.amb"
+        read_location=config['readdir']+'/{sample}',
+        indexedref=config['readdir']+"/{target}.fasta.amb"
     params:
-        ref="{refsdir}/{target}.fasta"
+        ref=config['refsdir']+"/{target}.fasta"
     resources:
         mem_mb=8000,
         runtime=240,
     output:
         aligned = temporary('results/align/{sample}_{target}_unsort.bam')
     log:
-        stderr="logs/align/bwa_mem_{sample}.err",
+        stderr="logs/align/bwa_mem_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
@@ -70,17 +70,17 @@ rule sam_subsample:
     input:
         aligned = 'results/align/{sample}_{target}_sort.bam'
     output:
-        subsamp = 'results/align/{sample}_{target}.bam'
-        idx = 'results/align/{sample}_{target}.bam.idx'
-        subsamp = temporary('results/align/{sample}_{target}.substat')
+        subsamp = 'results/align/{sample}_{target}.bam',
+        idx = 'results/align/{sample}_{target}.bam.idx',
+        subfactor = temporary('results/align/{sample}_{target}.substat')
     resources:
         mem_mb=16000,
         runtime=180,
-	params:
-        subfactor: lambda input.size_mb: get_subsample_factor(fqsize,1024), 
-    cores=4,
+    params:
+        subfactor=lambda getfact: get_subsample_factor(input.size_mb,1024) , 
+        cores=4,
     log:
-        stderr="logs/align/{sample}_sort.err"
+        stderr="logs/align/{sample}_{target}_sort.err"
     shell:
         """
         samtools view -b -s {params.subfactor} {input.aln_itrim_sorted} -o {output.subsamp} 2>&1 > {log.stderr}
@@ -121,7 +121,7 @@ rule depth:
         minmapqual=60,
         minbasequal=13
     log:
-        stderr="logs/depth/"+config['runname']+".err"
+        stderr="logs/depth/{sample}_{target}.err"
     shell:
         """
         samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
@@ -140,7 +140,7 @@ rule flagstat:
         minmapqual=60,
         minbasequal=13
     log:
-        stderr="logs/align/{sample}_{target}_flagstat.err'
+        stderr="logs/align/{sample}_{target}_flagstat.err"
     shell:
         """
         samtools flagstats -O tsv {input.bam} 1> {output} 2> {log.stderr}

@@ -15,8 +15,7 @@ rule ivar_pclip:
             mem_mb=8000,
             runtime=1440,
     log:
-        stdout="logs/ivar/{sample}_trim.out",
-        stderr="logs/ivar/{sample}_trim.err"
+        stderr="logs/ivar/{sample}_{target}_trim.err"
     message: "QC and soft-clipping primers using iVar"
     shell:
         """
@@ -31,7 +30,7 @@ rule sam_pileup:
     output:
         pileup=temporary('results/ivar/{sample}_{target}.pileup'),
     params:
-        ref=config['reference'],
+        ref= config['refsdir']+"/{target}.fa",
         threshold=0.2,
         depth=20,
     log:
@@ -47,8 +46,6 @@ rule ivar_consensus:
     output:
         consensus='results/ivar/{sample}_{target}_consensus.fa'
     params:
-        ref=config['reference'],
-        threshold=0.2,
         depth=20,
         prefix='results/ivar/{sample}_consensus'
     log:
@@ -66,7 +63,7 @@ rule ivar_variants:
     output:
         ivariants='results/ivar/{sample}_{target}_ivariants.tsv',
     params:
-        ref=config['reference'],
+        ref=config['refsdir']+"/{target}.fa",
         threshold=0.2,
         depth=20,
         qual=20,
@@ -75,7 +72,7 @@ rule ivar_variants:
         mem_mb=8000,
         runtime=240,
     log:
-        stderr="logs/ivar/{sample}_consensus.err"
+        stderr="logs/ivar/{sample}_{target}_consensus.err"
     shell:
         """
         cat {input.pileup} | \

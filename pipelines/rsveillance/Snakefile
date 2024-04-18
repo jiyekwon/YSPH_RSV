@@ -15,8 +15,8 @@ wildcard_constraints:
 
 rule all:
     input:
-        "results/align/{target}_all_depths.txt",
-        expand('results/summary/{site}_meancov.tsv',
+        expand("results/align/{target}_all_depths.txt",target=TARGETS),
+        expand('results/summary/{site}_covpc.tsv',
                site=["primers"])
 
 
@@ -100,4 +100,5 @@ rule get_div_metrics:
 #                 -e {params.python_script2} -d {params.depth} -t {params.threshold} \
 #                 -C {resources.cpus_per_task} -I {params.indir} -O {params.outdir} -L {log.log} \
 #                  >> {log.log} 2>&1
+
 

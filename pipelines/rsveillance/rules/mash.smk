@@ -5,9 +5,9 @@ rule run_mash:
 
 rule mash_index:
     input:
-        fastas=expand("{refsdir}/{target}.fasta",refsdir=config['refsdir'],target=TARGETS),
+        fastas=expand(config['refsdir']+"/{target}.fasta",target=TARGETS),
     output:
-        msh="{refsdir}/all.msh"
+        msh=config['refsdir']+"/all.msh"
     log:
         log="logs/mash/all.mash.log"
     params:

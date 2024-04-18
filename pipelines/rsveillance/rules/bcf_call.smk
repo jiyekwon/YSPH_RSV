@@ -13,7 +13,7 @@ rule bcf_call:
         mem_mb=8000,
         runtime=240,
     log:
-        stderr="logs/ivar/bcf_call.err"
+        stderr="logs/ivar/bcf_call_{target}.err"
     message: "Calling variants for all samples"
     shell:
         """
@@ -31,7 +31,7 @@ rule bcf_filter:
         mem_mb=8000,
         runtime=180,
     log:
-        stderr="logs/bcf_filter.err"
+        stderr="logs/bcf_filt_{target}.err"
     shell:
         """
         bcftools filter -O z -o {output.vcf_filt} -i 'QUAL>10 & DP>10' {input.vcf} 2>&1 > {log.stderr}
