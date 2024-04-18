@@ -5,9 +5,9 @@ rule run_mash:
 
 rule mash_index:
     input:
-        fastas=expand(config['refsdir']+"/{target}.fasta",target=TARGETS),
+        fastas=expand(os.path.join(config['refsdir'],"{target}.fasta"),target=TARGETS),
     output:
-        msh=config['refsdir']+"/all.msh"
+        msh=os.path.join(config['refsdir'],"all.msh")
     log:
         log="logs/mash/all.mash.log"
     params:
@@ -30,8 +30,8 @@ rule mash_index:
 
 rule mash_calltarget:
     input:
-        msh = expand("{refsdir}/all.msh",refsdir=config["refsdir"]),
-        read_location = "{readsdir}/{sample}"
+        msh = os.path.join(config["refsdir"],"all.msh"),
+        read_location = os.path.join(config['readdir'],"{sample}")
     output:
         mashout = "results/mash/{sample}_mash.txt",
         mashcalls = "results/mash/{sample}_calls.txt"
@@ -82,12 +82,14 @@ checkpoint mash_merge_calls:
 
 def get_mash_targets(wildcards):
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
-        mytargets = [L.split[1] for L in f.read().splitlines() if L.split[1] eq wildcards.sample]
+        mashlines = f.read().splitlines()
+	mytargets = [L.split()[1] for L in mashlines if L.split()[0]==wildcards.sample]
     return mytargets
 
 def get_mash_samples(wildcards):
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
-        mysamples = [L.split[0] for L in f.read().splitlines() if L.split[1] eq wildcards.target]
+        mashlines = f.read().splitlines()
+	mysamples = [L.split()[0] for L in mashlines if L.split()[1]==wildcards.target]
     return mysamples
 
 def get_valid_targets():
