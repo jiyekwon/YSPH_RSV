@@ -61,14 +61,28 @@ checkpoint mash_calltarget:
         {input.read_location}
         """
 
+rule: merge_mash_calls:
+    input:
+        expand("results/mash/{sample}_calls.txt",sample=SAMPLES)
+    output:
+        "results/mash/all_calls.txt",
+    shell:
+    """ cat {input} > {output} """
 
-def get_mash_calls(wildcards):
+
+
+def get_mash_targets(wildcards):
     with checkpoints.mash_calltarget.get(sample=wildcards.sample,outdir=wildcards.outdir).output.mashcalls.open() as f:
         mytargets = f.read().splitlines()
     return mytargets
 
+def get_mash_samples(wildcards):
+    with checkpoints.mash_calltarget.get(sample=wildcards.target,outdir=wildcards.outdir).output.mashcalls.open() as f:
+        mytargets = f.read().splitlines()
+    return mytargets
+
 def get_mash_bams(wildcards):
-    mytargets = get_mash_calls(wildcards)
-    return expand(os.path.join("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets))
+    mytargets = get_mash_targets(wildcards)
+    return expand("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets)
 
 

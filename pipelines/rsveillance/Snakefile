@@ -16,8 +16,8 @@ wildcard_constraints:
 rule all:
     input:
         expand("results/align/{target}_all_depths.txt",target=TARGETS),
-        expand('results/summary/{site}_covpc.tsv',
-               site=["primers"])
+        expand('results/summary/{target}_{site}_covpc.tsv',
+               target=TARGETS, site=["primers"])
 
 
 
@@ -65,7 +65,7 @@ rule get_div_metrics:
         primers='data/{target}.bed',
         #amplicons='data/{target}.insert.bed',
     output:
-        expand('results/summary/{site}_{metric}.tsv',
+        expand('results/summary/{{target}}_{site}_{metric}.tsv',
                site=["primers"],metric=["meandp","covpc","pi"]),
     container: "docker://sethnr/pgcoe_analysis:0.01"
     params:
