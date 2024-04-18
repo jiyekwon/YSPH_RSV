@@ -148,7 +148,7 @@ rule flagstat:
 
 rule mdepth:
     input:
-        bams=lambda wildcards: expand('results/align/{{sample}}_{target}.bam',target=get_mash_targets(wildcards)),
+        bams=lambda wildcards: expand('results/align/{sample}_{{target}}.bam',sample=get_mash_samples(wildcards)),
     output:
         'results/align/{target}_all_depths.txt'
     resources:
@@ -159,7 +159,7 @@ rule mdepth:
         minmapqual=60,
         minbasequal=13
     log:
-        stderr="logs/depth/{sample}_{target}.err"
+        stderr="logs/depth/{target}_all_depths.err"
     shell:
         """
         samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
