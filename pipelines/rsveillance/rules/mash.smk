@@ -1,15 +1,19 @@
+rule run_mash:
+    input:
+        msh=config['refsdir']+'/all.msh'
+
 
 rule mash_index:
     input:
-        fastas = expand("{refs}/{target}.fasta"),target=TARGETS),
+        fastas=expand("{refsdir}/{target}.fasta",refsdir=config['refsdir'],target=TARGETS),
     output:
-        msh = "{refs}/all.msh"
+        msh="{refsdir}/all.msh"
     log:
-        log = "logs/mash/all.mash.log"
+        log="logs/mash/all.mash.log"
     params:
         idx_script = "scripts/indexer.sh",
         genome_size = "11k",
-        refdir=config["reference_directory"],
+        refdir=config["refsdir"],
         localfastas=expand("{target}.fasta",target=TARGETS)
     resources:
         partition="day",
@@ -18,15 +22,15 @@ rule mash_index:
         runtime=300
     container: "docker://sethnr/pgcoe_anypipe:0.01"
     shell:"""
-        cd {params.refdir};
+        cd {input.refdir};
         {params.idx_script} \
                 -m {output.msh} -g {params.genome_size} \
                 {params.localfastas} >> {log.log} 2>&1
-            """
+        """
 
 checkpoint mash_calltarget:
     input:
-        msh = expand("{refs}/all.msh",refs=config["reference_directory"]),
+        msh = expand("{refsdir}/all.msh",refsdir=config["refsdir"]),
         read_location = "{readsdir}/{sample}"
     output:
         mashout = "results/mash/{sample}_mash.txt",
@@ -45,7 +49,7 @@ checkpoint mash_calltarget:
         dist=0.25,   # max mash dist to call
         masher = "scripts/masher.sh",
         prefix="results/mash/{sample}",
-        refdir=config["reference_directory"],
+        refdir=config["refsdir"],
     log:
         "logs/getstrain_{sample}.log",
     shell:
@@ -65,6 +69,6 @@ def get_mash_calls(wildcards):
 
 def get_mash_bams(wildcards):
     mytargets = get_mash_calls(wildcards)
-    return expand(os.path.join(wildcards.outdir,"bams","{sample}_{target}.bam",sample=wildcards.sample,target=mytargets))
+    return expand(os.path.join("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets))
 
 

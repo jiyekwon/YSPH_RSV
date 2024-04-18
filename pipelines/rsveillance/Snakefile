@@ -9,6 +9,9 @@ SAMPLES = [line.strip() for line in open(config['samples'], 'r')]
 TARGETS = [line.strip() for line in open(config['refs'], 'r')]
 
 
+wildcard_constraints:
+    refsdir=config['refsdir']
+
 
 rule all:
     input:

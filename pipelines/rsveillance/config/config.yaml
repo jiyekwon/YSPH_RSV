@@ -1,7 +1,8 @@
-samples: '/home/snr28/project/pgcoe/rsv/testdata/test_samples.txt'
-readdir: '/home/snr28/project/pgcoe/rsv/testdata/'
+samples: '../../testdata/test_samples.txt'
+readdir: '../../testdata/'
 runname: 'rsvtest'
-refs: '../refs/'
-primers: '../primers'
+refs:    '../../refs/refs.txt'
+refsdir: '../../refs/'
+primers: '../../primers'
 outdir: 'results' 
 maxfq_gb: 1

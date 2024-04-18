@@ -2,7 +2,7 @@ import os
 
 def get_value_col(search,fromcol,tocol):
         #
-        continue
+        pass
 
 def get_amplicon_panel_id(wildcards):
         ampset=get_value_col(wildcards.sample, "sample","ampset")
