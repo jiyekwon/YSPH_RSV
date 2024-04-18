@@ -1,12 +1,12 @@
 
 rule bcf_call:
     input:
-        tocall = lambda wildcards: expand("results/bams/{{sample}}_{target}_itrim.bam",target=get_mash_calls(wildcards)),
+        tocall = lambda wildcards: expand('results/bams/{{sample}}_{target}_itrim.bam',target=get_mash_calls(wildcards)),
         indexed = lambda wildcards: expand("results/bams/{{sample}}_{target}_itrim.bam.bai",target=get_mash_calls(wildcards)),
         #tocall=expand('results/ivar/{sample}_{target}_itrim.bam',sample=SAMPLES),
         #indexed=expand('results/ivar/{sample}_{target}_itrim.bam.bai'),sample=SAMPLES)
     output:
-        vcf=temporary('results/bcftools/{target}_all_unfilt.vcf.gz')
+        vcf=temporary('results/bcftools/{sample}_{target}_all_unfilt.vcf.gz')
     params:
         ref='{refs}/{target}.fa'
     resources:
