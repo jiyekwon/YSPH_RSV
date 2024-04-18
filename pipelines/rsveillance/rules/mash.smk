@@ -22,7 +22,7 @@ rule mash_index:
         runtime=300
     container: "docker://sethnr/pgcoe_anypipe:0.01"
     shell:"""
-        cd {input.refdir};
+        cd {params.refdir};
         {params.idx_script} \
                 -m {output.msh} -g {params.genome_size} \
                 {params.localfastas} >> {log.log} 2>&1
