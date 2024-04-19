@@ -27,11 +27,7 @@ if [ -z "$mashout" ]; then
 else 
     FASTAS=($@);
     echo "making mash indices for ${FASTAS}"  2>&1
-    #for F in ${FASTAS}; do 
-    #    echo mash sketch -g ${genome_size} ${F} 2>&1 
-    #    mash sketch -g ${genome_size} ${F} ; 
-    #done
-
+    
     mashidx=("${FASTAS[@]}")
 
     echo "${!FASTAS[@]}"
