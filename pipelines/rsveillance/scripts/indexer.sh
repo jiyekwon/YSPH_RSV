@@ -21,25 +21,18 @@ shift $(expr $OPTIND - 1 )
 
 if [ -z "$mashout" ]; then
     FASTA=$1
-    echo "generating bwa index for ${FASTA}"  2>&1
+    echo "generating bwa index for ${FASTA}"
     echo bwa index ${FASTA} 2>&1
     bwa index ${FASTA}
 else 
     FASTAS=($@);
-    echo "making mash indices for ${FASTAS}"  2>&1
-    #for F in ${FASTAS}; do 
-    #    echo mash sketch -g ${genome_size} ${F} 2>&1 
-    #    mash sketch -g ${genome_size} ${F} ; 
-    #done
-
+    echo "making mash indices for ${FASTAS}"
+    
     mashidx=("${FASTAS[@]}")
-
-    echo "${!FASTAS[@]}"
-    echo "${!mashidx[@]}"
     
     for i in "${!FASTAS[@]}"; do
 	echo $i ":"
-	echo mash sketch -g ${genome_size} ${FASTAS[$i]} 2>&1
+	echo mash sketch -g ${genome_size} ${FASTAS[$i]}
         mash sketch -g ${genome_size} ${FASTAS[$i]} ;
 	echo "-" 
         echo ${FASTAS[$i]}  '-->' ${FASTAS[$i]/.fasta/.fasta.msh}

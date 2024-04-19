@@ -28,10 +28,10 @@ rule bwa_index:
 
 rule bwa_align:
     input:
-        read_location=config['readdir']+'/{sample}',
-        indexedref=config['readdir']+"/{target}.fasta.amb"
+        read_location=os.path.join(config['readdir'],'{sample}'),
+        indexedref=os.path.join(config['readdir'],"{target}.fasta.amb")
     params:
-        ref=config['refsdir']+"/{target}.fasta"
+        ref=config['refsdir']+"{target}.fasta"
     resources:
         mem_mb=8000,
         runtime=240,
@@ -146,22 +146,4 @@ rule flagstat:
         samtools flagstats -O tsv {input.bam} 1> {output} 2> {log.stderr}
         """
 
-rule mdepth:
-    input:
-        bams=lambda wildcards: expand('results/align/{sample}_{{target}}.bam',sample=get_mash_samples(wildcards)),
-    output:
-        'results/align/{target}_all_depths.txt'
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    params:
-        maxdepth=0,
-        minmapqual=60,
-        minbasequal=13
-    log:
-        stderr="logs/depth/{target}_all_depths.err"
-    shell:
-        """
-        samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
-        """
 

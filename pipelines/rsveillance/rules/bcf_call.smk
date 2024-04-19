@@ -16,9 +16,9 @@ rule bcf_call:
     message: "Calling variants for all samples"
     shell:
         """
-        bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 1> {log.stdout} 2> {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 1>> {log.stdout} 2>> {log.stderr}
-        tabix -p vcf {output.vcf} 1>> {log.stdout} 2>> {log.stderr}	        
+        bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
+        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 2>&1  >> {log.stderr}
+        tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 
 rule bcf_filter:

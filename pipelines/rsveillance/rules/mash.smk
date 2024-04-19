@@ -1,3 +1,5 @@
+import sys
+
 rule run_mash:
     input:
         msh=config['refsdir']+'/all.msh'
@@ -7,11 +9,12 @@ rule mash_index:
     input:
         fastas=expand(os.path.join(config['refsdir'],"{target}.fasta"),target=TARGETS),
     output:
-        msh=os.path.join(config['refsdir'],"all.msh")
+        msh="results/mash/index_all.msh"
     log:
-        log="logs/mash/all.mash.log"
+        err="logs/mash/all.mash.err"
     params:
-        idx_script = "scripts/indexer.sh",
+        idx_script = os.path.join(os.getcwd(),"scripts/indexer.sh"),
+        mashabs=os.path.join(os.getcwd(),"results/mash/index_all.msh"),
         genome_size = "11k",
         refdir=config["refsdir"],
         localfastas=expand("{target}.fasta",target=TARGETS)
@@ -22,19 +25,22 @@ rule mash_index:
         runtime=300
     container: "docker://sethnr/pgcoe_anypipe:0.01"
     shell:"""
-        cd {params.refdir};
+	cd {params.refdir}
+        echo {params.idx_script} \
+                -m {params.mashabs} -g {params.genome_size} \
+                {input.fastas}
         {params.idx_script} \
-                -m {output.msh} -g {params.genome_size} \
-                {params.localfastas} >> {log.log} 2>&1
+                -m {params.mashabs} -g {params.genome_size} \
+                {params.localfastas}
         """
 
 rule mash_calltarget:
     input:
-        msh = os.path.join(config["refsdir"],"all.msh"),
+        msh = "results/mash/index_all.msh",
         read_location = os.path.join(config['readdir'],"{sample}")
     output:
-        mashout = "results/mash/{sample}_mash.txt",
-        mashcalls = "results/mash/{sample}_calls.txt"
+        mashout="results/mash/{sample}_mash.txt",
+        mashcalls="results/mash/{sample}_calls.txt",
     resources:
         partition="day",
         mem_mb="8G",
@@ -54,7 +60,7 @@ rule mash_calltarget:
         "logs/getstrain_{sample}.log",
     shell:
         """
-        {params.masher} -f {params.refdir}/all.msh -s {wildcards.sample}\
+        {params.masher} -f {input.msh} -s {wildcards.sample}\
                 -r {params.reads} -b {params.bloom} -g {params.gsize} \
                 -d {params.dist} -p {params.prob} \
         -o {params.prefix} \
@@ -63,14 +69,14 @@ rule mash_calltarget:
 
 checkpoint mash_merge_calls:
     input:
-        expand("results/mash/{sample}_calls.txt",sample=SAMPLES)
+        calls=expand("results/mash/{sample}_calls.txt",sample=SAMPLES)
     output:
-        "results/mash/all_calls.txt",
+        mashcalls="results/mash/all_calls.txt",
     log:
         "logs/mash/all_calls.err"
     shell:
         """
-        cat {input} 1> {output} 2> {log}
+        cat {input.calls} 1> {output.mashcalls} 2> {log}
         """
 
 
@@ -83,23 +89,29 @@ checkpoint mash_merge_calls:
 def get_mash_targets(wildcards):
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         mashlines = f.read().splitlines()
-	mytargets = [L.split()[1] for L in mashlines if L.split()[0]==wildcards.sample]
+    mytargets = [L.split()[1] for L in mashlines if L.split()[0]==wildcards.sample]
+    print("mash: returning "+";".join(mytargets)+" from "+wildcards.sample,file=sys.stderr)  
     return mytargets
 
 def get_mash_samples(wildcards):
+    print("mash: requesting samples for"+wildcards.target,file=sys.stderr)  
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         mashlines = f.read().splitlines()
-	mysamples = [L.split()[0] for L in mashlines if L.split()[1]==wildcards.target]
+    mysamples = [L.split()[0] for L in mashlines if L.split()[1]==wildcards.target]
+    print("mash: returning "+";".join(mysamples)+" from "+wildcards.target,file=sys.stderr)  
     return mysamples
 
 def get_valid_targets():
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
-        alltargets = list(set([L.split[1] for L in f.read().splitlines()]))
+        alltargets = [L.split()[1] for L in f.read().splitlines()]
+	alltargets = set(alltargets)
+    print("mash: returning "+";".join(alltargets)+" from mash merge",file=sys.stderr)  
     return alltargets
-
 
 def get_mash_bams(wildcards):
     mytargets = get_mash_targets(wildcards)
-    return expand("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets)
+    filenames = expand("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets)
+    print("mash: returning "+";".join(filenames)+" from "+wildcards.sample,file=sys.stderr)  
+    return filenames
 
 

@@ -1,3 +1,2 @@
 Sample_RSV_19
 Sample_RSV_2
-test_samples.txt
