@@ -50,13 +50,21 @@ rule mdepth:
         depths='results/align/{target}-depths.txt',
     resources:
         mem_mb=8000,
+<<<<<<< HEAD
         runtime=180,
+=======
+	runtime=180,
+>>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
     log:
         stderr="logs/depth/{target}-depths.err"
     shell:
         """
         samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
+<<<<<<< HEAD
         """
+=======
+	"""
+>>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
 
 
 
@@ -90,6 +98,10 @@ rule get_ivar_report:
         touch {output.report}
         """
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
 rule get_genotyping_report:
     input:
         ivariants='results/bcftools/{target}-all.vcf.gz',
