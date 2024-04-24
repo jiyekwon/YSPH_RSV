@@ -65,24 +65,14 @@ rule sam_subsample:
         runtime=180,
         cores=4,
     params:
-        subfactor=lambda _: get_subsample_factor( 2048 ) ,
-        #subfactor=lambda _: get_subsample_factor( input.size_mb, 1024) ,
-        #subfactor=0.5
-	maxsize_mb=1024
+	    maxsize_mb=1024
     log:
         stderr="logs/align/{sample}-{target}-sort.err"
-#    shell:
-#        """
-#        samtools view -b -s {params.subfactor} {input.aligned} -o {output.subsamp} 2>&1 > {log.stderr}
-#        samtools index {output.subsamp}
-#
-#        echo "{params.subfactor} subfactor\n" > {output.subfactor}
-#        """
     run:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
-	subfact = get_subsample_factor(insize, params.maxsize_mb)
-	subfraction = 1/subfact
+    	subfact = get_subsample_factor(insize, params.maxsize_mb)
+	    subfraction = 1/subfact
         if subfact < 1:
             subprocess.run(["samtools", "view","-b","-s",str(subfraction),"-o",output.subsamp,input.aligned])
         else:
@@ -133,21 +123,30 @@ rule indexbam:
 
 rule depth:
     input:
-        bams='results/align/{sample}-{target}.bam'
+        bams='results/align/{sample}-{target}.bam',
+        subfactor = 'results/align/{sample}-{target}.substat'
     output:
-        depth='results/align/{sample}-{target}-depth.txt'
+        depth=temporary('results/align/{sample}-{target}-depth.txt'),
+        dwins='results/align/{sample}-{target}-depthwins.txt',
+        dhist='results/align/{sample}-{target}-depthhist.txt',
     resources:
         mem_mb=8000,
         runtime=180,
     params:
         maxdepth=0,
         minmapqual=60,
-        minbasequal=13
+        minbasequal=13,
+        winsize=100,
+        prefix='results/align/{sample}-{target}'
     log:
         stderr="logs/depth/{sample}-{target}.err"
     shell:
         """
         samtools depth -a -H {input.bams} -o {output.depth} 2>&1 >  {log.stderr}
+
+        python scripts/get_depth_distribution.py \
+            -s {wildcards.sample} -F `cat {input.subfactor}` \
+            -w {params.winsize} -o {params.prefix}
         """
 
 rule flagstat:

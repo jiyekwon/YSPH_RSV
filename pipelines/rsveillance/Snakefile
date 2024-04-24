@@ -21,7 +21,7 @@ wildcard_constraints:
 rule all:
     input:
         mallcalls='results/mash/all-calls.txt',
-        depths=lambda _: expand("results/align/{target}-depths.txt",target=get_valid_targets() ),
+        depths=lambda _: expand('results/align/{target}-depthwins.txt',target=get_valid_targets() ),
         ivar=lambda _: expand("results/ivar/{target}-summary.txt",target=get_valid_targets() ),
         bcf=lambda _: expand("results/bcftools/{target}-summary.txt",target=get_valid_targets() ),
         #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
@@ -42,29 +42,24 @@ include: "rules/bcf_call.smk"
 
 
 
-rule mdepth:
+rule depthplots:
     input:
-        bams=lambda wildcards: expand('results/align/{sample}-{{target}}.bam',sample=get_mash_samples(wildcards)),
-        #idepth=expand('results/align/{sample}-{{target}}-depth.txt',sample=SAMPLES)
+        dhists=lambda wildcards: expand('results/align/{sample}-{{target}}-depthhist.txt',sample=get_mash_samples(wildcards)),
+        dwins=lambda wildcards: expand('results/align/{sample}-{{target}}-depthwins.txt',sample=get_mash_samples(wildcards)),
     output:
-        depths='results/align/{target}-depths.txt',
+        dwins='results/align/{target}-depthwins.txt',
+        dhists='results/align/{target}-depthhists.txt',
     resources:
         mem_mb=8000,
-<<<<<<< HEAD
         runtime=180,
-=======
-	runtime=180,
->>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
     log:
         stderr="logs/depth/{target}-depths.err"
+    container: "docker://sethnr/pgcoe_analysis:0.01"
     shell:
         """
-        samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
-<<<<<<< HEAD
+        cat {input.dhists} > {output.dhists}
+        cat {input.dwins} > {output.dwins}
         """
-=======
-	"""
->>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
 
 
 
@@ -98,10 +93,6 @@ rule get_ivar_report:
         touch {output.report}
         """
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f3a566ee2dce951f280cb2fe935baf1c3dffe257
 rule get_genotyping_report:
     input:
         ivariants='results/bcftools/{target}-all.vcf.gz',
