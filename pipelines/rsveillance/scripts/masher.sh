@@ -36,7 +36,7 @@ if [[ ! "$TEMPDIR" || ! -d "$TEMPDIR" ]]; then
     exit 1
 fi
 
-echo "getting top ${READS} reads from infiles" 1>&2
+echo "getting top ${READS} reads from infiles"
 let "RLINES = $READS / 2 * 4"
 for FQ in $1/*fastq.gz; do
     BASENAME=$(basename ${FQ/fastq.gz/head.fastq})
@@ -48,18 +48,18 @@ done
 cat ${TEMPDIR}/*head.fastq >  ${TEMPDIR}/${READS}.fastq
 rm ${TEMPDIR}/*head.fastq
 
-echo "mashing ${READS} reads against hashes" >&2
-echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq \> ${PREFIX}_mash.txt
-mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq > ${PREFIX}_mash.txt
+echo "mashing ${READS} reads against hashes"
+echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq \> ${PREFIX}-mash.txt
+mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq > ${PREFIX}-mash.txt
 
 if [[ $? >0 ]]; then
     exit $?
 fi
 
 #filter for max prob / dist, print genome names
-echo "pulling matches below ${DIST} / ${PROB}" >&2
-echo awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}_mash.txt \> ${PREFIX}_calls.txt
-awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}_mash.txt > ${PREFIX}_calls.txt
+echo "pulling matches below ${DIST} / ${PROB}"
+echo awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}-mash.txt \> ${PREFIX}-calls.txt
+awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}-mash.txt > ${PREFIX}-calls.txt
 
 
 echo "rm ${TEMPDIR}" >&2
