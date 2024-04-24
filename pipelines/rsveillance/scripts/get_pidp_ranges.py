@@ -85,12 +85,12 @@ pim = pd.melt(pi,id_vars=["start","end"],value_name="pi",var_name="sample")
 
 
 
-covplot = ggplot(covpcm, aes(x="sample",y="covpc"))+geom_violin() +coord_flip()
+covplot = ggplot(covpcm, aes(x="sample",y="covpc"))+ geom_violin() +coord_flip()
 covplot.save((outfile+"_covpc.png"),width=150,height=150,units="mm")
 
-dpplot = ggplot(meandepthm, aes(x="sample",y="depth"))+geom_violin() +coord_flip()
+dpplot = ggplot(meandepthm, aes(x="sample",y="depth"))+ geom_violin() +coord_flip()
 dpplot.save((outfile+"_meandp.png"),width=150,height=150,units="mm")
 
-dpplot = ggplot(pim, aes(x="sample",y="pi"))+geom_violin() +coord_flip()
+dpplot = ggplot(pim, aes(x="sample",y="pi"))+ geom_violin() +coord_flip()
 dpplot.save((outfile+"_pi.png"),width=150,height=150,units="mm")
 

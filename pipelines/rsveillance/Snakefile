@@ -1,4 +1,5 @@
 import os
+import sys
 
 configfile: "config/config.yaml"
 include:    "rules/common.py"
@@ -9,15 +10,25 @@ SAMPLES = [line.strip() for line in open(config['samples'], 'r')]
 TARGETS = [line.strip() for line in open(config['refs'], 'r')]
 
 
+print(":".join(SAMPLES),file=sys.stderr)
+print(":".join(TARGETS),file=sys.stderr)
+
 wildcard_constraints:
-    refsdir=config['refsdir']
+    sample="[^-]+",
+    target="[^\-/]+"
 
 
 rule all:
     input:
-        expand("results/align/{target}_all_depths.txt",target=TARGETS),
-        expand('results/summary/{target}_{site}_covpc.tsv',
-               target=TARGETS, site=["primers"])
+        mallcalls='results/mash/all-calls.txt',
+        depths=lambda _: expand("results/align/{target}-depths.txt",target=get_valid_targets() ),
+        ivar=lambda _: expand("results/ivar/{target}-summary.txt",target=get_valid_targets() ),
+        bcf=lambda _: expand("results/bcftools/{target}-summary.txt",target=get_valid_targets() ),
+        #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
+        #expand('results/summary/{target}_{site}_covpc.tsv',
+        #       target=TARGETS, site=["primers"])
+
+
 
 
 
@@ -29,6 +40,65 @@ include: "rules/ivar.smk"
 
 include: "rules/bcf_call.smk"
 
+
+
+rule mdepth:
+    input:
+        bams=lambda wildcards: expand('results/align/{sample}-{{target}}.bam',sample=get_mash_samples(wildcards)),
+        #idepth=expand('results/align/{sample}-{{target}}-depth.txt',sample=SAMPLES)
+    output:
+        depths='results/align/{target}-depths.txt',
+    resources:
+        mem_mb=8000,
+        runtime=180,
+    log:
+        stderr="logs/depth/{target}-depths.err"
+    shell:
+        """
+        samtools depth -a -H {input.bams} -o {output} 2>&1 >  {log.stderr}
+        """
+
+
+
+
+rule get_div_metrics:
+    input:
+        pileupvcf='results/bcftools/{target}-filt.vcf.gz',
+        depth='results/align/{target}-depths.txt',
+        primers=os.path.join(config['refsdir']+'{target}.bed'),
+        #amplicons='data/{target}.insert.bed',
+    output:
+        expand('results/summary/{{target}}-{site}-{metric}.tsv',
+               site=["primers"],metric=["meandp","covpc","pi"]),
+    container: "docker://sethnr/pgcoe_analysis:0.01"
+    params:
+        ppprefix='results/summary/{target}-primer-stats',
+        paprefix='results/summary/{target}-amplicon-stats',
+    shell:
+        """
+        python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.primers} --out {params.ppprefix}
+        """
+
+rule get_ivar_report:
+    input:
+        ivariants=lambda wildcards: expand('results/ivar/{sample}-{{target}}-ivariants.tsv',sample=get_mash_samples(wildcards)),
+        iconsensus=lambda wildcards: expand('results/ivar/{sample}-{{target}}-consensus.fa',sample=get_mash_samples(wildcards)),
+    output:
+        report='results/ivar/{target}-summary.txt'
+    shell:
+        """
+        touch {output.report}
+        """
+
+rule get_genotyping_report:
+    input:
+        ivariants='results/bcftools/{target}-all.vcf.gz',
+    output:
+        report='results/bcftools/{target}-summary.txt'
+    shell:
+        """
+        touch {output.report}
+        """
 
 
 
@@ -52,30 +122,12 @@ include: "rules/bcf_call.smk"
 #     message: "Running evorha"
 #     shell:
 #         """
-# 	    ln -f {input.bam} {params.bamln}
+#           ln -f {input.bam} {params.bamln}
 #             ln -f {input.idx} {params.idxln}
 #             java -jar /jars/evorha.jar completeAnalysis {params.ref} {params.bamln} 2>&1 >> {log.stderr}
 #         """
 
 
-rule get_div_metrics:
-    input:
-        pileupvcfs=expand('results/bcftools/{target}_all_filt.vcf.gz',target=TARGETS),
-        depths='results/align/{target}_all_depths.txt',
-        primers=os.path.join(config['refsdir']+'{target}.bed'),
-        #amplicons='data/{target}.insert.bed',
-    output:
-        expand('results/summary/{{target}}_{site}_{metric}.tsv',
-               site=["primers"],metric=["meandp","covpc","pi"]),
-    container: "docker://sethnr/pgcoe_analysis:0.01"
-    params:
-        ppprefix='results/summary/{target}_primer_stats',
-        paprefix='results/summary/{target}_amplicon_stats',
-    shell:
-        """
-        python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.primers} --out {params.ppprefix}
-        #python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.amplicons} --out {params.paprefix}
-        """
 
 
 # rule summary:
