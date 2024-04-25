@@ -40,6 +40,16 @@ def printblock(posn,dep,outfile):
     else:
         print("{}\t{}".format(posn,round(dep)), file=winsfile)
 
+def printhist(dep,count,outfile):
+    if sample and depthfactor:
+        print("{}\t{}\t{}\t{}".format(sample,round(dep),count,round(dep*depthfactor)), file=outfile)
+    elif depthfactor:
+        print("{}\t{}\t{}".format(round(dep),count,round(dep*depthfactor)), file=outfile)
+    elif sample:
+        print("{}\t{}\t{}".format(sample,round(dep),count), file=outfile)
+    else:
+        print("{}\t{}".format(round(dep),count), file=winsfile)
+
 dhist = dict()
 windepths=list()
 
@@ -68,6 +78,6 @@ histfile = open(outfile+"-depthhist.txt",'w')
 for d in sorted(dhist.keys()):
     #if d not in dhist:
     #    dhist[d]=0
-    printblock(d,dhist[d],histfile)
+    printhist(d,dhist[d],histfile)
 histfile.close()
 

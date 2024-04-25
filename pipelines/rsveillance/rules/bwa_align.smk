@@ -127,8 +127,8 @@ rule depth:
         subfactor = 'results/align/{sample}-{target}.substat'
     output:
         depth=temporary('results/align/{sample}-{target}-depth.txt'),
-        dwins='results/align/{sample}-{target}-depthwins.txt',
-        dhist='results/align/{sample}-{target}-depthhist.txt',
+        dwins=temporary('results/align/{sample}-{target}-depthwins.txt'),
+        dhist=temporary('results/align/{sample}-{target}-depthhist.txt'),
     resources:
         mem_mb=8000,
         runtime=180,
@@ -144,7 +144,7 @@ rule depth:
         """
         samtools depth -a -H {input.bams} -o {output.depth} 2>&1 >  {log.stderr}
 
-        python scripts/get_depth_distribution.py \
+        python scripts/get_depth_distribution.py -d {output.depth} \
             -s {wildcards.sample} -F `cat {input.subfactor}` \
             -w {params.winsize} -o {params.prefix}
         """
