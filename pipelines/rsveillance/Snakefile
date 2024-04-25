@@ -96,6 +96,7 @@ rule get_ivar_report:
 rule get_genotyping_report:
     input:
         ivariants='results/bcftools/{target}-all.vcf.gz',
+        ivariants_untrim='results/bcftools/{target}-untrim-all.vcf.gz',
     output:
         report='results/bcftools/{target}-summary.txt'
     shell:
