@@ -98,10 +98,18 @@ rule get_genotyping_report:
         ivariants='results/bcftools/{target}-all.vcf.gz',
         ivariants_untrim='results/bcftools/{target}-untrim-all.vcf.gz',
     output:
-        report='results/bcftools/{target}-summary.txt'
+        report='results/bcftools/{target}-summary.txt',
+        pi='results/bcftools/{target}-primer-pi.tsv',
+        pi_untrim='results/bcftools/{target}-untrim-primer-pi.tsv',
+    container: "docker://sethnr/pgcoe_analysis:0.01"
+    params:
+        prefix='results/bcftools/{target}-primer',
+        prefix_untrim='results/bcftools/{target}-untrim-primer',
     shell:
         """
         touch {output.report}
+        python scripts/get_pidp_ranges.py --vcf {input.ivariants} --bed {input.primers} --out {params.prefix}
+        python scripts/get_pidp_ranges.py --vcf {input.ivariants_untrim} --bed {input.primers} --out {params.prefix_untrim}
         """
 
 
