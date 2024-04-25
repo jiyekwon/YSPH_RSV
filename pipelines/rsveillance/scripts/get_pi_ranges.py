@@ -54,7 +54,7 @@ for i in range(0,len(ranges)):
 
     if sum(inpos)>0:
         ingts = gt[inpos,:]
-        locpi = (ingts[0] / len).tolist()
+        locpi = round((ingts[0] / len),4).tolist()
         #print([st,en]+locdepth+locpi+loccov)
     else:
         locpi = [-1.0]*nsamples
