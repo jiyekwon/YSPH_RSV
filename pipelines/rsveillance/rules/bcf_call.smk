@@ -34,7 +34,7 @@ rule bcf_filter:
     shell:
         """
         bcftools filter -O z -o {output.vcf_filt} -i 'QUAL>10 & DP>10' {input.vcf} 2>&1 > {log.stderr}
-	tabix -p vcf {output.vcf_filt}
+	    tabix -p vcf {output.vcf_filt}
         """
 
 
@@ -42,7 +42,7 @@ rule bcf_filter:
 rule bcf_call_untrim:
     input:
         tocall = lambda wildcards: expand('results/align/{sample}-{{target}}.bam',sample=get_mash_samples(wildcards)),
-        indexed = lambda wildcards: expand("results/aign/{sample}-{{target}}.bam.bai",sample=get_mash_samples(wildcards)),
+        indexed = lambda wildcards: expand("results/align/{sample}-{{target}}.bam.bai",sample=get_mash_samples(wildcards)),
     output:
         vcf=temporary('results/bcftools/{target}-untrim-all-unfilt.vcf.gz')
     params:
@@ -74,6 +74,6 @@ rule bcf_filter_untrim:
     shell:
         """
         bcftools filter -O z -o {output.vcf_filt} -i 'QUAL>10 & DP>10' {input.vcf} 2>&1 > {log.stderr}
-	tabix -p vcf {output.vcf_filt}
+	    tabix -p vcf {output.vcf_filt}
         """
 
