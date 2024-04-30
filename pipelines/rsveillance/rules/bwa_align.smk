@@ -33,14 +33,13 @@ rule bwa_align:
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
         aligned = temporary('results/align/{sample}-{target}-unsort.bam')
+        flagstat = temporary('results/align/{sample}-{target}-unsort.flagstat')
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
         runtime= 600,
         mem_mb=lambda wc, input: max(2 * input.size_mb, 4000),
-	cores=4,
-        #mem_mb=8000,
-	#runtime=lambda _: max(60* (input.size_mb/1024), 120),
+	    cores=4,
     log:
         stderr="logs/align/bwa_mem_{sample}-{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
@@ -50,6 +49,9 @@ rule bwa_align:
         echo 'bwa mem -o {output.aligned} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* \n' 
         bwa mem -t {resources.cores} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* | \
             samtools view -b -F 4 -F 2048 1> {output.aligned}  2> {log.stderr}
+
+        echo samtools flagstat -@ {resources.cores} -O tsv {output.aligned} \> {output.flagstat} \n' 
+        samtools flagstat -@ {resources.cores} -O tsv {output.aligned} 1> {output.flagstat} 2>> {log.stderr}
         """
 
 rule sam_subsample:
@@ -79,7 +81,7 @@ rule sam_subsample:
             subprocess.run(["cp",input.aligned,output.subsamp])
         #subprocess.run(["samtools","index",output.subsamp])
         f = open(output.subfactor, "w")
-        print(subfact,file=f)
+        print("\t".join(wildcards.subsample,subfact),file=f)
         f.close()
 
 rule sam_sort:
@@ -91,7 +93,7 @@ rule sam_sort:
     resources:
         mem_mb=16000,
         runtime=180,
-	cores=4,
+	    cores=4,
     log:
         stderr="logs/align/sort-{sample}-{target}.err"
     message: "Sorting and indexing reads"
@@ -145,26 +147,75 @@ rule depth:
         samtools depth -a -H {input.bams} -o {output.depth} 2>&1 >  {log.stderr}
 
         python scripts/get_depth_distribution.py -d {output.depth} \
-            -s {wildcards.sample} -F `cat {input.subfactor}` \
+            -s {wildcards.sample} -F `cat {input.subfactor} | cut -f 2,2` \
             -w {params.winsize} -o {params.prefix}
+
         """
 
-rule flagstat:
-    input:
-        bam='results/align/{sample}-{target}.bam'
+
+rule alignstats:
+    input: 
+        subfactor = 'results/align/{sample}-{target}.substat',
+        flagstats = 'results/align/{sample}-{target}.flagstats',
+        dhist='results/align/{sample}-{target}-depthhist.txt',
     output:
-        'results/align/{sample}-{target}-flagstat.txt'
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    params:
-        maxdepth=0,
-        minmapqual=60,
-        minbasequal=13
-    log:
-        stderr="logs/align/{sample}-{target}-flagstat.err"
-    shell:
-        """
-        samtools flagstats -O tsv {input.bam} 1> {output} 2> {log.stderr}
-        """
+        stats='results/align/{sample}-{target}-alignstats.txt',
+    run:
+        import subprocess
 
+        sample = wildcards.sample
+        target = wildcards.target
+
+        #get subsampling factor
+        with f as open(input.subfactor, "r"):
+            l = f.read().split
+            subfact = l[1] 
+        f.close()
+
+        #get reads aligned
+        with f as open(input.flagstats, "r"):
+            for l in my_file:
+                l = l.split("\t")
+                passreads = l[0]
+                failreads = l[1]
+                stat = l[2]
+                if stat == "total (QC-passed reads + QC-failed reads)": 
+                    reads = passreads
+                elif stat == "aligned": 
+                    aligned = passreads
+                elif stat == "properly paired": 
+                    paired = passreads
+        f.close()
+
+        #get coverage / depth
+        goodcov = 0
+        cov = 0
+        gsize = 0
+        dtotal = 0
+        with f as open(input.flagstats, "r"):
+            for l in my_file:
+                l = l.split("\t")
+                depth = l[0]
+                count = l[1]
+                cdepth = l[2]
+                dtotal += cdepth * count
+                if cdepth >= params.mindepth:
+                    gsize += count
+                    cov += count
+                    goodcov += count
+                if cdepth > 0:
+                    gsize += count
+                    cov += count
+                if cdepth == 0:
+                    gsize += count
+        f.close()
+        meandepth = round(dtotal/gsize)
+
+
+        #subprocess.run(["samtools","index",output.subsamp])
+        f = open(output.stats, "w")
+            print("\t".join(sample, target, subfact, 
+                            reads, aligned, paired,
+                            meandepth, goodcov, allcov, gsize),file=f)
+        f.close()
+    

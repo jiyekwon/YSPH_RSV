@@ -46,9 +46,11 @@ rule depthplots:
     input:
         dhists=lambda wildcards: expand('results/align/{sample}-{{target}}-depthhist.txt',sample=get_mash_samples(wildcards)),
         dwins=lambda wildcards: expand('results/align/{sample}-{{target}}-depthwins.txt',sample=get_mash_samples(wildcards)),
+        dstats=lambda wildcards: expand('results/align/{sample}-{{target}}-alignstats.txt',sample=get_mash_samples(wildcards)),
     output:
         dwins='results/align/{target}-depthwins.txt',
         dhists='results/align/{target}-depthhists.txt',
+        dstats='results/align/{target}-depthhists.txt',
     resources:
         mem_mb=8000,
         runtime=180,
@@ -59,6 +61,7 @@ rule depthplots:
         """
         cat {input.dhists} > {output.dhists}
         cat {input.dwins} > {output.dwins}
+        cat {input.dstats} > {output.dstats}
         """
 
 

@@ -36,7 +36,7 @@ rule mash_call:
         read_location = os.path.join(config['readdir'],"{sample}")
     output:
         mashcalls=temporary("results/mash/{sample}-calls.txt"),
-        mashout="results/mash/{sample}-mash.txt",
+        mashout=temporary("results/mash/{sample}-mash.txt"),
     resources:
         partition="day",
         mem_mb="8G",
@@ -66,13 +66,16 @@ rule mash_call:
 checkpoint mash_merge_calls:
     input:
         calls=expand("results/mash/{sample}-calls.txt",sample=SAMPLES)
+        mash=expand("results/mash/{sample}-mash.txt",sample=SAMPLES)
     output:
+        mashout="results/mash/all-mash.txt",
         mashcalls="results/mash/all-calls.txt",
     log:
         "logs/mash/all-calls.err"
     shell:
         """
         cat {input.calls} 1> {output.mashcalls} 2> {log}
+        cat {input.mash} 1> {output.mashout} 2>> {log}
         """
 
 

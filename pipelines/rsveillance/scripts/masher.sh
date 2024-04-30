@@ -45,12 +45,12 @@ for FQ in $1/*fastq.gz; do
     gunzip -dc $FQ | head -n $RLINES > ${TEMPDIR}/${BASENAME}
 done
 
-cat ${TEMPDIR}/*head.fastq >  ${TEMPDIR}/${READS}.fastq
+cat ${TEMPDIR}/*head.fastq >  ${TEMPDIR}/${SAMPLE}-${READS}.fastq
 rm ${TEMPDIR}/*head.fastq
 
 echo "mashing ${READS} reads against hashes"
-echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq \> ${PREFIX}-mash.txt
-mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${READS}.fastq > ${PREFIX}-mash.txt
+echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}-${READS}.fastq \> ${PREFIX}-mash.txt
+mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}-${READS}.fastq > ${PREFIX}-mash.txt
 
 if [[ $? >0 ]]; then
     exit $?
