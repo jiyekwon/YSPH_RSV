@@ -32,7 +32,7 @@ rule bwa_align:
         read_location=os.path.join(config['readdir'],'{sample}'),
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
-        aligned = temporary('results/align/{sample}-{target}-unsort.bam')
+        aligned = temporary('results/align/{sample}-{target}-unsort.bam'),
         flagstat = temporary('results/align/{sample}-{target}-unsort.flagstat')
     params:
         ref=config['refsdir']+"{target}.fasta"
@@ -161,19 +161,17 @@ rule alignstats:
     output:
         stats='results/align/{sample}-{target}-alignstats.txt',
     run:
-        import subprocess
-
         sample = wildcards.sample
         target = wildcards.target
 
         #get subsampling factor
-        with f as open(input.subfactor, "r"):
+        with open(input.subfactor, "r") as f:
             l = f.read().split
             subfact = l[1] 
         f.close()
 
         #get reads aligned
-        with f as open(input.flagstats, "r"):
+        with open(input.flagstats, "r") as f:
             for l in my_file:
                 l = l.split("\t")
                 passreads = l[0]
@@ -192,7 +190,7 @@ rule alignstats:
         cov = 0
         gsize = 0
         dtotal = 0
-        with f as open(input.flagstats, "r"):
+        with open(input.flagstats, "r") as f:
             for l in my_file:
                 l = l.split("\t")
                 depth = l[0]
@@ -214,8 +212,8 @@ rule alignstats:
 
         #subprocess.run(["samtools","index",output.subsamp])
         f = open(output.stats, "w")
-            print("\t".join(sample, target, subfact, 
-                            reads, aligned, paired,
-                            meandepth, goodcov, allcov, gsize),file=f)
+        print("\t".join(sample, target, subfact,
+	    reads, aligned, paired,
+	    meandepth, goodcov, allcov, gsize),file=f)
         f.close()
     

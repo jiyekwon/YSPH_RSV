@@ -65,7 +65,7 @@ rule mash_call:
 
 checkpoint mash_merge_calls:
     input:
-        calls=expand("results/mash/{sample}-calls.txt",sample=SAMPLES)
+        calls=expand("results/mash/{sample}-calls.txt",sample=SAMPLES),
         mash=expand("results/mash/{sample}-mash.txt",sample=SAMPLES)
     output:
         mashout="results/mash/all-mash.txt",
