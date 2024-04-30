@@ -56,7 +56,8 @@ rule flagstat:
     output:
         flagstat = temporary('results/align/{sample}-{target}.flagstats')
     params:
-        ref=config['refsdir']+"{target}.fasta"
+        ref=config['refsdir']+"{target}.fasta",
+        sleeplen=60,
     resources:
         runtime= 600,
         mem_mb=4000,
@@ -66,6 +67,11 @@ rule flagstat:
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
+        samtools quickcheck {output.aligned} 2>&1 > {log.stderr}
+        if [[ $? >0 ]]; then
+            sleep {params.sleeplen}
+        fi
+
         echo samtools flagstat -@ {resources.cores} -O tsv {output.aligned} \> {output.flagstat} \n' 
         samtools flagstat -@ {resources.cores} -O tsv {output.aligned} 1> {output.flagstat} 2>> {log.stderr}
         """
