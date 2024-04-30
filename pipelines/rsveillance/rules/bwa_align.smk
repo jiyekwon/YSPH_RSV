@@ -54,7 +54,7 @@ rule flagstat:
     input:
         aligned = 'results/align/{sample}-{target}-unsort.bam',
     output:
-        flagstat = temporary('results/align/{sample}-{target}-unsort.flagstat')
+        flagstat = temporary('results/align/{sample}-{target}.flagstats')
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
