@@ -33,7 +33,6 @@ rule bwa_align:
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
         aligned = temporary('results/align/{sample}-{target}-unsort.bam'),
-        flagstat = temporary('results/align/{sample}-{target}-unsort.flagstat')
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
@@ -49,10 +48,28 @@ rule bwa_align:
         echo 'bwa mem -o {output.aligned} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* \n' 
         bwa mem -t {resources.cores} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* | \
             samtools view -b -F 4 -F 2048 1> {output.aligned}  2> {log.stderr}
+        """
 
+rule flagstat:
+    input:
+        aligned = 'results/align/{sample}-{target}-unsort.bam',
+    output:
+        flagstat = temporary('results/align/{sample}-{target}-unsort.flagstat')
+    params:
+        ref=config['refsdir']+"{target}.fasta"
+    resources:
+        runtime= 600,
+        mem_mb=4000,
+	    cores=1,
+    log:
+        stderr="logs/align/flagstat_{sample}-{target}.err",
+    container: "docker://sethnr/pgcoe_bacseq:0.01"
+    shell:
+        """
         echo samtools flagstat -@ {resources.cores} -O tsv {output.aligned} \> {output.flagstat} \n' 
         samtools flagstat -@ {resources.cores} -O tsv {output.aligned} 1> {output.flagstat} 2>> {log.stderr}
         """
+
 
 rule sam_subsample:
     input:
