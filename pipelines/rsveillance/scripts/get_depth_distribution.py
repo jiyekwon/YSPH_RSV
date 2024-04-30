@@ -68,7 +68,8 @@ with open(depthfile) as my_file:
         #print("{}  {}  {}".format(s,winsize,s%winsize),file=sys.stdout)
         if s % winsize == 0:
             printblock(s,mean(windepths),winsfile)
-            
+            windepths=list()
+
 if s % winsize > 0:
     printblock(s,mean(windepths),winsfile)
 winsfile.close()

@@ -104,17 +104,17 @@ rule sam_sort:
 
 
 
-rule indexbam:
-    input:
-        bam = '{samplename}.bam'
-    output:
-        indexedbam = '{samplename}.bam.bai'
-    log:
-        stderr="logs/bamindex/{samplename}.err"
-    shell:
-        """
-        samtools index {input.bam} 2>&1 >  {log.stderr}
-        """
+#rule indexbam:
+#    input:
+#        bam = '{samplename}.bam'
+#    output:
+#        indexedbam = '{samplename}.bam.bai'
+#    log:
+#        stderr="logs/bamindex/{samplename}.err"
+#    shell:
+#        """
+#        samtools index {input.bam} 2>&1 >  {log.stderr}
+#        """
 
 
 
@@ -136,7 +136,7 @@ rule depth:
         maxdepth=0,
         minmapqual=60,
         minbasequal=13,
-        winsize=100,
+        winsize=10,
         prefix='results/align/{sample}-{target}'
     log:
         stderr="logs/depth/{sample}-{target}.err"

@@ -4,6 +4,7 @@ rule bcf_call:
         tocall = lambda wildcards: expand('results/ivar/{sample}-{{target}}-itrim.bam',sample=get_mash_samples(wildcards)),
         indexed = lambda wildcards: expand("results/ivar/{sample}-{{target}}-itrim.bam.bai",sample=get_mash_samples(wildcards)),
     output:
+        bcf=temporary('results/bcftools/{target}-varints.bcf'),
         vcf=temporary('results/bcftools/{target}-all-unfilt.vcf.gz')
     params:
         ref=os.path.join(config['refsdir'],'{target}.fasta')
@@ -15,8 +16,8 @@ rule bcf_call:
     message: "Calling variants for all samples"
     shell:
         """
-        bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 2>&1  >> {log.stderr}
+        bcftools mpileup -Ou -o {output.bcf} -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
+        bcftools call --ploidy 1 -vcO z -o {output.vcf} {output.bcf} 2>&1  >> {log.stderr}
         tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 

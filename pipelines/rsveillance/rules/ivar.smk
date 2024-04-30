@@ -12,7 +12,7 @@ rule ivar_pclip:
     output:
         trimmed_us=temporary('results/ivar/{sample}-{target}-itrim_us.bam'),
         trimmed='results/ivar/{sample}-{target}-itrim.bam',
-	#trimdex='results/ivar/{sample}-{target}-itrim.bam.bai'
+	trimdex='results/ivar/{sample}-{target}-itrim.bam.bai'
     resources:
         mem_mb=8000,
         runtime=1440,
@@ -23,7 +23,7 @@ rule ivar_pclip:
         """
         ivar trim -i {input.aligned} -b {input.primers} -p {output.trimmed_us} -e 2>&1 > {log.stderr}
         samtools sort -@ {resources.cores} -o {output.trimmed} {output.trimmed_us} 2>&1 >> {log.stderr}
-        #samtools index {output.trimmed} 2>&1 >> {log.stderr}
+        samtools index {output.trimmed} 2>&1 >> {log.stderr}
         """
 
 

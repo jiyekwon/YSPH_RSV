@@ -21,9 +21,9 @@ wildcard_constraints:
 rule all:
     input:
         mallcalls='results/mash/all-calls.txt',
-        depths=lambda _: expand('results/align/{target}-depthwins.txt',target=get_valid_targets() ),
-        ivar=lambda _: expand("results/ivar/{target}-summary.txt",target=get_valid_targets() ),
-        bcf=lambda _: expand("results/bcftools/{target}-summary.txt",target=get_valid_targets() ),
+        depths=lambda _: expand('results/summary/{target}-depthwins.txt',target=get_valid_targets() ),
+        ivar=lambda _: expand("results/summary/{target}-ivar-summary.txt",target=get_valid_targets() ),
+        bcf=lambda _: expand("results/summary/{target}-genotype-summary.txt",target=get_valid_targets() ),
         #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
         #expand('results/summary/{target}_{site}_covpc.tsv',
         #       target=TARGETS, site=["primers"])
@@ -47,8 +47,8 @@ rule depthplots:
         dhists=lambda wildcards: expand('results/align/{sample}-{{target}}-depthhist.txt',sample=get_mash_samples(wildcards)),
         dwins=lambda wildcards: expand('results/align/{sample}-{{target}}-depthwins.txt',sample=get_mash_samples(wildcards)),
     output:
-        dwins='results/align/{target}-depthwins.txt',
-        dhists='results/align/{target}-depthhists.txt',
+        dwins='results/summary/{target}-depthwins.txt',
+        dhists='results/summary/{target}-depthhists.txt',
     resources:
         mem_mb=8000,
         runtime=180,
@@ -87,7 +87,7 @@ rule get_ivar_report:
         ivariants=lambda wildcards: expand('results/ivar/{sample}-{{target}}-ivariants.tsv',sample=get_mash_samples(wildcards)),
         iconsensus=lambda wildcards: expand('results/ivar/{sample}-{{target}}-consensus.fa',sample=get_mash_samples(wildcards)),
     output:
-        report='results/ivar/{target}-summary.txt'
+        report='results/summary/{target}-ivar-summary.txt'
     shell:
         """
         touch {output.report}
@@ -99,13 +99,13 @@ rule get_genotyping_report:
         ivariants_untrim='results/bcftools/{target}-untrim-all.vcf.gz',
         primers=os.path.join(config['refsdir']+'{target}.bed'),
     output:
-        report='results/bcftools/{target}-summary.txt',
-        pi='results/bcftools/{target}-primer-pi.tsv',
-        pi_untrim='results/bcftools/{target}-untrim-primer-pi.tsv',
+        report='results/summary/{target}-genotype-summary.txt',
+        pi='results/summary/{target}-primer-pi.tsv',
+        pi_untrim='results/summary/{target}-untrim-primer-pi.tsv',
     container: "docker://sethnr/pgcoe_analysis:0.01"
     params:
-        prefix='results/bcftools/{target}-primer',
-        prefix_untrim='results/bcftools/{target}-untrim-primer',
+        prefix='results/summary/{target}-primer',
+        prefix_untrim='results/summary/{target}-untrim-primer',
     shell:
         """
         touch {output.report}
