@@ -66,8 +66,8 @@ rule flagstat:
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
-        echo samtools flagstat -@ {resources.cores} -O tsv {output.aligned} \> {output.flagstat} \n' 
-        samtools flagstat -@ {resources.cores} -O tsv {output.aligned} 1> {output.flagstat} 2>> {log.stderr}
+        echo samtools flagstat -@ {resources.cores} -O tsv {input.aligned} \> {output.flagstat} \n' 
+        samtools flagstat -@ {resources.cores} -O tsv {input.aligned} 1> {output.flagstat} 2>> {log.stderr}
         """
 
 
@@ -98,7 +98,7 @@ rule sam_subsample:
             subprocess.run(["cp",input.aligned,output.subsamp])
         #subprocess.run(["samtools","index",output.subsamp])
         f = open(output.subfactor, "w")
-        print("\t".join(wildcards.subsample,subfact),file=f)
+        print("\t".join([wildcards.sample,str(subfact)]),file=f)
         f.close()
 
 rule sam_sort:
@@ -229,8 +229,8 @@ rule alignstats:
 
         #subprocess.run(["samtools","index",output.subsamp])
         f = open(output.stats, "w")
-        print("\t".join(sample, target, subfact,
+        print("\t".join([sample, target, subfact,
 	    reads, aligned, paired,
-	    meandepth, goodcov, allcov, gsize),file=f)
+	    meandepth, goodcov, allcov, gsize]),file=f)
         f.close()
     
