@@ -72,8 +72,8 @@ rule flagstat:
             sleep {params.sleeplen}
         fi
 
-        echo samtools flagstat -@ {resources.cores} -O tsv {input.aligned} \> {output.flagstat} \n' 
-        samtools flagstat -@ {resources.cores} -O tsv {input.aligned} 1> {output.flagstat} 2>> {log.stderr}
+        echo samtools flagstat  -O tsv {input.aligned} \> {output.flagstat} \n' 
+        samtools flagstat  -O tsv {input.aligned} 1> {output.flagstat} 2>> {log.stderr}
         """
 
 
@@ -93,6 +93,7 @@ rule sam_subsample:
 	    maxsize_mb=1024
     log:
         stderr="logs/align/{sample}-{target}-sort.err"
+    container:  "docker://sethnr/pgcoe_bacseq:0.01"
     run:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
