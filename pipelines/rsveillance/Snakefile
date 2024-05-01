@@ -20,6 +20,7 @@ rule all:
         depths=lambda _: expand('results/summary/{target}-depthwins.txt',target=get_valid_targets() ),
         alignstats=lambda _: expand('results/summary/{target}-alignstats.txt',target=get_valid_targets() ),
         ivar=lambda _: expand("results/summary/{target}-ivar-summary.txt",target=get_valid_targets() ),
+        ivar=lambda _: expand("results/summary/{target}-consensus.fasta",target=get_valid_targets() ),
         bcf=lambda _: expand("results/summary/{target}-genotype-summary.txt",target=get_valid_targets() ),
         #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
         #expand('results/summary/{target}_{site}_covpc.tsv',
@@ -87,9 +88,11 @@ rule get_ivar_report:
         ivariants=lambda wildcards: expand('results/ivar/{sample}-{{target}}-ivariants.tsv',sample=get_mash_samples(wildcards)),
         iconsensus=lambda wildcards: expand('results/ivar/{sample}-{{target}}-consensus.fa',sample=get_mash_samples(wildcards)),
     output:
-        report='results/summary/{target}-ivar-summary.txt'
+        report='results/summary/{target}-ivar-summary.txt',
+        consensus='results/summary/{target}-consensus.fasta',
     shell:
         """
+        cat {input.iconsensus} > {output.consensus}
         touch {output.report}
         """
 
