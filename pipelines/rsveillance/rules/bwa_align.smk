@@ -69,11 +69,14 @@ rule flagstat:
         """
         samtools quickcheck {input.aligned} 2>&1 > {log.stderr}
         if [[ $? >0 ]]; then
+	   echo "sleeping {params.sleeplen}"
             sleep {params.sleeplen}
+        else:
+           echo "quickcheck good $?"
         fi
 
-        echo samtools flagstat -@ {resources.cores} -O tsv {input.aligned} \> {output.flagstat} \n' 
-        samtools flagstat -@ {resources.cores} -O tsv {input.aligned} 1> {output.flagstat} 2>> {log.stderr}
+        samtools flagstat -@ {resources.cores} -O tsv   {input.aligned} > {output.flagstat}
+
         """
 
 
@@ -189,16 +192,16 @@ rule alignstats:
 
         #get subsampling factor
         with open(input.subfactor, "r") as f:
-            l = f.read().split
+            l = f.read().split()
             subfact = l[1] 
         f.close()
 
         #get reads aligned
         with open(input.flagstats, "r") as f:
-            for l in my_file:
+            for l in f:
                 l = l.split("\t")
-                passreads = l[0]
-                failreads = l[1]
+                passreads = int(l[0])
+                failreads = int(l[1])
                 stat = l[2]
                 if stat == "total (QC-passed reads + QC-failed reads)": 
                     reads = passreads
@@ -213,12 +216,12 @@ rule alignstats:
         cov = 0
         gsize = 0
         dtotal = 0
-        with open(input.flagstats, "r") as f:
-            for l in my_file:
+        with open(input.dhist, "r") as f:
+            for l in f:
                 l = l.split("\t")
-                depth = l[0]
-                count = l[1]
-                cdepth = l[2]
+                depth = int(l[0])
+                count = int(l[1])
+                cdepth = int(l[2])
                 dtotal += cdepth * count
                 if cdepth >= params.mindepth:
                     gsize += count
