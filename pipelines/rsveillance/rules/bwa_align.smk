@@ -69,7 +69,7 @@ rule flagstat:
         """
         samtools quickcheck {input.aligned} 2>&1 > {log.stderr}
         if [[ $? >0 ]]; then
-	   echo "sleeping {params.sleeplen}"
+            echo "sleeping {params.sleeplen}"
             sleep {params.sleeplen}
         else:
            echo "quickcheck good $?"
@@ -96,7 +96,6 @@ rule sam_subsample:
 	    maxsize_mb=1024
     log:
         stderr="logs/align/{sample}-{target}-sort.err"
-    container:  "docker://sethnr/pgcoe_bacseq:0.01"
     run:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
