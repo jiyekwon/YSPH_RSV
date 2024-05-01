@@ -9,10 +9,6 @@ container:  "docker://sethnr/pgcoe_bacseq:0.01"
 SAMPLES = [line.strip() for line in open(config['samples'], 'r')]
 TARGETS = [line.strip() for line in open(config['refs'], 'r')]
 
-
-print(":".join(SAMPLES),file=sys.stderr)
-print(":".join(TARGETS),file=sys.stderr)
-
 wildcard_constraints:
     sample="[^-]+",
     target="[^\-/]+"

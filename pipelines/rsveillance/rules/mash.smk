@@ -80,38 +80,34 @@ checkpoint mash_merge_calls:
 
 
 
-# def get_mash_targets(wildcards):
-#     with checkpoints.mash_calltarget.get(sample=wildcards.sample,outdir=wildcards.outdir).output.mashcalls.open() as f:
-#         mytargets = f.read().splitlines()
-#     return mytargets
 
 def get_mash_targets(wildcards):
-    print("mash: requesting targets for "+wildcards.sample,file=sys.stderr)  
+    #print("mash: requesting targets for "+wildcards.sample,file=sys.stderr)  
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         mashlines = f.read().splitlines()
     mytargets = [L.split()[1] for L in mashlines if L.split()[0]==wildcards.sample]
-    print("mash: returning "+":".join(mytargets)+" from "+wildcards.sample,file=sys.stderr)  
+    #print("mash: returning "+":".join(mytargets)+" from "+wildcards.sample,file=sys.stderr)  
     return mytargets
 
 def get_mash_samples(wildcards):
-    print("mash: requesting samples for "+wildcards.target,file=sys.stderr)  
+    #print("mash: requesting samples for "+wildcards.target,file=sys.stderr)  
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         mashlines = f.read().splitlines()
     mysamples = [L.split()[0] for L in mashlines if L.split()[1]==wildcards.target]
-    print("mash: returning "+";".join(mysamples)+" from "+wildcards.target,file=sys.stderr)  
+    #print("mash: returning "+";".join(mysamples)+" from "+wildcards.target,file=sys.stderr)  
     return mysamples
 
 def get_valid_targets():
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         alltargets = [L.split()[1] for L in f.read().splitlines()]
 	alltargets = [I for I in set(alltargets)]
-    print("mash: returning valid target "+";".join(alltargets),file=sys.stderr)  
+    #print("mash: returning valid target "+";".join(alltargets),file=sys.stderr)  
     return alltargets
 
 def get_mash_bams(wildcards):
     mytargets = get_mash_targets(wildcards)
     filenames = expand("results/bams/{sample}-{target}.bam",sample=wildcards.sample,target=mytargets)
-    print("mash: returning "+";".join(filenames)+" from "+wildcards.sample,file=sys.stderr)  
+    #print("mash: returning "+";".join(filenames)+" from "+wildcards.sample,file=sys.stderr)  
     return filenames
 
 

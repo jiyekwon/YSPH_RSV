@@ -199,13 +199,16 @@ rule alignstats:
         f.close()
 
         #get reads aligned
+	reads = -1
+	aligned = -1
+	paired = -1
         with open(input.flagstats, "r") as f:
             for l in f:
                 l = l.split("\t")
                 passreads = l[0]
                 failreads = l[1]
                 stat = l[2]
-                if stat == "total (QC-passed reads + QC-failed reads)": 
+                if stat == 'total (QC-passed reads + QC-failed reads)': 
                     reads = int(passreads)
                 elif stat == "mapped": 
                     aligned = int(passreads)
@@ -240,8 +243,8 @@ rule alignstats:
 
         #subprocess.run(["samtools","index",output.subsamp])
         f = open(output.stats, "w")
-        print("\t".join([sample, target, subfact,
+        print("\t".join(map(str,[sample, target, subfact,
 	    reads, aligned, paired,
-	    meandepth, goodcov, allcov, gsize]),file=f)
+	    meandepth, goodcov, cov, gsize])),file=f)
         f.close()
     
