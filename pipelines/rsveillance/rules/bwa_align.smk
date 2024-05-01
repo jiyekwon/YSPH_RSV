@@ -186,6 +186,8 @@ rule alignstats:
         dhist='results/align/{sample}-{target}-depthhist.txt',
     output:
         stats='results/align/{sample}-{target}-alignstats.txt',
+    params:
+        mindepth=10
     run:
         sample = wildcards.sample
         target = wildcards.target
