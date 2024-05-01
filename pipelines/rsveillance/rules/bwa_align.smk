@@ -201,15 +201,15 @@ rule alignstats:
         with open(input.flagstats, "r") as f:
             for l in f:
                 l = l.split("\t")
-                passreads = int(l[0])
-                failreads = int(l[1])
+                passreads = l[0]
+                failreads = l[1]
                 stat = l[2]
                 if stat == "total (QC-passed reads + QC-failed reads)": 
-                    reads = passreads
-                elif stat == "aligned": 
-                    aligned = passreads
+                    reads = int(passreads)
+                elif stat == "mapped": 
+                    aligned = int(passreads)
                 elif stat == "properly paired": 
-                    paired = passreads
+                    paired = int(passreads)
         f.close()
 
         #get coverage / depth
