@@ -220,9 +220,9 @@ rule alignstats:
         with open(input.dhist, "r") as f:
             for l in f:
                 l = l.split("\t")
-                depth = int(l[0])
-                count = int(l[1])
-                cdepth = int(l[2])
+                depth = int(l[1])
+                count = int(l[2])
+                cdepth = int(l[3])
                 dtotal += cdepth * count
                 if cdepth >= params.mindepth:
                     gsize += count
