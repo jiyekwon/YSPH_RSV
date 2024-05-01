@@ -199,9 +199,9 @@ rule alignstats:
         f.close()
 
         #get reads aligned
-	reads = -1
-	aligned = -1
-	paired = -1
+	    reads = -1
+	    aligned = -1
+	    paired = -1
         with open(input.flagstats, "r") as f:
             for l in f:
                 l = l.split("\t")
@@ -232,10 +232,10 @@ rule alignstats:
                     gsize += count
                     cov += count
                     goodcov += count
-                if cdepth > 0:
+                elif cdepth > 0:
                     gsize += count
                     cov += count
-                if cdepth == 0:
+                elif cdepth == 0:
                     gsize += count
         f.close()
         meandepth = round(dtotal/gsize)
