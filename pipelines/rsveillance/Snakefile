@@ -13,6 +13,7 @@ wildcard_constraints:
     sample="[^-]+",
     target="[^\-/]+"
 
+localrules: all, get_ivar_report, depthplots
 
 rule all:
     input:
@@ -22,6 +23,7 @@ rule all:
         ivar=lambda _: expand("results/summary/{target}-ivar-summary.txt",target=get_valid_targets() ),
         ivar=lambda _: expand("results/summary/{target}-consensus.fasta",target=get_valid_targets() ),
         bcf=lambda _: expand("results/summary/{target}-genotype-summary.txt",target=get_valid_targets() ),
+        nextstrain=lambda _: expand('results/nextstrain/{target}-auspice.json',target=get_valid_targets() ),
         #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
         #expand('results/summary/{target}_{site}_covpc.tsv',
         #       target=TARGETS, site=["primers"])
