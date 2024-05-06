@@ -32,7 +32,8 @@ rule bwa_align:
         read_location=os.path.join(config['readdir'],'{sample}'),
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
-        aligned = temporary('results/align/{sample}-{target}-unsort.bam'),
+        #aligned = temporary('results/align/{sample}-{target}-unsort.bam'),
+        aligned = 'results/align/{sample}-{target}-unsort.bam',
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
@@ -54,7 +55,7 @@ rule flagstat:
     input:
         aligned = 'results/align/{sample}-{target}-unsort.bam',
     output:
-        flagstat = temporary('results/align/{sample}-{target}.flagstats')
+        flagstat = 'results/align/{sample}-{target}.flagstats'
     params:
         ref=config['refsdir']+"{target}.fasta",
         sleeplen=60,
@@ -199,12 +200,12 @@ rule alignstats:
         f.close()
 
         #get reads aligned
-	    reads = -1
-	    aligned = -1
-	    paired = -1
+        reads = -1
+        aligned = -1
+        paired = -1
         with open(input.flagstats, "r") as f:
             for l in f:
-                l = l.split("\t")
+                l = l.strip().split('\t')
                 passreads = l[0]
                 failreads = l[1]
                 stat = l[2]

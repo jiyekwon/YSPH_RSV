@@ -1,5 +1,6 @@
 import sys
 
+ruleorder: mash_merge_calls > mash_call
 
 rule mash_index:
     input:
@@ -68,8 +69,8 @@ checkpoint mash_merge_calls:
         calls=expand("results/mash/{sample}-calls.txt",sample=SAMPLES),
         mash=expand("results/mash/{sample}-mash.txt",sample=SAMPLES)
     output:
-        mashout="results/mash/all-mash.txt",
-        mashcalls="results/mash/all-calls.txt",
+        mashout="results/mash/allmash.txt",
+        mashcalls="results/mash/allcalls.txt",
     log:
         "logs/mash/all-calls.err"
     shell:
