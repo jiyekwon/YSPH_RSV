@@ -101,7 +101,7 @@ rule sam_subsample:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
     	subfact = get_subsample_factor(insize, params.maxsize_mb)
-	subfraction = 1/subfact
+        subfraction = 1/subfact
         if subfact < 1:
             subprocess.run(["samtools", "view","-b","-s",str(subfraction),"-o",output.subsamp,input.aligned])
         else:

@@ -1,6 +1,7 @@
 import sys
 
 ruleorder: mash_merge_calls > mash_call
+localrules: mash_merge_calls
 
 rule mash_index:
     input:
