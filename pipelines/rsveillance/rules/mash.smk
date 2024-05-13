@@ -7,12 +7,12 @@ rule mash_index:
     input:
         fastas=expand(os.path.join(config['refsdir'],"{target}.fasta"),target=TARGETS),
     output:
-        msh="results/mash/index-all.msh"
+        msh="results/mash/index_all.msh"
     log:
         err="logs/mash/all.mash.err"
     params:
         idx_script = os.path.join(os.getcwd(),"scripts/indexer.sh"),
-        mashabs=os.path.join(os.getcwd(),"results/mash/index-all.msh"),
+        mashabs=os.path.join(os.getcwd(),"results/mash/index_all.msh"),
         genome_size = "11k",
         refdir=config["refsdir"],
         localfastas=expand("{target}.fasta",target=TARGETS)
@@ -34,11 +34,11 @@ rule mash_index:
 
 rule mash_call:
     input:
-        msh = "results/mash/index-all.msh",
+        msh = "results/mash/index_all.msh",
         read_location = os.path.join(config['readdir'],"{sample}")
     output:
-        mashcalls=temporary("results/mash/{sample}-calls.txt"),
-        mashout=temporary("results/mash/{sample}-mash.txt"),
+        mashcalls=temporary("results/mash/{sample}_calls.txt"),
+        mashout=temporary("results/mash/{sample}_mash.txt"),
     resources:
         partition="day",
         mem_mb="8G",
@@ -67,8 +67,8 @@ rule mash_call:
 
 checkpoint mash_merge_calls:
     input:
-        calls=expand("results/mash/{sample}-calls.txt",sample=SAMPLES),
-        mash=expand("results/mash/{sample}-mash.txt",sample=SAMPLES)
+        calls=expand("results/mash/{sample}_calls.txt",sample=SAMPLES),
+        mash=expand("results/mash/{sample}_mash.txt",sample=SAMPLES)
     output:
         mashout="results/mash/allmash.txt",
         mashcalls="results/mash/allcalls.txt",
@@ -108,7 +108,7 @@ def get_valid_targets():
 
 def get_mash_bams(wildcards):
     mytargets = get_mash_targets(wildcards)
-    filenames = expand("results/bams/{sample}-{target}.bam",sample=wildcards.sample,target=mytargets)
+    filenames = expand("results/bams/{sample}_{target}.bam",sample=wildcards.sample,target=mytargets)
     #print("mash: returning "+";".join(filenames)+" from "+wildcards.sample,file=sys.stderr)  
     return filenames
 

@@ -1,10 +1,10 @@
 
 rule bwa_align_pipeline:
     input:
-        bam = 'results/align/{sample}-{target}.bam',
-        stat = 'results/align/{sample}-{target}.flagstat',
-        depth = 'results/align/{sample}-{target}.depth',
-        subsamp = 'results/align/{sample}-{target}.substat'
+        bam = 'results/align/{sample}_{target}.bam',
+        stat = 'results/align/{sample}_{target}.flagstat',
+        depth = 'results/align/{sample}_{target}.depth',
+        subsamp = 'results/align/{sample}_{target}.substat'
 
 
 rule bwa_index:
@@ -13,7 +13,7 @@ rule bwa_index:
     output:
         bwt = os.path.join(config['refsdir'],"{target}.fasta.bwt")
     log:
-        log = "logs/bwa/index-{target}.log"
+        log = "logs/bwa/index_{target}.log"
     params:
         idx_script = "scripts/indexer.sh",
     resources:
@@ -27,13 +27,41 @@ rule bwa_index:
                 {input.fasta} >> {log.log} 2>&1
             """
 
-rule bwa_align:
+rule cp_local_fq:
     input:
         read_location=os.path.join(config['readdir'],'{sample}'),
+    output:
+        R1 = temporary('results/rawdata/{sample}_R1.fastq'),
+        R2 = temporary('results/rawdata/{sample}_R2.fastq')
+    log:
+        log = "logs/datacopy/{sample}.log"
+    resources:
+        mem_mb="2G",
+        cpus_per_task=1,
+        runtime=60
+    container: None
+    shell:"""
+        if [-e {read_location}/*R1* ]; then
+            cp {read_location}/*R1* {output.R1}
+        elif  [-e {read_location}/?naligned/*R1* ]; then
+            cp {read_location}/?naligned/*R1* {output.R1}
+        fi
+        if [-e {read_location}/*R2* ]; then
+            cp {read_location}/*R2* {output.R2}
+        elif  [-e {read_location}/?naligned/*R2* ]; then
+            cp {read_location}/?naligned/*R2* {output.R2}
+        fi
+        """
+
+
+rule bwa_align:
+    input:
+        R1 = 'results/rawdata/{sample}_R1.fastq',
+        R2 = 'results/rawdata/{sample}_R2.fastq',
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
-        #aligned = temporary('results/align/{sample}-{target}-unsort.bam'),
-        aligned = 'results/align/{sample}-{target}-unsort.bam',
+        #aligned = temporary('results/align/{sample}_{target}_unsort.bam'),
+        aligned = 'results/align/{sample}_{target}_unsort.bam',
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
@@ -41,21 +69,21 @@ rule bwa_align:
         mem_mb=lambda wc, input: max(2 * input.size_mb, 4000),
 	    cores=4,
     log:
-        stderr="logs/align/bwa_mem_{sample}-{target}.err",
+        stderr="logs/align/bwa_mem_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
         echo "Aligning reads for {wildcards.sample} to {params.ref}\n"
-        echo 'bwa mem -o {output.aligned} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* \n' 
-        bwa mem -t {resources.cores} {params.ref} {input.read_location}/*R1* {input.read_location}/*R2* | \
+        echo 'bwa mem -o {output.aligned} {params.ref} {input.R1} {input.R2} \n' 
+        bwa mem -t {resources.cores} {params.ref} {input.R1} {input.R2} | \
             samtools view -b -F 4 -F 2048 1> {output.aligned}  2> {log.stderr}
         """
 
 rule flagstat:
     input:
-        aligned = 'results/align/{sample}-{target}-unsort.bam',
+        aligned = 'results/align/{sample}_{target}_unsort.bam',
     output:
-        flagstat = 'results/align/{sample}-{target}.flagstats'
+        flagstat = 'results/align/{sample}_{target}.flagstats'
     params:
         ref=config['refsdir']+"{target}.fasta",
         sleeplen=60,
@@ -64,7 +92,7 @@ rule flagstat:
         mem_mb=4000,
 	    cores=1,
     log:
-        stderr="logs/align/flagstat_{sample}-{target}.err",
+        stderr="logs/align/flagstat_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
@@ -83,12 +111,12 @@ rule flagstat:
 
 rule sam_subsample:
     input:
-        aligned = 'results/align/{sample}-{target}-unsort.bam'
+        aligned = 'results/align/{sample}_{target}_unsort.bam'
     output:
-        subsamp = temporary('results/align/{sample}-{target}-thin.bam'),
-        #idx = 'results/align/{sample}-{target}-thin.bam.bai',
-        #subfactor = temporary('results/align/{sample}-{target}.substat')	
-        subfactor = 'results/align/{sample}-{target}.substat'
+        subsamp = temporary('results/align/{sample}_{target}_thin.bam'),
+        #idx = 'results/align/{sample}_{target}_thin.bam.bai',
+        #subfactor = temporary('results/align/{sample}_{target}.substat')	
+        subfactor = 'results/align/{sample}_{target}.substat'
     resources:
         mem_mb=16000,
         runtime=180,
@@ -96,7 +124,7 @@ rule sam_subsample:
     params:
 	    maxsize_mb=1024
     log:
-        stderr="logs/align/{sample}-{target}-sort.err"
+        stderr="logs/align/{sample}_{target}_sort.err"
     run:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
@@ -113,16 +141,16 @@ rule sam_subsample:
 
 rule sam_sort:
     input:
-        aligned = 'results/align/{sample}-{target}-thin.bam'
+        aligned = 'results/align/{sample}_{target}_thin.bam'
     output:
-        sorted = 'results/align/{sample}-{target}.bam',
-        idx = 'results/align/{sample}-{target}.bam.bai'
+        sorted = 'results/align/{sample}_{target}.bam',
+        idx = 'results/align/{sample}_{target}.bam.bai'
     resources:
         mem_mb=16000,
         runtime=180,
 	    cores=4,
     log:
-        stderr="logs/align/sort-{sample}-{target}.err"
+        stderr="logs/align/sort_{sample}_{target}.err"
     message: "Sorting and indexing reads"
     shell:
         """
@@ -152,12 +180,12 @@ rule sam_sort:
 
 rule depth:
     input:
-        bams='results/align/{sample}-{target}.bam',
-        subfactor = 'results/align/{sample}-{target}.substat'
+        bams='results/align/{sample}_{target}.bam',
+        subfactor = 'results/align/{sample}_{target}.substat'
     output:
-        depth=temporary('results/align/{sample}-{target}-depth.txt'),
-        dwins=temporary('results/align/{sample}-{target}-depthwins.txt'),
-        dhist=temporary('results/align/{sample}-{target}-depthhist.txt'),
+        depth=temporary('results/align/{sample}_{target}_depth.txt'),
+        dwins=temporary('results/align/{sample}_{target}_depthwins.txt'),
+        dhist=temporary('results/align/{sample}_{target}_depthhist.txt'),
     resources:
         mem_mb=8000,
         runtime=180,
@@ -166,9 +194,9 @@ rule depth:
         minmapqual=60,
         minbasequal=13,
         winsize=10,
-        prefix='results/align/{sample}-{target}'
+        prefix='results/align/{sample}_{target}'
     log:
-        stderr="logs/depth/{sample}-{target}.err"
+        stderr="logs/depth/{sample}_{target}.err"
     shell:
         """
         samtools depth -a -H {input.bams} -o {output.depth} 2>&1 >  {log.stderr}
@@ -182,11 +210,11 @@ rule depth:
 
 rule alignstats:
     input: 
-        subfactor = 'results/align/{sample}-{target}.substat',
-        flagstats = 'results/align/{sample}-{target}.flagstats',
-        dhist='results/align/{sample}-{target}-depthhist.txt',
+        subfactor = 'results/align/{sample}_{target}.substat',
+        flagstats = 'results/align/{sample}_{target}.flagstats',
+        dhist='results/align/{sample}_{target}_depthhist.txt',
     output:
-        stats='results/align/{sample}-{target}-alignstats.txt',
+        stats='results/align/{sample}_{target}_alignstats.txt',
     params:
         mindepth=10
     run:

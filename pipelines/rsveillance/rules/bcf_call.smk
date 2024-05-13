@@ -1,18 +1,18 @@
 
 rule bcf_call:
     input:
-        tocall = lambda wildcards: expand('results/ivar/{sample}-{{target}}-itrim.bam',sample=get_mash_samples(wildcards)),
-        indexed = lambda wildcards: expand("results/ivar/{sample}-{{target}}-itrim.bam.bai",sample=get_mash_samples(wildcards)),
+        tocall = lambda wildcards: expand('results/ivar/{sample}_{{target}}_itrim.bam',sample=get_mash_samples(wildcards)),
+        indexed = lambda wildcards: expand("results/ivar/{sample}_{{target}}_itrim.bam.bai",sample=get_mash_samples(wildcards)),
     output:
-        bcf=temporary('results/bcftools/{target}-varints.bcf'),
-        vcf=temporary('results/bcftools/{target}-all-unfilt.vcf.gz')
+        bcf=temporary('results/bcftools/{target}_varints.bcf'),
+        vcf=temporary('results/bcftools/{target}_all_unfilt.vcf.gz')
     params:
         ref=os.path.join(config['refsdir'],'{target}.fasta')
     resources:
         mem_mb=8000,
         runtime=240,
     log:
-        stderr="logs/ivar/bcf_call-{target}.err"
+        stderr="logs/ivar/bcf_call_{target}.err"
     message: "Calling variants for all samples"
     shell:
         """
@@ -23,10 +23,10 @@ rule bcf_call:
 
 rule bcf_filter:
     input:
-        vcf='results/bcftools/{target}-all-unfilt.vcf.gz'
+        vcf='results/bcftools/{target}_all_unfilt.vcf.gz'
     output:
-        vcf_filt='results/bcftools/{target}-all.vcf.gz',
-        vcf_filt_idx='results/bcftools/{target}-all.vcf.gz.tbi'
+        vcf_filt='results/bcftools/{target}_all.vcf.gz',
+        vcf_filt_idx='results/bcftools/{target}_all.vcf.gz.tbi'
     resources:
         mem_mb=8000,
         runtime=180,
@@ -42,17 +42,17 @@ rule bcf_filter:
 
 rule bcf_call_untrim:
     input:
-        tocall = lambda wildcards: expand('results/align/{sample}-{{target}}.bam',sample=get_mash_samples(wildcards)),
-        indexed = lambda wildcards: expand("results/align/{sample}-{{target}}.bam.bai",sample=get_mash_samples(wildcards)),
+        tocall = lambda wildcards: expand('results/align/{sample}_{{target}}.bam',sample=get_mash_samples(wildcards)),
+        indexed = lambda wildcards: expand("results/align/{sample}_{{target}}.bam.bai",sample=get_mash_samples(wildcards)),
     output:
-        vcf=temporary('results/bcftools/{target}-untrim-all-unfilt.vcf.gz')
+        vcf=temporary('results/bcftools/{target}_untrim_all_unfilt.vcf.gz')
     params:
         ref=os.path.join(config['refsdir'],'{target}.fasta')
     resources:
         mem_mb=8000,
         runtime=240,
     log:
-        stderr="logs/ivar/bcf_call-{target}.err"
+        stderr="logs/ivar/bcf_call_{target}.err"
     message: "Calling variants for all samples"
     shell:
         """
@@ -63,10 +63,10 @@ rule bcf_call_untrim:
 
 rule bcf_filter_untrim:
     input:
-        vcf='results/bcftools/{target}-untrim-all-unfilt.vcf.gz'
+        vcf='results/bcftools/{target}_untrim_all_unfilt.vcf.gz'
     output:
-        vcf_filt='results/bcftools/{target}-untrim-all.vcf.gz',
-        vcf_filt_idx='results/bcftools/{target}-untrim-all.vcf.gz.tbi'
+        vcf_filt='results/bcftools/{target}_untrim_all.vcf.gz',
+        vcf_filt_idx='results/bcftools/{target}_untrim_all.vcf.gz.tbi'
     resources:
         mem_mb=8000,
         runtime=180,

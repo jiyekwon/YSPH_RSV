@@ -1,24 +1,24 @@
 
 rule ivar_pipeline:
     input:
-        consensus='results/ivar/{sample}-{target}-consensus.fa',
-        ivariants='results/ivar/{sample}-{target}-ivariants.tsv'
+        consensus='results/ivar/{sample}_{target}_consensus.fa',
+        ivariants='results/ivar/{sample}_{target}_ivariants.tsv'
 
 
 rule ivar_pclip:
     input:
-        aligned = 'results/align/{sample}-{target}.bam',
+        aligned = 'results/align/{sample}_{target}.bam',
         primers = os.path.join(config['refsdir']+'{target}.bed'),
     output:
-        trimmed_us=temporary('results/ivar/{sample}-{target}-itrim_us.bam'),
-        trimmed='results/ivar/{sample}-{target}-itrim.bam',
-	trimdex='results/ivar/{sample}-{target}-itrim.bam.bai'
+        trimmed_us=temporary('results/ivar/{sample}_{target}_itrim_us.bam'),
+        trimmed='results/ivar/{sample}_{target}_itrim.bam',
+	trimdex='results/ivar/{sample}_{target}_itrim.bam.bai'
     resources:
         mem_mb=8000,
         runtime=1440,
 	cores=1,
     log:
-        stderr="logs/ivar/{sample}-{target}-trim.err"
+        stderr="logs/ivar/{sample}_{target}_trim.err"
     shell:
         """
         ivar trim -i {input.aligned} -b {input.primers} -p {output.trimmed_us} -e 2>&1 > {log.stderr}
@@ -29,10 +29,10 @@ rule ivar_pclip:
 
 rule sam_pileup:
     input:
-        tocall='results/ivar/{sample}-{target}-itrim.bam',
-        indexed='results/ivar/{sample}-{target}-itrim.bam.bai'
+        tocall='results/ivar/{sample}_{target}_itrim.bam',
+        indexed='results/ivar/{sample}_{target}_itrim.bam.bai'
     output:
-        pileup=temporary('results/ivar/{sample}-{target}.pileup'),
+        pileup=temporary('results/ivar/{sample}_{target}.pileup'),
     params:
         ref=os.path.join(config['refsdir'],"{target}.fasta"),
         threshold=0.2,
@@ -41,7 +41,7 @@ rule sam_pileup:
         mem_mb=8000,
         runtime=600,
     log:
-        stderr="logs/ivar/pileup-{sample}-{target}.err"
+        stderr="logs/ivar/pileup_{sample}_{target}.err"
     shell:
         """
         samtools mpileup -aa -A -Q 0 -d {params.maxdepth} -f {params.ref} \
@@ -50,18 +50,18 @@ rule sam_pileup:
 
 rule ivar_consensus:
     input:
-        pileup='results/ivar/{sample}-{target}.pileup'
+        pileup='results/ivar/{sample}_{target}.pileup'
     output:
-        consensus='results/ivar/{sample}-{target}-consensus.fa'
+        consensus='results/ivar/{sample}_{target}_consensus.fa'
     params:
         depth=20,
 	threshold=0.75,
-        prefix='results/ivar/{sample}-{target}-consensus'
+        prefix='results/ivar/{sample}_{target}_consensus'
     resources:
         mem_mb=lambda wc, input: max(10 * input.size_mb, 4000),
         runtime=600,
     log:
-        stderr="logs/ivar/consensus-{sample}-{target}.err",
+        stderr="logs/ivar/consensus_{sample}_{target}.err",
     shell:
         """
         cat {input.pileup} | ivar consensus -t {params.threshold} \
@@ -71,20 +71,20 @@ rule ivar_consensus:
 
 rule ivar_variants:
     input:
-        pileup='results/ivar/{sample}-{target}.pileup'
+        pileup='results/ivar/{sample}_{target}.pileup'
     output:
-        ivariants='results/ivar/{sample}-{target}-ivariants.tsv',
+        ivariants='results/ivar/{sample}_{target}_ivariants.tsv',
     params:
         ref=config['refsdir']+"/{target}.fa",
         threshold=0.2,
         depth=20,
         qual=20,
-        prefix='results/ivar/{sample}-{target}-ivariants'
+        prefix='results/ivar/{sample}_{target}_ivariants'
     resources:
         mem_mb=lambda wc, input: max(20 * input.size_mb, 4000),
         runtime=240,
     log:
-        stderr="logs/ivar/{sample}-{target}-consensus.err"
+        stderr="logs/ivar/{sample}_{target}_consensus.err"
     shell:
         """
         cat {input.pileup} | \

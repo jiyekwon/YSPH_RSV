@@ -17,17 +17,14 @@ localrules: all, get_ivar_report, depthplots
 
 rule all:
     input:
-        mallcalls='results/mash/allcalls.txt',
-        depths=lambda _: expand('results/summary/{target}-depthwins.txt',target=get_valid_targets() ),
-        alignstats=lambda _: expand('results/summary/{target}-alignstats.txt',target=get_valid_targets() ),
-        #ivar=lambda _: expand("results/summary/{target}-ivar-summary.txt",target=get_valid_targets() ),
-        ivar=lambda _: expand("results/summary/{target}-consensus.fasta",target=get_valid_targets() ),
-        bcf=lambda _: expand("results/summary/{target}-genotype-summary.txt",target=get_valid_targets() ),
-        nextstrain=lambda _: expand('results/nextstrain/{target}-auspice.json',target=get_valid_targets() ),
-        #depths=expand("results/align/{target}-depths.txt",target=TARGETS )
-        #expand('results/summary/{target}_{site}_covpc.tsv',
-        #       target=TARGETS, site=["primers"])
-
+        #mallcalls='results/mash/allcalls.txt',
+        #depths=lambda _: expand('results/summary/{target}_depthwins.txt',target=get_valid_targets() ),
+        #alignstats=lambda _: expand('results/summary/{target}_alignstats.txt',target=get_valid_targets() ),
+        #ivar=lambda _: expand("results/summary/{target}_consensus.fasta",target=get_valid_targets() ),
+        #bcf=lambda _: expand("results/summary/{target}_genotype-summary.txt",target=get_valid_targets() ),
+        #nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=get_valid_targets() ),
+        nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=["RSVA","RSVB"] ),
+        
 
 
 
@@ -40,22 +37,24 @@ include: "rules/ivar.smk"
 
 include: "rules/bcf_call.smk"
 
+include: "rules/nextstrain.smk"
+
 
 
 rule depthplots:
     input:
-        dhists=lambda wildcards: expand('results/align/{sample}-{{target}}-depthhist.txt',sample=get_mash_samples(wildcards)),
-        dwins=lambda wildcards: expand('results/align/{sample}-{{target}}-depthwins.txt',sample=get_mash_samples(wildcards)),
-        dstats=lambda wildcards: expand('results/align/{sample}-{{target}}-alignstats.txt',sample=get_mash_samples(wildcards)),
+        dhists=lambda wildcards: expand('results/align/{sample}_{{target}}_depthhist.txt',sample=get_mash_samples(wildcards)),
+        dwins=lambda wildcards: expand('results/align/{sample}_{{target}}_depthwins.txt',sample=get_mash_samples(wildcards)),
+        dstats=lambda wildcards: expand('results/align/{sample}_{{target}}_alignstats.txt',sample=get_mash_samples(wildcards)),
     output:
-        dhists='results/align/{target}-depthhists.txt',
-        dwins='results/summary/{target}-depthwins.txt',
-        dstats='results/summary/{target}-alignstats.txt',
+        dhists='results/align/{target}_depthhists.txt',
+        dwins='results/summary/{target}_depthwins.txt',
+        dstats='results/summary/{target}_alignstats.txt',
     resources:
         mem_mb=8000,
         runtime=180,
     log:
-        stderr="logs/depth/{target}-depths.err"
+        stderr="logs/depth/{target}_depths.err"
     container: "docker://sethnr/pgcoe_analysis:0.01"
     shell:
         """
@@ -69,17 +68,17 @@ rule depthplots:
 
 rule get_div_metrics:
     input:
-        pileupvcf='results/bcftools/{target}-filt.vcf.gz',
-        depth='results/align/{target}-depths.txt',
+        pileupvcf='results/bcftools/{target}_filt.vcf.gz',
+        depth='results/align/{target}_depths.txt',
         primers=os.path.join(config['refsdir']+'{target}.bed'),
         #amplicons='data/{target}.insert.bed',
     output:
-        expand('results/summary/{{target}}-{site}-{metric}.tsv',
+        expand('results/summary/{{target}}_{site}_{metric}.tsv',
                site=["primers"],metric=["meandp","covpc","pi"]),
     container: "docker://sethnr/pgcoe_analysis:0.01"
     params:
-        ppprefix='results/summary/{target}-primer-stats',
-        paprefix='results/summary/{target}-amplicon-stats',
+        ppprefix='results/summary/{target}_primer-stats',
+        paprefix='results/summary/{target}_amplicon-stats',
     shell:
         """
         python scripts/get_pidp_ranges.py --vcf {input.pileupvcf} --depth {input.depth} --bed {input.primers} --out {params.ppprefix}
@@ -87,11 +86,11 @@ rule get_div_metrics:
 
 rule get_ivar_report:
     input:
-        ivariants=lambda wildcards: expand('results/ivar/{sample}-{{target}}-ivariants.tsv',sample=get_mash_samples(wildcards)),
-        iconsensus=lambda wildcards: expand('results/ivar/{sample}-{{target}}-consensus.fa',sample=get_mash_samples(wildcards)),
+        ivariants=lambda wildcards: expand('results/ivar/{sample}_{{target}}_ivariants.tsv',sample=get_mash_samples(wildcards)),
+        iconsensus=lambda wildcards: expand('results/ivar/{sample}_{{target}}_consensus.fa',sample=get_mash_samples(wildcards)),
     output:
-        report='results/summary/{target}-ivar-summary.txt',
-        consensus='results/summary/{target}-consensus.fasta',
+        report='results/summary/{target}_ivar-summary.txt',
+        consensus='results/summary/{target}_consensus.fasta',
     shell:
         """
         cat {input.iconsensus} > {output.consensus}
@@ -100,17 +99,17 @@ rule get_ivar_report:
 
 rule get_genotyping_report:
     input:
-        ivariants='results/bcftools/{target}-all.vcf.gz',
-        ivariants_untrim='results/bcftools/{target}-untrim-all.vcf.gz',
+        ivariants='results/bcftools/{target}_all.vcf.gz',
+        ivariants_untrim='results/bcftools/{target}_untrim-all.vcf.gz',
         primers=os.path.join(config['refsdir']+'{target}.bed'),
     output:
-        report='results/summary/{target}-genotype-summary.txt',
-        pi='results/summary/{target}-primer-pi.tsv',
-        pi_untrim='results/summary/{target}-untrim-primer-pi.tsv',
+        report='results/summary/{target}_genotype-summary.txt',
+        pi='results/summary/{target}_primer-pi.tsv',
+        pi_untrim='results/summary/{target}_untrim-primer-pi.tsv',
     container: "docker://sethnr/pgcoe_analysis:0.01"
     params:
-        prefix='results/summary/{target}-primer',
-        prefix_untrim='results/summary/{target}-untrim-primer',
+        prefix='results/summary/{target}_primer',
+        prefix_untrim='results/summary/{target}_untrim-primer',
     shell:
         """
         touch {output.report}

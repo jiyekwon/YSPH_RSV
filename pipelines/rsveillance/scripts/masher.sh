@@ -45,12 +45,12 @@ for FQ in $1/*fastq.gz; do
     gunzip -dc $FQ | head -n $RLINES > ${TEMPDIR}/${BASENAME}
 done
 
-cat ${TEMPDIR}/*head.fastq >  ${TEMPDIR}/${SAMPLE}-${READS}.fastq
+cat ${TEMPDIR}/*head.fastq >  ${TEMPDIR}/${SAMPLE}_${READS}.fastq
 rm ${TEMPDIR}/*head.fastq
 
 echo "mashing ${READS} reads against hashes"
-echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}-${READS}.fastq \> ${PREFIX}-mash.txt
-mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}-${READS}.fastq > ${PREFIX}-mash.txt
+echo mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}_${READS}.fastq \> ${PREFIX}_mash.txt
+mash  dist  -m $BLOOM -r -g $GSIZE ${MASHREF} ${TEMPDIR}/${SAMPLE}_${READS}.fastq > ${PREFIX}_mash.txt
 
 if [[ $? >0 ]]; then
     exit $?
@@ -58,8 +58,8 @@ fi
 
 #filter for max prob / dist, print genome names
 echo "pulling matches below ${DIST} / ${PROB}"
-echo awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}-mash.txt \> ${PREFIX}-calls.txt
-awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}-mash.txt > ${PREFIX}-calls.txt
+echo awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}_mash.txt \> ${PREFIX}_calls.txt
+awk -v dist=$DIST -v prob=$PROB -v sample=$SAMPLE '($3+0 < dist+0 && $4+0 < prob+0) {sub(".fasta","",$1); print sample, $1}' ${PREFIX}_mash.txt > ${PREFIX}_calls.txt
 
 
 echo "rm ${TEMPDIR}" >&2
