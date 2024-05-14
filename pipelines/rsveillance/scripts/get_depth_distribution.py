@@ -53,7 +53,7 @@ def printhist(dep,count,outfile):
 dhist = dict()
 windepths=list()
 
-winsfile = open(outfile+"-depthwins.txt",'w')
+winsfile = open(outfile+"_depthwins.txt",'w')
 with open(depthfile) as my_file:
     for line in my_file:
         line = line.split()
@@ -75,7 +75,7 @@ if s % winsize > 0:
 winsfile.close()
 
 
-histfile = open(outfile+"-depthhist.txt",'w')
+histfile = open(outfile+"_depthhist.txt",'w')
 for d in sorted(dhist.keys()):
     #if d not in dhist:
     #    dhist[d]=0

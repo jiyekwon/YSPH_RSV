@@ -31,37 +31,40 @@ rule cp_local_fq:
     input:
         read_location=os.path.join(config['readdir'],'{sample}'),
     output:
-        R1 = temporary('results/rawdata/{sample}_R1.fastq'),
-        R2 = temporary('results/rawdata/{sample}_R2.fastq')
+        R1 = 'results/rawdata/{sample}_R1.fastq.gz',
+        R2 = 'results/rawdata/{sample}_R2.fastq.gz'
     log:
         log = "logs/datacopy/{sample}.log"
+    group: "cplocal"
     resources:
         mem_mb="2G",
         cpus_per_task=1,
         runtime=60
     container: None
     shell:"""
-        if [-e {read_location}/*R1* ]; then
-            cp {read_location}/*R1* {output.R1}
-        elif  [-e {read_location}/?naligned/*R1* ]; then
-            cp {read_location}/?naligned/*R1* {output.R1}
-        fi
-        if [-e {read_location}/*R2* ]; then
-            cp {read_location}/*R2* {output.R2}
-        elif  [-e {read_location}/?naligned/*R2* ]; then
-            cp {read_location}/?naligned/*R2* {output.R2}
-        fi
+        find {input.read_location}
+
+        R1=` find {input.read_location} | grep _R1_ `
+        R2=` find {input.read_location} | grep _R2_ `
+
+        echo cp $R1 {output.R1}
+        cp $R1 {output.R1}
+        
+        echo cp $R2 {output.R2}
+        cp $R2 {output.R2}
+        
         """
 
 
 rule bwa_align:
     input:
-        R1 = 'results/rawdata/{sample}_R1.fastq',
-        R2 = 'results/rawdata/{sample}_R2.fastq',
+        R1 = 'results/rawdata/{sample}_R1.fastq.gz',
+        R2 = 'results/rawdata/{sample}_R2.fastq.gz',
         indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
     output:
         #aligned = temporary('results/align/{sample}_{target}_unsort.bam'),
         aligned = 'results/align/{sample}_{target}_unsort.bam',
+    group: "aligngroup"
     params:
         ref=config['refsdir']+"{target}.fasta"
     resources:
@@ -87,6 +90,7 @@ rule flagstat:
     params:
         ref=config['refsdir']+"{target}.fasta",
         sleeplen=60,
+    group: "aligngroup"
     resources:
         runtime= 600,
         mem_mb=4000,
@@ -121,6 +125,7 @@ rule sam_subsample:
         mem_mb=16000,
         runtime=180,
         cores=4,
+    group: "aligngroup"
     params:
 	    maxsize_mb=1024
     log:
@@ -149,6 +154,7 @@ rule sam_sort:
         mem_mb=16000,
         runtime=180,
 	    cores=4,
+    group: "aligngroup"
     log:
         stderr="logs/align/sort_{sample}_{target}.err"
     message: "Sorting and indexing reads"
@@ -189,6 +195,7 @@ rule depth:
     resources:
         mem_mb=8000,
         runtime=180,
+    group: "statsgroup"
     params:
         maxdepth=0,
         minmapqual=60,
@@ -215,6 +222,7 @@ rule alignstats:
         dhist='results/align/{sample}_{target}_depthhist.txt',
     output:
         stats='results/align/{sample}_{target}_alignstats.txt',
+    group: "statsgroup"
     params:
         mindepth=10
     run:
