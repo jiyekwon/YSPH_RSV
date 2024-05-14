@@ -35,7 +35,8 @@ rule mash_index:
 rule mash_call:
     input:
         msh = "results/mash/index_all.msh",
-        read_location = os.path.join(config['readdir'],"{sample}")
+        R1 = 'results/rawdata/{sample}_R1.fastq.gz',
+        R2 = 'results/rawdata/{sample}_R2.fastq.gz',
     output:
         mashcalls=temporary("results/mash/{sample}_calls.txt"),
         mashout=temporary("results/mash/{sample}_mash.txt"),
@@ -43,8 +44,9 @@ rule mash_call:
         partition="day",
         mem_mb="8G",
         cpus_per_task=1,
-        runtime=300
+        runtime=60
     container: "docker://sethnr/pgcoe_anypipe:0.01"
+    group: "mashcall"
     params:
         reads=10000, # compare top N reads to refs
         bloom=10,    # bloom filter kmers with < N coverage (seq errors)
@@ -62,7 +64,7 @@ rule mash_call:
                 -r {params.reads} -b {params.bloom} -g {params.gsize} \
                 -d {params.dist} -p {params.prob} \
         -o {params.prefix} \
-        {input.read_location}
+        {input.R1} {input.R2}
         """
 
 checkpoint mash_merge_calls:

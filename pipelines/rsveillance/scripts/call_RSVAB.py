@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import numpy as np
-import tabix
 import sys
 from Bio import SeqIO, Seq
 
@@ -19,21 +18,16 @@ minratio = 0.95
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--alignstats', '-i', help='align stats file')
-parser.add_argument('--metadata', '-m', help='sample metadata')
 parser.add_argument('--coverage', '-c', help='min coverage for secondary call')
 parser.add_argument('--ratio', '-r', help='min ratio for secondary call')
 parser.add_argument('--out', '-o', help='outfile')
 
 args = parser.parse_args()
 alignstatsf = args.alignstats
-metadataf = args.metadata
-mingoodcov = args.coverage
-minratio = args.ratio
+mingoodcov = float(args.coverage)
+minratio = float(args.ratio)
 outfile = args.out
 
-
-#read in metadata
-metadata = pd.read_csv(metadataf,sep="\t").rename(columns={"Seq-ID":"sample","Lab_Origin_Ct":"ct"})
 
 #read in alignment stats
 alignstatsnames = ["sample","mashcall","subfactor","reads","aligned","paired","meandepth","goodcov","cov","gsize"]

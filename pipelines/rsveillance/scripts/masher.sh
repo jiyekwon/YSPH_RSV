@@ -38,7 +38,7 @@ fi
 
 echo "getting top ${READS} reads from infiles"
 let "RLINES = $READS / 2 * 4"
-for FQ in $1/*fastq.gz; do
+for FQ in $1 $2; do
     BASENAME=$(basename ${FQ/fastq.gz/head.fastq})
     echo $BASENAME 
     echo gunzip -dc $FQ \| head -n $RLINES \> ${TEMPDIR}/${BASENAME}
