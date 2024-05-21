@@ -78,8 +78,8 @@ rule bwa_align:
         """
         echo "Aligning reads for {wildcards.sample} to {params.ref}\n"
         echo 'bwa mem -o {output.aligned} {params.ref} {input.R1} {input.R2} \n' 
-        bwa mem -t {resources.cores} {params.ref} {input.R1} {input.R2} | \
-            samtools view -b -F 4 -F 2048 1> {output.aligned}  2> {log.stderr}
+        bwa mem -t {resources.cores} {params.ref} {input.R1} {input.R2} \
+            1> {output.aligned}  2> {log.stderr}
         """
 
 rule flagstat:
@@ -112,14 +112,33 @@ rule flagstat:
 
         """
 
+rule flagstat:
+    input:
+        unsorted = 'results/align/{sample}_{target}_unsort.bam',
+    output:
+        aligned = 'results/align/{sample}_{target}_aligned.bam',
+    params:
+        ref=os.path.join(config['refsdir'],"{target}.fasta"),
+        sleeplen=60,
+    group: "aligngroup"
+    resources:
+        runtime= 600,
+        mem_mb=4000,
+	    cores=1,
+    container: "docker://sethnr/aaaa_gvs_processing:0.02"
+    log:
+        stderr="logs/align/flagstat_{sample}_{target}.err",
+    container: "docker://sethnr/pgcoe_bacseq:0.01"
+    shell:
+        """
+        samtools view -b -F 4 -F 2048 -o {output.aligned} {input.insorted}
+        """
 
 rule sam_subsample:
     input:
-        aligned = 'results/align/{sample}_{target}_unsort.bam'
+        aligned = 'results/align/{sample}_{target}_aligned.bam'
     output:
         subsamp = temporary('results/align/{sample}_{target}_thin.bam'),
-        #idx = 'results/align/{sample}_{target}_thin.bam.bai',
-        #subfactor = temporary('results/align/{sample}_{target}.substat')	
         subfactor = 'results/align/{sample}_{target}.substat'
     resources:
         mem_mb=16000,
