@@ -60,7 +60,9 @@ gismeta <-  read.table("../gisaid/rsv_2024_04_25.tsv",sep="\t",header=T,quote=""
                    "date"="Collection.date",
                    "location"="Location",
                    "agestr"="Patient.age",
-                   "specimen"="Specimen")
+                   "specimen"="Specimen") %>%
+            mutate(date=as.Date(date))
+
 gismeta$age <- NA
 gismeta$age[grep("day.*",gismeta$agestr,perl=T)] <-   round(as.numeric(gsub("day.*"  ,"",gismeta$agestr[grep("day.*",gismeta$agestr,perl=T)],perl=T)) / 365,3)
 gismeta$age[grep("month.*",gismeta$agestr,perl=T)] <- round(as.numeric(gsub("month.*","",gismeta$agestr[grep("month.*",gismeta$agestr,perl=T)],perl=T)) / 12,3)
