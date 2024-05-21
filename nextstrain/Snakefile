@@ -1,0 +1,310 @@
+
+TARGETS, = glob_wildcards("{target}_consensus.fasta")
+
+wildcard_constraints:
+    target="RSVA|RSVB"
+    #target="[^_]+",
+
+
+rule nextstrain_all:
+    input:
+        nextstrain=expand('{target}_auspice.json',target=TARGETS)
+
+
+rule next_index:
+    input:
+        fastas='{fastafile}.fasta'
+    output:
+        index='{fastafile}_index.tsv',
+    resources:
+        mem_mb=4000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        err="logs/{fastafile}.err"
+    shell:
+        """
+        augur index \
+            --sequences {input.fastas} \
+            --output {output.index} >> {log.err}
+        """
+
+rule next_filter_background:
+    input:
+        fastas='background/{target}_background.fasta',
+        index='background/{target}_background_index.tsv',
+        kill='background/{target}_background_kill.txt'
+    output:
+        filtered=temporary('results/{target}_background_filtered.fasta'),
+    resources:
+        mem_mb=4000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stdout="logs/filter_background_{target}.out",
+        stderr="logs/filter_background_{target}.err"
+    params:
+        mindate=2000,
+        seq_per_group=5,
+        maxseqs=1000,
+        metadata="meta/rsv_metadata_gisaid.txt",
+        group_by = "country year month",
+        idcols = "Seq-ID Original-ID name"
+    shell:
+        """
+        augur filter \
+            --sequences {input.fastas} \
+            --sequence-index {input.index} \
+            --metadata {params.metadata} \
+            --subsample-max-sequences {params.maxseqs} \
+            --metadata-id-columns {params.idcols} \
+            --exclude {input.kill} \
+            --group-by {params.group_by} \
+            --min-date {params.mindate} \
+            --output {output.filtered} 1> {log.stdout} 2> {log.stderr}
+
+#            --sequences-per-group {params.seq_per_group} \
+
+         """
+
+
+
+
+rule next_filter:
+    input:
+        fastas='{target}_consensus.fasta',
+        index='{target}_consensus_index.tsv',
+	    includes='{target}.samples',
+    output:
+        filtered=temporary('results/{target}_consensus_filtered.fasta'),
+    resources:
+        mem_mb=4000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stdout="logs/filter_consensus_{target}.out",
+        stderr="logs/filter_consensus_{target}.err"
+    params:
+        metadata="meta/rsv_metadata_gisaid.txt",
+        idcols = "Seq-ID Original-ID name"
+    shell:
+        """
+        augur filter \
+            --sequences {input.fastas} \
+            --sequence-index {input.index} \
+            --metadata {params.metadata} \
+            --include {input.includes} \
+            --exclude-all \
+            --output {output.filtered} 1> {log.stdout} 2> {log.stderr}
+         """
+
+rule cat_fasta:
+    input:
+        background='results/{target}_background_filtered.fasta',
+        consensus='results/{target}_consensus_filtered.fasta',
+    output:
+        all='results/{target}_all.fasta',
+    resources:
+        mem_mb=8000,
+        runtime=600,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stderr="logs/filter_{target}.err"
+    params:
+        mindate=2000,
+        seq_per_group=50,
+    shell:
+        """
+        cat {input.background} {input.consensus} > {output.all}
+        """
+
+
+rule next_align:
+    input:
+        filtered='results/{target}_all.fasta',
+        ref="refs/{target}.fasta",
+        index='results/{target}_all_index.tsv',
+    output:
+        aligned='results/{target}_all_aligned.fasta',
+    resources:
+        mem_mb=8000,
+        runtime=600,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stderr="logs/filter_{target}.err"
+    shell:
+        """
+        augur align \
+            --sequences {input.filtered} \
+            --reference-sequence {input.ref} \
+            --output {output.aligned} \
+            --fill-gaps
+        """
+
+
+rule next_tree:
+    input:
+        aligned='results/{target}_all_aligned.fasta',
+        index='results/{target}_all_aligned_index.tsv',
+    output:
+        tree='results/{target}_raw.nwk',
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stderr="logs/tree_{target}.err"
+    shell:
+        """
+        augur tree \
+        --alignment {input.aligned} \
+        --output {output.tree}
+        """
+
+
+rule next_refine:
+    input:
+        tree='results/{target}_raw.nwk',
+        aligned='results/{target}_all_aligned.fasta',
+    output:
+        tree = "results/{target}_tree.nwk",
+        node_data = "results/{target}_branchlens.json"
+    params:
+        coalescent = "opt",
+        date_inference = "marginal",
+        clock_filter_iqd = 4,
+	    metadata="meta/rsv_metadata_gisaid.txt",
+        idcols = "Seq-ID Original-ID name"
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    log:
+        stdout="logs/{target}_refine.out",
+        stderr="logs/{target}_refine.err"
+    shell:
+        """
+        augur refine \
+            --tree {input.tree} \
+            --alignment {input.aligned} \
+            --metadata {params.metadata} \
+            --output-tree {output.tree} \
+            --output-node-data {output.node_data} \
+            --timetree \
+            --keep-polytomies \
+            --coalescent {params.coalescent} \
+            --date-confidence \
+            --date-inference {params.date_inference} \
+            --clock-filter-iqd {params.clock_filter_iqd} \
+            --metadata-id-columns {params.idcols} \
+        1> {log.stdout} 2> {log.stderr}
+        """
+
+rule next_traits:
+    input:
+        tree = 'results/{target}_tree.nwk',
+    output:
+        node_data = "results/{target}_traits.json"
+    params:
+        metadata="meta/rsv_metadata_gisaid.txt",
+        idcols = "Seq-ID Original-ID name",
+	    cols = "country",
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    shell:
+        """
+        augur traits \
+            --tree {input.tree} \
+            --metadata {params.metadata} \
+            --output-node-data {output.node_data} \
+            --metadata-id-columns {params.idcols} \
+            --columns {params.cols} \
+            --confidence
+        """
+
+
+
+rule next_ancestral:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        alignment = 'results/{target}_all_aligned.fasta',
+    output:
+        node_data = "results/{target}_ntmuts.json"
+    params:
+        inference = "joint"
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    shell:
+        """
+        augur ancestral \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --output-node-data {output.node_data} \
+            --inference {params.inference}
+        """
+
+rule next_translate:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        ancestral = "results/{target}_ntmuts.json",
+        alignment = 'results/{target}_all_aligned.fasta',
+        gff3 = 'refs/{target}.gff3',
+    output:
+        node_data = "results/{target}_aamuts.json"
+    params:
+        inference = "joint"
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.ancestral} \
+            --reference-sequence {input.gff3} \
+            --output-node-data {output.node_data}
+        """
+
+
+
+rule next_export:
+    input:
+        tree =  "results/{target}_tree.nwk",
+        branch_lengths = "results/{target}_branchlens.json",
+        traits = "results/{target}_traits.json",
+        nt_muts = "results/{target}_ntmuts.json",
+        aa_muts = "results/{target}_aamuts.json",
+    output:
+        auspice_json = "{target}_auspice.json",
+    resources:
+        mem_mb=8000,
+        runtime=240,
+    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    params:
+        metadata="meta/rsv_metadata_gisaid.txt",
+        colors = "colors.txt",
+        lat_longs = "latlongs.txt",
+        traits = "traits.txt",
+        auspice_config = "auspice_config.json",
+	    idcols = "Seq-ID Original-ID name"
+    shell:
+        """
+        augur export v2 \
+            --tree {input.tree} \
+            --metadata {params.metadata} \
+            --node-data {input.branch_lengths} {input.traits} {input.nt_muts} {input.aa_muts} \
+            --auspice-config {params.auspice_config} \
+            --include-root-sequence \
+            --lat-longs {params.lat_longs} \
+            --output {output.auspice_json}
+            
+            
+            # --colors {params.colors} \
+    
+        """
+
