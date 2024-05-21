@@ -15,7 +15,7 @@ rule next_index:
     input:
         fastas='{fastafile}.fasta'
     output:
-        index='{fastafile}_index.tsv',
+        index=temp('{fastafile}_index.tsv'),
     resources:
         mem_mb=4000,
         runtime=240,
