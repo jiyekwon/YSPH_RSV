@@ -56,10 +56,7 @@ write.table(meta,file="rsv_metadata.txt",sep="\t",quote=F,row.names = F,col.name
 
 # plot meta ---------------------------------------------------------------
 
-#age distribution, all
-ggplot(allmeta,aes(x=Years)) + geom_density()
-#age distribution, newborns
-
+#age distribution, newborns / infants
 infhist <- ggplot(subset(allmeta,Agecat %in% c("Newborns","Infants")),aes(x=Years,fill=Agecat)) + 
   geom_histogram(bins=52) + 
   ylab("n")+
@@ -68,6 +65,7 @@ infhist <- ggplot(subset(allmeta,Agecat %in% c("Newborns","Infants")),aes(x=Year
         axis.title.x=element_blank(),
         legend.position="none")
 
+#age distribution, all
 agehist <- ggplot(allmeta,aes(x=Years,fill=Agecat)) + 
               geom_histogram(bins=100)  + 
               ylab("n")+
@@ -75,7 +73,7 @@ agehist <- ggplot(allmeta,aes(x=Years,fill=Agecat)) +
                     axis.title.x=element_blank(),
                     legend.position="none")
 
-
+#age category distribution
 catdist <- ggplot(allmeta,aes(x=Agecat,fill=Agecat)) + geom_bar() + 
   scale_y_continuous(name="n",sec.axis = sec_axis( trans=~./nrow(allmeta), name="%")) +
   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
@@ -84,6 +82,6 @@ catdist <- ggplot(allmeta,aes(x=Agecat,fill=Agecat)) + geom_bar() +
         legend.position="none")
 
 infhist + catdist + agehist + plot_layout(design = "ABB\nCCC",guides="keep")
-ggsave("")
+ggsave("rsv_metadata_age_distributions.png",width=300,height=200,units="mm")
 
 
