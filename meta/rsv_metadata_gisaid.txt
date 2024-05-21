@@ -664,13 +664,6 @@ hRSV/B/Senegal/1955/2022	2022-10-03	Africa / Senegal / Dakar	2 months		0.167	Inf
 hRSV/B/Senegal/2031/2022	2022-10-11	Africa / Senegal / Dakar	10 months		0.833	Infants
 hRSV/B/Senegal/2347/2022	2022-11-14	Africa / Senegal / Dakar	1		1	Preschool
 hRSV/B/Senegal/2353/2022	2022-11-14	Africa / Senegal / Dakar	1 month		0.083	Newborns
-hRSV/A/Senegal/0693/2022	2022-05-22	Africa / Senegal / Dakar	4 months	Nasopharyngeal swab	0.333	Infants
-hRSV/A/Senegal/0004/2022	2022-01-04	Africa / Senegal / Dakar	1 month	Nasopharyngeal swab	0.083	Newborns
-hRSV/A/Senegal/0748/2022	2022-05-31	Africa / Senegal / Dakar	4 months	Nasopharyngeal swab	0.333	Infants
-hRSV/A/Senegal/1017/2022	2022-07-01	Africa / Senegal / Dakar	17 months	Nasopharyngeal swab	1.417	Preschool
-hRSV/A/Senegal/2037/2022	2022-10-11	Africa / Senegal / Dakar	1 month	Nasopharyngeal swab	0.083	Newborns
-hRSV/A/Senegal/1712/2022	2022-09-01	Africa / Senegal / Dakar	1 month	Nasopharyngeal swab	0.083	Newborns
-hRSV/A/Senegal/2295/2022	2022-11-09	Africa / Senegal / Dakar	1 month	Nasopharyngeal swab	0.083	Newborns
 hRSV/B/South Africa/NICD-R03362/2023	2023-04-04	Africa / South Africa / KwaZulu Natal	0	Nasopharyngeal swab	0	Newborns
 hRSV/B/South Africa/NICD-R02940/2023	2023-03-17	Africa / South Africa / KwaZulu Natal	1	Nasopharyngeal swab	1	Preschool
 hRSV/B/South Africa/NICD-R04641/2023	2023-04-26	Africa / South Africa / KwaZulu Natal	1	Nasopharyngeal swab	1	Preschool
@@ -2408,7 +2401,6 @@ hRSV/B/China/HB-61984/2021	2021-04-05	Asia / China / Hubei	4	Oropharyngeal swab	
 hRSV/B/China/HB-62086/2021	2021-04-06	Asia / China / Hubei	11 months	Oropharyngeal swab	0.917	Infants
 hRSV/B/China/HB-62566/2021	2021-04-07	Asia / China / Hubei	3	Oropharyngeal swab	3	Preschool
 hRSV/B/China/HB-62717/2021	2021-04-08	Asia / China / Hubei	1	Oropharyngeal swab	1	Preschool
-Virus name	Collection date	Location	Patient age	Specimen	NA	NA
 hRSV/A/England/174360331/2017	2017-10-24	Europe / United Kingdom / England	1	Nasopharyngeal swab	1	Preschool
 hRSV/A/England/174560282/2017	2017-11-07	Europe / United Kingdom / England	4	Nasopharyngeal swab	4	Preschool
 hRSV/B/England/184860361/2018	2018-11-26	Europe / United Kingdom / England	11 months	Nasopharyngeal swab	0.917	Infants
@@ -4459,7 +4451,6 @@ hRSV/A/England/185140687/2018	2018-12-17	Europe / United Kingdom / England	17 ye
 hRSV/B/England/185160298/2018	2018-12-17	Europe / United Kingdom / England	83 years		83	Geriatrics
 hRSV/A/England/185200100/2018	2018-12-21	Europe / United Kingdom / England	59 years		59	Adults
 hRSV/B/England/190100016/2018	2018-12-27	Europe / United Kingdom / England	5 months		0.417	Infants
-Virus name	Collection date	Location	Patient age	Specimen	NA	NA
 hRSV/B/USA/un-USACAS/2020	2020-11-16	North America / USA	unknown	Nasopharyngal swab from adult woman	NA	NA
 hRSV/B/USA/TX-121301314/2014	2014	North America / USA / Texas	unknown		NA	NA
 hRSV/B/USA/TX-79362/2005	2005	North America / USA / Texas	unknown		NA	NA
@@ -7540,7 +7531,6 @@ hRSV/A/USA/TH-10150/2012	2012-08-15	North America / USA	8 weeks		NA	NA
 hRSV/A/USA/TH-10195/2012	2012-11-02	North America / USA	8 weeks		NA	NA
 hRSV/A/USA/TH-10210/2012	2012-09-28	North America / USA	2 weeks		NA	NA
 hRSV/A/USA/LA2-08/2012	2012-11-19	North America / USA / Tennessee	1 month		0.083	Newborns
-hRSV/A/USA/LA2-100/2013	2013-01-07	North America / USA / Tennessee	5 months		0.417	Infants
 hRSV/A/USA/LA2-105/2012	2012-12-27	North America / USA / Tennessee	5 months		0.417	Infants
 hRSV/A/USA/LA2-106/2012	2012-12-31	North America / USA / Tennessee	4 months		0.333	Infants
 hRSV/A/USA/LA2-13/2012	2012-12-13	North America / USA / Tennessee	3 months		0.25	Infants
@@ -7601,7 +7591,6 @@ hRSV/A/USA/ACRI-064/2016	2016-03-28	North America / USA / Arkansas / Little Rock
 hRSV/A/Nicaragua/NIC-IIIn-16-0250-01NT/2016	2016-09-30	North America / Nicaragua / Managua	7 months		0.583	Infants
 hRSV/A/USA/SC0276/2018	2018	North America / USA	unknown		NA	NA
 hRSV/A/Nicaragua/DIV-001/2016	2016-10-04	North America / Nicaragua / Managua	10 months	Nasal swab	0.833	Infants
-Virus name	Collection date	Location	Patient age	Specimen	NA	NA
 hRSV/B/Australia/VIC-VIDRL004/2015	2015-06-11	Oceania / Australia / Victoria / Melbourne	1		1	Preschool
 hRSV/B/Australia/VIC-VIDRL003/2018	2018-07-16	Oceania / Australia / Victoria / Melbourne	46		46	Adults
 hRSV/A/Australia/VIC-VIDRL002/2016	2016-06-27	Oceania / Australia / Victoria / Melbourne	8		8	Children
@@ -9160,7 +9149,6 @@ hRSV/B/Australia/NT-RDH0010/2023	2023-01-10	Oceania / Australia / Northern Terri
 hRSV/A/Australia/NT-RDH0012/2023	2023-02-01	Oceania / Australia / Northern Territory / Darwin	2 years 11 months 18 days		2	Preschool
 hRSV/A/Australia/NT-RDH0014/2023	2023-02-12	Oceania / Australia / Northern Territory / Darwin	5 months 25 days		0.417	Infants
 hRSV/B/Australia/NT-RDH0015/2023	2023-02-15	Oceania / Australia / Northern Territory / Darwin	0 years 10 months 15 days		0	Newborns
-hRSV/B/Australia/NT-RDH0015/2023	2023-02-15	Oceania / Australia / Northern Territory / Darwin	0 years 10 months 15 days		0	Newborns
 hRSV/B/Australia/NT-RDH0016/2023	2023-03-06	Oceania / Australia / Northern Territory / Darwin	74 years 10 months 10 days	Nasopharyngeal swab	74	Geriatrics
 hRSV/B/Australia/NT-RDH0018/2023	2023-03-03	Oceania / Australia / Northern Territory / Darwin	2 years 8 months 21 days	Nasopharyngeal swab	2	Preschool
 hRSV/A/Australia/NT-RDH0019/2023	2023-03-03	Oceania / Australia / Northern Territory / Darwin	5 months 25 days	Nasopharyngeal swab	0.417	Infants
@@ -9953,7 +9941,6 @@ hRSV/B/Australia/VIC-RCH023/2021	2021-02-15	Oceania / Australia / Victoria / Par
 hRSV/A/Australia/7002419/2021	2021-01-17	Oceania / Australia / Western Australia	unknown		NA	NA
 hRSV/B/Australia/VIC-VIDRL003/2015	2015-04-13	Oceania / Australia / Victoria / Parkville	0 years, 5 months, 9 days	Nasopharyngeal swab	0	Newborns
 hRSV/A/Australia/VIC-VIDRL002/2018	2018-07-25	Oceania / Australia / Victoria / Melbourne	31	Nasal swab	31	Adults
-Virus name	Collection date	Location	Patient age	Specimen	NA	NA
 hRSV/B/Argentina/BA-HNRG-129/2015	2015-06-02	South America / Argentina / Buenos Aires / Almirante Brown	9 months	Nasopharyngeal aspirate	0.75	Infants
 hRSV/B/Argentina/BA-HNRG-230/2016	2016-05-27	South America / Argentina / Buenos Aires / Adrogue	3 months	Nasopharyngeal aspirate	0.25	Infants
 hRSV/B/Argentina/BA-HNRG-128/2015	2015-06-01	South America / Argentina / Buenos Aires / Avellaneda	1 year, 9 months	Nasopharyngeal aspirate	1	Preschool
@@ -10919,14 +10906,7 @@ hRSV/A/Argentina/ARG-003/2015	2015-07-06	South America / Argentina	unknown		NA	N
 hRSV/A/Argentina/ARG-001/2015	2015-04-30	South America / Argentina	unknown		NA	NA
 hRSV/A/Argentina/ARG-009/2016	2016-06-27	South America / Argentina	unknown		NA	NA
 hRSV/A/Argentina/ARG-012/2015	2015-06-10	South America / Argentina	unknown		NA	NA
-hRSV/B/Argentina/BA-HNRG-383/2017	2017-07-07	South America / Argentina / Buenos Aires	10 months	Nasopharyngeal aspirate	0.833	Infants
-hRSV/B/Argentina/BA-HNRG-131/2015	2015-06-02	South America / Argentina / Buenos Aires	5 months	Nasopharyngeal aspirate	0.417	Infants
 hRSV/A/Argentina/BA-HNRG-011r/2016	2016-07-20	South America / Argentina / Buenos Aires / Ezeiza	1 month	Nasopharyngeal aspirate	0.083	Newborns
-hRSV/A/Argentina/BA-HNRG-289/2016	2016-07-12	South America / Argentina / Buenos Aires	11 months	Nasopharyngeal aspirate	0.917	Infants
-hRSV/A/Argentina/BA-HNRG-016/2014	2014-05-23	South America / Argentina / Buenos Aires	6 months	Nasopharyngeal aspirate	0.5	Infants
-hRSV/B/Argentina/BA-HNRG-004/2014	2014-05-06	South America / Argentina / Buenos Aires	9 months	Nasopharyngeal aspirate	0.75	Infants
-hRSV/B/Argentina/BA-HNRG-159/2015	2015-06-23	South America / Argentina / Buenos Aires	6 months	Nasopharyngeal aspirate	0.5	Infants
-Virus name	Collection date	Location	Patient age	Specimen	NA	NA
 hRSV/A/Belgium/SCI-VD-FD/2022	2022-04-14	Europe / Belgium / Brussels	unknown	Nasopharyngeal swab	NA	NA
 hRSV/A/Belgium/SCI-VD-FD-00001/2022	2022-04-14	Europe / Belgium / Brussels	unknown	Nasopharyngeal swab	NA	NA
 hRSV/B/Spain/CHUVI-19447304/2021	2021-11-14	Europe / Spain / Galicia / Vigo	13		13	Children
@@ -11102,7 +11082,6 @@ hRSV/A/England/RE20000102/2020	2020-02-08	Europe / United Kingdom / England	2 mo
 hRSV/A/England/RS20000579/2020	2020-02-16	Europe / United Kingdom / England	1 months		0.083	Newborns
 hRSV/A/England/RS20000580/2020	2020-02-05	Europe / United Kingdom / England	3 months		0.25	Infants
 hRSV/A/England/RS20000581/2020	2020-02-04	Europe / United Kingdom / England	2 months		0.167	Infants
-hRSV/A/England/RE19003244/2019	2020-12-16	Europe / United Kingdom / England	6 months		0.5	Infants
 hRSV/B/England/200181054/2020	2020-01-02	Europe / United Kingdom / England	25 years		25	Adults
 hRSV/B/England/200200201/2020	2020-01-02	Europe / United Kingdom / England	79 years		79	Geriatrics
 hRSV/B/England/200220388/2020	2020-01-03	Europe / United Kingdom / England	3 months		0.25	Infants
@@ -11755,7 +11734,6 @@ hRSV/b/Slovakia/2942/2023	2023-03-07	Europe / Slovakia / Komarno	40		40	Adults
 hRSV/a/Slovakia/2943/2023	2023-03-13	Europe / Slovakia / Nitra	3		3	Preschool
 hRSV/b/Slovakia/3484/2023	2023-03-27	Europe / Slovakia / Levice	64		64	Adults
 hRSV/B/Spain/AN-PMC-00010/2023	2023-04-20	Europe / Spain / Andalusia / Sevilla	unknown		NA	NA
-hRSV/B/Spain/AN-PMC-00010/2023	2023-04-20	Europe / Spain / Andalucia / Sevilla	unknown		NA	NA
 hRSV/A/Scotland/WoSSVC-1/2022	2022-08	Europe / United Kingdom / Scotland / Glasgow	23 weeks		NA	NA
 hRSV/A/Scotland/WoSSVC-2/2022	2022-08	Europe / United Kingdom / Scotland / Glasgow	4		4	Preschool
 hRSV/A/Scotland/WoSSVC-3/2022	2022-11	Europe / United Kingdom / Scotland / Glasgow	2		2	Preschool

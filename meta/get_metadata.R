@@ -6,19 +6,15 @@ library(patchwork)
 library(dplyr)
 
 
+#seq submission file
 sheetname <- "https://docs.google.com/spreadsheets/d/1nZ5a2ZfmUdMtgB-TcbIYX0begW7O_vZxD6VKxmj1lYU/edit#gid=0"
 allsamples <- read_sheet(sheetname,sheet="Sample Inventory")
 plates <- read_sheet(sheetname,sheet="RSVSeq")
 
-
+#plate manifests
 metafile <- "https://docs.google.com/spreadsheets/d/1-Ns_6d8mP301uuCbJQKdEZzAU8hDGqlbFCTjp6dl8JA/edit#gid=26759663"
 
-sheet_names(metafile)
-
-
-
 allmetaGS <- do.call(rbind, lapply(sheet_names(metafile),function(X) { read_sheet(metafile,sheet=X,col_types="ccDtDtccnccnccc")}))
-
 allmeta <- allmetaGS %>% select(c("Source","Collected","Age","RSV Ct","Method","RSV Plate","TubeCode")) %>%
                       rename("specimen"="Source",
                              "date"="Collected",
@@ -58,7 +54,7 @@ table(meta[,c("ngs_run_id","rsv plate")])
 write.table(meta,file="rsv_metadata.txt",sep="\t",quote=F,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
-gismeta <-  read.table("../../gisaid/rsv_2024_04_25.tsv",sep="\t",header=T,quote="") %>% 
+gismeta <-  read.table("../gisaid/rsv_2024_04_25.tsv",sep="\t",header=T,quote="") %>% 
             select(c("Virus.name","Collection.date","Location","Patient.age","Specimen")) %>%
             rename("name"="Virus.name",
                    "date"="Collection.date",
@@ -84,38 +80,38 @@ gismeta[is.na(gismeta$agecat),]
 
 comcols <- intersect(colnames(gismeta),colnames(meta))
 mergedmeta <- rbind(gismeta[comcols],meta[comcols])
-
+mergedmeta <- mergedmeta[!duplicated(mergedmeta$name),]
 write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=F,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
 # plot meta ---------------------------------------------------------------
 
-#age distribution, newborns / infants
-infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=Years,fill=agecat)) + 
-  geom_histogram(bins=52) + 
-  ylab("n")+
-  scale_fill_discrete(drop=F) +
-  theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
-        axis.title.x=element_blank(),
-        legend.position="none")
-
-#age distribution, all
-agehist <- ggplot(allmeta,aes(x=Years,fill=agecat)) + 
-              geom_histogram(bins=100)  + 
-              ylab("n")+
-              theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
-                    axis.title.x=element_blank(),
-                    legend.position="none")
-
-#age category distribution
-catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() + 
-  scale_y_continuous(name="n",sec.axis = sec_axis( trans=~./nrow(allmeta), name="%")) +
-  theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
-        axis.title.y.right = element_text(angle=0,vjust=0.5),
-        axis.title.x=element_blank(),
-        legend.position="none")
-
-infhist + catdist + agehist + plot_layout(design = "ABB\nCCC",guides="keep")
-ggsave("rsv_metadata_age_distributions.png",width=300,height=200,units="mm")
-
-
+# #age distribution, newborns / infants
+# infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=Years,fill=agecat)) + 
+#   geom_histogram(bins=52) + 
+#   ylab("n")+
+#   scale_fill_discrete(drop=F) +
+#   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
+#         axis.title.x=element_blank(),
+#         legend.position="none")
+# 
+# #age distribution, all
+# agehist <- ggplot(allmeta,aes(x=Years,fill=agecat)) + 
+#               geom_histogram(bins=100)  + 
+#               ylab("n")+
+#               theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
+#                     axis.title.x=element_blank(),
+#                     legend.position="none")
+# 
+# #age category distribution
+# catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() + 
+#   scale_y_continuous(name="n",sec.axis = sec_axis( trans=~./nrow(allmeta), name="%")) +
+#   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
+#         axis.title.y.right = element_text(angle=0,vjust=0.5),
+#         axis.title.x=element_blank(),
+#         legend.position="none")
+# 
+# infhist + catdist + agehist + plot_layout(design = "ABB\nCCC",guides="keep")
+# ggsave("rsv_metadata_age_distributions.png",width=300,height=200,units="mm")
+# 
+# 
