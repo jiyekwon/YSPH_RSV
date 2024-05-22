@@ -83,6 +83,11 @@ gismeta[is.na(gismeta$agecat),]
 comcols <- intersect(colnames(gismeta),colnames(meta))
 mergedmeta <- rbind(gismeta[comcols],meta[comcols])
 mergedmeta <- mergedmeta[!duplicated(mergedmeta$name),]
+
+mergedmeta <- mergedmeta %>% separate_wider_delim("location"," / ",
+                                                  names=c("continent","country","region"),
+                                                  too_few="align_start",too_many="drop")
+
 write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=F,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
