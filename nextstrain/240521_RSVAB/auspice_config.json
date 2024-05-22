@@ -9,6 +9,11 @@
       "type": "categorical"
     },
     {
+      "key": "region",
+      "title": "region",
+      "type": "categorical"
+    },
+    {
       "key": "agecat",
       "title": "age category",
       "type": "categorical"
