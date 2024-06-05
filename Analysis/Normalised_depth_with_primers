@@ -1,1 +1,35 @@
+install.packages(c("ggplot2", "dplyr"))
+library(ggplot2)
+library(dplyr)
+
+RSVA_depth_windows <- read.csv(file = "/home/emd224/ycga_work/Data/240514_RSV/summary/RSVA_depthwins.txt", sep = "\t")
+colnames(RSVA_depth_windows) <- c("Sample", "position", "depth", "depth2")
+
+normalise_depth <- function(df) {
+  df %>%
+    group_by(Sample) %>%
+    mutate(Normalised_Depth = (depth - mean(depth)) / sd(depth)) %>%
+    ungroup()
+}
+
+normalised_data <- normalise_depth(RSVA_depth_windows)
+
+ggplot(data = normalised_data, aes(x = position, y = Normalised_Depth, colour = Sample)) +
+  geom_line(alpha = 0.5)
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("rtracklayer")
+library(rtracklayer)
+
+bed_file_A <- import("/home/emd224/project/PGCOE/DENV_pipeline/denv_pipeline/RSV_Primer_Refs/RSV/RSVA.bed")
+bed_df <- as.data.frame(bed_file_A)
+colnames(bed_df) <- c("seqnames", "start", "end", "width", "strand", "name", "score")
+
+ggplot(normalised_data, aes(x = position, y = Normalised_Depth, colour = Sample, group = Sample)) +
+  geom_line() +
+  theme_minimal() +
+  geom_rect(data = bed_df, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+            inherit.aes = FALSE, alpha = 0.3, fill = "red")
 
