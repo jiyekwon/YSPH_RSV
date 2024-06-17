@@ -9,5 +9,3 @@ dependencies:
   - matplotlib
   - numpy
   - pandas
-  - scikit-learn
-  - scikit-allel
