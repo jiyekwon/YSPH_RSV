@@ -42,9 +42,9 @@ rule mash_call:
         mashout=temporary("results/mash/{sample}_mash.txt"),
     resources:
         partition="day",
-        mem_mb="8G",
+        mem_mb="4G",
         cpus_per_task=1,
-        runtime=60
+        runtime=30
     container: "docker://sethnr/pgcoe_anypipe:0.01"
     group: "mashcall"
     params:

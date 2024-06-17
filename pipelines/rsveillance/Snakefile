@@ -13,7 +13,7 @@ wildcard_constraints:
     sample="[^_]+",
     target="[^_]+"
 
-localrules: all, get_ivar_report, depthplots
+localrules: all, get_ivar_report, catstats
 
 rule all:
     input:
@@ -24,6 +24,7 @@ rule all:
         bcf=lambda _: expand("results/summary/{target}_genotype-summary.txt",target=get_valid_targets() ),
         finalcalls='results/summary/final_calls.txt',
         finalstats='results/summary/final_alignstats.txt',
+        ampdepths=lambda _: expand("results/summary/{target}_ampdepth.txt",target=get_valid_targets() ),
         #nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=get_valid_targets() ),
         #nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=["RSVA","RSVB"] ),
         
@@ -33,37 +34,18 @@ rule all:
 
 include: "rules/mash.smk"
 
-include: "rules/bwa_align.smk"
+include: "rules/align.smk"
 
 include: "rules/ivar.smk"
 
-include: "rules/bcf_call.smk"
+include: "rules/call.smk"
+
+include: "rules/stats.smk"
+
 
 #include: "rules/nextstrain.smk"
 
 
-
-rule depthplots:
-    input:
-        dhists=lambda wildcards: expand('results/align/{sample}_{{target}}_depthhist.txt',sample=get_mash_samples(wildcards)),
-        dwins=lambda wildcards: expand('results/align/{sample}_{{target}}_depthwins.txt',sample=get_mash_samples(wildcards)),
-        dstats=lambda wildcards: expand('results/align/{sample}_{{target}}_alignstats.txt',sample=get_mash_samples(wildcards)),
-    output:
-        dhists='results/align/{target}_depthhists.txt',
-        dwins='results/summary/{target}_depthwins.txt',
-        dstats='results/summary/{target}_alignstats.txt',
-    resources:
-        mem_mb=8000,
-        runtime=180,
-    log:
-        stderr="logs/depth/{target}_depths.err"
-    container: "docker://sethnr/pgcoe_analysis:0.01"
-    shell:
-        """
-        cat {input.dhists} > {output.dhists}
-        cat {input.dwins} > {output.dwins}
-        cat {input.dstats} > {output.dstats}
-        """
 
 
 
