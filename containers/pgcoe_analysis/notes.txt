@@ -4,4 +4,4 @@ docker build ./ -t sethnr/pgcoe_anypipe:0.01
 #explicitly set linux64 arch:
 docker build --platform linux/amd64 -t sethnr/pgcoe_analysis:0.01 ./
 
-docker push sethnr/pgcoe_anypipe:0.01
+docker push sethnr/pgcoe_analysis:0.01

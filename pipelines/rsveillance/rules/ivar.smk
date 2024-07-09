@@ -91,3 +91,5 @@ rule ivar_variants:
          ivar variants -q {params.qual} -r {params.ref} -t {params.threshold} \
            -m {params.depth} -p {params.prefix}  2>&1 >  {log.stderr}        
         """
+
+

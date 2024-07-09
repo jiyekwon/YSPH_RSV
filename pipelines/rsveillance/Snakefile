@@ -13,7 +13,7 @@ wildcard_constraints:
     sample="[^_]+",
     target="[^_]+"
 
-localrules: all, get_ivar_report, catstats
+localrules: all, get_ivar_report
 
 rule all:
     input:
@@ -24,7 +24,7 @@ rule all:
         bcf=lambda _: expand("results/summary/{target}_genotype-summary.txt",target=get_valid_targets() ),
         finalcalls='results/summary/final_calls.txt',
         finalstats='results/summary/final_alignstats.txt',
-        ampdepths=lambda _: expand("results/summary/{target}_ampdepth.txt",target=get_valid_targets() ),
+        ampdepths=lambda _: expand("results/summary/{target}_stats",target=get_valid_targets() ),
         #nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=get_valid_targets() ),
         #nextstrain=lambda _: expand('results/nextstrain/{target}_auspice.json',target=["RSVA","RSVB"] ),
         
@@ -41,7 +41,6 @@ include: "rules/ivar.smk"
 include: "rules/call.smk"
 
 include: "rules/stats.smk"
-
 
 #include: "rules/nextstrain.smk"
 

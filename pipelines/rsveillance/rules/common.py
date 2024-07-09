@@ -2,9 +2,12 @@ import os
 import sys
 import math as m
 
-def get_value_col(search,fromcol,tocol):
-        #
-        pass
+def get_value_col(search,filename,fromcol,tocol):
+        for line in open(filename):
+                t=line.split()
+                if t[fromcol]==search:
+                        return t['tocol']
+        return None
 
 def get_amplicon_panel_id(wildcards):
         ampset=get_value_col(wildcards.sample, "sample","ampset")
