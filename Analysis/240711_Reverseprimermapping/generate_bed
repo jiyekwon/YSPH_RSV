@@ -1,1 +1,35 @@
+import pandas as pd
+
+df = pd.read_excel('.xslx')
+#can test genome with primers in Geneious and export table of mapping as .xslx
+
+# Convert DataFrame to BED format
+bed_lines = []
+for index, row in df.iterrows():
+    chrom = "NC_038235"  #Change for relevent reference, NC_038235 = A, NC_001781 = B#
+    chromStart = int(row['Minimum'])
+    chromEnd = int(row['Maximum'])
+    name = str(row['Name'])
+    strand = '+' if row['Direction'].lower() == 'forward' else '-'
+    sequence = str(row['Sequence (with extension)'])
+
+    # Prepare the BED line
+    bed_line = '\t'.join([
+        chrom,
+        str(chromStart),
+        str(chromEnd),
+        name,
+        '0',  # Score (set to 0 if not used)
+        strand,
+        sequence,
+        # Add more columns as needed
+    ])
+    bed_lines.append(bed_line)
+
+# Write BED lines to a file, change name as needed
+with open('outputB.bed', 'w') as f:
+    for line in bed_lines:
+        f.write(line + '\n')
+
+print("BED file created successfully.")
 
