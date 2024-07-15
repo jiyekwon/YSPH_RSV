@@ -1,0 +1,31 @@
+perl -F\\t  -lane 'print ">".$F[3]."\n".$F[7]."\n"' RSVA_primers.bed > RSVA_primers.fa
+perl -F\\t  -lane 'print ">".$F[3]."\n".$F[7]."\n"' RSVB_primers.bed > RSVB_primers.fa
+
+
+minimap2 -c -xsr -k3 -w1 RSVB.fasta RSVB_primers.fa 2> /dev/null
+
+#reduce min chaining score to 5, reduce mismatch penalty to 2
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVB.fasta RSVB_primers.fa
+
+
+-k3 -w2
+--sr #short read mode
+--frag=yes #fragment mode
+-A2 #match score
+-B8 #mismatch penalty
+-O12,32 #gap open penalty
+-E2,1 #gap extension penalty
+-b0
+-r100 #bandwidth -p.3 -N20 -f1000,5000 -n2 -m20 -s40 -g100 -2K50m --heap-sort=yes --secondary=no
+
+#best recipe:
+
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVA.fasta RSVA_primers.fa 2> /dev/null > minimap2_pRSVA_gRSVA.txt
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVB.fasta RSVB_primers.fa 2> /dev/null > minimap2_pRSVB_gRSVB.txt
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVB.fasta RSVA_primers.fa 2> /dev/null > minimap2_pRSVB_gRSVA.txt
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVA.fasta RSVB_primers.fa 2> /dev/null > minimap2_pRSVA_gRSVB.txt
+
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVA_gRSVA.sam RSVA.fasta RSVA_primers.fa 
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVB_gRSVB.sam RSVB.fasta RSVB_primers.fa
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVB_gRSVA.sam RSVB.fasta RSVA_primers.fa
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVA_gRSVB.sam RSVA.fasta RSVB_primers.fa 
