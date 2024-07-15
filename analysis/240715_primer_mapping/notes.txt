@@ -27,5 +27,5 @@ minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 RSVA.fasta RSVB_primers.fa 2> /dev/null > min
 
 minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVA_gRSVA.sam RSVA.fasta RSVA_primers.fa 
 minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVB_gRSVB.sam RSVB.fasta RSVB_primers.fa
-minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVB_gRSVA.sam RSVB.fasta RSVA_primers.fa
-minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVA_gRSVB.sam RSVA.fasta RSVB_primers.fa 
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVB_gRSVA.sam RSVA.fasta RSVB_primers.fa
+minimap2 -cxsr -k3 -w1 -A4 -B2 -m5 -a -o minimap2_pRSVA_gRSVB.sam RSVB.fasta RSVA_primers.fa 
