@@ -1,0 +1,18 @@
+#samples: '../../testdata/test_samples.txt'
+#readdir: '../../testdata/'
+samples: '/home/snr28/project/rawdata/RSV_2324_samples_240612.txt'
+readdir: '/home/snr28/project/rawdata/RSV_2324'
+runname: 'rsvtest'
+refs:    '../../refs/refs.txt'
+refsdir: '../../refs/'
+ampschemes: '../../ampschemes'
+outdir: 'results' 
+maxfq_gb: 1
+
+
+nsmetadata: '../../meta/rsv_combined_meta.txt'
+nsdropped: '../../meta/dropped.txt'
+nscolors: '../../meta/colors.txt'
+nslatlongs: '../../meta/latlongs.txt'
+nstraits: '../../meta/traits.txt'
+nsconfig: '../../meta/auspice_config.json'
