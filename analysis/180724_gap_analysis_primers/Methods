@@ -1,0 +1,39 @@
+Left to right in IGV_Capture_Image - Amplicon 7, 15, 16, 17, 30, 34, 44, 45. 
+All primers were individually pooled to a 10uM concentraion (5uL of stock 100uM from the original plae poole with 45uL of water). 
+Primers were then made up into a mastermix where only the single primer was used, resulting in eight different master mixes. 
+
+Mastermix recepe as follows-
+MM 		12.5
+P1		1.25
+P2 		1.25
+Water 	8.5
+cDNA 	1.5
+
+The run following the Q5 PrimalSeq methods 
+98C 30sec
+98 15sec
+65 5 min
+4 hold
+
+Four different samples were used. One poitive control (RSV-0325, RSVB, Plate2, expected to have all amplicons present as a full genome sequence was generated), two test samples (RSV-0360,Plate 2, Ct 35, RSV-0389, Plate4, 23.3) who showed different areas of amplifcation across the regions of interest, and water as the NTC. cDNA for samples was not redone and was used from the original extraction day. 
+
+[NB these samples have minimal cDNA left]
+
+Gel was over run at 30 mins, but under run at 20, 25 mins seems to be optimum for 400bp fragments. 
+
+All samples were Qubitted and at least some banding was seen. Only appears to be across one sample, unsure on why other samples didn't show up- Ct values should have been within range to show up and Qubit values defintily indicated that amplification happened, not sure why it didn't. 
+
+All samples were diluted 1/10 into the 1X sample buffer provided and 20uL of that was loaded in the gel. 
+
+	RSVB-389	RSVB-360	RSVB-325	NTC				
+7	31.8	56.8	35.4	20.2				
+15	61.4	44.2	36.8	41.2				
+16	48.6	10.3	43.6	37.2				
+17	8.92	8.68	8.26	6.96				
+30	47.4	12.8	16.6	12.3				
+34	83.6	62.0	58.6	61.8				
+44	44.0	5.34	8.68	7.68				
+45	58.6	4.74	4.82	4.02				
+
+
+Proceeded to look at all gaps that were consistent across 6 different bam files, anything in at least 3 of those files was considered a "good" amplicon. "Bad" amplicons were amplicons that did not appearin any bams (amplicon set 7). Amplicons in two or less of the bam files were examined as they did show up but no regularly. These gaps were classifed as follows- "Expected" (where the two primers where the expected pair eg 1B_Left and 1B_Right), "Possible" (where one primer from another set could bind in a region to form an amplicon with another primer eg 19B_Left and 19A_Right) and "Unlikley" (where the binding pattern was similar to Possible but the secondary primer had too many mismatches to be likley eg 13A_Left and 11A_Right on the RSVB genome as 13A_Left has 7 mismatches). This was done for both A and B genomes with both sets of primers (Primer Pool 1 [PP1] and Primer Pool 2[PP2]) and placed into the excel sheets where the "To Test" tab has the amplcions listed down as "Expected", "Possible" (or "very posisble" if it looked like reads in the bams were caused by the different primers) and "Unlikley". Primers were assessed in pools as odd and even primers would never interact. 
