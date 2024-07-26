@@ -10,7 +10,6 @@ import numpy as np
 import pandas as pd
 from Bio import SeqIO
 
-from plotnine import *
 import os
 
 
@@ -20,6 +19,8 @@ import os
 minmaf = 0.05
 samplefile = "samples.txt"
 gapfile="{}_consensus_gaps.txt"
+
+idir = "../../pipelines/rsveillance/results/ivar/"
 
 targets = ["RSVA","RSVB"]
 #targetfile = ""
@@ -53,7 +54,7 @@ for target in targets:
     gaps = pd.read_csv("{}_consensus_gaps.txt".format(target),sep="\t",index_col=False)
 
     for sample in samples:
-        ivfile = "{}_{}_ivariants.tsv".format(sample,target)
+        ivfile = "{}/{}_{}_ivariants.tsv".format(idir,sample,target)
         if not os.path.exists(ivfile): continue
         
         ivars = pd.read_csv(ivfile,sep="\t")
@@ -69,19 +70,24 @@ for target in targets:
 
         ivars = ivars[(ivars['MAF'] > minmaf)]
 
-        smaf = pd.DataFrame({'MAF':ivars['MAF'],
+        if (len(ivars['MAF'])>0):
+            smaf = pd.DataFrame({'MAF':ivars['MAF'],
                      'sample':[sample] * len(ivars['MAF']),
                      'target':[target] * len(ivars['MAF'])})
 
-        allmaf = pd.concat([allmaf,smaf])
+            allmaf = pd.concat([allmaf,smaf])
 
 
 # In[131]:
 
 
-sumstats = pd.merge(allmaf.groupby(['sample','target'])['MAF'].std().reset_index().rename(columns={'MAF':"MAFsd"}),
-                    allmaf.groupby(['sample','target'])['MAF'].mean().reset_index().rename(columns={'MAF':"MAFmean"}))
-sumstats
+sumstats = pd.merge(allmaf.groupby(['sample','target'])['MAF'].count().reset_index().rename(columns={'MAF':"n"}),
+                   pd.merge(
+                       allmaf.groupby(['sample','target'])['MAF'].mean().reset_index().rename(columns={'MAF':"MAFmean"}),
+                       allmaf.groupby(['sample','target'])['MAF'].std().reset_index().rename(columns={'MAF':"MAFstd"}))
+)
+
+
 
 
 # In[124]:
