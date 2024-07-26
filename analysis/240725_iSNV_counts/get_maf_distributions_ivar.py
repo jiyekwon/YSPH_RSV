@@ -25,8 +25,8 @@ idir = "../../pipelines/rsveillance/results/ivar/"
 targets = ["RSVA","RSVB"]
 #targetfile = ""
 
-outsum = "ivar_maf_summary.txt"
-outmaf = "ivar_maf.txt"
+outsum = "ivar_maf_summary_maf0.05.txt"
+outmaf = "ivar_maf_maf0.05.txt"
 
 
 # In[127]:
