@@ -1,0 +1,58 @@
+RSV Sequencing Issues and Proposed Fixes:
+1.	Consistent gapping within certain regions across sequencing runs RSV004-RSV010. 
+•	Looking back at the very first test using these primers (RSV003), there was >90% coverage for both A and B using the exact same primer design. By my mind, this rules out any primer-primer interaction causing a majority of the drop-outs. 
+ 
+Figure 1 - RSV003 PathAg pipeline results
+		Resolution: Re-pool primers (I’d like to validate/check the primer set to avoid missing any) and re-sequence all plates from cDNA where possible, and RNA if needed. 
+
+2.	Large gaps and missing genome chunks Plate 4 (RSV008).
+•	Issue identified as primer pool 2 never amplified causing the poor genome coverage seen in the BAM files. 
+•	This was validated as the entire plate for RSV008 was checked on the Qubit and primer pool 2 had poor amplification versus primer pool 1 which had expected amplification. 
+
+ 
+Figure 2A RSVB Plate4 (RSV008) illustrating gaps
+ 
+Figure 2B RSVA Plate4 (RSV008) illustrating gaps
+
+Sample ID	Tube N	Position	CT	PP2	PP1
+Yale-RSV-0388	A4633319	A4	19.4	5.18	>120
+Yale-RSV-0389	A4633327	A5	23.3	4.86	120
+Yale-RSV-0400	A4633320	B4	20.1	5.3	>120
+Resolution: Re-sequence entire plate cDNA. 
+
+
+3.	Non-amplification of consistent regions.
+•	Regions consistently not amplifying in plate samples yet show amplification in Qubit test (below). These were newly diluted from the original plate. Implies that primer set 17 does not work and primer set 30, 44 and 45 work under specific conditions. 17 and 30 were not modified from the original UK primer scheme. NYC was also very high which is a bit concerning. 
+	RSVB-389	RSVB-360	RSVB-325	NTC
+7	31.8	56.8	35.4	20.2
+15	61.4	44.2	36.8	41.2
+16	48.6	10.3	43.6	37.2
+17	8.92	8.68	8.26	6.96
+30	47.4	12.8	16.6	12.3
+34	83.6	62.0	58.6	61.8
+44	44.0	5.34	8.68	7.68
+45	58.6	4.74	4.82	4.02
+
+All other regions of interest amplified as expected from the original RSV003 data except 17, 30, 44, 45.
+
+
+
+
+
+
+
+
+
+ 
+Figure 3B RSV003 BAM files for RSVA genomes using A+B Yale primers
+	Resolution: RSVB- Remove 44 (green) as an AB set and redesign and reorder it as both an A and B individual set. Remove 15 (red) as an AB set and reorder as single genome set. Redesign primer set 17 (yellow) as it is not a dual-genome primer. Redesign primer set 45 (blue) as that didn’t amplify well.
+			RSVA- Remove modified primer 14 (pink) and replace with original 14 primer set. Primer set 44 (green) will be resolved by removing it as a dual-genome primer set. 
+To do in order to publish preprint by September: 
+1.	Run Illumina test run with newly pooled primers and old primers for direct comparison on the same samples (identified from 3 plates already run). Check all samples on Qubit after amplification.
+a.	Amplification/Day 2 26/7 and submitted for sequencing Tues 30/7, results back 5/08
+b.	Order replacement primers and validate them if results from the re-sequence doesn’t produce full genome stuff. 
+2.	Re-sequence all plates with validated primers; either cDNA or RNA depending on how much of the sample is left. Ideally would like to test RNA with qPCR to make sure no loss of quality when sequencing. 
+a.	12/08 – 24/08
+3.	Re-analyse newly sequenced data. 
+a.	24/08 – 30/08
+4.	
