@@ -35,9 +35,7 @@ All samples were diluted 1/10 into the 1X sample buffer provided and 20uL of tha
 44	44.0	5.34	8.68	7.68				
 45	58.6	4.74	4.82	4.02				
 
-
 Proceeded to look at all gaps that were consistent across 6 different bam files, anything in at least 3 of those files was considered a "good" amplicon. "Bad" amplicons were amplicons that did not appearin any bams (amplicon set 7). Amplicons in two or less of the bam files were examined as they did show up but no regularly. These gaps were classifed as follows- "Expected" (where the two primers where the expected pair eg 1B_Left and 1B_Right), "Possible" (where one primer from another set could bind in a region to form an amplicon with another primer eg 19B_Left and 19A_Right) and "Unlikley" (where the binding pattern was similar to Possible but the secondary primer had too many mismatches to be likley eg 13A_Left and 11A_Right on the RSVB genome as 13A_Left has 7 mismatches). This was done for both A and B genomes with both sets of primers (Primer Pool 1 [PP1] and Primer Pool 2[PP2]) and placed into the excel sheets where the "To Test" tab has the amplcions listed down as "Expected", "Possible" (or "very posisble" if it looked like reads in the bams were caused by the different primers) and "Unlikley". Primers were assessed in pools as odd and even primers would never interact. 
-
 
 29/7/2024
 Using the finding_primers.py to look through all raw reads and pull out fastq files that have a nominated primer within 50nt of the start or finish of the read. 
