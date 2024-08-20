@@ -1,7 +1,7 @@
 #samples: '../../testdata/test_samples.txt'
 #readdir: '../../testdata/'
 samples: '/home/snr28/project/rawdata/RSV_2324_samples_240612.txt'
-readdir: '/home/snr28/project/rawdata/RSV_2324'
+readdir: '/vast/palmer/scratch/grubaugh/snr28/rsv_rawdata/RSV_2324'
 runname: 'rsvtest'
 refs:    '../../refs/refs.txt'
 refsdir: '../../refs/'
