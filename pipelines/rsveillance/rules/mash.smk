@@ -104,7 +104,7 @@ def get_mash_samples(wildcards):
 def get_valid_targets():
     with checkpoints.mash_merge_calls.get().output.mashcalls.open() as f:
         alltargets = [L.split()[1] for L in f.read().splitlines()]
-	alltargets = [I for I in set(alltargets)]
+    alltargets = [I for I in set(alltargets)]
     #print("mash: returning valid target "+";".join(alltargets),file=sys.stderr)  
     return alltargets
 

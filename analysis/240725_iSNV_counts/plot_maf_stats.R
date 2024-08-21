@@ -61,3 +61,21 @@ ggplot(data=vsratmash,aes(x=mash,y=vsrat,color=mash,group=paste(mash,call))) + g
   facet_grid(. ~ call,scale="free_x",space="free_x") + 
   theme(axis.text.x=element_text(angle=45,hjust=1))
 ggsave("ivar_variant_substitution_ratio_jitter.png")
+
+
+
+astats$pairatio = astats$paired / astats$reads
+astats$cov10pc = astats$cov10 / astats$gsize
+
+
+vspairtab <- merge(vsratmash,astats[,c("sample","target","meandepth","cov10pc","pairatio")])
+
+
+gooda <- subset(vspairtab,pairatio > 0.9 & cov10pc > 0.9 & mash == "RSVA" & vsrat<0.1)
+
+goodb <- subset(vspairtab,pairatio > 0.9 & cov10pc > 0.9 & mash == "RSVB" & vsrat<0.1)
+
+goodsamples <- rbind(gooda,goodb[sample(nrow(goodb),10),])
+write.table(goodsamples,"estimated_good_ab_calls.txt",sep="\t",row.names = F,col.names = T,quote=F)
+
+
