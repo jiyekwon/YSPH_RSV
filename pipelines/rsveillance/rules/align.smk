@@ -70,7 +70,7 @@ rule bwa_align:
     resources:
         runtime=600,
         mem_mb=lambda wc, input: max(2 * input.size_mb, 4000),
-	    cores=4,
+        cores=4,
     log:
         stderr="logs/align/bwa_mem_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
@@ -94,7 +94,7 @@ rule flagstat:
     resources:
         runtime=60,
         mem_mb=4000,
-	    cores=1,
+        cores=1,
     log:
         stderr="logs/align/flagstat_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
@@ -124,7 +124,7 @@ rule remove_unaligned:
     resources:
         runtime=100,
         mem_mb=4000,
-	    cores=1,
+        cores=1,
     log:
         stderr="logs/align/flagstat_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
@@ -145,13 +145,13 @@ rule sam_subsample:
         cores=4,
     group: "aligngroup"
     params:
-	    maxsize_mb=1024
+        maxsize_mb=1024
     log:
         stderr="logs/align/{sample}_{target}_sort.err"
     run:
         import subprocess
         insize = round(os.stat(input.aligned).st_size / 1048576)
-    	subfact = get_subsample_factor(insize, params.maxsize_mb)
+        subfact = get_subsample_factor(insize, params.maxsize_mb)
         subfraction = 1/subfact
         if subfact < 1:
             subprocess.run(["samtools", "view","-b","-s",str(subfraction),"-o",output.subsamp,input.aligned])
@@ -171,7 +171,7 @@ rule sam_sort:
     resources:
         mem_mb=16000,
         runtime=180,
-	    cores=4,
+        cores=4,
     group: "aligngroup"
     log:
         stderr="logs/align/sort_{sample}_{target}.err"

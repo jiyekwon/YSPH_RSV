@@ -12,11 +12,11 @@ rule ivar_pclip:
     output:
         trimmed_us=temporary('results/ivar/{sample}_{target}_itrim_us.bam'),
         trimmed='results/ivar/{sample}_{target}_itrim.bam',
-	trimdex='results/ivar/{sample}_{target}_itrim.bam.bai'
+        trimdex='results/ivar/{sample}_{target}_itrim.bam.bai'
     resources:
         mem_mb=8000,
         runtime=1440,
-	cores=1,
+        cores=1,
     log:
         stderr="logs/ivar/{sample}_{target}_trim.err"
     shell:
@@ -55,7 +55,7 @@ rule ivar_consensus:
         consensus='results/ivar/{sample}_{target}_consensus.fa'
     params:
         depth=20,
-	threshold=0.75,
+        threshold=0.75,
         prefix='results/ivar/{sample}_{target}_consensus'
     resources:
         mem_mb=lambda wc, input: max(10 * input.size_mb, 4000),
