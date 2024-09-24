@@ -134,7 +134,7 @@ rule depth_amplicons:
         ampbed=os.path.join(config['ampschemes'],'{target}_amplicons.bed'),
     log:
         stderr="logs/depth/{sample}_{target}.err"
-    container: "docker://sethnr/pgcoe_analysis:0.01"
+    container: "docker://sethnr/pgcoe_analysis:0.02"
     shell:
         """
         python scripts/get_depth_windows.py -d {input.depth} \
@@ -158,7 +158,7 @@ rule depth_genes:
         bed=os.path.join(config['ampschemes'],'{target}_genes.bed'),
     log:
         stderr="logs/depth/{sample}_{target}.err"
-    container: "docker://sethnr/pgcoe_analysis:0.01"
+    container: "docker://sethnr/pgcoe_analysis:0.02"
     shell:
         """
         python scripts/get_depth_windows.py -d {input.depth} \
@@ -181,7 +181,7 @@ rule div_amplicons:
         runtime=60,
     params:
         ampbed=os.path.join(config['ampschemes'],'{target}_amplicons.bed'),
-    container: "docker://sethnr/pgcoe_analysis:0.01"
+    container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
         """
@@ -199,7 +199,7 @@ rule div_genes:
         runtime=60,
     params:
         ampbed=os.path.join(config['ampschemes'],'{target}_genes.bed'),
-    container: "docker://sethnr/pgcoe_analysis:0.01"
+    container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
         """
