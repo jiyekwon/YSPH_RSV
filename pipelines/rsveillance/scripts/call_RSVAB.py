@@ -54,8 +54,8 @@ dupes = alignstats.loc[alignstats['sample'].duplicated(keep=False)]
 #if any duplicates are found, investigate to see which are true mixes
 if np.shape(dupes)[0] >=1:
     dupescf = dupes.pivot(index="sample",
-                                                values=["meandepth","covpc","goodcovpc"],
-                                                columns="mashcall",)
+                            values=["meandepth","covpc","goodcovpc"],
+                            columns="mashcall",)
     dupescf["goodcovratio"] = dupescf["goodcovpc"]["RSVA"]/dupescf["goodcovpc"]["RSVB"]
     dupescf["meandepthratio"] = dupescf["meandepth"]["RSVA"]/dupescf["meandepth"]["RSVB"]
 

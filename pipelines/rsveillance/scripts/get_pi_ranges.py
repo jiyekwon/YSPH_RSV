@@ -8,7 +8,7 @@ import sys
 import argparse 
 import pandas as pd
 
-from plotnine import *
+#from plotnine import *
 
 
 # vcf='pileup_all_vars.vcf.gz'
@@ -67,6 +67,6 @@ pim = pd.melt(pi,id_vars=["start","end"],value_name="pi",var_name="sample")
 
 
 
-piplot = ggplot(pim, aes(x="sample",y="pi"))+ geom_violin() +coord_flip()
-piplot.save((outfile+"_pi.png"),width=150,height=150,units="mm")
+#piplot = ggplot(pim, aes(x="sample",y="pi"))+ geom_violin() +coord_flip()
+#piplot.save((outfile+"_pi.png"),width=150,height=150,units="mm")
 
