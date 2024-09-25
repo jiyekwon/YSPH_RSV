@@ -45,56 +45,64 @@ print("removing {}/{} calls due to coverage below {}".format(failedcov,len(align
 alignstats = alignstats[alignstats['goodcovpc'] > mingoodcov]
 
 
-#identify duplicated samples (align to both RSV A and B)
-dupes = alignstats.loc[alignstats['sample'].duplicated(keep=False)]
+#identify single samples (align to only RSV A or B)
 singles = alignstats.loc[alignstats['sample'].duplicated(keep=False)==False]
 
-dupescf = dupes.pivot(index="sample",
-                                               values=["meandepth","covpc","goodcovpc"],
-                                               columns="mashcall",)
-dupescf["goodcovratio"] = dupescf["goodcovpc"]["RSVA"]/dupescf["goodcovpc"]["RSVB"]
-dupescf["meandepthratio"] = dupescf["meandepth"]["RSVA"]/dupescf["meandepth"]["RSVB"]
+#identify duplicated samples (align to both RSV A and B)
+dupes = alignstats.loc[alignstats['sample'].duplicated(keep=False)]
+
+#if any duplicates are found, investigate to see which are true mixes
+if np.shape(dupes)[0] >=1:
+    dupescf = dupes.pivot(index="sample",
+                                                values=["meandepth","covpc","goodcovpc"],
+                                                columns="mashcall",)
+    dupescf["goodcovratio"] = dupescf["goodcovpc"]["RSVA"]/dupescf["goodcovpc"]["RSVB"]
+    dupescf["meandepthratio"] = dupescf["meandepth"]["RSVA"]/dupescf["meandepth"]["RSVB"]
 
 
-#identify putative coinfections (second align is within minratio of first)
-coinfections = (dupescf["goodcovratio"] > minratio) & (dupescf["goodcovratio"] < (1/minratio))
-rsva = (dupescf["goodcovratio"] > (1/minratio))
-rsvb = (dupescf["goodcovratio"] < minratio)
+    #identify putative coinfections (second align is within minratio of first)
+    coinfections = (dupescf["goodcovratio"] > minratio) & (dupescf["goodcovratio"] < (1/minratio))
+    rsva = (dupescf["goodcovratio"] > (1/minratio))
+    rsvb = (dupescf["goodcovratio"] < minratio)
 
-#assemble final calls table and print to file
-calls = pd.concat([pd.DataFrame({"sample":dupescf.index[rsvb].tolist(),
-                          "call":["RSVB"]*sum(rsvb)}),
-                    pd.DataFrame({"sample":dupescf.index[rsva].tolist(),
-                          "call":["RSVA"]*sum(rsva)}),
-                    pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
-                          "call":["RSVA/B"]*sum(coinfections)}),
-                    singles[['sample',"mashcall"]]
-                    ], axis=0)
-calls.to_csv("{}_calls.txt".format(outfile),sep="\t",index=False)
+    #assemble final calls table
+    calls = pd.concat([pd.DataFrame({"sample":dupescf.index[rsvb].tolist(),
+                            "call":["RSVB"]*sum(rsvb)}),
+                        pd.DataFrame({"sample":dupescf.index[rsva].tolist(),
+                            "call":["RSVA"]*sum(rsva)}),
+                        pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
+                            "call":["RSVA/B"]*sum(coinfections)}),
+                        singles[['sample',"mashcall"]]
+                        ], axis=0)
 
+    #combine mash / final calls into one table
+    combinations = pd.concat([pd.DataFrame({"sample":dupescf.index[rsvb].tolist(),
+                            "mashcall":["RSVB"]*sum(rsvb),
+                            "call":["RSVB"]*sum(rsvb)}),
+                            pd.DataFrame({"sample":dupescf.index[rsva].tolist(),
+                                            "mashcall":["RSVA"]*sum(rsva),
+                                            "call":["RSVA"]*sum(rsva)}),
+                            pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
+                                            "mashcall":["RSVB"]*sum(coinfections),
+                                            "call":["RSVA/B"]*sum(coinfections)}),
+                            pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
+                                            "mashcall":["RSVA"]*sum(coinfections),
+                                            "call":["RSVA/B"]*sum(coinfections)}),
+                            pd.DataFrame({"sample":singles['sample'].to_list(),
+                                            "mashcall":singles['mashcall'].to_list(),
+                                            "call":singles['mashcall'].to_list()}),
+                            ], axis=0)
+    
+else:
+    #use single A/B calls as final calls table and print to file
+    calls = singles[['sample',"mashcall"]]
+    combinations = pd.DataFrame({"sample":singles['sample'].to_list(),
+                "mashcall":singles['mashcall'].to_list(),
+                "call":singles['mashcall'].to_list()})
 
 #merge calls with alignstats
-combinations = pd.concat([pd.DataFrame({"sample":dupescf.index[rsvb].tolist(),
-                          "mashcall":["RSVB"]*sum(rsvb),
-                          "call":["RSVB"]*sum(rsvb)}),
-            pd.DataFrame({"sample":dupescf.index[rsva].tolist(),
-                          "mashcall":["RSVA"]*sum(rsva),
-                          "call":["RSVA"]*sum(rsva)}),
-           pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
-                          "mashcall":["RSVB"]*sum(coinfections),
-                          "call":["RSVA/B"]*sum(coinfections)}),
-           pd.DataFrame({"sample":dupescf.index[coinfections].tolist(),
-                          "mashcall":["RSVA"]*sum(coinfections),
-                          "call":["RSVA/B"]*sum(coinfections)}),
-           pd.DataFrame({"sample":singles['sample'].to_list(),
-                          "mashcall":singles['mashcall'].to_list(),
-                          "call":singles['mashcall'].to_list()}),
-          ], axis=0)
 combinations = pd.merge(combinations,alignstats[alignstatsnames],on=['sample','mashcall'])
-combinations
 
-
+calls.to_csv("{}_calls.txt".format(outfile),sep="\t",index=False)
 combinations.to_csv("{}_alignstats.txt".format(outfile),sep="\t",index=False,header=False)
-
-
 
