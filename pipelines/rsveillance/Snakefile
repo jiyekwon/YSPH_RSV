@@ -74,9 +74,20 @@ rule get_ivar_report:
     output:
         report='results/summary/{target}_ivar-summary.txt',
         consensus='results/summary/{target}_consensus.fasta',
+    params:
+        badregions=os.path.join(config['ampschemes'],'{target}_badregions.bed'),
+        samplefile=config['samples']
+        minmaf=0.05
     shell:
         """
         cat {input.iconsensus} > {output.consensus}
+        
+        # python scripts/get_variant_substitution_stats.py -d results/ivar \
+        #                                   -b {params.badregions} 
+        #                                   -s {params.samplefile}
+        #                                   -o {output.report}
+        #                                   -m {params.minmaf}
+        
         touch {output.report}
         """
 
