@@ -48,6 +48,7 @@ platesGS <- read_sheet(sheetname,sheet="RSVSeq")
 plates <- platesGS %>% 
             rename_with(tolower) %>%
             select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
+            mutate("plate number"=paste("plate number")) %>%
             rename("name"="seq_id")
 
 meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")

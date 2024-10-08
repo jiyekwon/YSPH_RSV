@@ -4,13 +4,12 @@
 
 # read in meta ------------------------------------------------------------
 
-allmeta
+allmeta <- read.table("data/rsv_metadata.txt",sep="\t",header=T)
 
 
 
 # plot age distributions --------------------------------------------------
 
-allmeta <- read.table("data/rsv_metadata.txt",sep="\t",header=T)
 
 #age distribution, newborns / infants
 infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=age,fill=agecat)) +
