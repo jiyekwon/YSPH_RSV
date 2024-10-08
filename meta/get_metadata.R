@@ -55,7 +55,7 @@ meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
 
 table(meta[,c("ngs_run_id","rsv plate")])
 
-write.table(meta,file="rsv_metadata.txt",sep="\t",quote=F,row.names = F,col.names = T,fileEncoding="UTF-8")
+write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
 gismeta <-  read.table("../gisaid/rsv_2024_04_25.tsv",sep="\t",header=T,quote="") %>% 
@@ -95,7 +95,7 @@ mergedmeta <- mergedmeta %>% separate_wider_delim("location"," / ",
                                                   names=c("continent","country","region"),
                                                   too_few="align_start",too_many="drop")
 
-write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=F,row.names = F,col.names = T,fileEncoding="UTF-8")
+write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
 # plot meta ---------------------------------------------------------------
