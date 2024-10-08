@@ -30,12 +30,14 @@ allmeta$age[grep("yrs",allmeta$agestr)] <- as.numeric(gsub(" yrs","",allmeta$age
 allmeta$age[grep("yr$",allmeta$agestr)] <- as.numeric(gsub(" yr","",allmeta$agestr[grep("yr$",allmeta$agestr)]))
 allmeta[is.na(allmeta$age),]
 
-allmeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
-allmeta$agecat[allmeta$age <= (60/365)] <- "Newborns"
-allmeta$agecat[allmeta$age > (60/365) & allmeta$age <1] <- "Infants"
-allmeta$agecat[allmeta$age >= 1 & allmeta$age <5] <- "Preschool"
-allmeta$agecat[allmeta$age >= 5 & allmeta$age <=16] <- "Children"
-allmeta$agecat[allmeta$age > 16 & allmeta$age <=64] <- "Adults"
+#allmeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
+#allmeta$agecat[allmeta$age <= (60/365)] <- "Newborns"
+#allmeta$agecat[allmeta$age > (60/365) & allmeta$age <1] <- "Infants"
+allmeta$agecat <- factor(NA,levels=c("Infants","Preschool","Children","Adults","Geriatrics"))
+allmeta$agecat[allmeta$age <1] <- "Infants"
+allmeta$agecat[allmeta$age >= 1 & allmeta$age <=5] <- "Preschool"
+allmeta$agecat[allmeta$age > 5 & allmeta$age <=17] <- "Children"
+allmeta$agecat[allmeta$age > 18 & allmeta$age <=64] <- "Adults"
 allmeta$agecat[allmeta$age >= 65] <- "Geriatrics"
 allmeta[is.na(allmeta$agecat),]
 
@@ -45,9 +47,10 @@ allmeta[is.na(allmeta$agecat),]
 platesGS <- read_sheet(sheetname,sheet="RSVSeq")
 plates <- platesGS %>% 
             rename_with(tolower) %>%
-            select(c("original-id","seq-id","plate number","ngs_run_id")) %>%
-            rename("name"="seq-id")
-meta <- merge(plates,allmeta,by.x="original-id",by.y="tubecode",all.x=T)
+            select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
+            rename("name"="seq_id")
+
+meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
 
 table(meta[,c("ngs_run_id","rsv plate")])
 
@@ -70,12 +73,15 @@ gismeta$age[grep("year.*",gismeta$agestr,perl=T)] <-  as.numeric(gsub("year.*" ,
 gismeta$age[!is.na(as.numeric(gismeta$agestr))] <-   as.numeric(gismeta$agestr)[!is.na(as.numeric(gismeta$agestr))]
 gismeta[is.na(gismeta$age),]
 
-gismeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
-gismeta$agecat[gismeta$age <= (60/365)] <- "Newborns"
-gismeta$agecat[gismeta$age > (60/365) & gismeta$age <1] <- "Infants"
-gismeta$agecat[gismeta$age >= 1 & gismeta$age <5] <- "Preschool"
-gismeta$agecat[gismeta$age >= 5 & gismeta$age <=16] <- "Children"
-gismeta$agecat[gismeta$age > 16 & gismeta$age <=64] <- "Adults"
+# gismeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
+# gismeta$agecat[gismeta$age <= (60/365)] <- "Newborns"
+# gismeta$agecat[gismeta$age > (60/365) & gismeta$age <1] <- "Infants"
+# gismeta$agecat[gismeta$age >= 1 & gismeta$age <5] <- "Preschool"
+gismeta$agecat <- factor(NA,levels=c("Infants","Preschool","Children","Adults","Geriatrics"))
+gismeta$agecat[gismeta$age <1] <- "Infants"
+gismeta$agecat[gismeta$age >= 1 & gismeta$age <=5] <- "Preschool"
+gismeta$agecat[gismeta$age > 5 & gismeta$age <=17] <- "Children"
+gismeta$agecat[gismeta$age > 18 & gismeta$age <=64] <- "Adults"
 gismeta$agecat[gismeta$age >= 65] <- "Geriatrics"
 gismeta[is.na(gismeta$agecat),]
 
@@ -94,8 +100,8 @@ write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=F,row.names
 # plot meta ---------------------------------------------------------------
 
 # #age distribution, newborns / infants
-# infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=Years,fill=agecat)) + 
-#   geom_histogram(bins=52) + 
+# infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=age,fill=agecat)) +
+#   geom_histogram(bins=52) +
 #   ylab("n")+
 #   scale_fill_discrete(drop=F) +
 #   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
@@ -103,15 +109,15 @@ write.table(mergedmeta,file="rsv_metadata_gisaid.txt",sep="\t",quote=F,row.names
 #         legend.position="none")
 # 
 # #age distribution, all
-# agehist <- ggplot(allmeta,aes(x=Years,fill=agecat)) + 
-#               geom_histogram(bins=100)  + 
-#               ylab("n")+
+# agehist <- ggplot(allmeta,aes(x=floor(age),fill=agecat)) +
+#               geom_bar(stat="count")  +
+#               ylab("n")+xlab("age (yrs)") +
 #               theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
 #                     axis.title.x=element_blank(),
 #                     legend.position="none")
 # 
 # #age category distribution
-# catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() + 
+# catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() +
 #   scale_y_continuous(name="n",sec.axis = sec_axis( trans=~./nrow(allmeta), name="%")) +
 #   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
 #         axis.title.y.right = element_text(angle=0,vjust=0.5),
