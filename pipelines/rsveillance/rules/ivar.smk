@@ -15,8 +15,9 @@ rule ivar_pclip:
         trimdex='results/ivar/{sample}_{target}_itrim.bam.bai'
     resources:
         mem_mb=8000,
-        runtime=1440,
+        runtime=240,
         cores=1,
+    group: "ivar"
     log:
         stderr="logs/ivar/{sample}_{target}_trim.err"
     shell:
@@ -37,9 +38,10 @@ rule sam_pileup:
         ref=os.path.join(config['refsdir'],"{target}.fasta"),
         threshold=0.2,
         maxdepth=10000,
+    group: "ivar"
     resources:
         mem_mb=8000,
-        runtime=600,
+        runtime=240,
     log:
         stderr="logs/ivar/pileup_{sample}_{target}.err"
     shell:
@@ -57,9 +59,10 @@ rule ivar_consensus:
         depth=20,
         threshold=0.75,
         prefix='results/ivar/{sample}_{target}_consensus'
+    group: "ivar"
     resources:
         mem_mb=lambda wc, input: max(10 * input.size_mb, 4000),
-        runtime=600,
+        runtime=120,
     log:
         stderr="logs/ivar/consensus_{sample}_{target}.err",
     shell:
@@ -80,6 +83,7 @@ rule ivar_variants:
         depth=20,
         qual=20,
         prefix='results/ivar/{sample}_{target}_ivariants'
+    group: "ivar"
     resources:
         mem_mb=lambda wc, input: max(20 * input.size_mb, 4000),
         runtime=240,

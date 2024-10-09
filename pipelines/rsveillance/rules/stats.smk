@@ -131,7 +131,7 @@ rule depth_amplicons:
         runtime=60,
     group: "statsgroup"
     params:
-        ampbed=os.path.join(config['ampschemes'],'{target}_amplicons.bed'),
+        ampbed='results/refs/{target}_amplicons.bed',
     log:
         stderr="logs/depth/{sample}_{target}.err"
     container: "docker://sethnr/pgcoe_analysis:0.02"
@@ -155,7 +155,7 @@ rule depth_genes:
         runtime=60,
     group: "statsgroup"
     params:
-        bed=os.path.join(config['ampschemes'],'{target}_genes.bed'),
+        bed='results/refs/{target}_genes.bed',
     log:
         stderr="logs/depth/{sample}_{target}.err"
     container: "docker://sethnr/pgcoe_analysis:0.02"
@@ -180,7 +180,7 @@ rule div_amplicons:
         mem_mb=8000,
         runtime=60,
     params:
-        ampbed=os.path.join(config['ampschemes'],'{target}_amplicons.bed'),
+        ampbed='results/refs/{target}_amplicons.bed',
     container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
@@ -198,7 +198,7 @@ rule div_genes:
         mem_mb=8000,
         runtime=60,
     params:
-        ampbed=os.path.join(config['ampschemes'],'{target}_genes.bed'),
+        ampbed='results/refs/{target}_genes.bed',
     container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
@@ -220,7 +220,7 @@ rule catstats:
     output:
         dhists=    'results/summary/{target}_depthhists.txt',
         dwins=     'results/summary/{target}_depthwins.txt',
-        alstats=    'results/summary/{target}_alignstats.txt',
+        alstats=   'results/summary/{target}_alignstats.txt',
         ampdepths= 'results/summary/{target}_ampdepth.txt',
         genedepths='results/summary/{target}_genedepth.txt',
         #prmdepths='results/summary/{target}_prmdepth.txt',

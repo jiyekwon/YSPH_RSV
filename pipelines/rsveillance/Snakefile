@@ -30,7 +30,7 @@ rule all:
         
 
 
-
+include: "rules/cplocal.smk"
 
 include: "rules/mash.smk"
 
@@ -53,7 +53,7 @@ rule get_div_metrics:
     input:
         pileupvcf='results/bcftools/{target}_filt.vcf.gz',
         depth='results/align/{target}_depths.txt',
-        primers=os.path.join(config['refsdir']+'{target}.bed'),
+        primers='results/refs/{target}.bed',
         #amplicons='data/{target}.insert.bed',
     output:
         expand('results/summary/{{target}}_{site}_{metric}.tsv',
@@ -75,8 +75,8 @@ rule get_ivar_report:
         report='results/summary/{target}_ivar-summary.txt',
         consensus='results/summary/{target}_consensus.fasta',
     params:
-        badregions=os.path.join(config['ampschemes'],'{target}_badregions.bed'),
-        samplefile=config['samples']
+        samplefile=config['samples'],
+        badregions='results/refs/{target}_badregions.bed',
         minmaf=0.05
     shell:
         """
@@ -95,7 +95,7 @@ rule get_genotyping_report:
     input:
         ivariants='results/bcftools/{target}_all.vcf.gz',
         ivariants_untrim='results/bcftools/{target}_untrim_all.vcf.gz',
-        primers=os.path.join(config['refsdir']+'{target}.bed'),
+        primers='results/refs/{target}.bed',
     output:
         report='results/summary/{target}_genotype-summary.txt',
         pi='results/summary/{target}_primer-pi.tsv',

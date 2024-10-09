@@ -9,9 +9,9 @@ rule bwa_align_pipeline:
 
 rule bwa_index:
     input:
-        fasta = os.path.join(config['refsdir'],"{target}.fasta")
+        fasta = "results/refs/{target}.fasta"
     output:
-        bwt = os.path.join(config['refsdir'],"{target}.fasta.bwt")
+        bwt = "results/refs/{target}.fasta.bwt"
     log:
         log = "logs/bwa/index_{target}.log"
     params:
@@ -27,46 +27,18 @@ rule bwa_index:
                 {input.fasta} >> {log.log} 2>&1
             """
 
-rule cp_local_fq:
-    input:
-        read_location=os.path.join(config['readdir'],'{sample}'),
-    output:
-        R1 = 'results/rawdata/{sample}_R1.fastq.gz',
-        R2 = 'results/rawdata/{sample}_R2.fastq.gz'
-    log:
-        log = "logs/datacopy/{sample}.log"
-    group: "cplocal"
-    resources:
-        mem_mb="2G",
-        cpus_per_task=1,
-        runtime=60
-    container: None
-    shell:"""
-        #find {input.read_location}
-
-        R1=` find {input.read_location} | grep _R1_ `
-        R2=` find {input.read_location} | grep _R2_ `
-
-        echo cp $R1 {output.R1}
-        cp $R1 {output.R1}
-        
-        echo cp $R2 {output.R2}
-        cp $R2 {output.R2}
-        
-        """
-
 
 rule bwa_align:
     input:
         R1 = 'results/rawdata/{sample}_R1.fastq.gz',
         R2 = 'results/rawdata/{sample}_R2.fastq.gz',
-        indexedref=os.path.join(config['refsdir'],"{target}.fasta.bwt")
+        indexedref="results/refs/{target}.fasta.bwt"
     output:
-        #aligned = temporary('results/align/{sample}_{target}_unsort.bam'),
-        aligned = 'results/align/{sample}_{target}_unsort.bam',
+        aligned = temporary('results/align/{sample}_{target}_unsort.bam'),
+        #aligned = 'results/align/{sample}_{target}_unsort.bam',
     group: "aligngroup"
     params:
-        ref=config['refsdir']+"{target}.fasta"
+        ref="results/refs/{target}.fasta"
     resources:
         runtime=600,
         mem_mb=lambda wc, input: max(2 * input.size_mb, 4000),
@@ -88,7 +60,7 @@ rule flagstat:
     output:
         flagstat = 'results/align/{sample}_{target}.flagstats'
     params:
-        ref=config['refsdir']+"{target}.fasta",
+        ref="results/refs/{target}.fasta",
         sleeplen=60,
     group: "aligngroup"
     resources:
@@ -116,9 +88,9 @@ rule remove_unaligned:
     input:
         unsorted = 'results/align/{sample}_{target}_unsort.bam',
     output:
-        aligned = 'results/align/{sample}_{target}_aligned.bam',
+        aligned = temporary('results/align/{sample}_{target}_aligned.bam'),
     params:
-        ref=os.path.join(config['refsdir'],"{target}.fasta"),
+        ref="results/refs/{target}.fasta",
         sleeplen=60,
     group: "aligngroup"
     resources:
@@ -181,22 +153,6 @@ rule sam_sort:
         samtools sort -@ {resources.cores} -o {output.sorted} {input.aligned} 2>&1 > {log.stderr}
         samtools index {output.sorted} 2>&1 >> {log.stderr}
         """
-
-
-
-
-#rule indexbam:
-#    input:
-#        bam = '{samplename}.bam'
-#    output:
-#        indexedbam = '{samplename}.bam.bai'
-#    log:
-#        stderr="logs/bamindex/{samplename}.err"
-#    shell:
-#        """
-#        samtools index {input.bam} 2>&1 >  {log.stderr}
-#        """
-
 
 
 

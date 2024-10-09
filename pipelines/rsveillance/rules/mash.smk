@@ -5,7 +5,7 @@ localrules: mash_merge_calls
 
 rule mash_index:
     input:
-        fastas=expand(os.path.join(config['refsdir'],"{target}.fasta"),target=TARGETS),
+        fastas=expand("results/refs/{target}.fasta",target=TARGETS),
     output:
         msh="results/mash/index_all.msh"
     log:
@@ -14,7 +14,7 @@ rule mash_index:
         idx_script = os.path.join(os.getcwd(),"scripts/indexer.sh"),
         mashabs=os.path.join(os.getcwd(),"results/mash/index_all.msh"),
         genome_size = "11k",
-        refdir=config["refsdir"],
+        refdir='results/refs/',
         localfastas=expand("{target}.fasta",target=TARGETS)
     resources:
         partition="day",
