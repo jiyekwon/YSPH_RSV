@@ -2,6 +2,7 @@
 
 library(tidyverse)
 library(lubridate)
+library(patchwork)
 
 # read in meta ------------------------------------------------------------
 
@@ -52,6 +53,6 @@ ages_by_month_p
 ages_by_month_n / ages_by_month_p + plot_layout(heights=c(8,2), guides='collect')
 
 
-ggsave("rsv_metadata_age_distributions.png",width=300,height=200,units="mm")
+ggsave("rsv_age_distributions_by_month.png",width=300,height=200,units="mm")
 
 
