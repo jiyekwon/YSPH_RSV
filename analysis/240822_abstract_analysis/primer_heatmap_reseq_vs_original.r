@@ -100,4 +100,5 @@ plate1_orig <- ggplot(amplicon_data_94, aes(x = name, y = sample, fill = pmin(de
 print(plate1_orig)
 
 # patchwork ---------------------------------------------------------------
-plate1_orig / plate1_reseq
+plate1_total <- plate1_orig / plate1_reseq
+ggsave("plate1_comparison.png", plot = plate1_total, width = 10, height = 8, dpi = 300)
