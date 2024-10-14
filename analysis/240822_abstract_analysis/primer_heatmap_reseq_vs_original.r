@@ -22,11 +22,11 @@ str(data)
 plate1_reseq <- ggplot(data, aes(x = name, y = sample, fill = pmin(depth, 500))) +
   geom_tile() +
   scale_fill_gradientn(
-    colors = c("white", "#ffcccc", "#ff9999", "#ff6666", "#ff3333"),  # Custom colors for depth
-    values = c(0, 0.1, 0.25, 0.5, 1),  # Scale values
-    limits = c(0, 500),  # Limit the color scale to 500
-    breaks = c(0, 100, 250, 500),  # Breaks for the color legend
-    labels = c("0", "100", "250", "500+"),  # Labels for the color legend
+    colors = c("white", "#ffcccc", "#ff9999", "#ff6666", "#ff3333"),
+    values = c(0, 0.1, 0.25, 0.5, 1),  
+    scale_x_continuous(limits = c(0,500)),  
+    breaks = c(0, 100, 250, 500),  
+    labels = c("0", "100", "250", "500+"),
     name = "Coverage\nDepth"
   ) +
   # Highlight negative values in red
@@ -41,7 +41,7 @@ plate1_reseq <- ggplot(data, aes(x = name, y = sample, fill = pmin(depth, 500)))
     panel.grid.minor = element_blank(),  # Remove grid
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    plot.title = element_text(hjust = 0.5)  # Center the title
+    plot.title = element_text(hjust = 0.5)
   ) +
   ggtitle("Coverage Depth Against RSVB, Plate1 ReSeq") +
   # Add labels for negative values
@@ -49,9 +49,6 @@ plate1_reseq <- ggplot(data, aes(x = name, y = sample, fill = pmin(depth, 500)))
             aes(label = "Error"),
             color = "white",
             size = 2)
-
-# Save the plot
-ggsave("coverage_heatmap_plate1_reseq_RSVB.pdf", width = 12, height = 8)
 
 # old plate heatmap -------------------------------------------------------
 library(dplyr)
@@ -74,7 +71,7 @@ plate1_orig <- ggplot(amplicon_data_94, aes(x = name, y = sample, fill = pmin(de
   scale_fill_gradientn(
     colors = c("white", "#ffcccc", "#ff9999", "#ff6666", "#ff3333"),
     values = c(0, 0.1, 0.25, 0.5, 1),
-    limits = c(0, 500),
+    scale_x_continuous(limits = c(0,500)),
     breaks = c(0, 100, 250, 500),
     labels = c("0", "100", "250", "500+"),
     name = "Coverage\nDepth"
