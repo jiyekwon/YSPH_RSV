@@ -14,9 +14,9 @@ data <- read.table("/vast/palmer/pi/grubaugh/datasets/pgcoe/RSV/241009_reseq_pla
 data$depth <- as.numeric(data$depth)
 data$name <- factor(data$name, levels = paste("Amplicon", 1:50))
 data$sample <- factor(data$sample, levels = rev(unique(data$sample)))
-
-# Check the structure of the data to confirm
+data$depth[data$depth == 0] <- 0.0001
 str(data)
+
 
 # Create the plot
 plate1_reseq <- ggplot(data, aes(x = name, y = sample, fill = pmin(depth, 500))) +
@@ -66,6 +66,8 @@ str(amplicon_data_94)
 amplicon_data_94$depth <- as.numeric(amplicon_data_94$depth)
 amplicon_data_94$name <- factor(amplicon_data_94$name, levels = paste("Amplicon", 1:50))
 amplicon_data_94$sample <- factor(amplicon_data_94$sample, levels = rev(unique(amplicon_data_94$sample)))
+data94$depth[data94$depth == 0] <- 0.0001
+
 plate1_orig <- ggplot(amplicon_data_94, aes(x = name, y = sample, fill = pmin(depth, 500))) +
   geom_tile() +
   scale_fill_gradientn(
