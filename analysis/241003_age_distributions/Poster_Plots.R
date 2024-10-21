@@ -1,8 +1,8 @@
 # adding in meta sections -------------------------------------------------
 
-install.packages("readxl")
-install.packages("tidyverse")
-install.packages("svglite")
+# install.packages("readxl")
+# install.packages("tidyverse")
+# install.packages("svglite")
 library(readxl)
 library(tidyverse)
 library(svglite)
@@ -10,7 +10,7 @@ library(svglite)
 
 allmeta <- read.table("data/rsv_metadata.txt",sep="\t",header=T)
 cluster_list <- read_xlsx("FINAL_clusters_B_Post_April_1_23.xlsx")
-call_list <- read.table("/vast/palmer/pi/grubaugh/datasets/pgcoe/RSV/240613_RSV001-006/summary/final_calls.txt", header = TRUE, sep = "\t", na.strings = "", fill = TRUE)
+call_list <- read.table("data/final_calls.txt", header = TRUE, sep = "\t", na.strings = "", fill = TRUE)
 call_list <- call_list %>%
   mutate(merged_call = coalesce(call, mashcall))
 call_list <- call_list %>% select(-call, -mashcall)
