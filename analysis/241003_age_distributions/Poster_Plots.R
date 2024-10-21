@@ -279,5 +279,5 @@ library("patchwork")
 layout="AAB
 AAC"
 agedist_across_season_plot + guide_area() + cladegrouping + plot_layout(design=layout,guides="collect")
-ggsave("combined_RSVAB_age_season_inclades.png",dpi=400,units="mm",width=400,height=300)
-ggsave("combined_RSVAB_age_season_inclades.svg",dpi=400,units="mm",width=400,height=300)
+ggsave("combined_RSVAB_age_season_inclades.png",dpi=500,units="mm",width=250,height=200)
+ggsave("combined_RSVAB_age_season_inclades.svg",dpi=500,units="mm",width=250,height=200)

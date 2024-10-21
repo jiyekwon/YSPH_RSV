@@ -6,6 +6,11 @@
 
 allmeta <- read.table("data/rsv_metadata.txt",sep="\t",header=T)
 
+colour_codes <- c("Infants" = "#023858",
+                  "Preschool" = "#045a8d",
+                  "Children" = "#0570b0",
+                  "Adults" = "#2b8cbe",
+                  "Geriatrics" = "#74a9cf")
 
 
 # plot age distributions --------------------------------------------------
@@ -24,6 +29,7 @@ infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=age,
 agehist <- ggplot(allmeta,aes(x=floor(age),fill=agecat)) +
   geom_bar(stat="count")  +
   ylab("n")+xlab("age (yrs)") +
+  scale_fill_manual(values=colour_codes) + 
   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
         axis.title.x=element_blank(),
         legend.position="none")
@@ -31,6 +37,7 @@ agehist <- ggplot(allmeta,aes(x=floor(age),fill=agecat)) +
 #age category distribution
 catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() +
   scale_y_continuous(name="n",sec.axis = sec_axis( trans=~./nrow(allmeta), name="%")) +
+  scale_fill_manual(values=colour_codes) + 
   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
         axis.title.y.right = element_text(angle=0,vjust=0.5),
         axis.title.x=element_blank(),
