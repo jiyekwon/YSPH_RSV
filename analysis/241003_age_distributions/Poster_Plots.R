@@ -5,12 +5,13 @@
 # install.packages("svglite")
 library(readxl)
 library(tidyverse)
+library(dplyr)
 library(svglite)
 
 
 allmeta <- read.table("data/rsv_metadata.txt",sep="\t",header=T)
 cluster_list <- read_xlsx("FINAL_clusters_B_Post_April_1_23.xlsx")
-call_list <- read.table("data/final_calls.txt", header = TRUE, sep = "\t", na.strings = "", fill = TRUE)
+call_list <- read.table("data/RSVAB_final_calls.txt", header = TRUE, sep = "\t", na.strings = "", fill = TRUE)
 call_list <- call_list %>%
   mutate(merged_call = coalesce(call, mashcall))
 call_list <- call_list %>% select(-call, -mashcall)
@@ -70,6 +71,8 @@ season_colors <- c("Early (Oct/Nov)" = "salmon", "Middle (Dec/Jan)" = "lightgree
 
 # plotting clusters -------------------------------------------------------
 #all vs none, by agecat
+allmeta$Clade_Name
+
 cladegrouping <- ggplot(allmeta %>% filter(!is.na(agecat)), 
                         aes(x = ifelse(Clade_Name == "no_clade", "No Clade", "Has Clade"), 
                             fill = factor(agecat, levels = age_order))) +  # Set levels for agecat
@@ -80,6 +83,7 @@ cladegrouping <- ggplot(allmeta %>% filter(!is.na(agecat)),
        y = "Proportion",
        fill = "Ages") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title=element_blank(),
         legend.position = "none")
 print(cladegrouping)
 
@@ -129,6 +133,26 @@ plot_ab <- create_rsv_plot(df, "A/B")
 print(plot_a)
 print(plot_b)
 print(plot_ab)
+
+
+
+rsv_type <- "A"
+agedist_across_season_plot <- ggplot(subset(allmeta,merged_call != "RSVA/B"), 
+       aes(x = month, fill = agecat)) +
+  geom_bar(position="fill") +
+  facet_grid(merged_call ~ ., scales = "free_y") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        #legend.position = "none"
+        ) +
+  labs(title = paste("RSV", "Cases by Age Category and Season"),
+       x = "",
+       y = "Proportion of cases") +
+  scale_fill_manual(values = colour_codes,name="")
+agedist_across_season_plot
+ggsave("combined_RSVAB_age_dists_across_season.png",dpi=400,units="mm",width=300,height=250)
+ggsave("combined_RSVAB_age_dists_across_season.svg",dpi=400,units="mm",width=300,height=250)
+
 
 combined_plot_AB_A_B <- ggplot(allmeta, aes(x = merged_call, fill = agecat)) +
   geom_bar(position = "stack") +  # Stack the bars by age category
@@ -249,3 +273,11 @@ library(cowplot)
 combined_plot <- ggdraw(agehist) + draw_plot(combined_plot_AB_A_B, x = 0.5, y = 0.5, width = 0.5, height = 0.5) +
   draw_plot(cladegrouping, x = 0.10, y = 0.5, width = 0.45, height = 0.5)
 print(combined_plot)
+
+
+library("patchwork")
+layout="AAB
+AAC"
+agedist_across_season_plot + guide_area() + cladegrouping + plot_layout(design=layout,guides="collect")
+ggsave("combined_RSVAB_age_season_inclades.png",dpi=400,units="mm",width=400,height=300)
+ggsave("combined_RSVAB_age_season_inclades.svg",dpi=400,units="mm",width=400,height=300)
