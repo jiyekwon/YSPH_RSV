@@ -1,16 +1,4 @@
 # install everything ------------------------------------------------------
-install.packages("BiocManager")
-install.packages("rlang")
-install.packages("ggtree")
-install.packages("tidytree")
-install.packages("dplyr")
-install.packages("ggplot2")
-install.packages("ape")
-install.packages("jsonlite")
-install.packages("tidyr")
-install.packages("crayon")
-install.packages("tidyverse")
-
 library(tidyr)
 library(BiocManager)
 library(rlang)
@@ -19,12 +7,10 @@ library(ggplot2)
 library(tidytree)
 library(dplyr)
 library(ape)
-library(jsonlite)
-library(crayon)
 library(tidyverse)
 # pull meta and trees -----------------------------------------------------
 treeA <- read.tree("RSVA_tree.nwk")
-treeB <- read.tree("RSVB_tree.nwk")
+treeB <- read.tree("nextstrain__timetree.nwk")
 json_dataA <- fromJSON("RSVA_auspice.json")
 json_dataB <- fromJSON("RSVB_auspice.json")
 metadata_file_gisaid <- read.table("rsv_metadata_gisaid.txt", header = TRUE, stringsAsFactors = FALSE)
@@ -38,14 +24,14 @@ metadata_separated_yale <- metadata_separated_yale %>%
 metadata_total <- bind_rows(metadata_file_gisaid, metadata_separated_yale)
 
 # plot trees --------------------------------------------------------------
-treeA <- read.tree("RSVA_tree.nwk")
+treeA <- read.tree("nextstrain__timetreeA.nwk")
 tip_dataA <- data.frame(
   label = treeA$tip.label,
   continent = sample(c("North America", "South America", "Europe", "Asia", "Africa", "Oceania"), 
                      size = length(treeA$tip.label), replace = TRUE),
   stringsAsFactors = FALSE
 )
-tip_dataA$category <- ifelse(grepl("^Yale-", tip_data$label), "Yale", tip_data$continent)
+tip_dataA$category <- ifelse(grepl("^Yale-", tip_dataA$label), "Yale", tip_dataA$continent)
 color_palette <- c(
   "North America" = "#d6604d",
   "South America" = "#f4a582",
@@ -58,12 +44,15 @@ color_palette <- c(
 p <- ggtree(treeA) %<+% tip_dataA +
   geom_point(aes(color = category), size = 2, alpha = 0.8, na.rm = TRUE) +
   scale_color_manual(values = color_palette, na.translate = FALSE) +
-  theme(legend.position = "left") +
-  labs(color = "Category")
+  theme(legend.position = c(0.2, 0.2),
+        legend.text = element_text(size = 20, face = "bold"),
+        legend.title = element_text(size = 22, face = "bold"),
+        legend.key.size = unit(1, "cm")) +
+  labs(color = "")
 p <- p + geom_point(data = subset(p$data, !isTip & is.na(category)), 
                     color = "transparent", size = 0)
 
-treeB <- read.tree("RSVB_tree.nwk")
+treeB <- read.tree("nextstrain__timetree.nwk")
 tip_dataB <- data.frame(
   label = treeB$tip.label,
   continent = sample(c("North America", "South America", "Europe", "Asia", "Africa", "Oceania"), 
@@ -74,11 +63,14 @@ tip_dataB$category <- ifelse(grepl("^Yale-", tip_dataB$label), "Yale", tip_dataB
 pB <- ggtree(treeB) %<+% tip_dataB +
   geom_point(aes(color = category), size = 2, alpha = 0.8, na.rm = TRUE) +
   scale_color_manual(values = color_palette, na.translate = FALSE) +
-  theme(legend.position = "left") +
+  theme(legend.position = "none") +
   labs(color = "Category")
+
 pB <- pB + geom_point(data = subset(p$data, !isTip & is.na(category)), 
-                    color = "transparent", size = 0)
+                      color = "transparent", size = 0)
 print(pB)
 print(p)
-ggsave("RSVA_tree_R.png", p, width = 12, height = 8, dpi = 300)
-ggsave("RSVA_tree_R.png", p, width = 12, height = 8, dpi = 300)
+ggsave("RSVA_tree_R.png", p, width = 12, height = 18, dpi = 200)
+ggsave("RSVB_tree_R.png", pB, width = 12, height = 28.5, dpi = 400)
+
+
