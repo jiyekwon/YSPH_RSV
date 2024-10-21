@@ -9,8 +9,6 @@ library(dplyr)
 library(ape)
 library(tidyverse)
 # pull meta and trees -----------------------------------------------------
-treeA <- read.tree("RSVA_tree.nwk")
-treeB <- read.tree("nextstrain__timetree.nwk")
 json_dataA <- fromJSON("RSVA_auspice.json")
 json_dataB <- fromJSON("RSVB_auspice.json")
 metadata_file_gisaid <- read.table("rsv_metadata_gisaid.txt", header = TRUE, stringsAsFactors = FALSE)
