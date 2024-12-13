@@ -1,0 +1,783 @@
+name	original_id	plate.number	ngs_run_id	specimen	date	agestr	rsv.ct	method	rsv.plate	location	age	agecat	Clade_Name	Estimated_Introduction  (MM/DD/YY)	merged_call
+Yale-RSV-0001	A4621214	plate number	RSV004	Nasopharynx	2023-10-02	1 yr	28.7	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0002	A4621215	plate number	RSV004	Nasopharynx	2023-10-06	1 yr	26.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA/B
+Yale-RSV-0003	A4621216	plate number	RSV004	Nasopharynx	2023-10-13	30 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	30	Adults	no_clade	NA	RSVB
+Yale-RSV-0004	A4621217	plate number	RSV004	Nasopharynx	2023-10-14	87 yrs	17.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	87	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0005	A4624455	plate number	RSV004	Nasopharynx	2023-10-19	34 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	34	Adults	no_clade	NA	RSVB
+Yale-RSV-0006	A4624454	plate number	RSV004	Nasopharynx	2023-10-20	10 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	10	Children	no_clade	NA	RSVA/B
+Yale-RSV-0007	A4624453	plate number	RSV004	Nasopharynx	2023-10-24	1 yr	20.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA/B
+Yale-RSV-0008	A4624452	plate number	RSV004	Nasopharynx	2023-10-25	1 yr	29.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA/B
+Yale-RSV-0009	A4621205	plate number	RSV004	Nasopharynx	2023-10-02	66 yrs	19	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	66	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0010	A4621206	plate number	RSV004	Nasopharynx	2023-10-06	4 yrs	29.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	no_clade	NA	NA
+Yale-RSV-0011	A4621207	plate number	RSV004	Nasopharynx	2023-10-14	1 yr	20.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	H	2023-09-12	RSVB
+Yale-RSV-0012	A4621208	plate number	RSV004	Nasopharynx	2023-10-15	5 yrs	24.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	5	Preschool	no_clade	NA	RSVB
+Yale-RSV-0013	A4621209	plate number	RSV004	Nasopharynx	2023-10-20	20 yrs	23.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	20	Adults	A	2023-05-08	RSVB
+Yale-RSV-0014	A4615918	plate number	RSV004	Nasopharynx	2023-10-20	8 mos	19.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.667	Infants	F	2023-07-08	RSVB
+Yale-RSV-0015	A4624462	plate number	RSV004	Nasopharynx	2023-10-24	38 yrs	21.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	38	Adults	N	2023-05-03	RSVB
+Yale-RSV-0016	A4624461	plate number	RSV004	Nasopharynx	2023-10-25	10 mos	23.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.833	Infants	A	2023-05-08	RSVB
+Yale-RSV-0017	A4621230	plate number	RSV004	Nasopharynx	2023-10-03	5 mos	19.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.417	Infants	N	2023-05-03	RSVB
+Yale-RSV-0018	A4621231	plate number	RSV004	Nasopharynx	2023-10-10	2 yrs	25.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	2	Preschool	H	2023-09-12	RSVB
+Yale-RSV-0019	A4621232	plate number	RSV004	Nasopharynx	2023-10-14	9 mos	34.9	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.75	Infants	no_clade	NA	NA
+Yale-RSV-0020	A4621233	plate number	RSV004	Nasopharynx	2023-10-15	8 mos	18.7	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.667	Infants	no_clade	NA	RSVA
+Yale-RSV-0021	A4624439	plate number	RSV004	Nasopharynx	2023-10-21	9 yrs	31.9	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	9	Children	no_clade	NA	NA
+Yale-RSV-0022	A4624438	plate number	RSV004	Nasopharynx	2023-10-20	8 mos	19.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.667	Infants	H	2023-09-12	RSVB
+Yale-RSV-0023	A4624437	plate number	RSV004	Nasopharynx	2023-10-24	5 mos	17.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.417	Infants	N	2023-05-03	RSVB
+Yale-RSV-0024	A4624436	plate number	RSV004	Nasopharynx	2023-10-25	2 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	2	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0025	A4621221	plate number	RSV004	Nasopharynx	2023-10-04	2 yrs	18.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	2	Preschool	F	2023-07-08	RSVB
+Yale-RSV-0026	A4621222	plate number	RSV004	Nasopharynx	2023-10-10	11 mos	24.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVA/B
+Yale-RSV-0027	A4621223	plate number	RSV004	Nasopharynx	2023-10-15	5 mos	17.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.417	Infants	O	2023-05-05	RSVB
+Yale-RSV-0028	A4621224	plate number	RSV004	Nasopharynx	2023-10-16	1 yr	22.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0029	A4621225	plate number	RSV004	Nasopharynx	2023-10-21	4 yrs	26	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0030	A4624447	plate number	RSV004	Nasopharynx	2023-10-23	6 mos	20.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVA
+Yale-RSV-0031	A4624446	plate number	RSV004	Nasopharynx	2023-10-24	1 yr	17.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0032	A4624445	plate number	RSV004	Nasopharynx	2023-10-25	61 yrs	33.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	61	Adults	no_clade	NA	NA
+Yale-RSV-0033	A4621246	plate number	RSV004	Nasopharynx	2023-10-05	4 yrs	29.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0034	A4621247	plate number	RSV004	Nasopharynx	2023-10-10	3 yrs	18.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0035	A4621248	plate number	RSV004	Nasopharynx	2023-10-15	1 yr	29.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0036	A4621249	plate number	RSV004	Nasopharynx	2023-10-17	29 yrs	24	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	29	Adults	A	2023-05-08	RSVB
+Yale-RSV-0037	A4624423	plate number	RSV004	Nasopharynx	2023-10-22	4 yrs	29.7	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVA
+Yale-RSV-0038	A4624422	plate number	RSV004	Nasopharynx	2023-10-22	1 yr	18.9	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0039	A4624421	plate number	RSV004	Nasopharynx	2023-10-24	67 yrs	28.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	67	Geriatrics	K	2023-08-04	RSVB
+Yale-RSV-0040	A4624420	plate number	RSV004	Nasopharynx	2023-10-25	38 yrs	25.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	38	Adults	A	2023-05-08	RSVB
+Yale-RSV-0041	A4621237	plate number	RSV004	Nasopharynx	2023-10-06	2 yrs	19.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0042	A4621238	plate number	RSV004	Nasopharynx	2023-10-11	3 yrs	23.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0043	A4621239	plate number	RSV004	Nasopharynx	2023-10-15	3 yrs	25.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0044	A4621240	plate number	RSV004	Nasopharynx	2023-10-18	85 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	85	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0045	A4621241	plate number	RSV004	Nasopharynx	2023-10-22	11 yrs	23.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	11	Children	A	2023-05-08	RSVB
+Yale-RSV-0046	A4624431	plate number	RSV004	Nasopharynx	2023-10-23	5 mos	36.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.417	Infants	no_clade	NA	NA
+Yale-RSV-0047	A4624430	plate number	RSV004	Nasopharynx	2023-10-24	5 yrs	24.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	5	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0048	A4624429	plate number	RSV004	Nasopharynx	2023-10-26	11 mos	19.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.917	Infants	A	2023-05-08	RSVB
+Yale-RSV-0049	A4621262	plate number	RSV004	Nasopharynx	2023-10-07	7 mos	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	0.583	Infants	N	2023-05-03	RSVB
+Yale-RSV-0050	A4621263	plate number	RSV004	Nasopharynx	2023-10-11	79 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	79	Geriatrics	no_clade	NA	NA
+Yale-RSV-0051	A4621264	plate number	RSV004	Nasopharynx	2023-10-15	11 mos	25	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.917	Infants	A	2023-05-08	RSVB
+Yale-RSV-0052	A4621265	plate number	RSV004	Nasopharynx	2023-10-18	23 yrs	26.7	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	23	Adults	no_clade	NA	RSVB
+Yale-RSV-0053	A4624407	plate number	RSV004	Nasopharynx	2023-10-22	1 yr	20.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0054	A4624406	plate number	RSV004	Nasopharynx	2023-10-23	67 yrs	30	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	67	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0055	A4624405	plate number	RSV004	Nasopharynx	2023-10-24	1 yr	25.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0056	A4624404	plate number	RSV004	Nasopharynx	2023-10-26	79 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	79	Geriatrics	M	2023-08-28	RSVB
+Yale-RSV-0057	A4621253	plate number	RSV004	Nasopharynx	2023-10-08	73 yrs	17.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	73	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0058	A4621254	plate number	RSV004	Nasopharynx	2023-10-12	3 yrs	26.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0059	A4621255	plate number	RSV004	Nasopharynx	2023-10-15	5 mos	19.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.417	Infants	C	2023-04-13	RSVB
+Yale-RSV-0060	A4621256	plate number	RSV004	Nasopharynx	2023-10-19	3 yrs	19.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0061	A4621257	plate number	RSV004	Nasopharynx	2023-10-22	3 yrs	22.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0062	A4624415	plate number	RSV004	Nasopharynx	2023-10-23	5 yrs	31.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	5	Preschool	no_clade	NA	NA
+Yale-RSV-0063	A4624414	plate number	RSV004	Nasopharynx	2023-10-24	1 yr	28.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0064	A4624413	plate number	RSV004	Nasopharynx	2023-10-26	1 yr	19.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	I	2023-08-16	RSVB
+Yale-RSV-0065	A4621278	plate number	RSV004	Nasopharynx	2023-10-09	3 yrs	23.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0066	A4621279	plate number	RSV004	Nasopharynx	2023-10-12	6 mos	24.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.5	Infants	A	2023-05-08	RSVB
+Yale-RSV-0067	A4621280	plate number	RSV004	Nasopharynx	2023-10-15	13 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	13	Children	E	2023-06-14	RSVB
+Yale-RSV-0068	A4621281	plate number	RSV004	Nasopharynx	2023-10-19	6 mos	17.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.5	Infants	C	2023-04-13	RSVB
+Yale-RSV-0069	A4624391	plate number	RSV004	Nasopharynx	2023-10-22	2 yrs	29.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0070	A4624390	plate number	RSV004	Nasopharynx	2023-10-23	70 yrs	19.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	70	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0071	A4624389	plate number	RSV004	Nasopharynx	2023-10-25	58 yrs	28.1	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	58	Adults	G	2023-05-09	RSVB
+Yale-RSV-0072	A4615917	plate number	RSV004	Nasopharynx	2023-10-26	7 mos	33	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.583	Infants	no_clade	NA	NA
+Yale-RSV-0073	A4621269	plate number	RSV004	Nasopharynx	2023-10-09	2 yrs	22.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0074	A4621270	plate number	RSV004	Nasopharynx	2023-10-12	23 dys	18.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.063	Infants	N	2023-05-03	RSVB
+Yale-RSV-0075	A4621271	plate number	RSV004	Nasopharynx	2023-10-13	11 mos	26.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVA
+Yale-RSV-0076	A4621272	plate number	RSV004	Nasopharynx	2023-10-19	27 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	27	Adults	no_clade	NA	RSVA
+Yale-RSV-0077	A4621273	plate number	RSV004	Nasopharynx	2023-10-19	66 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	66	Geriatrics	no_clade	NA	NA
+Yale-RSV-0078	A4624399	plate number	RSV004	Nasopharynx	2023-10-23	8 mos	36.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.667	Infants	no_clade	NA	NA
+Yale-RSV-0079	A4624398	plate number	RSV004	Sputum	2023-10-24	86 yrs	18.7	YH MANUAL METHOD	RSV1	North America / USA / Connecticut	86	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0080	A4624397	plate number	RSV004	Nasopharynx	2023-10-26	37 yrs	21.6	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	37	Adults	A	2023-05-08	RSVB
+Yale-RSV-0081	A4621294	plate number	RSV004	Nasopharynx	2023-10-06	47 yrs	22.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	47	Adults	no_clade	NA	RSVB
+Yale-RSV-0082	A4621295	plate number	RSV004	Nasopharynx	2023-10-12	52 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	52	Adults	no_clade	NA	RSVB
+Yale-RSV-0083	A4621296	plate number	RSV004	Nasopharynx	2023-10-13	8 yrs	30.3	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	8	Children	N	2023-05-03	RSVB
+Yale-RSV-0084	A4621297	plate number	RSV004	Nasopharynx	2023-10-19	11 mos	17.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.917	Infants	A	2023-05-08	RSVB
+Yale-RSV-0085	A4624376	plate number	RSV004	Nasopharynx	2023-10-19	72 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	72	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0086	A4624375	plate number	RSV004	Nasopharynx	2023-10-23	10 mos	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.833	Infants	N	2023-05-03	RSVB
+Yale-RSV-0087	A4624374	plate number	RSV004	Nasopharynx	2023-10-24	2 mos	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	0.167	Infants	no_clade	NA	RSVB
+Yale-RSV-0088	A4624373	plate number	RSV004	Nasopharynx	2023-10-26	3 yrs	33.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	3	Preschool	no_clade	NA	NA
+Yale-RSV-0089	A4621285	plate number	RSV004	Nasopharynx	2023-10-06	7 mos	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	0.583	Infants	N	2023-05-03	RSVB
+Yale-RSV-0090	A4621286	plate number	RSV004	Nasopharynx	2023-10-12	1 yr	25.9	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0091	A4621287	plate number	RSV004	Nasopharynx	2023-10-14	3 mos	20.5	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.25	Infants	C	2023-04-13	RSVB
+Yale-RSV-0092	A4621288	plate number	RSV004	Nasopharynx	2023-10-19	9 mos	29.8	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	0.75	Infants	N	2023-05-03	RSVB
+Yale-RSV-0093	A4621289	plate number	RSV004	Nasopharynx	2023-10-20	6 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV1	North America / USA / Connecticut	6	Children	no_clade	NA	NA
+Yale-RSV-0094	A4624384	plate number	RSV004	Nasopharynx	2023-10-23	1 yr	18.4	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	1	Preschool	Q	2023-08-22	RSVB
+Yale-RSV-0095	A4624383	plate number	RSV004	Nasopharynx	2023-10-25	4 yrs	24.2	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0096	A4624382	plate number	RSV004	Nasopharynx	2023-10-26	4 yrs	18.7	YH CEPHEID GENEXPERT INFINITY	RSV1	North America / USA / Connecticut	4	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0097	A4630382	plate number	RSV005	Nasopharynx	2023-11-18	2 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0098	A4630390	plate number	RSV005	Nasopharynx	2023-11-21	6 yrs	23.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	6	Children	no_clade	NA	NA
+Yale-RSV-0099	A4630339	plate number	RSV005	Nasopharynx	2023-11-22	51 yrs	27.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	51	Adults	D	2023-07-08	RSVB
+Yale-RSV-0100	A4630341	plate number	RSV005	Nasopharynx	2023-11-27	84 yrs	27.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	84	Geriatrics	A	2023-05-08	RSVB
+Yale-RSV-0101	A4633139	plate number	RSV005	Nasopharynx	2023-11-30	9 mos	25.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.75	Infants	A	2023-05-08	RSVB
+Yale-RSV-0102	A4633109	plate number	RSV005	Nasopharynx	2023-12-01	3 yrs	32.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	no_clade	NA	NA
+Yale-RSV-0103	A4633125	plate number	RSV005	Nasopharynx	2023-12-07	68 yrs	30	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	68	Geriatrics	no_clade	NA	NA
+Yale-RSV-0104	A4622556	plate number	RSV005	Nasopharynx	2023-12-10	7 yrs	29.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	7	Children	no_clade	NA	NA
+Yale-RSV-0105	A4630379	plate number	RSV005	Nasopharynx	2023-11-18	1 yr	22.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0106	A4630380	plate number	RSV005	Nasopharynx	2023-11-21	5 mos	24.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.417	Infants	no_clade	NA	NA
+Yale-RSV-0107	A4630345	plate number	RSV005	Nasopharynx	2023-11-22	4 mos	34.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.333	Infants	A	2023-05-08	RSVB
+Yale-RSV-0108	A4630338	plate number	RSV005	Nasopharynx	2023-11-27	55 yrs	31.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	55	Adults	no_clade	NA	RSVB
+Yale-RSV-0109	A4633107	plate number	RSV005	Nasopharynx	2023-12-02	68 yrs	25.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	68	Geriatrics	L	2023-10-04	RSVB
+Yale-RSV-0110	A4633117	plate number	RSV005	Nasopharynx	2023-12-04	46 yrs	24.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	46	Adults	no_clade	NA	RSVB
+Yale-RSV-0111	A4648823	plate number	RSV005	Nasopharynx	2023-12-09	3 mos	32.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0112	A4622555	plate number	RSV005	Nasopharynx	2023-12-10	13 yrs	21.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	13	Children	K	2023-08-04	RSVB
+Yale-RSV-0113	A4630368	plate number	RSV005	Nasopharynx	2023-11-18	3 mos	17.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0114	A4630378	plate number	RSV005	Nasopharynx	2023-11-20	3 yrs	21.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	M	2023-08-28	RSVB
+Yale-RSV-0115	A4631383	plate number	RSV005	Nasopharynx	2023-11-22	3 yrs	24.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	F	2023-07-08	RSVB
+Yale-RSV-0116	A4631399	plate number	RSV005	Nasopharynx	2023-11-28	1 yr	23.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0117	A4633115	plate number	RSV005	Nasopharynx	2023-12-02	4 mos	23.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.333	Infants	no_clade	NA	RSVB
+Yale-RSV-0118	A4633124	plate number	RSV005	Nasopharynx	2023-12-04	2 yrs	32.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0119	A4633141	plate number	RSV005	Nasopharynx	2023-12-08	68 yrs	37.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	68	Geriatrics	no_clade	NA	NA
+Yale-RSV-0120	A4622564	plate number	RSV005	Nasopharynx	2023-12-11	13 yrs	35.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	13	Children	no_clade	NA	NA
+Yale-RSV-0121	A4630387	plate number	RSV005	Nasopharynx	2023-11-18	10 mos	24.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.833	Infants	no_clade	NA	RSVA
+Yale-RSV-0122	A4630389	plate number	RSV005	Nasopharynx	2023-11-21	3 yrs	23.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0123	A4630350	plate number	RSV005	Nasopharynx	2023-11-22	1 yr	19	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0124	A4631398	plate number	RSV005	Nasopharynx	2023-11-28	10 mos	17.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.833	Infants	N	2023-05-03	RSVB
+Yale-RSV-0125	A4633130	plate number	RSV005	Nasopharynx	2023-12-03	2 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0126	A4633132	plate number	RSV005	Nasopharynx	2023-12-04	1 yr	17.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0127	A4633140	plate number	RSV005	Nasopharynx	2023-12-09	45 yrs	31.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	45	Adults	J	2023-06-22	RSVB
+Yale-RSV-0128	A4622563	plate number	RSV005	Nasopharynx	2023-12-11	14 yrs	24.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	14	Children	no_clade	NA	RSVB
+Yale-RSV-0129	A4630396	plate number	RSV005	Nasopharynx	2023-11-19	3 yrs	36.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0130	A4630398	plate number	RSV005	Nasopharynx	2023-11-21	13 yrs	25.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	13	Children	no_clade	NA	RSVB
+Yale-RSV-0131	A4630347	plate number	RSV005	Nasopharynx	2023-11-23	84 yrs	31.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	84	Geriatrics	no_clade	NA	NA
+Yale-RSV-0132	A4630348	plate number	RSV005	Nasopharynx	2023-11-28	3 yrs	34.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	no_clade	NA	NA
+Yale-RSV-0133	A4633138	plate number	RSV005	Nasopharynx	2023-12-03	68 yrs	35.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	68	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0134	A4633108	plate number	RSV005	Nasopharynx	2023-12-04	6 mos	20.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.5	Infants	no_clade	NA	NA
+Yale-RSV-0135	A4622554	plate number	RSV005	Nasopharynx	2023-12-09	8 mos	21.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.667	Infants	no_clade	NA	NA
+Yale-RSV-0136	A4622557	plate number	RSV005	Nasopharynx	2023-12-11	85 yrs	27.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	85	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0137	A4630405	plate number	RSV005	Nasopharynx	2023-11-20	1 yr	25.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0138	A4630406	plate number	RSV005	Nasopharynx	2023-11-24	41 yrs	25.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	41	Adults	N	2023-05-03	RSVB
+Yale-RSV-0139	A4630336	plate number	RSV005	Nasopharynx	2023-11-23	73 yrs	18.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	73	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0140	A4630346	plate number	RSV005	Nasopharynx	2023-11-29	86 yrs	22.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	86	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0141	A4633114	plate number	RSV005	Nasopharynx	2023-12-03	1 yr	17.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0142	A4633116	plate number	RSV005	Nasopharynx	2023-12-06	64 yrs	32.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	64	Adults	no_clade	NA	RSVA
+Yale-RSV-0143	A4622562	plate number	RSV005	Nasopharynx	2023-12-09	2 mos	16.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.167	Infants	no_clade	NA	NA
+Yale-RSV-0144	A4622565	plate number	RSV005	Nasopharynx	2023-12-05	33 yrs	29.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	33	Adults	no_clade	NA	NA
+Yale-RSV-0145	A4630395	plate number	RSV005	Nasopharynx	2023-11-20	7 yrs	30.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	7	Children	M	2023-08-28	RSVB
+Yale-RSV-0146	A4630403	plate number	RSV005	Nasopharynx	2023-11-24	69 yrs	25	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	69	Geriatrics	M	2023-08-28	RSVB
+Yale-RSV-0147	A4630358	plate number	RSV005	Nasopharynx	2023-11-23	3 yrs	21.4	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0148	A4631406	plate number	RSV005	Nasopharynx	2023-11-29	16 dys	23	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.044	Infants	no_clade	NA	NA
+Yale-RSV-0149	A4633122	plate number	RSV005	Nasopharynx	2023-12-03	46 dys	27.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.126	Infants	A	2023-05-08	RSVB
+Yale-RSV-0150	A4633123	plate number	RSV005	Nasopharynx	2023-12-06	2 mos	33.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.167	Infants	N	2023-05-03	RSVB
+Yale-RSV-0151	A4633147	plate number	RSV005	Nasopharynx	2023-12-09	2 yrs	21.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0152	A4622571	plate number	RSV005	Nasopharynx	2023-12-05	35 dys	25.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.096	Infants	M	2023-08-28	RSVB
+Yale-RSV-0153	A4630386	plate number	RSV005	Nasopharynx	2023-11-20	1 yr	28.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0154	A4630394	plate number	RSV005	Nasopharynx	2023-11-22	4 yrs	17.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	4	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0155	A4630355	plate number	RSV005	Nasopharynx	2023-11-23	1 yr	28.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0156	A4630357	plate number	RSV005	Nasopharynx	2023-11-29	4 mos	21.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.333	Infants	no_clade	NA	RSVB
+Yale-RSV-0157	A4633106	plate number	RSV005	Nasopharynx	2023-12-03	9 mos	17.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.75	Infants	no_clade	NA	RSVB
+Yale-RSV-0158	A4633131	plate number	RSV005	Nasopharynx	2023-12-06	4 mos	25.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.333	Infants	no_clade	NA	NA
+Yale-RSV-0159	A4633146	plate number	RSV005	Nasopharynx	2023-12-09	2 mos	31.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.167	Infants	no_clade	NA	NA
+Yale-RSV-0160	A4622570	plate number	RSV005	Nasopharynx	2023-12-05	6 yrs	34.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	6	Children	no_clade	NA	RSVA
+Yale-RSV-0161	A4630393	plate number	RSV005	Nasopharynx	2023-11-20	73 yrs	17.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	73	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0162	A4630384	plate number	RSV005	Nasopharynx	2023-11-22	10 mos	22.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.833	Infants	no_clade	NA	NA
+Yale-RSV-0163	A4630361	plate number	RSV005	Nasopharynx	2023-11-23	16 yrs	32.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	16	Children	no_clade	NA	NA
+Yale-RSV-0164	A4630354	plate number	RSV005	Nasopharynx	2023-11-29	10 mos	35.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.833	Infants	no_clade	NA	RSVB
+Yale-RSV-0165	A4630332	plate number	RSV005	Nasopharynx	2023-12-03	2 mos	25.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.167	Infants	no_clade	NA	NA
+Yale-RSV-0166	A4630325	plate number	RSV005	Nasopharynx	2023-12-06	4 yrs	29.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	4	Preschool	I	2023-08-16	RSVB
+Yale-RSV-0167	A4622547	plate number	RSV005	Nasopharynx	2023-12-09	3 mos	19.3	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.25	Infants	D	2023-07-08	RSVB
+Yale-RSV-0168	A4622573	plate number	RSV005	Nasopharynx	2023-12-05	1 yr	31.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0169	A4630409	plate number	RSV005	Nasopharynx	2023-11-21	1 yr	29.8	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0170	A4630402	plate number	RSV005	Nasopharynx	2023-11-22	22 yrs	34.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	22	Adults	N	2023-05-03	RSVB
+Yale-RSV-0171	A4630364	plate number	RSV005	Nasopharynx	2023-11-26	8 yrs	28	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	8	Children	N	2023-05-03	RSVB
+Yale-RSV-0172	A4630366	plate number	RSV005	Nasopharynx	2023-11-30	1 yr	16.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0173	A4630334	plate number	RSV005	Nasopharynx	2023-12-03	9 yrs	34.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	9	Children	N	2023-05-03	RSVB
+Yale-RSV-0174	A4630326	plate number	RSV005	Nasopharynx	2023-12-07	5 mos	25	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.417	Infants	no_clade	NA	NA
+Yale-RSV-0175	A4622546	plate number	RSV005	Nasopharynx	2023-12-10	10 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	10	Children	N	2023-05-03	RSVB
+Yale-RSV-0176	A4622572	plate number	RSV005	Nasopharynx	2023-12-12	2 mos	19.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.167	Infants	C	2023-04-13	RSVB
+Yale-RSV-0177	A4630410	plate number	RSV005	Nasopharynx	2023-11-21	84 yrs	25.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	84	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0178	A4630411	plate number	RSV005	Nasopharynx	2023-11-22	2 yrs	21.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0179	A4630352	plate number	RSV005	Nasopharynx	2023-11-27	1 yr	27	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0180	A4630362	plate number	RSV005	Nasopharynx	2023-11-30	1 yr	31.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0181	A4631382	plate number	RSV005	Nasopharynx	2023-12-01	1 yr	27	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0182	A4615888	plate number	RSV005	Nasopharynx	2023-12-07	11 yrs	31.1	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	11	Children	no_clade	NA	NA
+Yale-RSV-0183	A4622549	plate number	RSV005	Nasopharynx	2023-12-10	1 yr	22.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0184	A4622579	plate number	RSV005	Nasopharynx	2023-12-12	1 yr	20.6	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0185	A4630400	plate number	RSV005	Nasopharynx	2023-11-21	41 yrs	31.5	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	41	Adults	no_clade	NA	RSVB
+Yale-RSV-0186	A4630371	plate number	RSV005	Nasopharynx	2023-11-22	3 yrs	25.7	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0187	A4630377	plate number	RSV005	Nasopharynx	2023-11-27	2 yrs	22.2	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0188	A4630370	plate number	RSV005	Nasopharynx	2023-11-30	77 yrs	19.9	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	77	Geriatrics	M	2023-08-28	RSVB
+Yale-RSV-0189	A4630342	plate number	RSV005	Nasopharynx	2023-12-01	6 mos	20	YH CEPHEID GENEXPERT INFINITY	RSV 3	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVA
+Yale-RSV-0193	A4751543	plate number	RSV006	Nasopharynx	2024-01-21	80 yrs	23.3	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	80	Geriatrics	L	2023-10-04	RSVB
+Yale-RSV-0194	A4753935	plate number	RSV006	Nasopharynx	2024-01-22	5 yrs	28.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	5	Preschool	no_clade	NA	RSVB
+Yale-RSV-0195	A4753936	plate number	RSV006	Nasopharynx	2024-01-27	9 mos	20.6	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.75	Infants	no_clade	NA	RSVB
+Yale-RSV-0196	A4749398	plate number	RSV006	Nasopharynx	2024-01-29	24 yrs	29.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	24	Adults	no_clade	NA	RSVB
+Yale-RSV-0197	A4753938	plate number	RSV006	Nasopharynx	2024-01-31	16 yrs	26.9	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	16	Children	no_clade	NA	RSVB
+Yale-RSV-0198	A4753939	plate number	RSV006	Nasopharynx	2024-02-03	10 mos	28.2	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.833	Infants	no_clade	NA	RSVB
+Yale-RSV-0199	A4753940	plate number	RSV006	Nasopharynx	2024-02-05	8 yrs	23.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	8	Children	K	2023-08-04	RSVB
+Yale-RSV-0200	A4753941	plate number	RSV006	Nasopharynx	2024-02-08	93 yrs	23	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	93	Geriatrics	L	2023-10-04	RSVB
+Yale-RSV-0201	A4751551	plate number	RSV006	Nasopharynx	2024-01-18	10 mos	24.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.833	Infants	J	2023-06-22	RSVB
+Yale-RSV-0202	A4753943	plate number	RSV006	Nasopharynx	2024-01-23	85 yrs	31.7	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	85	Geriatrics	no_clade	NA	NA
+Yale-RSV-0203	A4753944	plate number	RSV006	Nasopharynx	2024-01-27	61 yrs	27	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	61	Adults	no_clade	NA	RSVB
+Yale-RSV-0204	A4753945	plate number	RSV006	Nasopharynx	2024-01-29	82 yrs	21.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	82	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0205	A4753946	plate number	RSV006	Nasopharynx	2024-02-01	59 yrs	21.4	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	59	Adults	L	2023-10-04	RSVB
+Yale-RSV-0206	A4753947	plate number	RSV006	Nasopharynx	2024-02-03	8 mos	25.5	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.667	Infants	J	2023-06-22	RSVB
+Yale-RSV-0207	A4753948	plate number	RSV006	Nasopharynx	2024-02-07	1 yr	16	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	O	2023-05-05	RSVB
+Yale-RSV-0208	A4753949	plate number	RSV006	Nasopharynx	2024-02-08	3 yrs	23.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0209	A4751559	plate number	RSV006	Nasopharynx	2024-01-18	60 yrs	25.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	60	Adults	Q	2023-08-22	RSVB
+Yale-RSV-0210	A4753951	plate number	RSV006	Nasopharynx	2024-01-23	4 yrs	20.3	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0211	A4753952	plate number	RSV006	Nasopharynx	2024-01-27	21 yrs	29.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	21	Adults	G	2023-05-09	RSVB
+Yale-RSV-0212	A4753953	plate number	RSV006	Nasopharynx	2024-01-29	5 yrs	20.2	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	5	Preschool	no_clade	NA	RSVB
+Yale-RSV-0213	A4753954	plate number	RSV006	Nasopharynx	2024-02-01	47 yrs	32.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	47	Adults	no_clade	NA	RSVB
+Yale-RSV-0214	A4753955	plate number	RSV006	Nasopharynx	2024-02-03	1 yr	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0215	A4753956	plate number	RSV006	Nasopharynx	2024-02-06	2 yrs	18	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0216	A4753957	plate number	RSV006	Nasopharynx	2024-02-08	84 yrs	28.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	84	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0217	A4751567	plate number	RSV006	Nasopharynx	2024-01-18	15 yrs	22.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	15	Children	no_clade	NA	RSVB
+Yale-RSV-0218	A4753959	plate number	RSV006	Nasopharynx	2024-01-23	83 yrs	19	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	83	Geriatrics	P	2023-08-28	RSVB
+Yale-RSV-0219	A4753960	plate number	RSV006	Nasopharynx	2024-01-25	11 mos	27.7	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVB
+Yale-RSV-0220	A4753961	plate number	RSV006	Nasopharynx	2024-01-29	82 yrs	20.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	82	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0221	A4753962	plate number	RSV006	Nasopharynx	2024-02-01	3 mos	23.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.25	Infants	no_clade	NA	RSVA
+Yale-RSV-0222	A4753963	plate number	RSV006	Nasopharynx	2024-02-04	68 yrs	36.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	68	Geriatrics	no_clade	NA	NA
+Yale-RSV-0223	A4753964	plate number	RSV006	Nasopharynx	2024-02-06	29 yrs	26	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	29	Adults	no_clade	NA	RSVB
+Yale-RSV-0224	A4753965	plate number	RSV006	Nasopharynx	2024-02-10	59 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 5	North America / USA / Connecticut	59	Adults	no_clade	NA	NA
+Yale-RSV-0225	A4751575	plate number	RSV006	Nasopharynx	2024-01-17	78 yrs	27.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	78	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0226	A4753967	plate number	RSV006	Nasopharynx	2024-01-23	21 yrs	20.7	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	21	Adults	no_clade	NA	RSVB
+Yale-RSV-0227	A4753968	plate number	RSV006	Nasopharynx	2024-01-25	12 yrs	30.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	12	Children	no_clade	NA	RSVB
+Yale-RSV-0228	A4753969	plate number	RSV006	Nasopharynx	2024-01-30	7 yrs	22.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	7	Children	no_clade	NA	RSVA
+Yale-RSV-0229	A4753970	plate number	RSV006	Nasopharynx	2024-02-01	4 yrs	22.8	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	4	Preschool	O	2023-05-05	RSVB
+Yale-RSV-0230	A4753971	plate number	RSV006	Nasopharynx	2024-02-05	37 yrs	24.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	37	Adults	no_clade	NA	RSVB
+Yale-RSV-0231	A4753972	plate number	RSV006	Nasopharynx	2024-02-06	39 yrs	25.5	YH GENPROBE PANTHER 2
+MODEL MANUAL METHOD	RSV 5	North America / USA / Connecticut	39	Adults	no_clade	NA	RSVA
+Yale-RSV-0232	A4753973	plate number	RSV006	Nasopharynx	2024-02-10	85 yrs	29.8	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	85	Geriatrics	no_clade	NA	NA
+Yale-RSV-0233	A4751583	plate number	RSV006	Nasopharynx	2024-01-20	2 yrs	23	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0234	A4753975	plate number	RSV006	Nasopharynx	2024-01-23	30 yrs	35.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	30	Adults	no_clade	NA	NA
+Yale-RSV-0235	A4753976	plate number	RSV006	Nasopharynx	2024-01-28	32 yrs	32.3	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	32	Adults	no_clade	NA	NA
+Yale-RSV-0236	A4753977	plate number	RSV006	Nasopharynx	2024-01-29	39 yrs	24.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	39	Adults	no_clade	NA	RSVB
+Yale-RSV-0237	A4751304	plate number	RSV006	Nasopharynx	2024-02-02	4 yrs	20.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVA
+Yale-RSV-0238	A4753979	plate number	RSV006	Nasopharynx	2024-02-05	71 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 5	North America / USA / Connecticut	71	Geriatrics	P	2023-08-28	RSVB
+Yale-RSV-0239	A4753980	plate number	RSV006	Nasopharynx	2024-02-07	16 yrs	27	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	16	Children	no_clade	NA	RSVB
+Yale-RSV-0240	A4753981	plate number	RSV006	Nasopharynx	2024-02-08	19 yrs	33.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	19	Adults	no_clade	NA	NA
+Yale-RSV-0241	A4751591	plate number	RSV006	Nasopharynx	2024-01-18	74 yrs	23.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	74	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0242	A4751320	plate number	RSV006	Nasopharynx	2024-01-23	34 yrs	31.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	34	Adults	no_clade	NA	RSVB
+Yale-RSV-0243	A4753984	plate number	RSV006	Nasopharynx	2024-01-28	1 yr	27.7	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	J	2023-06-22	RSVB
+Yale-RSV-0244	A4741343	plate number	RSV006	Nasopharynx	2024-01-29	16 yrs	32	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	16	Children	no_clade	NA	RSVA/B
+Yale-RSV-0245	A4753986	plate number	RSV006	Nasopharynx	2024-02-02	53 yrs	30.2	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	53	Adults	no_clade	NA	NA
+Yale-RSV-0246	A4753987	plate number	RSV006	Nasopharynx	2024-02-04	52 yrs	26.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	52	Adults	N	2023-05-03	RSVB
+Yale-RSV-0247	A4753988	plate number	RSV006	Nasopharynx	2024-02-07	23 yrs	31.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	23	Adults	no_clade	NA	NA
+Yale-RSV-0248	A4753989	plate number	RSV006	Nasopharynx	2024-02-08	45 yrs	27.4	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	45	Adults	no_clade	NA	RSVB
+Yale-RSV-0249	A4751599	plate number	RSV006	Nasopharynx	2024-01-18	9 yrs	18.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	9	Children	no_clade	NA	RSVB
+Yale-RSV-0250	A4753991	plate number	RSV006	Nasopharynx	2024-01-23	59 yrs	30.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	59	Adults	no_clade	NA	NA
+Yale-RSV-0251	A4753992	plate number	RSV006	Nasopharynx	2024-01-28	54 yrs	26.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	54	Adults	no_clade	NA	RSVA
+Yale-RSV-0252	A4753993	plate number	RSV006	Nasopharynx	2024-01-29	10 yrs	25.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	10	Children	no_clade	NA	RSVA
+Yale-RSV-0253	A4753994	plate number	RSV006	Nasopharynx	2024-02-02	70 yrs	21.7	YH GENPROBE PANTHER 2
+SMC CEPHEID GENEXPERT	RSV 5	North America / USA / Connecticut	70	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0254	A4753995	plate number	RSV006	Nasopharynx	2024-02-05	28 yrs	31.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	28	Adults	no_clade	NA	RSVA
+Yale-RSV-0255	A4753996	plate number	RSV006	Nasopharynx	2024-02-07	55 yrs	25.3	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	55	Adults	no_clade	NA	RSVB
+Yale-RSV-0256	A4753997	plate number	RSV006	Nasopharynx	2024-02-08	84 yrs	29.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	84	Geriatrics	G	2023-05-09	RSVB
+Yale-RSV-0257	A4751607	plate number	RSV006	Nasopharynx	2024-01-22	3 yrs	20.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0258	A4753999	plate number	RSV006	Nasopharynx	2024-01-24	90 yrs	22.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	90	Geriatrics	no_clade	NA	RSVA/B
+Yale-RSV-0259	A4754000	plate number	RSV006	Nasopharynx	2024-01-26	29 yrs	21.7	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	29	Adults	no_clade	NA	RSVA
+Yale-RSV-0260	A4754001	plate number	RSV006	Nasopharynx	2024-01-31	100 yrs	35.8	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	100	Geriatrics	no_clade	NA	NA
+Yale-RSV-0261	A4754002	plate number	RSV006	Nasopharynx	2024-02-02	14 yrs	27.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	14	Children	no_clade	NA	RSVB
+Yale-RSV-0262	A4754003	plate number	RSV006	Nasopharynx	2024-02-05	4 mos	20.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.333	Infants	no_clade	NA	RSVA
+Yale-RSV-0263	A4754004	plate number	RSV006	Nasopharynx	2024-02-07	7 yrs	26.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	7	Children	no_clade	NA	RSVB
+Yale-RSV-0264	A4754005	plate number	RSV006	Nasopharynx	2024-02-08	17 yrs	22.3	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	17	Children	no_clade	NA	RSVB
+Yale-RSV-0265	A4751615	plate number	RSV006	Nasopharynx	2024-01-21	74 yrs	31.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	74	Geriatrics	M	2023-08-28	RSVB
+Yale-RSV-0266	A4754007	plate number	RSV006	Nasopharynx	2024-01-25	4 mos	33.9	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.333	Infants	no_clade	NA	NA
+Yale-RSV-0267	A4754008	plate number	RSV006	Nasopharynx	2024-01-26	1 yr	30.3	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0268	A4754009	plate number	RSV006	Nasopharynx	2024-01-30	2 yrs	25.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0269	A4754010	plate number	RSV006	Nasopharynx	2024-02-02	6 yrs	36	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	6	Children	no_clade	NA	NA
+Yale-RSV-0270	A4754011	plate number	RSV006	Nasopharynx	2024-02-05	1 yr	19	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0271	A4754012	plate number	RSV006	Nasopharynx	2024-02-09	60 yrs	35.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	60	Adults	no_clade	NA	NA
+Yale-RSV-0272	A4754013	plate number	RSV006	Nasopharynx	2024-02-12	6 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	6	Children	no_clade	NA	NA
+Yale-RSV-0273	A4751623	plate number	RSV006	Nasopharynx	2024-01-21	1 yr	18.1	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0274	A4754015	plate number	RSV006	Nasopharynx	2024-01-25	17 yrs	32.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	17	Children	N	2023-05-03	RSVB
+Yale-RSV-0275	A4754016	plate number	RSV006	Nasopharynx	2024-01-26	57 yrs	28.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	57	Adults	no_clade	NA	RSVB
+Yale-RSV-0276	A4754017	plate number	RSV006	Nasopharynx	2024-01-30	1 yr	20.6	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0277	A4754018	plate number	RSV006	Nasopharynx	2024-02-04	11 yrs	22.6	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	11	Children	no_clade	NA	RSVA
+Yale-RSV-0278	A4754019	plate number	RSV006	Nasopharynx	2024-02-05	10 yrs	23.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	10	Children	no_clade	NA	RSVB
+Yale-RSV-0279	A4754020	plate number	RSV006	Nasopharynx	2024-02-09	57 yrs	35.6	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	57	Adults	no_clade	NA	NA
+Yale-RSV-0280	A4754021	plate number	RSV006	Nasopharynx	2024-02-11	81 yrs	23	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	81	Geriatrics	N	2023-05-03	RSVB
+Yale-RSV-0281	A4751631	plate number	RSV006	Nasopharynx	2024-01-22	46 yrs	30.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	46	Adults	no_clade	NA	NA
+Yale-RSV-0282	A4754023	plate number	RSV006	Nasopharynx	2024-01-25	28 dys	18.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.077	Infants	Q	2023-08-22	RSVB
+Yale-RSV-0283	A4754024	plate number	RSV006	Nasopharynx	2024-01-27	10 mos	24.3	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.833	Infants	J	2023-06-22	RSVB
+Yale-RSV-0284	A4754025	plate number	RSV006	Nasopharynx	2024-01-30	9 mos	27.3	YH CEPHEID GENEXPERT INFINITY	RSV 5	North America / USA / Connecticut	0.75	Infants	N	2023-05-03	RSVB
+Yale-RSV-0285	A4754026	plate number	RSV006	Sputum	2024-02-02	83 yrs	27.5	YH MANUAL METHOD	RSV 5	North America / USA / Connecticut	83	Geriatrics	P	2023-08-28	RSVB
+Yale-RSV-0289	A4630419	plate number	RSV007	Nasopharynx	2023-10-26	3 yrs	31.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0290	A4630420	plate number	RSV007	Nasopharynx	2023-10-28	2 yrs	32.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0291	A4630421	plate number	RSV007	Nasopharynx	2023-10-31	87 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	87	Geriatrics	Q	2023-08-22	RSVB
+Yale-RSV-0292	A4630422	plate number	RSV007	Nasopharynx	2023-11-03	57 dys	NA	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.156	Infants	no_clade	NA	RSVA
+Yale-RSV-0293	A4632238	plate number	RSV007	Nasopharynx	2023-11-06	1 yr	25.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0294	A4632239	plate number	RSV007	Nasopharynx	2023-11-09	9 mos	20.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.75	Infants	no_clade	NA	RSVA
+Yale-RSV-0295	A4632240	plate number	RSV007	Nasopharynx	2023-11-12	4 yrs	19.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	4	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0296	A4632241	plate number	RSV007	Nasopharynx	2023-11-15	4 yrs	30.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0297	A4630427	plate number	RSV007	Nasopharynx	2023-10-26	1 yr	27.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0298	A4630428	plate number	RSV007	Nasopharynx	2023-10-29	1 yr	20.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0299	A4630429	plate number	RSV007	Nasopharynx	2023-11-01	1 yr	20.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0300	A4630430	plate number	RSV007	Nasopharynx	2023-11-03	66 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	66	Geriatrics	B	2023-07-09	RSVB
+Yale-RSV-0301	A4632246	plate number	RSV007	Nasopharynx	2023-11-07	35 yrs	31.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	35	Adults	no_clade	NA	NA
+Yale-RSV-0302	A4632247	plate number	RSV007	Nasopharynx	2023-11-09	1 yr	25.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	O	2023-05-05	RSVB
+Yale-RSV-0303	A4632248	plate number	RSV007	Nasopharynx	2023-11-13	2 yrs	18.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0304	A4632249	plate number	RSV007	Nasopharynx	2023-11-16	2 yrs	30.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0305	A4630435	plate number	RSV007	Nasopharynx	2023-10-26	2 yrs	23.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0306	A4630436	plate number	RSV007	Nasopharynx	2023-10-29	9 mos	21.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.75	Infants	E	2023-06-14	RSVB
+Yale-RSV-0307	A4630437	plate number	RSV007	Nasopharynx	2023-11-01	1 yr	24.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0308	A4630438	plate number	RSV007	Nasopharynx	2023-11-03	2 mos	19.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.167	Infants	Q	2023-08-22	RSVB
+Yale-RSV-0309	A4632254	plate number	RSV007	Nasopharynx	2023-11-07	7 mos	35.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.583	Infants	no_clade	NA	NA
+Yale-RSV-0310	A4632255	plate number	RSV007	Nasopharynx	2023-11-10	1 yr	24.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0311	A4632256	plate number	RSV007	Nasopharynx	2023-11-13	45 yrs	29.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	45	Adults	no_clade	NA	RSVA
+Yale-RSV-0312	A4632257	plate number	RSV007	Nasopharynx	2023-11-16	6 mos	17	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.5	Infants	D	2023-07-08	RSVB
+Yale-RSV-0313	A4630443	plate number	RSV007	Nasopharynx	2023-10-26	4 yrs	20.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	4	Preschool	D	2023-07-08	RSVB
+Yale-RSV-0314	A4630444	plate number	RSV007	Nasopharynx	2023-10-29	3 yrs	25.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0315	A4630445	plate number	RSV007	Nasopharynx	2023-11-01	58 yrs	26.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	58	Adults	no_clade	NA	RSVB
+Yale-RSV-0316	A4630331	plate number	RSV007	Nasopharynx	2023-11-03	72 yrs	37.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	72	Geriatrics	no_clade	NA	NA
+Yale-RSV-0317	A4632262	plate number	RSV007	Nasopharynx	2023-11-07	2 yrs	19.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0318	A4632263	plate number	RSV007	Nasopharynx	2023-11-10	2 yrs	16.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0319	A4632272	plate number	RSV007	Nasopharynx	2023-11-13	40 dys	20.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.11	Infants	Q	2023-08-22	RSVB
+Yale-RSV-0320	A4632265	plate number	RSV007	Nasopharynx	2023-11-16	2 yrs	20.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0321	A4630451	plate number	RSV007	Nasopharynx	2023-10-26	8 mos	20.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.667	Infants	N	2023-05-03	RSVB
+Yale-RSV-0322	A4630452	plate number	RSV007	Nasopharynx	2023-10-28	10 mos	24.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.833	Infants	A	2023-05-08	RSVB
+Yale-RSV-0323	A4630453	plate number	RSV007	Nasopharynx	2023-11-02	2 yrs	23.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0324	A4630454	plate number	RSV007	Nasopharynx	2023-11-03	1 yr	23.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	Q	2023-08-22	RSVB
+Yale-RSV-0325	A4632270	plate number	RSV007	Nasopharynx	2023-11-07	6 mos	17.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.5	Infants	B	2023-07-09	RSVB
+Yale-RSV-0326	A4632271	plate number	RSV007	Nasopharynx	2023-11-11	1 yr	29.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	K	2023-08-04	RSVB
+Yale-RSV-0327	A4632280	plate number	RSV007	Nasopharynx	2023-11-13	10 mos	20.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.833	Infants	N	2023-05-03	RSVB
+Yale-RSV-0328	A4632273	plate number	RSV007	Nasopharynx	2023-11-16	47 yrs	29	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	47	Adults	no_clade	NA	NA
+Yale-RSV-0329	A4630459	plate number	RSV007	Nasopharynx	2023-10-27	3 yrs	21.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	I	2023-08-16	RSVB
+Yale-RSV-0330	A4630460	plate number	RSV007	Nasopharynx	2023-10-30	9 mos	21.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.75	Infants	no_clade	NA	RSVA
+Yale-RSV-0331	A4630461	plate number	RSV007	Nasopharynx	2023-11-02	48 yrs	21.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	48	Adults	N	2023-05-03	RSVB
+Yale-RSV-0332	A4630462	plate number	RSV007	Nasopharynx	2023-11-03	12 yrs	22.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	12	Children	no_clade	NA	NA
+Yale-RSV-0333	A4632278	plate number	RSV007	Nasopharynx	2023-11-08	28 yrs	30.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	28	Adults	no_clade	NA	RSVB
+Yale-RSV-0334	A4632279	plate number	RSV007	Nasopharynx	2023-11-11	2 yrs	31.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0335	A4648775	plate number	RSV007	Nasopharynx	2023-11-14	66 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	66	Geriatrics	C	2023-04-13	RSVB
+Yale-RSV-0336	A4632281	plate number	RSV007	Nasopharynx	2023-11-18	93 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	93	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0337	A4630467	plate number	RSV007	Nasopharynx	2023-10-27	52 yrs	36.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	52	Adults	no_clade	NA	NA
+Yale-RSV-0338	A4630468	plate number	RSV007	Nasopharynx	2023-10-30	6 yrs	27.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	6	Children	no_clade	NA	RSVB
+Yale-RSV-0339	A4630469	plate number	RSV007	Nasopharynx	2023-11-02	37 dys	22.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.101	Infants	Q	2023-08-22	RSVB
+Yale-RSV-0340	A4630470	plate number	RSV007	Nasopharynx	2023-11-03	37 yrs	20.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	37	Adults	no_clade	NA	RSVB
+Yale-RSV-0341	A4632286	plate number	RSV007	Nasopharynx	2023-11-08	5 yrs	27.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	5	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0342	A4632287	plate number	RSV007	Nasopharynx	2023-11-12	1 yr	19.7	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0343	A4632288	plate number	RSV007	Nasopharynx	2023-11-14	8 mos	22.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.667	Infants	no_clade	NA	RSVB
+Yale-RSV-0344	A4632289	plate number	RSV007	Nasopharynx	2023-11-18	78 yrs	36	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	78	Geriatrics	no_clade	NA	NA
+Yale-RSV-0345	A4630475	plate number	RSV007	Nasopharynx	2023-10-27	5 yrs	20.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	5	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0346	A4630476	plate number	RSV007	Nasopharynx	2023-10-30	4 yrs	23.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVA
+Yale-RSV-0347	A4630477	plate number	RSV007	Nasopharynx	2023-11-02	56 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	56	Adults	N	2023-05-03	RSVB
+Yale-RSV-0348	A4630478	plate number	RSV007	Nasopharynx	2023-11-04	28 yrs	36.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	28	Adults	no_clade	NA	NA
+Yale-RSV-0349	A4632294	plate number	RSV007	Nasopharynx	2023-11-08	2 yrs	33	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0350	A4632295	plate number	RSV007	Nasopharynx	2023-11-12	8 mos	20.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.667	Infants	no_clade	NA	RSVB
+Yale-RSV-0351	A4632296	plate number	RSV007	Nasopharynx	2023-11-14	3 yrs	18.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	B	2023-07-09	RSVB
+Yale-RSV-0352	A4632297	plate number	RSV007	Nasopharynx	2023-11-18	4 mos	19.6	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.333	Infants	N	2023-05-03	RSVB
+Yale-RSV-0353	A4630483	plate number	RSV007	Nasopharynx	2023-10-28	5 mos	27.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.417	Infants	E	2023-06-14	RSVB
+Yale-RSV-0354	A4630484	plate number	RSV007	Nasopharynx	2023-10-30	3 yrs	31.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0355	A4630485	plate number	RSV007	Nasopharynx	2023-11-02	54 dys	23.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.148	Infants	A	2023-05-08	RSVB
+Yale-RSV-0356	A4630486	plate number	RSV007	Nasopharynx	2023-11-04	2 yrs	19.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0357	A4632302	plate number	RSV007	Nasopharynx	2023-11-08	37 yrs	29.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	37	Adults	no_clade	NA	NA
+Yale-RSV-0358	A4632303	plate number	RSV007	Nasopharynx	2023-11-12	10 mos	24.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.833	Infants	A	2023-05-08	RSVB
+Yale-RSV-0359	A4632304	plate number	RSV007	Nasopharynx	2023-11-14	3 yrs	21.5	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0360	A4632305	plate number	RSV007	Nasopharynx	2023-11-17	1 yr	35	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0361	A4630491	plate number	RSV007	Nasopharynx	2023-10-28	11 mos	27.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVA
+Yale-RSV-0362	A4630492	plate number	RSV007	Nasopharynx	2023-10-31	1 yr	21.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0363	A4630493	plate number	RSV007	Nasopharynx	2023-11-03	2 yrs	21.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	A	2023-05-08	RSVB
+Yale-RSV-0364	A4630494	plate number	RSV007	Nasopharynx	2023-11-06	21 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	21	Adults	A	2023-05-08	RSVB
+Yale-RSV-0365	A4632310	plate number	RSV007	Bronchial Wash	2023-11-08	41 yrs	24.6	YH MANUAL METHOD
+MODEL MANUAL METHOD	RSV2	North America / USA / Connecticut	41	Adults	no_clade	NA	NA
+Yale-RSV-0366	A4632311	plate number	RSV007	Nasopharynx	2023-11-12	7 yrs	23.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	7	Children	no_clade	NA	RSVB
+Yale-RSV-0367	A4632312	plate number	RSV007	Nasopharynx	2023-11-14	10 mos	26.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.833	Infants	no_clade	NA	RSVA
+Yale-RSV-0368	A4632313	plate number	RSV007	Nasopharynx	2023-11-17	6 mos	21.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVB
+Yale-RSV-0369	A4630499	plate number	RSV007	Nasopharynx	2023-10-28	3 yrs	23.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0370	A4630500	plate number	RSV007	Nasopharynx	2023-10-31	1 yr	21.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0371	A4630501	plate number	RSV007	Nasopharynx	2023-11-03	4 yrs	27.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0372	A4630502	plate number	RSV007	Nasopharynx	2023-11-06	33 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV2	North America / USA / Connecticut	33	Adults	no_clade	NA	RSVB
+Yale-RSV-0373	A4632318	plate number	RSV007	Nasopharynx	2023-11-08	2 yrs	23.8	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0374	A4632319	plate number	RSV007	Nasopharynx	2023-11-12	49 dys	18.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.134	Infants	no_clade	NA	RSVB
+Yale-RSV-0375	A4632320	plate number	RSV007	Nasopharynx	2023-11-15	11 mos	26.2	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVB
+Yale-RSV-0376	A4632321	plate number	RSV007	Nasopharynx	2023-11-16	78 yrs	35.9	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	78	Geriatrics	no_clade	NA	NA
+Yale-RSV-0377	A4630507	plate number	RSV007	Nasopharynx	2023-10-28	9 mos	21.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.75	Infants	E	2023-06-14	RSVB
+Yale-RSV-0378	A4630508	plate number	RSV007	Nasopharynx	2023-10-31	2 yrs	31.4	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	N	2023-05-03	RSVB
+Yale-RSV-0379	A4630509	plate number	RSV007	Nasopharynx	2023-11-03	4 mos	18.7	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	0.333	Infants	N	2023-05-03	RSVB
+Yale-RSV-0380	A4630510	plate number	RSV007	Nasopharynx	2023-11-06	3 yrs	25.1	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	3	Preschool	no_clade	NA	NA
+Yale-RSV-0381	A4632326	plate number	RSV007	Nasopharynx	2023-11-08	2 yrs	24.3	YH CEPHEID GENEXPERT INFINITY	RSV2	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0385	A4633295	plate number	RSV008	Nasopharynx	2023-12-12	1 yr	29.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0386	A4633303	plate number	RSV008	Nasopharynx	2023-12-13	11 mos	28.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVB
+Yale-RSV-0387	A4633311	plate number	RSV008	Nasopharynx	2023-12-13	24 yrs	33.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	24	Adults	no_clade	NA	NA
+Yale-RSV-0388	A4633319	plate number	RSV008	Nasopharynx	2023-12-13	8 mos	19.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.667	Infants	no_clade	NA	NA
+Yale-RSV-0389	A4633327	plate number	RSV008	Nasopharynx	2023-12-13	80 yrs	23.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	80	Geriatrics	no_clade	NA	NA
+Yale-RSV-0390	A4633335	plate number	RSV008	Nasopharynx	2023-12-13	3 yrs	26.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	3	Preschool	no_clade	NA	NA
+Yale-RSV-0391	A4633343	plate number	RSV008	Nasopharynx	2023-12-14	4 yrs	20.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	4	Preschool	no_clade	NA	NA
+Yale-RSV-0392	A4633351	plate number	RSV008	Nasopharynx	2023-12-14	1 yr	32.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0393	A4633359	plate number	RSV008	Nasopharynx	2023-12-14	46 yrs	31.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	46	Adults	no_clade	NA	NA
+Yale-RSV-0394	A4633367	plate number	RSV008	Nasopharynx	2023-12-14	1 yr	25.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0395	A4633375	plate number	RSV008	Nasopharynx	2023-12-15	1 yr	18.1	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0396	A4633383	plate number	RSV008	Nasopharynx	2023-12-15	2 yrs	20.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0397	A4633296	plate number	RSV008	Nasopharynx	2023-12-15	31 yrs	24.5	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	31	Adults	no_clade	NA	NA
+Yale-RSV-0398	A4633304	plate number	RSV008	Nasopharynx	2023-12-15	1 yr	25.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0399	A4633312	plate number	RSV008	Nasopharynx	2023-12-17	37 dys	20.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.101	Infants	no_clade	NA	NA
+Yale-RSV-0400	A4633320	plate number	RSV008	Nasopharynx	2023-12-17	7 mos	20.1	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.583	Infants	no_clade	NA	NA
+Yale-RSV-0401	A4633328	plate number	RSV008	Nasopharynx	2023-12-16	1 yr	20	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0402	A4633336	plate number	RSV008	Nasopharynx	2023-12-15	9 mos	18.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.75	Infants	J	2023-06-22	RSVB
+Yale-RSV-0403	A4633344	plate number	RSV008	Nasopharynx	2023-12-16	30 yrs	30.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	30	Adults	no_clade	NA	NA
+Yale-RSV-0404	A4633352	plate number	RSV008	Nasopharynx	2023-12-17	5 yrs	33.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	5	Preschool	no_clade	NA	NA
+Yale-RSV-0405	A4633360	plate number	RSV008	Nasopharynx	2023-12-17	1 yr	17.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0406	A4633368	plate number	RSV008	Nasopharynx	2023-12-18	10 mos	23.1	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.833	Infants	no_clade	NA	NA
+Yale-RSV-0407	A4633376	plate number	RSV008	Nasopharynx	2023-12-18	30 yrs	28.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	30	Adults	A	2023-05-08	RSVB
+Yale-RSV-0408	A4633384	plate number	RSV008	Nasopharynx	2023-12-18	56 yrs	25.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	56	Adults	no_clade	NA	NA
+Yale-RSV-0409	A4633297	plate number	RSV008	Nasopharynx	2023-12-18	1 yr	30.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0410	A4633305	plate number	RSV008	Nasopharynx	2023-12-19	41 yrs	33.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	41	Adults	no_clade	NA	RSVB
+Yale-RSV-0411	A4633313	plate number	RSV008	Nasopharynx	2023-12-19	4 mos	23.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.333	Infants	no_clade	NA	NA
+Yale-RSV-0412	A4633321	plate number	RSV008	Nasopharynx	2023-12-19	5 mos	25.1	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.417	Infants	no_clade	NA	NA
+Yale-RSV-0413	A4633329	plate number	RSV008	Nasopharynx	2023-12-18	6 mos	26.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.5	Infants	no_clade	NA	NA
+Yale-RSV-0414	A4633337	plate number	RSV008	Nasopharynx	2023-12-20	81 yrs	17.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	81	Geriatrics	no_clade	NA	NA
+Yale-RSV-0415	A4633345	plate number	RSV008	Nasopharynx	2023-12-20	54 yrs	34	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	54	Adults	no_clade	NA	NA
+Yale-RSV-0416	A4633353	plate number	RSV008	Nasopharynx	2023-12-20	4 mos	16.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.333	Infants	no_clade	NA	NA
+Yale-RSV-0417	A4633361	plate number	RSV008	Nasopharynx	2023-12-20	17 yrs	31.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	17	Children	no_clade	NA	RSVB
+Yale-RSV-0418	A4633369	plate number	RSV008	Nasopharynx	2023-12-20	7 yrs	22.5	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	7	Children	A	2023-05-08	RSVB
+Yale-RSV-0419	A4633377	plate number	RSV008	Nasopharynx	2023-12-20	2 yrs	37.5	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0420	A4633385	plate number	RSV008	Nasopharynx	2023-12-20	82 yrs	22.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	82	Geriatrics	no_clade	NA	NA
+Yale-RSV-0421	A4633298	plate number	RSV008	Nasopharynx	2023-12-20	1 yr	24.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0422	A4633306	plate number	RSV008	Nasopharynx	2024-01-05	68 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	68	Geriatrics	no_clade	NA	NA
+Yale-RSV-0423	A4633314	plate number	RSV008	Nasopharynx	2024-01-05	63 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	63	Adults	no_clade	NA	NA
+Yale-RSV-0424	A4633322	plate number	RSV008	Nasopharynx	2024-01-05	89 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	89	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0425	A4633330	plate number	RSV008	Nasopharynx	2024-01-05	82 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	82	Geriatrics	no_clade	NA	NA
+Yale-RSV-0426	A4633338	plate number	RSV008	Nasopharynx	2024-01-04	59 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	59	Adults	no_clade	NA	RSVB
+Yale-RSV-0427	A4633346	plate number	RSV008	Nasopharynx	2024-01-05	51 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	51	Adults	no_clade	NA	RSVB
+Yale-RSV-0428	A4633354	plate number	RSV008	Nasopharynx	2024-01-05	31 yrs	32.1	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	31	Adults	no_clade	NA	NA
+Yale-RSV-0429	A4633362	plate number	RSV008	Nasopharynx	2024-01-05	1 yr	21.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0430	A4633370	plate number	RSV008	Nasopharynx	2024-01-05	6 mos	26.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVB
+Yale-RSV-0431	A4633378	plate number	RSV008	Nasopharynx	2024-01-05	86 yrs	24.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	86	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0432	A4633386	plate number	RSV008	Nasopharynx	2024-01-05	9 mos	28.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.75	Infants	no_clade	NA	NA
+Yale-RSV-0433	A4633299	plate number	RSV008	Nasopharynx	2024-01-05	56 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	56	Adults	no_clade	NA	RSVB
+Yale-RSV-0434	A4633307	plate number	RSV008	Nasopharynx	2024-01-05	13 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	13	Children	no_clade	NA	NA
+Yale-RSV-0435	A4633315	plate number	RSV008	Nasopharynx	2024-01-05	11 yrs	25.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	11	Children	no_clade	NA	NA
+Yale-RSV-0436	A4633323	plate number	RSV008	Nasopharynx	2024-01-05	1 yr	28.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0437	A4633331	plate number	RSV008	Nasopharynx	2024-01-06	11 mos	24.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.917	Infants	no_clade	NA	NA
+Yale-RSV-0438	A4633339	plate number	RSV008	Nasopharynx	2024-01-06	59 yrs	24.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	59	Adults	no_clade	NA	NA
+Yale-RSV-0439	A4633347	plate number	RSV008	Nasopharynx	2024-01-06	72 yrs	34.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	72	Geriatrics	no_clade	NA	NA
+Yale-RSV-0440	A4633355	plate number	RSV008	Nasopharynx	2024-01-06	3 yrs	34.5	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVB
+Yale-RSV-0441	A4633363	plate number	RSV008	Nasopharynx	2024-01-07	3 mos	16.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0442	A4633371	plate number	RSV008	Nasopharynx	2024-01-07	1 yr	26.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0443	A4633379	plate number	RSV008	Nasopharynx	2024-01-07	1 yr	17.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0444	A4633387	plate number	RSV008	Nasopharynx	2024-01-07	40 dys	17.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.11	Infants	no_clade	NA	NA
+Yale-RSV-0445	A4633300	plate number	RSV008	Nasopharynx	2024-01-07	1 yr	25.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0446	A4633309	plate number	RSV008	Nasopharynx	2024-01-14	4 yrs	18.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	4	Preschool	no_clade	NA	NA
+Yale-RSV-0447	A4633317	plate number	RSV008	Nasopharynx	2024-01-14	4 yrs	29.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	4	Preschool	no_clade	NA	NA
+Yale-RSV-0448	A4633325	plate number	RSV008	Nasopharynx	2024-01-14	6 yrs	29.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	6	Children	no_clade	NA	NA
+Yale-RSV-0449	A4633333	plate number	RSV008	Nasopharynx	2024-01-14	2 yrs	21.3	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0450	A4633341	plate number	RSV008	Nasopharynx	2024-01-14	47 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	47	Adults	no_clade	NA	RSVB
+Yale-RSV-0451	A4633349	plate number	RSV008	Nasopharynx	2024-01-14	1 yr	28.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0452	A4633357	plate number	RSV008	Nasopharynx	2024-01-14	57 yrs	26.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	57	Adults	no_clade	NA	NA
+Yale-RSV-0453	A4633365	plate number	RSV008	Nasopharynx	2024-01-14	2 yrs	17.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0454	A4633373	plate number	RSV008	Nasopharynx	2024-01-16	11 mos	26.4	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.917	Infants	no_clade	NA	RSVB
+Yale-RSV-0455	A4633381	plate number	RSV008	Nasopharynx	2024-01-16	65 yrs	22	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	65	Geriatrics	no_clade	NA	NA
+Yale-RSV-0456	A4615870	plate number	RSV008	Nasopharynx	2024-01-16	3 mos	24.9	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0457	A4633774	plate number	RSV008	Nasopharynx	2024-01-15	52 dys	32	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.142	Infants	no_clade	NA	NA
+Yale-RSV-0458	A4633782	plate number	RSV008	Nasopharynx	2024-01-16	71 yrs	29.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	71	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0459	A4633316	plate number	RSV008	Nasopharynx	2024-01-15	63 yrs	18.5	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	63	Adults	no_clade	NA	NA
+Yale-RSV-0460	A4633324	plate number	RSV008	Nasopharynx	2024-01-15	86 yrs	30.8	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	86	Geriatrics	no_clade	NA	NA
+Yale-RSV-0461	A4633332	plate number	RSV008	Nasopharynx	2024-01-15	1 yr	29.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0462	A4633340	plate number	RSV008	Nasopharynx	2024-01-15	36 yrs	20.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	36	Adults	no_clade	NA	RSVA
+Yale-RSV-0463	A4633348	plate number	RSV008	Nasopharynx	2024-01-15	34 yrs	25.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	34	Adults	no_clade	NA	NA
+Yale-RSV-0464	A4633356	plate number	RSV008	Nasopharynx	2024-01-18	1 yr	26.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0465	A4633364	plate number	RSV008	Nasopharynx	2024-01-18	5 mos	29.2	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.417	Infants	no_clade	NA	NA
+Yale-RSV-0466	A4633372	plate number	RSV008	Nasopharynx	2024-01-18	76 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 4	North America / USA / Connecticut	76	Geriatrics	no_clade	NA	NA
+Yale-RSV-0467	A4633380	plate number	RSV008	Nasopharynx	2024-01-18	8 yrs	30.6	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	8	Children	no_clade	NA	NA
+Yale-RSV-0468	A4633388	plate number	RSV008	Nasopharynx	2024-01-18	55 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	55	Adults	no_clade	NA	NA
+Yale-RSV-0469	A4633301	plate number	RSV008	Nasopharynx	2024-01-18	1 yr	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0470	A4633308	plate number	RSV008	Nasopharynx	2024-01-17	95 yrs	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	95	Geriatrics	no_clade	NA	NA
+Yale-RSV-0471	A4633790	plate number	RSV008	Nasopharynx	2024-01-17	3 mos	34.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0472	A4633798	plate number	RSV008	Nasopharynx	2024-01-17	88 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	88	Geriatrics	no_clade	NA	NA
+Yale-RSV-0473	A4633806	plate number	RSV008	Nasopharynx	2024-01-17	1 yr	NA	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0474	A4633814	plate number	RSV008	Nasopharynx	2024-01-17	93 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	93	Geriatrics	no_clade	NA	NA
+Yale-RSV-0475	A4633822	plate number	RSV008	Nasopharynx	2024-01-17	91 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	91	Geriatrics	no_clade	NA	NA
+Yale-RSV-0476	A4633830	plate number	RSV008	Nasopharynx	2024-01-17	71 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	71	Geriatrics	no_clade	NA	NA
+Yale-RSV-0477	A4633838	plate number	RSV008	Nasopharynx	2024-01-19	75 yrs	29.7	YH CEPHEID GENEXPERT INFINITY	RSV 4	North America / USA / Connecticut	75	Geriatrics	A	2023-05-08	RSVB
+Yale-RSV-0481	A4753942	plate number	RSV009	Nasopharynx	2024-02-13	59 yrs	23.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	59	Adults	no_clade	NA	NA
+Yale-RSV-0482	A4741312	plate number	RSV009	Nasopharynx	2024-02-15	23 yrs	26.7	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	23	Adults	no_clade	NA	RSVB
+Yale-RSV-0483	A4755952	plate number	RSV009	Nasopharynx	2024-02-19	6 mos	19.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVB
+Yale-RSV-0484	A4755953	plate number	RSV009	Nasopharynx	2024-02-23	2 yrs	18.7	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0485	A4755954	plate number	RSV009	Nasopharynx	2024-02-27	73 yrs	29	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	73	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0486	A4755955	plate number	RSV009	Nasopharynx	2024-03-01	6 yrs	24.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	6	Children	no_clade	NA	RSVB
+Yale-RSV-0487	A4755956	plate number	RSV009	Nasopharynx	2024-03-07	30 yrs	28.5	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	30	Adults	no_clade	NA	RSVB
+Yale-RSV-0488	A4755957	plate number	RSV009	Nasopharynx	2024-03-12	78 yrs	26.4	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	78	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0489	A4753950	plate number	RSV009	Nasopharynx	2024-02-13	40 yrs	25	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	40	Adults	no_clade	NA	RSVA
+Yale-RSV-0490	A4755959	plate number	RSV009	Nasopharynx	2024-02-15	86 yrs	18.1	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	86	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0491	A4755960	plate number	RSV009	Nasopharynx	2024-02-20	12 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	12	Children	no_clade	NA	RSVA
+Yale-RSV-0492	A4755961	plate number	RSV009	Nasopharynx	2024-02-24	9 yrs	23.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	9	Children	no_clade	NA	RSVB
+Yale-RSV-0493	A4755962	plate number	RSV009	Nasopharynx	2024-02-27	31 yrs	33.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	31	Adults	no_clade	NA	NA
+Yale-RSV-0494	A4755963	plate number	RSV009	Nasopharynx	2024-03-01	43 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	43	Adults	no_clade	NA	RSVB
+Yale-RSV-0495	A4755964	plate number	RSV009	Nasopharynx	2024-03-06	48 yrs	34.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	48	Adults	no_clade	NA	RSVB
+Yale-RSV-0496	A4755965	plate number	RSV009	Nasopharynx	2024-03-12	56 yrs	23.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	56	Adults	no_clade	NA	NA
+Yale-RSV-0497	A4753958	plate number	RSV009	Nasopharynx	2024-02-14	83 yrs	20.9	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	83	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0498	A4755967	plate number	RSV009	Nasopharynx	2024-02-15	64 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	64	Adults	no_clade	NA	RSVA
+Yale-RSV-0499	A4755968	plate number	RSV009	Nasopharynx	2024-02-20	83 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	83	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0500	A4755969	plate number	RSV009	Nasopharynx	2024-02-24	2 yrs	25.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0501	A4755970	plate number	RSV009	Nasopharynx	2024-02-28	35 yrs	33.9	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	35	Adults	no_clade	NA	RSVB
+Yale-RSV-0502	A4755971	plate number	RSV009	Nasopharynx	2024-03-04	39 yrs	27.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	39	Adults	no_clade	NA	RSVB
+Yale-RSV-0503	A4755972	plate number	RSV009	Nasopharynx	2024-03-08	85 yrs	24.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	85	Geriatrics	no_clade	NA	NA
+Yale-RSV-0504	A4755973	plate number	RSV009	Nasopharynx	2024-03-13	5 yrs	30	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	5	Preschool	no_clade	NA	RSVB
+Yale-RSV-0505	A4753966	plate number	RSV009	Nasopharynx	2024-02-14	2 yrs	21.1	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	NA
+Yale-RSV-0506	A4755975	plate number	RSV009	Nasopharynx	2024-02-16	57 yrs	32.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	57	Adults	no_clade	NA	RSVB
+Yale-RSV-0507	A4755976	plate number	RSV009	Nasopharynx	2024-02-20	4 mos	29.3	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.333	Infants	no_clade	NA	NA
+Yale-RSV-0508	A4755977	plate number	RSV009	Nasopharynx	2024-02-22	1 yr	19.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0509	A4755978	plate number	RSV009	Nasopharynx	2024-02-28	59 yrs	25.1	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	59	Adults	no_clade	NA	RSVA
+Yale-RSV-0510	A4755979	plate number	RSV009	Nasopharynx	2024-03-03	6 mos	23.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVB
+Yale-RSV-0511	A4755980	plate number	RSV009	Nasopharynx	2024-03-10	65 yrs	23.1	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	65	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0512	A4755981	plate number	RSV009	Nasopharynx	2024-03-13	90 yrs	27.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	90	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0513	A4753974	plate number	RSV009	Nasopharynx	2024-02-14	64 yrs	23.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	64	Adults	no_clade	NA	NA
+Yale-RSV-0514	A4755983	plate number	RSV009	Nasopharynx	2024-02-16	44 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	44	Adults	no_clade	NA	RSVB
+Yale-RSV-0515	A4755984	plate number	RSV009	Nasopharynx	2024-02-21	3 yrs	26.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	3	Preschool	no_clade	NA	RSVA
+Yale-RSV-0516	A4755985	plate number	RSV009	Nasopharynx	2024-02-24	72 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	72	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0517	A4755986	plate number	RSV009	Nasopharynx	2024-02-29	7 yrs	19.6	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	7	Children	no_clade	NA	RSVB
+Yale-RSV-0518	A4755987	plate number	RSV009	Nasopharynx	2024-03-04	6 mos	17.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.5	Infants	no_clade	NA	RSVB
+Yale-RSV-0519	A4755988	plate number	RSV009	Nasopharynx	2024-03-09	90 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	90	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0520	A4755989	plate number	RSV009	Tracheal Aspirate	2024-03-13	67 yrs	25.4	YH MANUAL METHOD	RSV 6	North America / USA / Connecticut	67	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0521	A4753982	plate number	RSV009	Nasopharynx	2024-02-14	75 yrs	24.2	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	75	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0522	A4755991	plate number	RSV009	Nasopharynx	2024-02-17	29 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	29	Adults	no_clade	NA	RSVB
+Yale-RSV-0523	A4755992	plate number	RSV009	Nasopharynx	2024-02-20	60 yrs	23.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	60	Adults	no_clade	NA	RSVB
+Yale-RSV-0524	A4755993	plate number	RSV009	Nasopharynx	2024-02-23	78 yrs	26.2	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	78	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0525	A4755994	plate number	RSV009	Nasopharynx	2024-02-29	1 yr	17.9	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0526	A4755995	plate number	RSV009	Nasopharynx	2024-03-04	51 yrs	24.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	51	Adults	no_clade	NA	RSVA
+Yale-RSV-0527	A4755996	plate number	RSV009	Nasopharynx	2024-03-08	77 yrs	22.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	77	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0528	A4755997	plate number	RSV009	Nasopharynx	2024-03-14	74 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	74	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0529	A4753990	plate number	RSV009	Nasopharynx	2024-02-14	1 yr	20.4	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0530	A4755999	plate number	RSV009	Nasopharynx	2024-02-17	1 yr	16.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0531	A4756000	plate number	RSV009	Nasopharynx	2024-02-20	20 yrs	25.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	20	Adults	no_clade	NA	RSVB
+Yale-RSV-0532	A4756001	plate number	RSV009	Nasopharynx	2024-02-23	52 dys	30.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.142	Infants	no_clade	NA	RSVB
+Yale-RSV-0533	A4756002	plate number	RSV009	Nasopharynx	2024-02-29	41 yrs	35.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	41	Adults	no_clade	NA	RSVA
+Yale-RSV-0534	A4756003	plate number	RSV009	Nasopharynx	2024-03-05	16 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	16	Children	no_clade	NA	RSVB
+Yale-RSV-0535	A4756004	plate number	RSV009	Nasopharynx	2024-03-08	46 yrs	NA	YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	46	Adults	no_clade	NA	NA
+Yale-RSV-0536	A4756005	plate number	RSV009	Nasopharynx	2024-03-16	67 yrs	21.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	67	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0537	A4753998	plate number	RSV009	Nasopharynx	2024-02-14	1 yr	25.6	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	NA
+Yale-RSV-0538	A4756007	plate number	RSV009	Nasopharynx	2024-02-17	25 yrs	30.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	25	Adults	no_clade	NA	NA
+Yale-RSV-0539	A4756008	plate number	RSV009	Nasopharynx	2024-02-20	15 yrs	28.3	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	15	Children	no_clade	NA	RSVB
+Yale-RSV-0540	A4756009	plate number	RSV009	Nasopharynx	2024-02-22	65 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	65	Geriatrics	no_clade	NA	RSVA
+Yale-RSV-0541	A4756010	plate number	RSV009	Nasopharynx	2024-03-03	20 yrs	26.9	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	20	Adults	no_clade	NA	NA
+Yale-RSV-0542	A4756011	plate number	RSV009	Nasopharynx	2024-03-04	5 yrs	25.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	5	Preschool	no_clade	NA	RSVB
+Yale-RSV-0543	A4756012	plate number	RSV009	Nasopharynx	2024-03-07	3 mos	20.8	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.25	Infants	no_clade	NA	NA
+Yale-RSV-0544	A4756013	plate number	RSV009	Nasopharynx	2024-03-17	34 yrs	30.7	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	34	Adults	no_clade	NA	RSVB
+Yale-RSV-0545	A4754006	plate number	RSV009	Nasopharynx	2024-02-15	1 yr	30.3	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0546	A4756015	plate number	RSV009	Nasopharynx	2024-02-18	2 yrs	24.5	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0547	A4756016	plate number	RSV009	Nasopharynx	2024-02-21	81 yrs	28.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	81	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0548	A4756017	plate number	RSV009	Nasopharynx	2024-02-26	1 yr	21	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVB
+Yale-RSV-0549	A4756018	plate number	RSV009	Nasopharynx	2024-03-02	58 yrs	27	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	58	Adults	no_clade	NA	RSVB
+Yale-RSV-0550	A4756019	plate number	RSV009	Nasopharynx	2024-03-04	4 yrs	34.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVB
+Yale-RSV-0551	A4756020	plate number	RSV009	Nasopharynx	2024-03-10	19 yrs	23.1	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	19	Adults	no_clade	NA	RSVB
+Yale-RSV-0552	A4756021	plate number	RSV009	Nasopharynx	2024-03-18	2 mos	32.9	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.167	Infants	no_clade	NA	RSVB
+Yale-RSV-0553	A4754014	plate number	RSV009	Nasopharynx	2024-02-15	42 yrs	23.6	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	42	Adults	no_clade	NA	RSVA
+Yale-RSV-0554	A4756023	plate number	RSV009	Nasopharynx	2024-02-18	59 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	59	Adults	no_clade	NA	RSVB
+Yale-RSV-0555	A4756024	plate number	RSV009	Nasopharynx	2024-02-21	2 mos	18.5	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.167	Infants	no_clade	NA	RSVA
+Yale-RSV-0556	A4756025	plate number	RSV009	Nasopharynx	2024-02-26	8 mos	19.5	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.667	Infants	no_clade	NA	NA
+Yale-RSV-0557	A4756026	plate number	RSV009	Nasopharynx	2024-03-02	1 yr	27.9	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	1	Preschool	no_clade	NA	RSVA
+Yale-RSV-0558	A4756027	plate number	RSV009	Nasopharynx	2024-03-06	10 mos	21.4	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.833	Infants	no_clade	NA	NA
+Yale-RSV-0559	A4756028	plate number	RSV009	Nasopharynx	2024-03-11	8 mos	18.1	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.667	Infants	no_clade	NA	RSVA
+Yale-RSV-0560	A4756029	plate number	RSV009	Nasopharynx	2024-03-18	2 yrs	20.1	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVB
+Yale-RSV-0561	A4754022	plate number	RSV009	Nasopharynx	2024-02-15	57 yrs	20.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	57	Adults	no_clade	NA	RSVB
+Yale-RSV-0562	A4756031	plate number	RSV009	Nasopharynx	2024-02-19	59 yrs	24.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	59	Adults	no_clade	NA	NA
+Yale-RSV-0563	A4756032	plate number	RSV009	Nasopharynx	2024-02-21	4 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	4	Preschool	no_clade	NA	NA
+Yale-RSV-0564	A4756033	plate number	RSV009	Nasopharynx	2024-02-27	90 yrs	32.3	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	90	Geriatrics	no_clade	NA	NA
+Yale-RSV-0565	A4756034	plate number	RSV009	Nasopharynx	2024-03-02	62 yrs	26.3	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	62	Adults	no_clade	NA	RSVA
+Yale-RSV-0566	A4756035	plate number	RSV009	Nasopharynx	2024-03-06	4 yrs	25.7	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	4	Preschool	no_clade	NA	RSVA
+Yale-RSV-0567	A4756036	plate number	RSV009	Nasopharynx	2024-03-11	63 yrs	20.7	YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	63	Adults	no_clade	NA	RSVB
+Yale-RSV-0568	A4756037	plate number	RSV009	Nasopharynx	2024-03-19	34 yrs	26.8	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	34	Adults	no_clade	NA	RSVB
+Yale-RSV-0569	A4754030	plate number	RSV009	Nasopharynx	2024-02-15	44 dys	17.4	YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	0.121	Infants	no_clade	NA	RSVB
+Yale-RSV-0570	A4756039	plate number	RSV009	Nasopharynx	2024-02-19	77 yrs	29	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	77	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0571	A4756040	plate number	RSV009	Nasopharynx	2024-02-20	29 yrs	NA	YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	29	Adults	no_clade	NA	RSVA
+Yale-RSV-0572	A4756041	plate number	RSV009	Nasopharynx	2024-02-27	74 yrs	NA	YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE	RSV 6	North America / USA / Connecticut	74	Geriatrics	no_clade	NA	RSVB
+Yale-RSV-0573	A4756042	plate number	RSV009	Nasopharynx	2024-03-02	2 yrs	NA	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	2	Preschool	no_clade	NA	RSVA
+Yale-RSV-0574	A4756043	plate number	RSV009	Nasopharynx	2024-03-07	43 yrs	24.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	43	Adults	no_clade	NA	RSVA
+Yale-RSV-0575	A4756044	plate number	RSV009	Nasopharynx	2024-03-11	15 yrs	25.2	YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY	RSV 6	North America / USA / Connecticut	15	Children	no_clade	NA	RSVA
+Yale-RSV-0576	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	no_clade	NA	RSVB
