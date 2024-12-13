@@ -44,7 +44,7 @@ rule mash_call:
         partition="day",
         mem_mb="4G",
         cpus_per_task=1,
-        runtime=30
+        runtime=10
     container: "docker://sethnr/pgcoe_anypipe:0.01"
     group: "mashcall"
     params:

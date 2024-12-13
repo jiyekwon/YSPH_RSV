@@ -15,8 +15,8 @@ rule cp_local_fq:
     shell:"""
         #find {input.read_location}
 
-        R1=` find {input.read_location} | grep _R1_ `
-        R2=` find {input.read_location} | grep _R2_ `
+        R1=` find {input.read_location}/ | grep _R1_ `
+        R2=` find {input.read_location}/ | grep _R2_ `
 
         echo cp $R1 {output.R1}
         cp $R1 {output.R1}
