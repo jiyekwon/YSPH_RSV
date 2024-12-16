@@ -1,0 +1,304 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+library(tidyverse)
+library(dplyr)
+
+library(ggalluvial)
+library(patchwork)
+knitr::opts_chunk$set(fig.width=12,fig.height=6,dpi=400)
+
+```
+
+```{r }
+#get amplicon depth / div tables
+
+ampdep <- rbind(read.table("data/RSVA_ampdepth_V1.txt",sep="\t",header=T) %>%
+                  mutate("ampset"="V1","target"="RSVA"),
+                read.table("data/RSVA_ampdepth_v2.txt",sep="\t",header=T) %>%
+                  mutate(sample = gsub("-1$","",sample)) %>%
+                  mutate(ampset="V2","target"="RSVA"),
+                read.table("data/RSVB_ampdepth_V1.txt",sep="\t",header=T) %>%
+                  mutate("ampset"="V1","target"="RSVB"),
+                read.table("data/RSVB_ampdepth_v2.txt",sep="\t",header=T) %>%
+                  mutate(sample = gsub("-1$","",sample)) %>%
+                  mutate(ampset="V2","target"="RSVB")) %>% 
+             mutate(start=as.numeric(start),
+                    end=as.numeric(end),
+                    depth=as.numeric(depth),
+                    sampleindex=as.numeric(gsub("Yale-RSV-","",sample)),
+                    ampindex=as.numeric(gsub("Amplicon ","",name))
+                    ) %>% 
+             mutate("pos"=round((start+end)/2)) %>% 
+            filter(sampleindex <= 96) 
+
+
+ampdiv <- rbind(read.table("data/RSVA_ampdiv_V1.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V1") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVA_ampdiv_v2.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V2") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVB_ampdiv_V2.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V2") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVB_ampdiv_v2.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V2") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop")) %>% 
+             mutate(start=as.numeric(start),
+                    end=as.numeric(end),
+                    pi=as.numeric(pi),
+                    sampleindex=as.numeric(gsub("Yale-RSV-","",sample)),
+                    ampindex=as.numeric(gsub("Amplicon ","",name))
+                    ) %>% 
+             mutate("pos"=round((start+end)/2)) %>% 
+            filter(sampleindex <= 96) 
+
+table(ampdep[,c("sample","target","ampset")])
+table(ampdiv[,c("sample","target","ampset")])
+
+ampdep <- merge(ampdep,
+                ampdep %>% dplyr::group_by(ampset) %>% 
+                  summarize(meddep=median(depth))) %>% 
+                mutate(normdep=round((depth/meddep)*10000))
+
+
+```
+
+
+```{r}
+#get genelicon depth / div tables
+
+genedep <- rbind(read.table("data/RSVA_genedepth_V1.txt",sep="\t",header=T) %>%
+                  mutate("ampset"="V1","target"="RSVA"),
+                read.table("data/RSVA_genedepth_v2.txt",sep="\t",header=T) %>%
+                  mutate(sample = gsub("-1$","",sample)) %>%
+                  mutate(ampset="V2","target"="RSVA"),
+                read.table("data/RSVB_genedepth_V1.txt",sep="\t",header=T) %>%
+                  mutate("ampset"="V1","target"="RSVB"),
+                read.table("data/RSVB_genedepth_v2.txt",sep="\t",header=T) %>%
+                  mutate(sample = gsub("-1$","",sample)) %>%
+                  mutate(ampset="V2","target"="RSVB")) %>% 
+             mutate(start=as.numeric(start),
+                    end=as.numeric(end),
+                    depth=as.numeric(depth),
+                    sampleindex=as.numeric(gsub("Yale-RSV-","",sample))
+                    ) %>% 
+             mutate("pos"=round((start+end)/2)) %>% 
+            filter(sampleindex <= 96) 
+
+
+genediv <- rbind(read.table("data/RSVA_genediv_V1.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V1") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVA_genediv_v2.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V2") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVB_genediv_V1.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V1") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop"),
+                read.table("data/RSVB_genediv_v2.txt",sep="\t",header=F,
+                            col.names=c("start","end","name","file","pi")) %>%
+                      mutate("ampset"="V2") %>%
+                      mutate(file = gsub("results/ivar/","",file)) %>%
+                      separate_wider_delim(file,delim="_",
+                                           names = c("sample","target"),
+                                           too_many = "drop")) %>% 
+             mutate(start=as.numeric(start),
+                    end=as.numeric(end),
+                    pi=as.numeric(pi),
+                    sampleindex=as.numeric(gsub("Yale-RSV-","",sample))
+                    ) %>% 
+             mutate("pos"=round((start+end)/2)) %>% 
+            filter(sampleindex <= 96) 
+
+table(genedep[,c("sample","target","ampset")])
+table(genediv[,c("sample","target","ampset")])
+
+genedep <- merge(genedep,
+                genedep %>% dplyr::group_by(ampset) %>% 
+                  summarize(meddep=median(depth))) %>% 
+                mutate(normdep=round((depth/meddep)*10000))
+
+genedep$gindex <- as.numeric(as.factor(genedep$pos))
+genedep$name <- as.factor(gsub(" ","",gsub("gene","",genedep$name)))
+
+
+geneorder <- c("NS1","NS2","N","P","M","SH","G","F","M2","L")
+genedep$name <- factor(genedep$name,levels=geneorder,ordered=T)
+genediv$name <- factor(genediv$name,levels=geneorder,ordered=T)
+
+```
+
+
+
+
+
+```{r}
+
+ampdepp <- ggplot(ampdep,aes(x=ampindex,y=normdep,group=paste(ampset,name,target),color=ampset)) +   
+            geom_boxplot(position="dodge") + facet_grid(target ~ .) + scale_y_log10()
+
+genedepp <- ggplot(genedep,aes(x=name,y=normdep,group=paste(ampset,name,target),color=ampset)) +   
+            geom_boxplot(position="dodge") + facet_grid(target ~ .) + scale_y_log10() +
+  theme(axis.title.x=element_blank())
+
+
+ampdepp + genedepp + guide_area() + plot_layout(guides="collect",widths=c(6,3,1))
+# ggplot(unique(genedep[genedep$normdep > 100,c("ampset","name","sample","target")]),
+#        aes(x=name,group=paste(ampset,name,target),fill=ampset)) +   
+#             geom_bar(position="dodge") + facet_grid(target ~ .) +
+#   theme(axis.title.x=element_blank())
+
+```
+
+
+```{r}
+#get final calls, filter out only good calls...
+
+calls <- rbind(read.table("data/final_calls_V1.txt",sep="\t",header=T) %>% 
+                 mutate(ampset="V1"),
+              read.table("data/final_calls_v2.txt",sep="\t",header=T) %>% 
+                mutate(ampset="V2")) %>%
+          mutate(sample=gsub("-1","",sample)) %>% 
+          mutate(sampleindex=as.numeric(gsub("Yale-RSV-","",sample))) %>% 
+          filter(sampleindex <= 96) 
+
+calls$mashcall[calls$mashcall==""] <- "RSVA/B"
+calls$call[calls$call==""] <- calls$mashcall[calls$call==""]
+
+calls
+
+#calls$change <- paste(calls$mashcall,">",calls$call)
+```
+
+
+```{r}
+
+calls$sampleindex
+nchanges <- calls %>% pivot_wider(names_from=ampset,values_from=c(call,mashcall)) %>%   
+                      replace_na(list(call_V1="-",call_V2="-",
+                                      mashcall_V1="-",mashcall_V2="-")) %>% 
+                      arrange(sampleindex) %>% 
+                      group_by(mashcall_V1,call_V1,mashcall_V2,call_V2) %>%
+                      summarize(Freq=n())
+i <- nrow(nchanges)+1
+nchanges[i,c(1:4)] <- "-"
+nchanges[i,5] <- sum(!c(1:96) %in% calls$sampleindex)
+
+
+fillcalls =   scale_fill_manual(values=c("RSVB"="#e41a1c","RSVA"="#377eb8",
+                                         "RSVA/B"="#984ea3","-"="grey50"))
+
+allchangesp <- ggplot(nchanges,
+       aes(y = Freq, axis1 = mashcall_V2,axis2 = call_V2,
+                     axis3 = mashcall_V2,axis4 = call_V2,)) +
+  geom_alluvium(aes(fill = call_V2), width = 1/12) +
+  geom_stratum(width = 1/12, fill = "black", color = "grey") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("mash1", "call1","mash2","call2"), expand = c(.05, .05)) +
+  fillcalls
+
+chg1p <- ggplot(nchanges,
+       aes(y = Freq, axis1 = mashcall_V1,axis2 = call_V1)) +
+  geom_alluvium(aes(fill = call_V1), width = 1/12) +
+  geom_stratum(width = 1/12, fill = "black", color = "grey") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("mash_v1", "call_v1"), expand = c(.05, .05)) +
+  fillcalls
+
+chg2p <- ggplot(nchanges,
+       aes(y = Freq, axis1 = mashcall_V2,axis2 = call_V2)) +
+  geom_alluvium(aes(fill = call_V2), width = 1/12) +
+  geom_stratum(width = 1/12, fill = "black", color = "grey") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("mash_v2", "call_v2"), expand = c(.05, .05)) +
+  fillcalls
+
+#chg1p + chg2p + guide_area() + plot_layout(guides="collect",widths=c(4,4,1))
+
+callp <- ggplot(nchanges,
+       aes(y = Freq, axis1 = mashcall_V1,axis2 = mashcall_V2)) +
+  geom_alluvium(aes(fill = mashcall_V2), width = 1/12) +
+  geom_stratum(width = 1/12, fill = "black", color = "grey") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("mash_V2", "mash_v2"), expand = c(.05, .05)) +
+  fillcalls
+
+mashp <- ggplot(nchanges,
+       aes(y = Freq, axis1 = call_V1,axis2 = call_V2)) +
+  geom_alluvium(aes(fill = call_V2), width = 1/12) +
+  geom_stratum(width = 1/12, fill = "black", color = "grey") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("call_V2", "call_v2"), expand = c(.05, .05)) +
+  fillcalls
+
+callp + mashp + guide_area() + plot_layout(guides="collect",widths=c(4,4,1))
+
+```
+
+
+```{r}
+
+#get correct (V2) calls, split out RSVA/B into individual calls
+rightcalls <- calls[calls$ampset=="V2",c("sample","call")]
+abcalls <- rightcalls$sample[rightcalls$call=="RSVA/B"]
+rightcalls <- rbind(rightcalls[!rightcalls$sample %in% abcalls,],
+                  data.frame("sample"=rep(abcalls,each=2),
+                             "call"=rep(c("RSVA","RSVB"),length(abcalls)))
+                  )
+colnames(rightcalls) <- c("sample","target")
+
+genedepT <- merge(genedep,rightcalls)
+ampdepT <- merge(ampdep,rightcalls)
+
+ampdepTp <- ggplot(ampdepT,aes(x=ampindex,y=normdep,group=paste(ampset,name,target),color=ampset)) +   
+            geom_boxplot(position="dodge") + facet_grid(target ~ .) + scale_y_log10()
+
+genedepTp <- ggplot(genedepT,aes(x=name,y=normdep,group=paste(ampset,name,target),color=ampset)) +   
+            geom_boxplot(position="dodge") + facet_grid(target ~ .) + scale_y_log10() +
+  theme(axis.title.x=element_blank())
+
+ampdepTp + genedepTp + guide_area() + plot_layout(guides="collect",widths=c(6,3,1))
+
+# ggplot(unique(genedepT[genedepT$normdep > 1000,c("ampset","name","sample","target")]),
+#        aes(x=name,group=paste(ampset,name,target),fill=ampset)) +   
+#             geom_bar(position="dodge") + facet_grid(target ~ .) +
+#   theme(axis.title.x=element_blank())
+
+
+```
+
+
+

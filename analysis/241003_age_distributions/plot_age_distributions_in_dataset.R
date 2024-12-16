@@ -21,6 +21,7 @@ infhist <- ggplot(subset(allmeta,agecat %in% c("Newborns","Infants")),aes(x=age,
   geom_histogram(bins=52) +
   ylab("n")+
   scale_fill_discrete(drop=F) +
+  scale_fill_manual(values=colour_codes) + 
   theme(axis.title.y.left = element_text(angle=0,vjust=0.5),
         axis.title.x=element_blank(),
         legend.position="none")
@@ -45,5 +46,9 @@ catdist <- ggplot(allmeta,aes(x=agecat,fill=agecat)) + geom_bar() +
 
 infhist + catdist + agehist + plot_layout(design = "ABB\nCCC",guides="keep")
 ggsave("rsv_metadata_age_distributions.png",width=300,height=200,units="mm")
+
+
+agehist
+ggsave("rsv_metadata_age_histogram.png",width=200,height=50,dpi=500,units="mm")
 
 
