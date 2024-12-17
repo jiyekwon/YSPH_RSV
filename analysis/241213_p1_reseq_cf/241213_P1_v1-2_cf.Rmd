@@ -73,8 +73,8 @@ ampdiv <- rbind(read.table("data/RSVA_ampdiv_V1.txt",sep="\t",header=F,
              mutate("pos"=round((start+end)/2)) %>% 
             filter(sampleindex <= 96) 
 
-table(ampdep[,c("sample","target","ampset")])
-table(ampdiv[,c("sample","target","ampset")])
+#table(ampdep[,c("sample","target","ampset")])
+#table(ampdiv[,c("sample","target","ampset")])
 
 ampdep <- merge(ampdep,
                 ampdep %>% dplyr::group_by(ampset) %>% 
@@ -143,8 +143,8 @@ genediv <- rbind(read.table("data/RSVA_genediv_V1.txt",sep="\t",header=F,
              mutate("pos"=round((start+end)/2)) %>% 
             filter(sampleindex <= 96) 
 
-table(genedep[,c("sample","target","ampset")])
-table(genediv[,c("sample","target","ampset")])
+#table(genedep[,c("sample","target","ampset")])
+#table(genediv[,c("sample","target","ampset")])
 
 genedep <- merge(genedep,
                 genedep %>% dplyr::group_by(ampset) %>% 
