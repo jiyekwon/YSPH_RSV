@@ -301,4 +301,57 @@ ampdepTp + genedepTp + guide_area() + plot_layout(guides="collect",widths=c(6,3,
 ```
 
 
+```{r}
+consquals <- rbind(read.table("RSVA_all_aligned_qual_v1.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V1",target="RSVA"),
+                  read.table("RSVB_all_aligned_qual_v1.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V1",target="RSVB"),
+                  read.table("RSVA_all_aligned_qual_v2.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V2",target="RSVA"),
+                  read.table("RSVB_all_aligned_qual_v2.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V2",target="RSVB")) %>% 
+              pivot_longer(cols=c("good","ambiguous","bad"))
+      
+```
+
+
+```{r}
+
+qplot = ggplot(consquals, aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            ggtitle("consensus calls qualities") +
+            facet_wrap(vars(target,ampset)) +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+qplot 
+
+qplotA = ggplot(subset(consquals,target=="RSVA"), aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            facet_grid(ampset ~ target, scale="free",space="free") +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+qplotB = ggplot(subset(consquals,target=="RSVB"), aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            facet_grid(ampset ~ target, scale="free",space="free") +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+
+qplotA + qplotB + guide_area() + plot_layout(heights=c(3,5,1),guides="collect") + plot_annotation(title="consensus quality comparison",)
+
+```
 
