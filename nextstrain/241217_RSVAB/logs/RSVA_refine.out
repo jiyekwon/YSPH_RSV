@@ -1,0 +1,59 @@
+augur refine is using TreeTime version 0.11.3
+
+6.77	TreeTime.reroot: with method or node: least-squares
+
+6.77	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+
+7.88	TreeTime.reroot: with method or node: least-squares
+
+7.88	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+pruning leaf  NC_038235.1
+pruning leaf  hRSV/A/Germany/BE-03-01038/2003
+pruning leaf  hRSV/A/Germany/RP-06-01417/2006
+pruning leaf  hRSV/A/Germany/BE-04-01144/2004
+pruning leaf  hRSV/A/Germany/SH-05-02141/2005
+pruning leaf  hRSV/A/Germany/RP-07-02759/2007
+pruning leaf  hRSV/A/Italy/ITA-119/2009
+pruning leaf  hRSV/A/Argentina/170/2005
+pruning leaf  hRSV/A/England/104800018/2010
+pruning leaf  hRSV/A/Italy/ITA-120/2009
+pruning leaf  hRSV/A/Australia/VIC-RCH047/2019
+pruning leaf  Yale-RSV-0026
+pruning leaf  hRSV/A/Kuwait/KUNIV-52536/2022
+pruning leaf  hRSV/A/Kuwait/KUNIV-44196/2021
+pruning leaf  hRSV/A/Kuwait/KUNIV-53056/2022
+pruning leaf  hRSV/A/Kuwait/KUNIV-515/2021
+pruning leaf  hRSV/A/Kuwait/KUNIV-44240/2022
+pruning leaf  hRSV/A/Kuwait/KUNIV-5738/2020
+pruning leaf  hRSV/A/Kuwait/KUNIV-1765/2022
+pruning leaf  hRSV/A/Australia/VIC-RCH045/2019
+pruning leaf  hRSV/A/Australia/un-VIDRL-103/2022
+pruning leaf  hRSV/A/Australia/VIC-RCH042/2019
+
+25.92	TreeTime.reroot: with method or node: least-squares
+
+25.93	TreeTime.reroot: rerooting will account for covariance and shared
+     	ancestry.
+
+34.01	###TreeTime.run: INITIAL ROUND
+
+62.34	TreeTime.reroot: with method or node: least-squares
+
+62.35	TreeTime.reroot: rerooting will account for covariance and shared
+     	ancestry.
+
+63.14	###TreeTime.run: rerunning timetree after rerooting
+
+104.01	###TreeTime.run: ITERATION 1 out of 2 iterations
+
+150.37	###TreeTime.run: ITERATION 2 out of 2 iterations
+
+290.25	###TreeTime.run: FINAL ROUND - confidence estimation via marginal
+      	reconstruction
+
+Inferred a time resolved phylogeny using TreeTime:
+	Sagulenko et al. TreeTime: Maximum-likelihood phylodynamic analysis
+	Virus Evolution, vol 4, https://academic.oup.com/ve/article/4/1/vex042/4794731
+
+updated tree written to results/RSVA_tree.nwk
+node attributes written to results/RSVA_branchlens.json
