@@ -73,8 +73,8 @@ ampdiv <- rbind(read.table("data/RSVA_ampdiv_V1.txt",sep="\t",header=F,
              mutate("pos"=round((start+end)/2)) %>% 
             filter(sampleindex <= 96) 
 
-table(ampdep[,c("sample","target","ampset")])
-table(ampdiv[,c("sample","target","ampset")])
+#table(ampdep[,c("sample","target","ampset")])
+#table(ampdiv[,c("sample","target","ampset")])
 
 ampdep <- merge(ampdep,
                 ampdep %>% dplyr::group_by(ampset) %>% 
@@ -143,8 +143,8 @@ genediv <- rbind(read.table("data/RSVA_genediv_V1.txt",sep="\t",header=F,
              mutate("pos"=round((start+end)/2)) %>% 
             filter(sampleindex <= 96) 
 
-table(genedep[,c("sample","target","ampset")])
-table(genediv[,c("sample","target","ampset")])
+#table(genedep[,c("sample","target","ampset")])
+#table(genediv[,c("sample","target","ampset")])
 
 genedep <- merge(genedep,
                 genedep %>% dplyr::group_by(ampset) %>% 
@@ -198,15 +198,12 @@ calls <- rbind(read.table("data/final_calls_V1.txt",sep="\t",header=T) %>%
 calls$mashcall[calls$mashcall==""] <- "RSVA/B"
 calls$call[calls$call==""] <- calls$mashcall[calls$call==""]
 
-calls
-
-#calls$change <- paste(calls$mashcall,">",calls$call)
 ```
 
 
 ```{r}
 
-calls$sampleindex
+
 nchanges <- calls %>% pivot_wider(names_from=ampset,values_from=c(call,mashcall)) %>%   
                       replace_na(list(call_V1="-",call_V2="-",
                                       mashcall_V1="-",mashcall_V2="-")) %>% 
@@ -253,7 +250,7 @@ callp <- ggplot(nchanges,
   geom_alluvium(aes(fill = mashcall_V2), width = 1/12) +
   geom_stratum(width = 1/12, fill = "black", color = "grey") +
   geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
-  scale_x_discrete(limits = c("mash_V2", "mash_v2"), expand = c(.05, .05)) +
+  scale_x_discrete(limits = c("mash_V1", "mash_V2"), expand = c(.05, .05)) +
   fillcalls
 
 mashp <- ggplot(nchanges,
@@ -261,7 +258,7 @@ mashp <- ggplot(nchanges,
   geom_alluvium(aes(fill = call_V2), width = 1/12) +
   geom_stratum(width = 1/12, fill = "black", color = "grey") +
   geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
-  scale_x_discrete(limits = c("call_V2", "call_v2"), expand = c(.05, .05)) +
+  scale_x_discrete(limits = c("call_V1", "call_V2"), expand = c(.05, .05)) +
   fillcalls
 
 callp + mashp + guide_area() + plot_layout(guides="collect",widths=c(4,4,1))
@@ -301,4 +298,57 @@ ampdepTp + genedepTp + guide_area() + plot_layout(guides="collect",widths=c(6,3,
 ```
 
 
+```{r}
+consquals <- rbind(read.table("RSVA_all_aligned_qual_v1.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V1",target="RSVA"),
+                  read.table("RSVB_all_aligned_qual_v1.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V1",target="RSVB"),
+                  read.table("RSVA_all_aligned_qual_v2.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V2",target="RSVA"),
+                  read.table("RSVB_all_aligned_qual_v2.txt",sep="\t",header=T) %>% 
+                        mutate(ampset="V2",target="RSVB")) %>% 
+              pivot_longer(cols=c("good","ambiguous","bad"))
+      
+```
+
+
+```{r}
+
+qplot = ggplot(consquals, aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            ggtitle("consensus calls qualities") +
+            facet_wrap(vars(target,ampset)) +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+qplot 
+
+qplotA = ggplot(subset(consquals,target=="RSVA"), aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            facet_grid(ampset ~ target, scale="free",space="free") +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+qplotB = ggplot(subset(consquals,target=="RSVB"), aes(x=pos,y=value,fill=name)) +
+            geom_bar(stat="identity",color=NA) +
+            scale_fill_manual(values=c("good"="green",
+                                      "ambiguous"="orange",
+                                      "bad"="red"),
+                             name="") +
+            facet_grid(ampset ~ target, scale="free",space="free") +
+            theme(legend.position="bottom",
+                  legend.title=element_blank(),axis.title=element_blank())
+
+
+qplotA + qplotB + guide_area() + plot_layout(heights=c(3,5,1),guides="collect") + plot_annotation(title="consensus quality comparison",)
+
+```
 
