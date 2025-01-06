@@ -1,7 +1,0 @@
-Sampling at 1 per group.
-15879 strains were dropped during filtering
-	856 had no metadata
-	8626 had no sequence data
-	556 were dropped because they were earlier than 2000.0 or missing a date
-	5841 were dropped because of subsampling criteria
-797 strains passed all filters

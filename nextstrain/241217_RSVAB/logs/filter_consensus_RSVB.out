@@ -1,5 +1,0 @@
-15799 strains were dropped during filtering
-	49 had no metadata
-	15820 were dropped by `--exclude-all`
-	70 were added back because they were in RSVB.samples
-70 strains passed all filters
