@@ -1,4 +1,4 @@
-#remotes::install_github("coolbutuseless/ggpattern")
+#~/Gits/YSPH_RSV/meta/get_metadata.R
 
 library(tidyverse)
 library(googlesheets4)
@@ -41,6 +41,8 @@ allmeta$agecat[allmeta$age > 18 & allmeta$age <=64] <- "Adults"
 allmeta$agecat[allmeta$age >= 65] <- "Geriatrics"
 allmeta[is.na(allmeta$agecat),]
 
+write.table(allmeta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
+
 
 # bind / merge ------------------------------------------------------------
 
@@ -55,7 +57,7 @@ meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
 
 table(meta[,c("ngs_run_id","rsv plate")])
 
-write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
+write.table(meta,file="rsv_metadata_plates.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
 gismeta <-  read.table("../gisaid/rsv_2024_04_25.tsv",sep="\t",header=T,quote="") %>% 
