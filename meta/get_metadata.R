@@ -14,7 +14,13 @@ plates <- read_sheet(sheetname,sheet="RSVSeq")
 #plate manifests
 metafile <- "https://docs.google.com/spreadsheets/d/1-Ns_6d8mP301uuCbJQKdEZzAU8hDGqlbFCTjp6dl8JA/edit#gid=26759663"
 
-allmetaGS <- do.call(rbind, lapply(sheet_names(metafile),function(X) { read_sheet(metafile,sheet=X,col_types="ccDtDtccnccnccc")}))
+#allmetaGS <- do.call(rbind, lapply(sheet_names(metafile),function(X) { read_sheet(metafile,sheet=X,col_types="ccDtDtccnccnccc")}))
+allmetaGS <- do.call(rbind, lapply(sheet_names(metafile),
+                                   function(X) { 
+                                     df<- read_sheet(metafile, sheet=X)
+                                     df[]<- lapply(df, as.character)
+                                     return(df)
+                                   }))
 allmeta <- allmetaGS %>% select(c("Source","Collected","Age","RSV Ct","Method","RSV Plate","TubeCode")) %>%
                       rename("specimen"="Source",
                              "date"="Collected",
@@ -30,6 +36,19 @@ allmeta$age[grep("yrs",allmeta$agestr)] <- as.numeric(gsub(" yrs","",allmeta$age
 allmeta$age[grep("yr$",allmeta$agestr)] <- as.numeric(gsub(" yr","",allmeta$agestr[grep("yr$",allmeta$agestr)]))
 allmeta[is.na(allmeta$age),]
 
+# bind / merge ------------------------------------------------------------
+platesGS <- read_sheet(sheetname,sheet="RSVSeq")
+plates <- platesGS %>% 
+  rename_with(tolower) %>%
+  select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
+  mutate("plate number"=paste("plate number")) %>%
+  rename("name"="seq_id")
+
+meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
+table(meta[,c("ngs_run_id","rsv plate")])
+
+
+# metadata edits ------------------------------------------------------------
 #allmeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
 #allmeta$agecat[allmeta$age <= (60/365)] <- "Newborns"
 #allmeta$agecat[allmeta$age > (60/365) & allmeta$age <1] <- "Infants"
@@ -57,6 +76,22 @@ meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
 
 table(meta[,c("ngs_run_id","rsv plate")])
 
+meta <- meta %>%
+  mutate(agecat2 = case_when(
+    age < 1 ~ "<1",
+    age >= 1 & age < 5 ~ "[1,5)",
+    age >= 5 & age < 18 ~ "[5,18)",
+    age >= 18 & age < 65 ~ "[18,65)",
+    age >= 65 ~ "65+",
+    TRUE ~ NA_character_  
+  ))
+meta$agecat2 <- factor(meta$agecat2, 
+                       levels = c("<1", "[1,5)", "[5,18)", "[18,65)", "65+")) 
+meta$date <- as.Date(meta$date, "%Y-%m-%d")
+meta$rsv.ct <- as.numeric(meta$rsv.ct) # 74 NAs = 70 N/A & 4 NULL
+
+# ------------------------------------------------------------
+#write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 write.table(meta,file="rsv_metadata_plates.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
