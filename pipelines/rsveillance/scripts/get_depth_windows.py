@@ -11,6 +11,7 @@ import pandas as pd
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--bed', '-b', help='primer / amplicon positions (bed)')
+parser.add_argument('--gff', '-g', help='gene positions (gff)')
 parser.add_argument('--depth', '-d', help='depth file (samtools / txt)')
 parser.add_argument('--sample', '-s', help='sample name')
 parser.add_argument('--factor', '-F', help='subsampling factor')
@@ -24,28 +25,41 @@ outfile = args.out
 
 
 depth = pd.read_csv(depthfile, sep='\t')
-ranges=pd.read_csv(bedfile, sep='\t')
 
-nranges=len(ranges.iloc[:,1])
+if bedfile is not None:
+    rangetab=pd.read_csv(bedfile, sep='\t')
+    ranges=list()
+    for i in range(0,len(rangetab)):
+        st = int(rangetab.iloc[i,1])
+        en = int(rangetab.iloc[i,2])
+        name = rangetab.iloc[i,3]
+        ranges.append((st,en,name))
+
+elif gfffile is not None:
+    getname = re.compile(r'.*?ame=([^;]*);.*')
+
+    rangetab=pd.read_csv(gfffile, sep='\t', comment="#")
+    for i in range(0,len(rangetab)):
+        st = int(rangetab.iloc[i,4])
+        en = int(rangetab.iloc[i,5])
+        type = rangetab.iloc[i,3]
+        namestr = rangetab.iloc[i,9]
+        name = getname.search(namestr)
+        if type=="gene":
+            ranges.append((st,en,name))
+
+print(ranges)
+nranges=len(ranges)
 
 meandepth=pd.DataFrame({"sample":[sample]*nranges,
-              "name":ranges.iloc[:,4],
-              "start":ranges.iloc[:,1],
-              "end":ranges.iloc[:,2],
+              "name":[n for s,e,n in ranges],
+              "start":[s for s,e,n in ranges],
+              "end":[e for s,e,n in ranges],
               "depth":[-1]*nranges
               })
 
-# meandepth=pd.concat([
-#                     [sample]*nranges,
-#                     ranges.iloc[4,:],
-#                     ranges.iloc[1:2,:],
-#                     [-1]*nranges
-#                     ],axis=1)
 
-for i in range(0,len(ranges)):
-    st = int(ranges.iloc[i,1])
-    en = int(ranges.iloc[i,2])
-    name = ranges.iloc[i,3]
+for st,en,name in ranges:
     indepth = np.logical_and((depth['POS'] >= st),(depth['POS'] <= en))
 
     if sum(indepth)>0:

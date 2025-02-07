@@ -95,7 +95,7 @@ rule get_genotyping_report:
     input:
         ivariants='results/bcftools/{target}_all.vcf.gz',
         ivariants_untrim='results/bcftools/{target}_untrim_all.vcf.gz',
-        primers='results/refs/{target}.bed',
+        primers='results/refs/{target}_primer.bed',
     output:
         report='results/summary/{target}_genotype-summary.txt',
         pi='results/summary/{target}_primer-pi.tsv',

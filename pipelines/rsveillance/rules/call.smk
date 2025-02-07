@@ -17,7 +17,7 @@ rule bcf_call:
     shell:
         """
         bcftools mpileup -Ou -o {output.bcf} -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} {output.bcf} 2>&1  >> {log.stderr}
+        bcftools call --ploidy 1 -A -vcO z -o {output.vcf} {output.bcf} 2>&1  >> {log.stderr}
         tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 
@@ -57,7 +57,7 @@ rule bcf_call_untrim:
     shell:
         """
         bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 2>&1  >> {log.stderr}
+        bcftools call --ploidy 1 -A -vcO z -o {output.vcf} variants.bcf 2>&1  >> {log.stderr}
         tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 
