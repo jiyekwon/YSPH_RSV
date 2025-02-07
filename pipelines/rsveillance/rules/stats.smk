@@ -155,7 +155,7 @@ rule depth_genes:
         runtime=60,
     group: "statsgroup"
     params:
-        bed='results/refs/{target}_genes.bed',
+        gff='results/refs/{target}.gff3',
     log:
         stderr="logs/depth/{sample}_{target}.err"
     container: "docker://sethnr/pgcoe_analysis:0.02"
@@ -163,7 +163,7 @@ rule depth_genes:
         """
         python scripts/get_depth_windows.py -d {input.depth} \
             -s {wildcards.sample} -F `cat {input.subfactor} | cut -f 2,2` \
-            -b {params.bed} -o {output.depth}
+            -g {params.gff} -o {output.depth}
 
         """
 
@@ -198,13 +198,13 @@ rule div_genes:
         mem_mb=8000,
         runtime=60,
     params:
-        ampbed='results/refs/{target}_genes.bed',
+        gff='results/refs/{target}.gff3',
     container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
         """
         python scripts/get_refdist_distribution.py -v {input.vcf} \
-            -b {params.ampbed} -o {output.div}
+            -g {params.gff} -o {output.div}
         """
 
 

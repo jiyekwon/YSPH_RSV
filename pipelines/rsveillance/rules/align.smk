@@ -51,7 +51,7 @@ rule bwa_align:
         echo "Aligning reads for {wildcards.sample} to {params.ref}\n"
         echo 'bwa mem -o {output.aligned} {params.ref} {input.R1} {input.R2} \n' 
         bwa mem -t {resources.cores} {params.ref} {input.R1} {input.R2} \
-            1> {output.aligned}  2> {log.stderr}
+            -o {output.aligned} -O z  2> {log.stderr}
         """
 
 rule flagstat:

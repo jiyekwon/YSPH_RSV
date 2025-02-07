@@ -44,8 +44,8 @@ rule cp_local_data:
         targets = TARGETS
     container: None
     shell:"""
-        cp -r {input.refdir}/* results/refs/
-        cp -r {input.ampdir}/* results/refs/
+        cp -L {input.refdir}/* results/refs/
+        cp -L {input.ampdir}/* results/refs/
         cp {input.refsfile} results/refs/refs.txt        
         """
 

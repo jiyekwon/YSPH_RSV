@@ -19,6 +19,7 @@ parser.add_argument('--out', '-o', help='outfile prefix')
 
 args = parser.parse_args()
 bedfile = args.bed
+gfffile = args.gff
 depthfile = args.depth
 sample = args.sample
 outfile = args.out
@@ -26,9 +27,10 @@ outfile = args.out
 
 depth = pd.read_csv(depthfile, sep='\t')
 
+ranges=list()
+
 if bedfile is not None:
     rangetab=pd.read_csv(bedfile, sep='\t')
-    ranges=list()
     for i in range(0,len(rangetab)):
         st = int(rangetab.iloc[i,1])
         en = int(rangetab.iloc[i,2])
@@ -36,16 +38,20 @@ if bedfile is not None:
         ranges.append((st,en,name))
 
 elif gfffile is not None:
-    getname = re.compile(r'.*?ame=([^;]*);.*')
+    getname = re.compile(r'.*?gene=([^;]*);.*')
 
     rangetab=pd.read_csv(gfffile, sep='\t', comment="#")
     for i in range(0,len(rangetab)):
-        st = int(rangetab.iloc[i,4])
-        en = int(rangetab.iloc[i,5])
-        type = rangetab.iloc[i,3]
-        namestr = rangetab.iloc[i,9]
-        name = getname.search(namestr)
-        if type=="gene":
+        st = int(rangetab.iloc[i,3])
+        en = int(rangetab.iloc[i,4])
+        type = rangetab.iloc[i,2]
+        namestr = rangetab.iloc[i,8]
+        if type=="CDS":
+            search = getname.search(namestr)
+            if search is not None:
+                name = search.group(1)
+            else:
+                name = "NA"
             ranges.append((st,en,name))
 
 print(ranges)
@@ -58,8 +64,9 @@ meandepth=pd.DataFrame({"sample":[sample]*nranges,
               "depth":[-1]*nranges
               })
 
-
+i=-1
 for st,en,name in ranges:
+    i=i+1
     indepth = np.logical_and((depth['POS'] >= st),(depth['POS'] <= en))
 
     if sum(indepth)>0:
