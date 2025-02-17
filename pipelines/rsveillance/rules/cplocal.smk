@@ -10,7 +10,7 @@ rule cp_local_fq:
     resources:
         mem_mb="2G",
         cpus_per_task=1,
-        runtime=60
+        runtime=30
     container: None
     shell:"""
         #find {input.read_location}
@@ -44,8 +44,8 @@ rule cp_local_data:
         targets = TARGETS
     container: None
     shell:"""
-        cp -L {input.refdir}/* results/refs/
-        cp -L {input.ampdir}/* results/refs/
+        cp -LR {input.refdir}/* results/refs/
+        cp -LR {input.ampdir}/* results/refs/
         cp {input.refsfile} results/refs/refs.txt        
         """
 

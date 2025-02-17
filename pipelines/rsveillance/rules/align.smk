@@ -38,20 +38,22 @@ rule bwa_align:
         #aligned = 'results/align/{sample}_{target}_unsort.bam',
     group: "aligngroup"
     params:
-        ref="results/refs/{target}.fasta"
+        ref="results/refs/{target}.fasta",
     resources:
-        runtime=600,
-        mem_mb=lambda wc, input: max(2 * input.size_mb, 4000),
-        cores=4,
+        runtime=180,
+        mem_mb=lambda wc, input: max(2 * input.size_mb, 8000),
+        cpus_per_task=4,
+        cores=1,
     log:
         stderr="logs/align/bwa_mem_{sample}_{target}.err",
     container: "docker://sethnr/pgcoe_bacseq:0.01"
     shell:
         """
         echo "Aligning reads for {wildcards.sample} to {params.ref}\n"
-        echo 'bwa mem -o {output.aligned} {params.ref} {input.R1} {input.R2} \n' 
-        bwa mem -t {resources.cores} {params.ref} {input.R1} {input.R2} \
-            -o {output.aligned} -O z  2> {log.stderr}
+        echo 'bwa mem -t {resources.cpus_per_task} {params.ref} {input.R1} {input.R2} \n  
+                 -o {output.aligned}  \n' 
+        bwa mem -t {resources.cpus_per_task} {params.ref} {input.R1} {input.R2} \
+            -o {output.aligned}  2> {log.stderr}
         """
 
 rule flagstat:
@@ -64,7 +66,7 @@ rule flagstat:
         sleeplen=60,
     group: "aligngroup"
     resources:
-        runtime=60,
+        runtime=30,
         mem_mb=4000,
         cores=1,
     log:
@@ -94,7 +96,7 @@ rule remove_unaligned:
         sleeplen=60,
     group: "aligngroup"
     resources:
-        runtime=100,
+        runtime=30,
         mem_mb=4000,
         cores=1,
     log:
@@ -112,8 +114,8 @@ rule sam_subsample:
         subsamp = temporary('results/align/{sample}_{target}_thin.bam'),
         subfactor = 'results/align/{sample}_{target}.substat'
     resources:
-        mem_mb=16000,
-        runtime=180,
+        mem_mb=8000,
+        runtime=60,
         cores=4,
     group: "aligngroup"
     params:
@@ -136,13 +138,13 @@ rule sam_subsample:
 
 rule sam_sort:
     input:
-        aligned = 'results/align/{sample}_{target}_thin.bam'
+        aligned = 'results/align/{sample}_{target}_aligned.bam'
     output:
         sorted = 'results/align/{sample}_{target}.bam',
         idx = 'results/align/{sample}_{target}.bam.bai'
     resources:
         mem_mb=16000,
-        runtime=180,
+        runtime=40,
         cores=4,
     group: "aligngroup"
     log:
