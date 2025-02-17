@@ -27,7 +27,7 @@ rule depthist:
         dhist=temporary('results/align/{sample}_{target}_depthhist.txt'),
     resources:
         mem_mb=8000,
-        runtime=120,
+        runtime=60,
     group: "statsgroup"
     params:
         maxdepth=0,
@@ -55,7 +55,8 @@ rule alignstats:
         stats='results/align/{sample}_{target}_alignstats.txt',
     group: "statsgroup"
     params:
-        mindepth=10
+        mindepth=10,
+        runtime=30,
     run:
         sample = wildcards.sample
         target = wildcards.target
@@ -128,7 +129,7 @@ rule depth_amplicons:
         depth=temporary('results/align/{sample}_{target}_ampdepth.txt'),
     resources:
         mem_mb=8000,
-        runtime=60,
+        runtime=30,
     group: "statsgroup"
     params:
         ampbed='results/refs/{target}_amplicons.bed',
@@ -152,10 +153,10 @@ rule depth_genes:
         depth=temporary('results/align/{sample}_{target}_genedepth.txt'),
     resources:
         mem_mb=8000,
-        runtime=60,
+        runtime=30,
     group: "statsgroup"
     params:
-        bed='results/refs/{target}_genes.bed',
+        gff='results/refs/{target}.gff3',
     log:
         stderr="logs/depth/{sample}_{target}.err"
     container: "docker://sethnr/pgcoe_analysis:0.02"
@@ -163,7 +164,7 @@ rule depth_genes:
         """
         python scripts/get_depth_windows.py -d {input.depth} \
             -s {wildcards.sample} -F `cat {input.subfactor} | cut -f 2,2` \
-            -b {params.bed} -o {output.depth}
+            -g {params.gff} -o {output.depth}
 
         """
 
@@ -178,7 +179,7 @@ rule div_amplicons:
         div='results/summary/{target}_ampdiv.txt',
     resources:
         mem_mb=8000,
-        runtime=60,
+        runtime=30,
     params:
         ampbed='results/refs/{target}_amplicons.bed',
     container: "docker://sethnr/pgcoe_analysis:0.02"
@@ -198,13 +199,13 @@ rule div_genes:
         mem_mb=8000,
         runtime=60,
     params:
-        ampbed='results/refs/{target}_genes.bed',
+        gff='results/refs/{target}.gff3',
     container: "docker://sethnr/pgcoe_analysis:0.02"
     group: "statsgroup"
     shell:
         """
         python scripts/get_refdist_distribution.py -v {input.vcf} \
-            -b {params.ampbed} -o {output.div}
+            -g {params.gff} -o {output.div}
         """
 
 
@@ -224,6 +225,7 @@ rule catstats:
         ampdepths= 'results/summary/{target}_ampdepth.txt',
         genedepths='results/summary/{target}_genedepth.txt',
         #prmdepths='results/summary/{target}_prmdepth.txt',
+    group: "catstats"
     resources:
         mem_mb=8000,
         runtime=180,
@@ -247,6 +249,10 @@ rule runstats:
         ampdiv='results/summary/{target}_ampdiv.txt',        
         genedepths='results/summary/{target}_genedepth.txt',
         genediv='results/summary/{target}_genediv.txt',                
+    group: "catstats"
+    resources:
+        mem_mb=4000,
+        runtime=10,
     output:
         done=temporary('results/summary/{target}_stats'),
     shell:

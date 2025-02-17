@@ -3,21 +3,25 @@ rule bcf_call:
     input:
         tocall = lambda wildcards: expand('results/ivar/{sample}_{{target}}_itrim.bam',sample=get_mash_samples(wildcards)),
         indexed = lambda wildcards: expand("results/ivar/{sample}_{{target}}_itrim.bam.bai",sample=get_mash_samples(wildcards)),
+        ref="results/refs/{target}.fasta"
     output:
-        bcf=temporary('results/bcftools/{target}_varints.bcf'),
+        bamlist=temporary('results/bcftools/bamlist_{target}.txt'),
+        bcf=temporary('results/bcftools/{target}_variants.vcf'),
         vcf=temporary('results/bcftools/{target}_all_unfilt.vcf.gz')
-    params:
-        ref=os.path.join(config['refsdir'],'{target}.fasta')
     resources:
-        mem_mb=8000,
+        mem_mb=24000,
         runtime=240,
+        cpus_per_task=4,
+    params:
+        threads=3
     log:
         stderr="logs/ivar/bcf_call_{target}.err"
     message: "Calling variants for all samples"
     shell:
         """
-        bcftools mpileup -Ou -o {output.bcf} -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} {output.bcf} 2>&1  >> {log.stderr}
+        ls -1 results/ivar/*_{wildcards.target}_itrim.bam > {output.bamlist}
+        bcftools mpileup -Ov --threads {params.threads} -o {output.bcf} -f {input.ref} -b {output.bamlist} #2>&1  > {log.stderr}
+        bcftools call --threads {params.threads} --ploidy 1 -A -vcO z -o {output.vcf} {output.bcf}         #2>&1  >> {log.stderr}
         tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 
@@ -44,20 +48,25 @@ rule bcf_call_untrim:
     input:
         tocall = lambda wildcards: expand('results/align/{sample}_{{target}}.bam',sample=get_mash_samples(wildcards)),
         indexed = lambda wildcards: expand("results/align/{sample}_{{target}}.bam.bai",sample=get_mash_samples(wildcards)),
+        ref="results/refs/{target}.fasta"
     output:
+        bamlist=temporary('results/bcftools/bamlist_untrim_{target}.txt'),
+        bcf=temporary('results/bcftools/{target}_untrim_variants.vcf'),
         vcf=temporary('results/bcftools/{target}_untrim_all_unfilt.vcf.gz')
-    params:
-        ref=os.path.join(config['refsdir'],'{target}.fasta')
     resources:
-        mem_mb=8000,
+        mem_mb=16000,
         runtime=240,
+        cpus_per_task=4,
+    params:
+        threads=3
     log:
-        stderr="logs/ivar/bcf_call_{target}.err"
+        stderr="logs/ivar/bcf_call_untrim_{target}.err"
     message: "Calling variants for all samples"
     shell:
         """
-        bcftools mpileup -Ou -o variants.bcf -f {params.ref} {input.tocall} 2>&1  > {log.stderr}
-        bcftools call --ploidy 1 -vcO z -o {output.vcf} variants.bcf 2>&1  >> {log.stderr}
+        ls -1 results/align/*_{wildcards.target}.bam > {output.bamlist}
+        bcftools mpileup -Ov --threads {params.threads} -o {output.bcf} -f {input.ref} -b {output.bamlist} 2>&1  > {log.stderr}
+        bcftools call --threads {params.threads} --ploidy 1 -A -vcO z -o {output.vcf} {output.bcf} 2>&1  >> {log.stderr}
         tabix -p vcf {output.vcf} 2>&1  >> {log.stderr}	        
 	"""
 
