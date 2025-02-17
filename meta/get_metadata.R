@@ -36,18 +36,6 @@ allmeta$age[grep("yrs",allmeta$agestr)] <- as.numeric(gsub(" yrs","",allmeta$age
 allmeta$age[grep("yr$",allmeta$agestr)] <- as.numeric(gsub(" yr","",allmeta$agestr[grep("yr$",allmeta$agestr)]))
 allmeta[is.na(allmeta$age),]
 
-# bind / merge ------------------------------------------------------------
-platesGS <- read_sheet(sheetname,sheet="RSVSeq")
-plates <- platesGS %>% 
-  rename_with(tolower) %>%
-  select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
-  mutate("plate number"=paste("plate number")) %>%
-  rename("name"="seq_id")
-
-meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
-table(meta[,c("ngs_run_id","rsv plate")])
-
-
 # metadata edits ------------------------------------------------------------
 #allmeta$agecat <- factor(NA,levels=c("Newborns","Infants","Preschool","Children","Adults","Geriatrics"))
 #allmeta$agecat[allmeta$age <= (60/365)] <- "Newborns"
@@ -65,8 +53,8 @@ write.table(allmeta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.n
 
 # bind / merge ------------------------------------------------------------
 
-platesGS <- read_sheet(sheetname,sheet="RSVSeq")
-plates <- platesGS %>% 
+#platesGS <- read_sheet(sheetname,sheet="RSVSeq")
+plates <- plates %>% 
             rename_with(tolower) %>%
             select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
             mutate("plate number"=paste("plate number")) %>%
@@ -88,7 +76,7 @@ meta <- meta %>%
 meta$agecat2 <- factor(meta$agecat2, 
                        levels = c("<1", "[1,5)", "[5,18)", "[18,65)", "65+")) 
 meta$date <- as.Date(meta$date, "%Y-%m-%d")
-meta$rsv.ct <- as.numeric(meta$rsv.ct) # 74 NAs = 70 N/A & 4 NULL
+#meta$rsv.ct <- as.numeric(meta$`rsv ct`) # 74 NAs = 70 N/A & 4 NULL
 
 # ------------------------------------------------------------
 #write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
