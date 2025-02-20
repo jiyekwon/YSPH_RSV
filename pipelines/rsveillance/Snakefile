@@ -118,7 +118,7 @@ rule call_rsvab:
         catstats=temporary('results/summary/cat_alignstats.txt'),
         alignstats='results/summary/final_alignstats.txt',
         calls='results/summary/final_calls.txt'
-    container: "docker://sethnr/pgcoe_analysis:0.02"
+    container: "docker://sethnr/pgcoe_processing:0.01"
     params:
         mincov=0.8,
         minratio=0.95,

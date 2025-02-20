@@ -1,0 +1,1 @@
+../../rsveillance/rules/mash.smk
