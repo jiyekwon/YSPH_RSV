@@ -1,0 +1,23 @@
+Rscript run_transnet_juniper.R -i input_data -m 1e-6 -M -s 5 -o rsv_m1e-6_fix_incvcfs
+Rscript run_transnet_juniper.R -i input_data -m 1e-5 -M -s 5 -o rsv_m1e-5_fix_incvcfs
+Rscript run_transnet_juniper.R -i input_data -m 1e-4 -M -s 5 -o rsv_m1e-4_fix_incvcfs
+Rscript run_transnet_juniper.R -i input_data -m 1e-6 -M -s 5 -o rsv_m1e-6_var_incvcfs
+Rscript run_transnet_juniper.R -i input_data -m 1e-5 -M -s 5 -o rsv_m1e-5_var_incvcfs
+Rscript run_transnet_juniper.R -i input_data -m 1e-4 -M -s 5 -o rsv_m1e-4_var_incvcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-6 -M -s 5 -o rsv_m1e-6_fix_novcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-5 -M -s 5 -o rsv_m1e-5_fix_novcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-4 -M -s 5 -o rsv_m1e-4_fix_novcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-6 -M -s 5 -o rsv_m1e-6_var_novcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-5 -M -s 5 -o rsv_m1e-5_var_novcfs
+Rscript run_transnet_juniper.R -i input_data_noivars -m 1e-4 -M -s 5 -o rsv_m1e-4_var_novcfs
+
+
+for S in 3 4 5 6 7 8; do
+    for M in 1e-4 1e-5 1e-6; do
+    	Rscript run_transnet_juniper.R -i input_data         -m ${M} -M -s ${S} -o rsv_m${M}fix_s${S}_incvcfs
+    	Rscript run_transnet_juniper.R -i input_data         -m ${M}    -s ${S} -o rsv_m${M}var_s${S}_incvcfs
+    	Rscript run_transnet_juniper.R -i input_data_noivars -m ${M} -M -s ${S} -o rsv_m${M}fix_s${S}_novcfs
+    	Rscript run_transnet_juniper.R -i input_data_noivars -m ${M}    -s ${S} -o rsv_m${M}var_s${S}_novcfs
+    done
+done
+
