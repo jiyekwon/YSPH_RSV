@@ -26,9 +26,9 @@ init <- initialize(indir  =opt$input,
                   init_pi =0.05,
                   filters=list(af=0.05, dp=100, sb=10))
 
-outbreak <- run_mcmc(init)
+outbreak <- run_mcmc(init, noisy=TRUE)
 
 summary <- juniper0::summarize(outbreak)
 
-save(summary,file=paste(outprefix,"summary.Rdata",sep="_"))
+save(summary,file=paste(opt$outprefix,"summary.Rdata",sep="_"))
 
