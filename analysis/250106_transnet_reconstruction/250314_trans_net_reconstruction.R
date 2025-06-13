@@ -11,7 +11,7 @@ library(juniper0)
 library(igraph)
 library(patchwork)
 library(ggplot2)
-
+library(ggnetwork)
 
 
 #currently B only
