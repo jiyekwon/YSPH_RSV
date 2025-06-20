@@ -6,11 +6,6 @@ library(patchwork)
 library(dplyr)
 
 
-#seq submission file
-sheetname <- "https://docs.google.com/spreadsheets/d/1nZ5a2ZfmUdMtgB-TcbIYX0begW7O_vZxD6VKxmj1lYU/edit#gid=0"
-allsamples <- read_sheet(sheetname,sheet="Sample Inventory")
-plates <- read_sheet(sheetname,sheet="RSVSeq")
-
 #plate manifests
 metafile <- "https://docs.google.com/spreadsheets/d/1-Ns_6d8mP301uuCbJQKdEZzAU8hDGqlbFCTjp6dl8JA/edit#gid=26759663"
 
@@ -51,13 +46,18 @@ allmeta[is.na(allmeta$agecat),]
 write.table(allmeta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
 
+#seq submission file
+sheetname <- "https://docs.google.com/spreadsheets/d/1nZ5a2ZfmUdMtgB-TcbIYX0begW7O_vZxD6VKxmj1lYU/edit#gid=0"
+allsamples <- read_sheet(sheetname,sheet="Sample Inventory")
+plates <- read_sheet(sheetname,sheet="RSVSeq")
+
+
 # bind / merge ------------------------------------------------------------
 
 #platesGS <- read_sheet(sheetname,sheet="RSVSeq")
 plates <- plates %>% 
             rename_with(tolower) %>%
-            select(c("original_id","seq_id","plate number","ngs_run_id")) %>%
-            mutate("plate number"=paste("plate number")) %>%
+            select(c("original_id","seq_id","ngs_run_id")) %>%
             rename("name"="seq_id")
 
 meta <- merge(plates,allmeta,by.x="original_id",by.y="tubecode")
