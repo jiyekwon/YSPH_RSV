@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.20+htslib-1.20
-##bcftoolsCommand=mpileup -Ov --threads 3 -o results/recondata/Yale-RSV-0907_RSVA_pileup.vcf -f results/refs/RSVA.fasta results/ivar/Yale-RSV-0907_RSVA_itrim.bam
+##bcftoolsCommand=mpileup -Ov --threads 3 -o results/recondata/Yale-RSV-0907_RSVA_pileup.vcf -f results/refs/RSVA.fasta  SAMPLE
 ##reference=file://results/refs/RSVA.fasta
 ##contig=<ID=EPI_ISL_412866,length=15225>
 ##ALT=<ID=*,Description="Represents allele(s) other than observed.">
@@ -32,7 +32,7 @@
 ##bcftools_callCommand=call --threads 3 --ploidy 1 -A -vcO v -o results/recondata/Yale-RSV-0907_RSVA_unfilt.vcf results/recondata/Yale-RSV-0907_RSVA_pileup.vcf; Date=Fri Jun 20 19:48:14 2025
 ##bcftools_filterVersion=1.20+htslib-1.20
 ##bcftools_filterCommand=filter -o results/recondata/RSVA/input_data/vcf/Yale-RSV-0907.vcf -i 'QUAL>10 & DP>10' results/recondata/Yale-RSV-0907_RSVA_unfilt.vcf; Date=Fri Jun 20 19:48:14 2025
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	results/ivar/Yale-RSV-0907_RSVA_itrim.bam
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
 EPI_ISL_412866	66	.	T	A	31.0082	PASS	DP=22;VDB=1.10853e-14;SGB=-0.692352;RPBZ=2.11349;MQBZ=0;BQBZ=-2.11349;SCBZ=-0.431203;MQ0F=0;AF1=1;AC1=1;DP4=1,0,21,0;MQ=60;FQ=-999;PV4=1,0.00214926,1,1	GT:PL	1:61,0
 EPI_ISL_412866	67	.	A	G	13.2167	PASS	DP=250;VDB=2.38787e-17;SGB=-0.693141;RPBZ=-0.284343;MQBZ=0;BQBZ=-1.82918;SCBZ=-0.568917;MQ0F=0;AF1=1;AC1=1;DP4=1,0,37,0;MQ=60;FQ=-999;PV4=1,1.50106e-05,1,0.325331	GT:PL	1:43,0
 EPI_ISL_412866	90	.	C	T	225.007	PASS	DP=273;VDB=0;SGB=-0.693147;MQSBZ=0;MQ0F=0;AF1=1;AC1=1;DP4=0,0,271,1;MQ=60;FQ=-999	GT:PL	1:255,0
