@@ -10,6 +10,7 @@ import re
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--meta', '-m', help='metadata file')
+parser.add_argument('--mindate', '-D', help='minimum date (YYYY-MM-DD)')
 parser.add_argument('--samples', '-s', help='samples file')
 parser.add_argument('--out', '-o', help='outfile')
 parser.add_argument('--datecol', '-d', help='data column (metadata)',default="date")

@@ -31,7 +31,6 @@ rule cp_local_data:
     input:
         refdir=config['refsdir'],
         ampdir=config['ampsdir'],
-        ref=config['ref']
         refsfile=config['refs']
     output:
         fa = expand('results/refs/{target}.fasta',target=TARGETS)
