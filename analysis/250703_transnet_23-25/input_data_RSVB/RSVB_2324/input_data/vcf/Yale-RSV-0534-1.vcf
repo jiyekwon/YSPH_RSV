@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.20+htslib-1.20
-##bcftoolsCommand=mpileup -Ov --threads 3 -o results/recondata/Yale-RSV-0534-1_RSVB_pileup.vcf -f results/refs/RSVB.fasta results/ivar/Yale-RSV-0534-1_RSVB_itrim.bam
+##bcftoolsCommand=mpileup -Ov --threads 3 -o results/recondata/Yale-RSV-0534-1_RSVB_pileup.vcf -f results/refs/RSVB.fasta SAMPLE
 ##reference=file://results/refs/RSVB.fasta
 ##contig=<ID=OP975389.1,length=15222>
 ##ALT=<ID=*,Description="Represents allele(s) other than observed.">
@@ -32,7 +32,7 @@
 ##bcftools_callCommand=call --threads 3 --ploidy 1 -A -vcO v -o results/recondata/Yale-RSV-0534-1_RSVB_unfilt.vcf results/recondata/Yale-RSV-0534-1_RSVB_pileup.vcf; Date=Fri Jun 20 17:34:39 2025
 ##bcftools_filterVersion=1.20+htslib-1.20
 ##bcftools_filterCommand=filter -o results/recondata/RSVB/input_data/vcf/Yale-RSV-0534-1.vcf -i 'QUAL>10 & DP>10' results/recondata/Yale-RSV-0534-1_RSVB_unfilt.vcf; Date=Fri Jun 20 17:34:39 2025
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	results/ivar/Yale-RSV-0534-1_RSVB_itrim.bam
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
 OP975389.1	49	.	A	T	225.007	PASS	DP=252;VDB=0;SGB=-0.693147;MQ0F=0;AF1=1;AC1=1;DP4=0,0,252,0;MQ=60;FQ=-999	GT:PL	1:255,0
 OP975389.1	314	.	A	G	225.007	PASS	DP=248;VDB=1.23016e-06;SGB=-0.693147;RPBZ=3.49;MQBZ=12.0992;MQSBZ=-1.32829;BQBZ=1.20824;SCBZ=-0.20028;MQ0F=0;AF1=1;AC1=1;DP4=2,3,89,153;MQ=60;FQ=-999;PV4=1,1,1,1	GT:PL	1:255,0
 OP975389.1	441	.	A	T	62.0051	PASS	DP=21;VDB=7.10873e-06;SGB=-0.670168;RPBZ=2.84726;MQBZ=-1.42701;MQSBZ=-1.68175;BQBZ=-2.06747;SCBZ=1.05847;MQ0F=0;AF1=0.5;AC1=1;DP4=2,2,3,7;MQ=57;FQ=-999;PV4=0.58042,0.0240176,0.0821169,0.264936	GT:PL	1:255,163

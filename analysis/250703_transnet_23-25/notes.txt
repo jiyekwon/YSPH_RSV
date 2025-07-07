@@ -9,4 +9,4 @@ grep -f input_data_RSVA/RSVA_2425/samples_1.tsv metadata.tsv > input_data_RSVA/R
 grep -f input_data_RSVB/RSVB_2324/samples_1.tsv metadata.tsv > input_data_RSVB/RSVB_2324/input_data/metadata.tsv
 grep -f input_data_RSVB/RSVB_2425/samples_1.tsv metadata.tsv > input_data_RSVB/RSVB_2425/input_data/metadata.tsv
 
-perl -pe 's/(.*)results\/ivar\/Yale.*/$1 SAMPLE/gi' input_data_RSV?/RSVA_*/input_data/vcf/*.vcf
+perl -pe 's/(.*)results\/ivar\/Yale.*/${1}SAMPLE/gi' input_data_RSV?/RSV?_*/input_data/vcf/*.vcf
