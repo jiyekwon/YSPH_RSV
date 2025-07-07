@@ -180,11 +180,11 @@ get_network_df <- function(sets,transmatrix,meta) {
 
 plot_clusters <- function(setgraph, title="") {
   #age color scheme
-  age_colors <- c("Infants" = "green",
-                  "Preschool" = "blue",
-                  "Children" = "red",
-                  "Adults" = "pink",
-                  "Geriatrics" = "grey")
+  age_colors <- c("<1" = "green",
+                  "[1,5)" = "blue",
+                  "[5,18)" = "red",
+                  "[18,65)" = "pink",
+                  "65+" = "grey")
   
   cplot <- ggplot(setgraph) +
     geom_edges(aes(x = date_from, xend = date_to, y = y2, yend = yend2,linewidth=z,linetype=backedge),
@@ -204,11 +204,11 @@ plot_clusters <- function(setgraph, title="") {
 
 plot_extents <- function(setgraph, title="") {
   #age color scheme
-  age_colors <- c("Infants" = "green",
-                  "Preschool" = "blue",
-                  "Children" = "red",
-                  "Adults" = "pink",
-                  "Geriatrics" = "grey")
+  age_colors <- c("<1" = "green",
+                  "[1,5)" = "blue",
+                  "[5,18)" = "red",
+                  "[18,65)" = "pink",
+                  "65+" = "grey")
 
   netlengths <- setgraph %>% 
     group_by(cluster) %>%
