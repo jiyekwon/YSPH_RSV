@@ -20,7 +20,7 @@ target = args.target
 outfile = args.out
 
 if depthfile is None:
-    depthfile = "results/align/{}_{}_depth.txt"
+    depthfile = "results/ivar/{}_{}_depth.txt"
 
 samples = open(samplefile).read().split()
 

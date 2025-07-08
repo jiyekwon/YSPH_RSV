@@ -1,12 +1,29 @@
-Rscript run_transnet_juniper.R -i input_data_RSVA/RSVA_2324/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVA_2324
-Rscript run_transnet_juniper.R -i input_data_RSVA/RSVA_2425/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVA_2425
+#Rscript run_transnet_juniper.R -i input_data_RSVA/RSVA_2324/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVA_2324
+#Rscript run_transnet_juniper.R -i input_data_RSVA/RSVA_2425/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVA_2425
 
-Rscript run_transnet_juniper.R -i input_data_RSVB/RSVB_2324/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVB_2324
-Rscript run_transnet_juniper.R -i input_data_RSVB/RSVB_2425/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVB_2425
 
-grep -f input_data_RSVA/RSVA_2324/samples_1.tsv metadata.tsv > input_data_RSVA/RSVA_2324/input_data/metadata.tsv
-grep -f input_data_RSVA/RSVA_2425/samples_1.tsv metadata.tsv > input_data_RSVA/RSVA_2425/input_data/metadata.tsv
-grep -f input_data_RSVB/RSVB_2324/samples_1.tsv metadata.tsv > input_data_RSVB/RSVB_2324/input_data/metadata.tsv
-grep -f input_data_RSVB/RSVB_2425/samples_1.tsv metadata.tsv > input_data_RSVB/RSVB_2425/input_data/metadata.tsv
+cp -r ../../pipelines/reconstructR/results/recondata/* ./
 
-perl -pe 's/(.*)results\/ivar\/Yale.*/${1}SAMPLE/gi' input_data_RSV?/RSV?_*/input_data/vcf/*.vcf
+echo "sample" > RSVA/samples_1.tsv
+echo "sample" > RSVB/samples_1.tsv
+
+perl -pe 's/\s/\n/gi;' RSVA/samples.txt >> RSVA/samples_1.tsv
+perl -pe 's/\s/\n/gi;' RSVB/samples.txt >> RSVB/samples_1.tsv
+
+grep -f RSVA/samples_1.tsv  metadata.tsv > RSVA/input_data/metadata.tsv
+grep -f RSVB/samples_1.tsv  metadata.tsv > RSVB/input_data/metadata.tsv
+
+#perl -i -pe 's/-1(?=\s)//gi' RSV?/input_data/*.* <-- do not change -1, IDs do not match up
+
+sort -u  RSVA/input_data/metadata.tsv > RSVA/input_data/metadata_s.tsv
+sort -u  RSVB/input_data/metadata.tsv > RSVB/input_data/metadata_s.tsv
+mv RSVA/input_data/metadata_s.tsv RSVA/input_data/metadata.tsv
+mv RSVB/input_data/metadata_s.tsv RSVB/input_data/metadata.tsv
+
+#swap all sample names to fake lofreq format
+perl -i -pe 's/(.*)results\/ivar\/Yale.*/${1}SAMPLE/gi' RSV?/input_data/vcf/*.vcf
+
+
+
+#perl -pe 's/(.*)results\/ivar\/Yale.*/${1}SAMPLE/gi' input_data_RSV?/RSV?_*/input_data/vcf/*.vcf
+perl -i -pe 's/(.*)results\/ivar\/Yale.*/${1}SAMPLE/gi' RSV?/input_data/vcf/*.vcf
