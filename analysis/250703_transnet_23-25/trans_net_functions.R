@@ -9,6 +9,15 @@ require(ggplot2)
 require(ggnetwork)
 
 
+
+#age color scheme
+age_colors <- c("<1" = "green",
+                "[1,5)" = "blue",
+                "[5,18)" = "red",
+                "[18,65)" = "pink",
+                "65+" = "grey")
+
+
 # identify clusters within transmission matrix ----------------------------
 
 
@@ -172,6 +181,7 @@ get_network_df <- function(sets,transmatrix,meta) {
     }
     
   }
+  allsetgraph$agecat <- factor(allsetgraph$agecat,levels=rev(levels(meta$agecat)))
   return(allsetgraph)
 }
 
@@ -179,18 +189,12 @@ get_network_df <- function(sets,transmatrix,meta) {
 #make gplots from graphs 
 
 plot_clusters <- function(setgraph, title="") {
-  #age color scheme
-  age_colors <- c("<1" = "green",
-                  "[1,5)" = "blue",
-                  "[5,18)" = "red",
-                  "[18,65)" = "pink",
-                  "65+" = "grey")
   
   cplot <- ggplot(setgraph) +
     geom_edges(aes(x = date_from, xend = date_to, y = y2, yend = yend2,linewidth=z,linetype=backedge),
                arrow=arrow(ends="last"),alpha=0.5) +
     geom_nodes(aes(x = date, y = y2,color=agecat),size=5) + 
-    geom_nodetext(aes(x = date, y = y2,label=shortname),inherit.aes = F) + 
+    #geom_nodetext(aes(x = date, y = y2,label=shortname),inherit.aes = F) + 
     theme_bw() + 
     #facet_grid(cluster ~ .) +
     scale_color_manual(values=age_colors) +

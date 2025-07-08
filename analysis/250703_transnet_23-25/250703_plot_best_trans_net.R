@@ -12,14 +12,19 @@ source("./trans_net_functions.R")
 # identify clusters within transmission matrix ----------------------------
 
 inputs <- list(
-            c("metafile" = "input_data_RSVA/RSVA_2324/input_data/metadata.tsv",
-                  "infile" = "transnet_RSVA_2324_summary.Rdata"),
-            c("metafile" = "input_data_RSVA/RSVA_2425/input_data/metadata.tsv",
-                  "infile" = "transnet_RSVA_2425_summary.Rdata"),
-            c("metafile" = "input_data_RSVB/RSVB_2324/input_data/metadata.tsv",
-                 "infile" = "transnet_RSVB_2324_summary.Rdata"),
-            c("metafile" = "input_data_RSVB/RSVB_2425/input_data/metadata.tsv",
-                 "infile" = "transnet_RSVB_2425_summary.Rdata")
+              c("metafile" = "RSVA/input_data/metadata.tsv",
+                    "infile" = "transnet_RSVA_232425_summary.Rdata"),
+              c("metafile" = "RSVB/input_data/metadata.tsv",
+                "infile" = "transnet_RSVB_232425_summary.Rdata")
+              
+            # c("metafile" = "input_data_RSVA/RSVA_2324/input_data/metadata.tsv",
+            #       "infile" = "transnet_RSVA_2324_summary.Rdata"),
+            # c("metafile" = "input_data_RSVA/RSVA_2425/input_data/metadata.tsv",
+            #       "infile" = "transnet_RSVA_2425_summary.Rdata"),
+            # c("metafile" = "input_data_RSVB/RSVB_2324/input_data/metadata.tsv",
+            #      "infile" = "transnet_RSVB_2324_summary.Rdata"),
+            # c("metafile" = "input_data_RSVB/RSVB_2425/input_data/metadata.tsv",
+            #      "infile" = "transnet_RSVB_2425_summary.Rdata")
 )
 
 for(input in inputs) {
@@ -28,7 +33,7 @@ for(input in inputs) {
   
   meta <- read.table(metafile,header=T,sep="\t") %>%
                 mutate(agecat = factor(agecat2,levels=c("<1","[1,5)","[5,18)","[18,65)","65+"),ordered=T))
-  MIN_Z=0.3
+  MIN_Z=0.5
   
   
   load(infile)
@@ -60,13 +65,7 @@ for(input in inputs) {
   xplot <- plot_extents(transdf,setname)
   cplot <- plot_clusters(transdf,setname)
   
-  age_colors <- c("<1" = "green",
-                  "[1,5)" = "blue",
-                  "[5,18)" = "red",
-                  "[18,65)" = "pink",
-                  "65+" = "grey")
-  
-  
+
   
   longplot <- ggplot(cases,aes(x=month,group=agecat,fill=agecat)) + 
                 geom_bar() + 
@@ -114,7 +113,7 @@ for(input in inputs) {
   
   
   longplot / cplot / (transsumplot | (intplot | sizeplot)) + plot_layout(heights=c(2,6,2))
-  ggsave(paste("netplot_",setname,".png",sep=""),height=300,width=250,units="mm")
+  ggsave(paste("netplot_",setname,".png",sep=""),height=210,width=310,units="mm")
   
 
 }
