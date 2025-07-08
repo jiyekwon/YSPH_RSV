@@ -16,15 +16,6 @@ inputs <- list(
                     "infile" = "transnet_RSVA_232425_summary.Rdata"),
               c("metafile" = "RSVB/input_data/metadata.tsv",
                 "infile" = "transnet_RSVB_232425_summary.Rdata")
-              
-            # c("metafile" = "input_data_RSVA/RSVA_2324/input_data/metadata.tsv",
-            #       "infile" = "transnet_RSVA_2324_summary.Rdata"),
-            # c("metafile" = "input_data_RSVA/RSVA_2425/input_data/metadata.tsv",
-            #       "infile" = "transnet_RSVA_2425_summary.Rdata"),
-            # c("metafile" = "input_data_RSVB/RSVB_2324/input_data/metadata.tsv",
-            #      "infile" = "transnet_RSVB_2324_summary.Rdata"),
-            # c("metafile" = "input_data_RSVB/RSVB_2425/input_data/metadata.tsv",
-            #      "infile" = "transnet_RSVB_2425_summary.Rdata")
 )
 
 for(input in inputs) {
@@ -42,18 +33,24 @@ for(input in inputs) {
   transmatrix = summary$direct_transmissions
   sets <- find_trans_nets(transmatrix,MIN_Z=MIN_Z)
   sets <- date_order_nets(sets,meta)
-  transdf <- get_network_df(sets,transmatrix,meta)
+  transdf <- get_network_df(sets,transmatrix,meta,MIN_Z)
   
   intervals <- transdf %>% 
     filter(!is.na(date_to)) %>% 
     select(cluster,date_from,date_to) %>%
     mutate(interval = abs(date_from-date_to))
-  
+
   cases <- transdf %>% 
-    filter(is.na(date_to)) %>% 
+    filter(is.na(date_to)) %>%
     select(cluster,name,date,agecat) %>%
     mutate(month = format(date,"%Y-%m"))
-  #cases
+  
+  #make factor for all month levels (print empty months)
+  monthlevels <- sort(do.call(paste,c(expand.grid(c(year(min(transdf$date)):year(max(transdf$date))),
+                                                  sprintf("%02d", c(1:12))),sep="-")))
+  monthlevels <- monthlevels[monthlevels>=min(cases$month) & monthlevels<=max(cases$month)]
+  cases <- cases %>% mutate(month = factor(month,levels=monthlevels,ordered=T))
+
   
   cluster_sizes <- cases %>%
     group_by(cluster) %>% 
@@ -69,7 +66,8 @@ for(input in inputs) {
   
   longplot <- ggplot(cases,aes(x=month,group=agecat,fill=agecat)) + 
                 geom_bar() + 
-                scale_fill_manual(values=age_colors)
+                scale_fill_manual(values=age_colors) + 
+                scale_x_discrete(drop=F,limits=c(monthlevels))
     
   
   donors = c()

@@ -105,7 +105,7 @@ date_order_nets <- function(sets,meta) {
 # wrap and plot all clusters  ---------------------------------------------
 
 
-get_network_df <- function(sets,transmatrix,meta) {
+get_network_df <- function(sets,transmatrix,meta,min_z) {
   #transplots = list()
   setmatrices = list()
   #if(exists("allsetgraph")) {rm(allsetgraph)}
@@ -120,7 +120,7 @@ get_network_df <- function(sets,transmatrix,meta) {
       mutate(date=as.Date(date))
     
     setmatrixdf <- reshape2::melt(setmatrix, c("from", "to"), 
-                                  value.name = "z") %>% filter(z>MIN_Z) %>%
+                                  value.name = "z") %>% filter(z>=min_z) %>%
       merge(setmeta[,c("sample","date")],by.x="to",by.y="sample",all.x=T) %>%
       merge(setmeta[,c("sample","date")],by.x="from",by.y="sample",all.x=T,
             suffixes = c("_to","_from"))
