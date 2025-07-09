@@ -3,5 +3,8 @@
 #Rscript run_transnet_juniper.R -i input_data_RSVB/RSVB_2324/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVB_2324
 #Rscript run_transnet_juniper.R -i input_data_RSVB/RSVB_2425/input_data/ -m 1e-4 -M -s 7 -o transnet_RSVB_2425
 
-Rscript run_transnet_juniper.R -i RSVA/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVA_232425
-Rscript run_transnet_juniper.R -i RSVB/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVB_232425
+#Rscript run_transnet_juniper.R -i RSVA/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVA_232425
+#Rscript run_transnet_juniper.R -i RSVB/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVB_232425
+
+Rscript run_transnet_juniper.R -i RSVA/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVA_232425_novcf
+Rscript run_transnet_juniper.R -i RSVB/input_data/ -m 1e-4 -M -s 5 -o transnet_RSVB_232425_novcf
