@@ -105,7 +105,7 @@ date_order_nets <- function(sets,meta) {
 # wrap and plot all clusters  ---------------------------------------------
 
 
-get_network_df <- function(sets,transmatrix,meta,min_z) {
+get_network_df <- function(sets,transmatrix,meta,min_z,daybuffer=7) {
   #transplots = list()
   setmatrices = list()
   #if(exists("allsetgraph")) {rm(allsetgraph)}
@@ -148,8 +148,8 @@ get_network_df <- function(sets,transmatrix,meta,min_z) {
     } else {
       
       #check for overlaps with existing clusters
-      xmin <- min(setgraphdf$date_from,na.rm=TRUE)
-      xmax <- max(setgraphdf$date_to,na.rm=T)
+      xmin <- min(c(setgraphdf$date_from,setgraphdf$date_to),na.rm=TRUE)
+      xmax <- max(c(setgraphdf$date_from,setgraphdf$date_to),na.rm=T)
       ymin <- min(setgraphdf$y2)
       ymax <- max(setgraphdf$yend2)
       
@@ -160,16 +160,19 @@ get_network_df <- function(sets,transmatrix,meta,min_z) {
         olap=FALSE
         for(j in unique(allsetgraph$cluster)) {
           cfset <- allsetgraph$cluster==j
-          daybuffer <- 7
-          cfxmin <- min(allsetgraph$date_from[cfset],na.rm=TRUE) - daybuffer
-          cfxmax <- max(allsetgraph$date_to[cfset],na.rm=T) + daybuffer
+          
+          cfxmin <- min(c(allsetgraph$date_from[cfset],allsetgraph$date_to[cfset]),
+                        na.rm=TRUE) - daybuffer
+          cfxmax <- max(c(allsetgraph$date_from[cfset],allsetgraph$date_to[cfset]),
+                        na.rm=T) + daybuffer
           cfymin <- min(allsetgraph$y2[cfset])
           cfymax <- max(allsetgraph$yend2[cfset])
           
-          if((xmin <= cfxmax & xmax >= cfxmin) & (ymin <= cfymax & ymax >= cfymin) & (i!=j)) {
+          if((xmin <= cfxmax & xmax >= cfxmin) & (ymin <= cfymax & ymax >= cfymin)) {
             #write(paste("overlap",i,j),file=stderr())
             olap=TRUE}
-        }
+        } # end of for j in unique(allsetgraph$cluster)
+        
         if(olap==TRUE) {
           setgraphdf$y2 <- setgraphdf$y2 + 1
           setgraphdf$yend2 <- setgraphdf$yend2 + 1
@@ -188,21 +191,34 @@ get_network_df <- function(sets,transmatrix,meta,min_z) {
 
 #make gplots from graphs 
 
-plot_clusters <- function(setgraph, title="") {
+plot_clusters <- function(setgraph, title="",plotnames=FALSE) {
   
-  cplot <- ggplot(setgraph) +
-    geom_edges(aes(x = date_from, xend = date_to, y = y2, yend = yend2,linewidth=z,linetype=backedge),
-               arrow=arrow(ends="last"),alpha=0.5) +
-    geom_nodes(aes(x = date, y = y2,color=agecat),size=5) + 
-    #geom_nodetext(aes(x = date, y = y2,label=shortname),inherit.aes = F) + 
-    theme_bw() + 
-    #facet_grid(cluster ~ .) +
-    scale_color_manual(values=age_colors) +
-    ggtitle(label=title) +
-    theme(#axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
-      axis.title = element_blank(), 
-      legend.position = "none", panel.background = element_rect(fill = "white",colour = NA), 
-      panel.border = element_blank(), panel.grid = element_blank())
+  if(plotnames) {
+    cplot <- ggplot(setgraph) +
+      geom_edges(aes(x = date_from, xend = date_to, y = y2, yend = yend2,linewidth=z,linetype=backedge),
+                 arrow=arrow(ends="last"),alpha=0.5) +
+      geom_nodes(aes(x = date, y = y2,color=agecat),size=5) + 
+      geom_nodetext(aes(x = date, y = y2,label=cluster),inherit.aes = F) + 
+      theme_bw() + 
+      scale_color_manual(values=age_colors) +
+      ggtitle(label=title) +
+      theme(#axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.title = element_blank(), 
+        legend.position = "none", panel.background = element_rect(fill = "white",colour = NA), 
+        panel.border = element_blank(), panel.grid = element_blank())
+  } else {
+    cplot <- ggplot(setgraph) +
+      geom_edges(aes(x = date_from, xend = date_to, y = y2, yend = yend2,linewidth=z,linetype=backedge),
+                 arrow=arrow(ends="last"),alpha=0.5) +
+      geom_nodes(aes(x = date, y = y2,color=agecat),size=5) + 
+      #geom_nodetext(aes(x = date, y = y2,label=shortname),inherit.aes = F) + 
+      theme_bw() + 
+      scale_color_manual(values=age_colors) +
+      theme(#axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.title = element_blank(), 
+        legend.position = "none", panel.background = element_rect(fill = "white",colour = NA), 
+        panel.border = element_blank(), panel.grid = element_blank())
+  }
   return(cplot)
   }
 

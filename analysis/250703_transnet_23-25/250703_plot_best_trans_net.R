@@ -15,8 +15,13 @@ inputs <- list(
               c("metafile" = "RSVA/input_data/metadata.tsv",
                     "infile" = "transnet_RSVA_232425_summary.Rdata"),
               c("metafile" = "RSVB/input_data/metadata.tsv",
-                "infile" = "transnet_RSVB_232425_summary.Rdata")
+                "infile" = "transnet_RSVB_232425_summary.Rdata"),
+              c("metafile" = "RSVA/input_data/metadata.tsv",
+                "infile" = "transnet_RSVA_232425_novcf_summary.Rdata"),
+              c("metafile" = "RSVB/input_data/metadata.tsv",
+                "infile" = "transnet_RSVB_232425_novcf_summary.Rdata")
 )
+
 
 for(input in inputs) {
   metafile <- input[['metafile']]
@@ -25,7 +30,7 @@ for(input in inputs) {
   meta <- read.table(metafile,header=T,sep="\t") %>%
                 mutate(agecat = factor(agecat2,levels=c("<1","[1,5)","[5,18)","[18,65)","65+"),ordered=T))
   MIN_Z=0.5
-  
+  daybuffer=14
   
   load(infile)
   setname=gsub("_summary.Rdata","",infile)
@@ -33,7 +38,7 @@ for(input in inputs) {
   transmatrix = summary$direct_transmissions
   sets <- find_trans_nets(transmatrix,MIN_Z=MIN_Z)
   sets <- date_order_nets(sets,meta)
-  transdf <- get_network_df(sets,transmatrix,meta,MIN_Z)
+  transdf <- get_network_df(sets,transmatrix,meta,MIN_Z,daybuffer)
   
   intervals <- transdf %>% 
     filter(!is.na(date_to)) %>% 
@@ -60,14 +65,15 @@ for(input in inputs) {
   #transdf <- subset(transdf,date > as.Date("2024-07-01"))
   
   xplot <- plot_extents(transdf,setname)
-  cplot <- plot_clusters(transdf,setname)
+  cplot <- plot_clusters(transdf,setname,plotnames=F)
   
 
   
   longplot <- ggplot(cases,aes(x=month,group=agecat,fill=agecat)) + 
                 geom_bar() + 
                 scale_fill_manual(values=age_colors) + 
-                scale_x_discrete(drop=F,limits=c(monthlevels))
+                scale_x_discrete(drop=F,limits=c(monthlevels)) +
+                theme(axis.title.x = element_blank())
     
   
   donors = c()
@@ -103,15 +109,24 @@ for(input in inputs) {
   
   transsumplot <- ggplot(transsums,aes(y=fromcat,x=tocat,fill=n,label=n)) + 
     geom_tile() + geom_text(color="white") +
-    xlab("to") + ylab("from")
+    xlab("to") + ylab("from") + 
+    theme(legend.position = "none",axis.text.x = element_text(angle=90,hjust=1)) + 
+    coord_fixed()
   
   
-  intplot <- ggplot(intervals,aes(x=interval)) + geom_density() + xlab("cluster size")
-  sizeplot <- ggplot(cluster_sizes,aes(x=n)) + geom_density() + xlab("interval")
+  intplot <- ggplot(intervals,aes(x=interval)) + geom_density() + xlab("interval")
+  sizeplot <- ggplot(cluster_sizes,aes(x=n)) + geom_density() + xlab("cluster size")
   
   
-  longplot / cplot / (transsumplot | (intplot | sizeplot)) + plot_layout(heights=c(2,6,2))
+  longplot + cplot +transsumplot + intplot + sizeplot + guide_area() + plot_layout(design="AAAF
+                                                                                             BBBC
+                                                                                             BBBD
+                                                                                             BBBE",
+                                                                                    guides="collect",
+                                                                                    widths=c(8,2),heights=c(1,1,1,1))
   ggsave(paste("netplot_",setname,".png",sep=""),height=210,width=310,units="mm")
   
 
 }
+
+
