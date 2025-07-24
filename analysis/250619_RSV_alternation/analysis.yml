@@ -1,0 +1,11 @@
+name: analysis
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - biopython
+  - matplotlib
+  - numpy
+  - pandas
