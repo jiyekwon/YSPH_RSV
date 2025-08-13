@@ -1,5 +1,4 @@
-
-TARGETS, = glob_wildcards("{target}_consensus.fasta")
+INDIR = "datasets"
 
 wildcard_constraints:
     target="RSVA|RSVB"
@@ -8,7 +7,26 @@ wildcard_constraints:
 
 rule nextstrain_all:
     input:
-        nextstrain=expand('{target}_auspice.json',target=TARGETS)
+        nextstrain=expand('{target}_auspice.json',target=['RSVA','RSVB'])
+
+rule cat_rsveillance:
+    input:
+        fastas=paste(INDIR,'/{dataset}/summary/{target}_consensus.fasta')
+    output:
+        all='{target}_consensus.fasta',
+    resources:
+        mem_mb=8000,
+        runtime=600,
+    container: None
+    log:
+        stderr="logs/cat_{target}.err"
+    params:
+        mindate=2000,
+        seq_per_group=50,
+    shell:
+        """
+        cat {input.fastas} > {output.all}
+        """
 
 
 rule next_index:
@@ -19,7 +37,7 @@ rule next_index:
     resources:
         mem_mb=4000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         err="logs/{fastafile}.err"
     shell:
@@ -39,7 +57,7 @@ rule next_filter_background:
     resources:
         mem_mb=4000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stdout="logs/filter_background_{target}.out",
         stderr="logs/filter_background_{target}.err"
@@ -80,7 +98,7 @@ rule next_filter:
     resources:
         mem_mb=4000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stdout="logs/filter_consensus_{target}.out",
         stderr="logs/filter_consensus_{target}.err"
@@ -107,7 +125,7 @@ rule cat_fasta:
     resources:
         mem_mb=8000,
         runtime=600,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stderr="logs/filter_{target}.err"
     params:
@@ -129,7 +147,7 @@ rule next_align:
     resources:
         mem_mb=8000,
         runtime=600,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stderr="logs/filter_{target}.err"
     shell:
@@ -151,7 +169,7 @@ rule next_tree:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stderr="logs/tree_{target}.err"
     shell:
@@ -178,7 +196,7 @@ rule next_refine:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     log:
         stdout="logs/{target}_refine.out",
         stderr="logs/{target}_refine.err"
@@ -212,7 +230,7 @@ rule next_traits:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     shell:
         """
         augur traits \
@@ -237,7 +255,7 @@ rule next_ancestral:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     shell:
         """
         augur ancestral \
@@ -260,7 +278,7 @@ rule next_translate:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     shell:
         """
         augur translate \
@@ -284,7 +302,7 @@ rule next_export:
     resources:
         mem_mb=8000,
         runtime=240,
-    #container: "docker://nextstrain/base:build-20240501T170101Z"
+    container: "docker://nextstrain/base"
     params:
         metadata="meta/rsv_metadata_gisaid.txt",
         colors = "colors.txt",
