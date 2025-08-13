@@ -1,0 +1,39 @@
+{  "title": "YSPH PGCOE surveillance RSV",
+  "maintainers": [
+    {"name": "Seth Redmond", "url": "https://github.com/sethnr/"}
+  ],
+  "colorings": [
+    {
+      "key": "country",
+      "title": "origin",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "region",
+      "type": "categorical"
+    },
+    {
+      "key": "agecat",
+      "title": "age category",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+      "continent",
+      "country",
+      "region"
+  ],
+  "panels": [
+     "tree",
+     "map",
+     "entropy"
+  ],
+  "filters": [
+    "country",
+    "region",
+    "agecat",
+    "author"
+  ]
+}
+
