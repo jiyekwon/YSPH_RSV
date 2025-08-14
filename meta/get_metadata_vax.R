@@ -76,7 +76,8 @@ meta <- merge(plates,allmeta,by="tubecode")%>%
 #write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 write.table(meta,file="rsv_metadata_vax.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
-mainmeta <- read.table("./rsv_metadata.txt",header=T,sep="\t",stringsAsFactors = F)
+mainmeta <- read.table("./rsv_metadata.txt",header=T,sep="\t",stringsAsFactors = F) %>%
+  mutate(date = as.Date(date, "%Y-%m-%d"))
 
 meta$age = "NA"
 meta$agecat = "NA"
