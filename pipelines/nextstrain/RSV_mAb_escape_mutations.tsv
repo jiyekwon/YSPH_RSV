@@ -1,0 +1,13 @@
+Ref	Site	Alt	Mutation	Target Site	Affected Antibody	Subtype	Effect	Gene	Notes
+L	172	Q	L172Q	Site V	Suptavumab	RSV-B	Escape	F	
+S	173	L	S173L	Site V	Suptavumab	RSV-B	Escape	F	
+T	176	I	T176I	Site V	Suptavumab	RSV-B	Escape	F	
+K	272	E	K272E	Site II	Palivizumab	RSV-A/B	Escape	F	
+N	276	S	N276S	Site II	Palivizumab	RSV-A/B	Escape	F	
+K	68	N	K68N	Site Ø	Nirsevimab	RSV-B	Partial escape (in vitro)	F	
+S	190	F	S190F	Site Ø	Nirsevimab	RSV-B	Partial escape (in vitro)	F	
+I	206	M	I206M:Q209R	Site Ø	Nirsevimab	RSV-B	Increased susceptibility	F	
+X	207	X	I206M:Q209R	Site Ø	Nirsevimab	RSV-B	Increased susceptibility	F	
+X	208	X	I206M:Q209R	Site Ø	Nirsevimab	RSV-B	Increased susceptibility	F	
+Q	209	R	I206M:Q209R	Site Ø	Nirsevimab	RSV-B	Increased susceptibility	F	
+L	305	I	L305I	Distal epitope sites	Multiple mAbs	RSV-A	Broad resistance	F	 (RSV-A→RSV-B)
