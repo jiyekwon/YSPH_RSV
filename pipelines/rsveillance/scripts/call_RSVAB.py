@@ -104,8 +104,8 @@ else:
 combinations = pd.merge(combinations,alignstats[alignstatsnames],on=['sample','mashcall'])
 
 #fill across call / mashcall columns
-calls['mashcall'] = calls['mashcall'].fillna(calls['call'])
-calls['call'] = calls['call'].fillna(calls['mashcall'])
+#calls['mashcall'] = calls['mashcall'].fillna(calls['call'])
+#calls['call'] = calls['call'].fillna(calls['mashcall'])
 
 calls.to_csv("{}_calls.txt".format(outfile),sep="\t",index=False)
 combinations.to_csv("{}_alignstats.txt".format(outfile),sep="\t",index=False,header=False)
