@@ -78,6 +78,8 @@ write.table(meta,file="rsv_metadata_vax.txt",sep="\t",quote=T,row.names = F,col.
 
 mainmeta <- read.table("./rsv_metadata.txt",header=T,sep="\t",stringsAsFactors = F)
 
+meta$project = "PGCOE"
+mainmeta$project = "VAXesc"
 commoncols <- intersect(colnames(meta),colnames(mainmeta))
 
 write.table(rbind(mainmeta[,commoncols],meta[,commoncols]),
