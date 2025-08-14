@@ -1,0 +1,1 @@
+snakemake --cores 4 --slurm -j 30 --latency-wait 180    --use-singularity --singularity-args "-B ${SCRATCH}" -k
