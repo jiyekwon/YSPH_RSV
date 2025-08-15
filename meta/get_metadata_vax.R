@@ -81,8 +81,8 @@ mainmeta <- read.table("./rsv_metadata.txt",header=T,sep="\t",stringsAsFactors =
 
 meta$age = "NA"
 meta$agecat = "NA"
-meta$project = "PGCOE"
-mainmeta$project = "VAXesc"
+meta$project = "VAXesc"
+mainmeta$project = "PGCOE"
 commoncols <- intersect(colnames(meta),colnames(mainmeta))
 
 write.table(rbind(mainmeta[,commoncols],meta[,commoncols]),
