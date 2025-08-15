@@ -17,6 +17,11 @@
       "key": "agecat",
       "title": "age category",
       "type": "categorical"
+    },
+    {
+      "key": "project",
+      "title": "project",
+      "type": "categorical"
     }
   ],
   "geo_resolutions": [
@@ -33,7 +38,8 @@
     "country",
     "region",
     "agecat",
-    "author"
+    "author",
+    "project"
   ]
 }
 

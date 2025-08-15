@@ -1,7 +1,0 @@
-grep RSVA ../../analysis/241213_p1_reseq_cf/data/final_calls_v2.txt | cut -f 1  > RSVA.samples
-grep RSVB ../../analysis/241213_p1_reseq_cf/data/final_calls_v2.txt | cut -f 1  > RSVB.samples
-
-perl -i -pe 's/(\>Yale-RSV.*)\-1/$1/gi' RSV?_consensus.fasta
-perl -i -pe 's/(Yale-RSV.*)\-1/$1/gi' *samples.txt
-
-nextstrain build ./
