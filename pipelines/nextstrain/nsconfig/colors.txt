@@ -1,2 +1,13 @@
 Lab_Origin	YNHH	#072f70
 Lab_Origin	MGH	#12c5e0
+
+agecat	<1	#006d2c
+agecat	[1,5)	#2ca25f"
+agecat	[5,18)	#66c2a4
+agecat	[18,65)	#b2e2e2
+agecat	65+	#edf8fb
+
+project	background	#AAAAAA
+project	VAXesc	#DD0000
+project	PGCOE	#DD8888
+
