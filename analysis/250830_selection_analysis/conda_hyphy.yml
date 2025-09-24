@@ -5,15 +5,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - biopython=1.85=py313h72d1ebd_0
-  - hyphy=2.5.75=h558c6c5_0
-  - ipython=9.1.0=py313hca03da5_0
-  - iqtree=3.0.1=h39b84e0_0
-  - mafft=7.526=h99b78c6_0
-  - numpy=2.3.3=py313h9771d21_0
-  - pal2nal=14.1=pl5321hdfd78af_3
-  - pandas=2.3.2=py313h17050e6_0
-  - python=3.13.7=hc28b8d9_100_cp313
-  - simplejson=3.19.2=py313h80987f9_1
-  - virulign=1.1.1=hfa788aa_6
+  - biopython=1.85
+  - hyphy=2.5.75
+  - ipython=9.1.0
+  - iqtree=3.0.1
+  - mafft=7.526
+  - numpy=2.3.3
+  - pal2nal=14.1
+  - pandas=2.3.2
+  - python=3.13.7
+  - simplejson=3.19.2
+  - virulign=1.1.1
 prefix: /opt/miniconda3/envs/hyphy
