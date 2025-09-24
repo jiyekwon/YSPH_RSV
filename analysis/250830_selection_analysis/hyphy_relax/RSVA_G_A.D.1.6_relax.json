@@ -1,0 +1,3311 @@
+{
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution g",
+   "citation":"RELAX: Detecting Relaxed Selection in a Phylogenetic Framework (2015). Mol Biol Evol 32 (3): 820-832",
+   "contact":"spond@temple.edu",
+   "info":"RELAX (a random effects test of selection relaxation) uses a random effects branch-site model framework to test whether a set of 'Test' branches evolves under relaxed selection relative to a set of 'Reference' branches (R), as measured by the relaxation parameter (K).\n                                                Version 2.1 adds a check for stability in K estimates to try to mitigate convergence problems. \n                                                Version 3 provides support for >2 branch sets.\n                                                Version 3.1 adds LHC + Nedler-Mead initial fit phase and keyword support.\n                                                Version 3.1.1 adds some bug fixes for better convergence.\n                                                Version 4.0 adds support for synonymous rate variation.\n                                                Version 4.1 adds further support for multiple hit models.\n                                                Version 4.1.1 adds reporting for convergence diagnostics.\n                                                Version 4.5 adds support for multiple datasets for joint testing.",
+   "requirements":"in-frame codon alignment and a phylogenetic tree, with at least two groups of branches defined using the {} notation (one group can be defined as all unlabeled branches)",
+   "settings":{
+     "convergence-flat-surface":-0.726474565265562,
+     "convergence-unstable-alernative":      [
+[1, -5698.692106751158] 
+      ]
+    },
+   "version":"4.5"
+  },
+ "branch attributes":{
+   "0":{
+     "NODE_0000008":{
+       "MG94xREV with separate rates for branch sets":0.01368413255842092,
+       "Nucleotide GTR":0.01343916232092803,
+       "RELAX alternative":0.01371942300845383,
+       "RELAX null":0.01371860770586674
+      },
+     "NODE_0000011":{
+       "MG94xREV with separate rates for branch sets":0.001119634569230692,
+       "Nucleotide GTR":0.001108274960875536,
+       "RELAX alternative":0.001120691999089636,
+       "RELAX null":0.001120616658465135
+      },
+     "NODE_0000019":{
+       "MG94xREV with separate rates for branch sets":0.002423495266882406,
+       "Nucleotide GTR":0.002416094500800479,
+       "RELAX alternative":0.002430571851568667,
+       "RELAX null":0.002429472710692131
+      },
+     "NODE_0000021":{
+       "MG94xREV with separate rates for branch sets":0.009977144449391186,
+       "Nucleotide GTR":0.009855232786887649,
+       "RELAX alternative":0.009993727058267935,
+       "RELAX null":0.009997207996197625
+      },
+     "NODE_0000024":{
+       "MG94xREV with separate rates for branch sets":0.007729246520044275,
+       "Nucleotide GTR":0.007647762045013008,
+       "RELAX alternative":0.007751136851059584,
+       "RELAX null":0.007755360088764814
+      },
+     "NODE_0000025":{
+       "MG94xREV with separate rates for branch sets":0.001274431423981773,
+       "Nucleotide GTR":0.001251987840907641,
+       "RELAX alternative":0.001277699544102669,
+       "RELAX null":0.001277550818571508
+      },
+     "NODE_0000026":{
+       "MG94xREV with separate rates for branch sets":0.001078758943102846,
+       "Nucleotide GTR":0.001061144901540847,
+       "RELAX alternative":0.001078543922566118,
+       "RELAX null":0.001077932490632888
+      },
+     "NODE_0000037":{
+       "MG94xREV with separate rates for branch sets":0.01029165978017999,
+       "Nucleotide GTR":0.01015178243336001,
+       "RELAX alternative":0.01033439894571956,
+       "RELAX null":0.01033670002904065
+      },
+     "NODE_0000040":{
+       "MG94xREV with separate rates for branch sets":0.00456591387489877,
+       "Nucleotide GTR":0.004494612143047395,
+       "RELAX alternative":0.004575946262959782,
+       "RELAX null":0.004576112001830239
+      },
+     "NODE_0000042":{
+       "MG94xREV with separate rates for branch sets":0.0034104259089765,
+       "Nucleotide GTR":0.003360484553021875,
+       "RELAX alternative":0.003411690093188815,
+       "RELAX null":0.003412467146152639
+      },
+     "NODE_0000069":{
+       "MG94xREV with separate rates for branch sets":0.003405402705260709,
+       "Nucleotide GTR":0.003374758928227806,
+       "RELAX alternative":0.003413602615265045,
+       "RELAX null":0.003414392137224616
+      },
+     "NODE_0000076":{
+       "MG94xREV with separate rates for branch sets":0.002236256102859599,
+       "Nucleotide GTR":0.002213571403190451,
+       "RELAX alternative":0.00223409663207691,
+       "RELAX null":0.002235128450922122
+      },
+     "NODE_0000078":{
+       "MG94xREV with separate rates for branch sets":0.003357872994608522,
+       "Nucleotide GTR":0.003334492829442777,
+       "RELAX alternative":0.003367707708839695,
+       "RELAX null":0.003368469160617337
+      },
+     "NODE_0000081":{
+       "MG94xREV with separate rates for branch sets":0.00111308947518306,
+       "Nucleotide GTR":0.001107288838090146,
+       "RELAX alternative":0.001114881713371308,
+       "RELAX null":0.00111481013601732
+      },
+     "NODE_0000082":{
+       "MG94xREV with separate rates for branch sets":0.001117342652832922,
+       "Nucleotide GTR":0.001105895135405173,
+       "RELAX alternative":0.001115838253855973,
+       "RELAX null":0.001115762891525975
+      },
+     "NODE_0000089":{
+       "MG94xREV with separate rates for branch sets":0.001111303085854277,
+       "Nucleotide GTR":0.001104511474452082,
+       "RELAX alternative":0.001113643377481336,
+       "RELAX null":0.001113572699646992
+      },
+     "NODE_0000090":{
+       "MG94xREV with separate rates for branch sets":0.002234118302966913,
+       "Nucleotide GTR":0.00221016819985617,
+       "RELAX alternative":0.002236690198629056,
+       "RELAX null":0.002237726023648308
+      },
+     "NODE_0000121":{
+       "MG94xREV with separate rates for branch sets":0.009014982712928396,
+       "Nucleotide GTR":0.008916888154735849,
+       "RELAX alternative":0.009030322682756709,
+       "RELAX null":0.00903378368518584
+      },
+     "NODE_0000125":{
+       "MG94xREV with separate rates for branch sets":0.002245520405810351,
+       "Nucleotide GTR":0.002214576247695551,
+       "RELAX alternative":0.002247061061787572,
+       "RELAX null":0.002248093681255657
+      },
+     "NODE_0000133":{
+       "MG94xREV with separate rates for branch sets":0.006357005143126675,
+       "Nucleotide GTR":0.006271738784639638,
+       "RELAX alternative":0.006375370718215916,
+       "RELAX null":0.006379846532225492
+      },
+     "NODE_0000135":{
+       "MG94xREV with separate rates for branch sets":0.003748482078876078,
+       "Nucleotide GTR":0.003720977232224028,
+       "RELAX alternative":0.003759629032088663,
+       "RELAX null":0.003760325596655796
+      },
+     "NODE_0000136":{
+       "MG94xREV with separate rates for branch sets":0.0011307536422617,
+       "Nucleotide GTR":0.001117076610642322,
+       "RELAX alternative":0.001132182126492307,
+       "RELAX null":0.001132101591214373
+      },
+     "NODE_0000138":{
+       "MG94xREV with separate rates for branch sets":0.001118798288081928,
+       "Nucleotide GTR":0.001107834461917292,
+       "RELAX alternative":0.001120332647824248,
+       "RELAX null":0.001121214490514059
+      },
+     "NODE_0000139":{
+       "MG94xREV with separate rates for branch sets":0.003356823996809975,
+       "Nucleotide GTR":0.003321204883393747,
+       "RELAX alternative":0.003364477350059503,
+       "RELAX null":0.003365279772289181
+      },
+     "NODE_0000145":{
+       "MG94xREV with separate rates for branch sets":0.004486835278981295,
+       "Nucleotide GTR":0.004436010282086127,
+       "RELAX alternative":0.004488466656955742,
+       "RELAX null":0.004488677287630615
+      },
+     "NODE_0000149":{
+       "MG94xREV with separate rates for branch sets":0.001118678209505325,
+       "Nucleotide GTR":0.001107620693007395,
+       "RELAX alternative":0.001120214611431465,
+       "RELAX null":0.001121097215764661
+      },
+     "NODE_0000151":{
+       "MG94xREV with separate rates for branch sets":0.002244307584592875,
+       "Nucleotide GTR":0.002217950932264131,
+       "RELAX alternative":0.002243333156540391,
+       "RELAX null":0.002244363974925217
+      },
+     "NODE_0000153":{
+       "MG94xREV with separate rates for branch sets":0.001121610361436455,
+       "Nucleotide GTR":0.001109909168658311,
+       "RELAX alternative":0.001124018293229783,
+       "RELAX null":0.001123942130552897
+      },
+     "NODE_0000155":{
+       "MG94xREV with separate rates for branch sets":0.004478232638415017,
+       "Nucleotide GTR":0.004437260314535501,
+       "RELAX alternative":0.004488229511606823,
+       "RELAX null":0.004488448470795621
+      },
+     "NODE_0000156":{
+       "MG94xREV with separate rates for branch sets":0.001110019331146389,
+       "Nucleotide GTR":0.001096885249290805,
+       "RELAX alternative":0.001109524249363996,
+       "RELAX null":0.001109451852827848
+      },
+     "NODE_0000161":{
+       "MG94xREV with separate rates for branch sets":0.005612610002612671,
+       "Nucleotide GTR":0.005571518464583117,
+       "RELAX alternative":0.005641280304460304,
+       "RELAX null":0.005645647132914042
+      },
+     "NODE_0000162":{
+       "MG94xREV with separate rates for branch sets":0.001095726622156637,
+       "Nucleotide GTR":0.001070456901072276,
+       "RELAX alternative":0.001095909042251732,
+       "RELAX null":0.001095842339794977
+      },
+     "NODE_0000164":{
+       "MG94xREV with separate rates for branch sets":0.001104641680688127,
+       "Nucleotide GTR":0.001095668399105445,
+       "RELAX alternative":0.001104032352046642,
+       "RELAX null":0.001103962892422943
+      },
+     "NODE_0000175":{
+       "MG94xREV with separate rates for branch sets":0.001104357987829363,
+       "Nucleotide GTR":0.00109641988855729,
+       "RELAX alternative":0.00110428488530087,
+       "RELAX null":0.001104214586400176
+      },
+     "NODE_0000177":{
+       "MG94xREV with separate rates for branch sets":0.001103277973565678,
+       "Nucleotide GTR":0.00109525371424715,
+       "RELAX alternative":0.001105602041437669,
+       "RELAX null":0.001105533429481653
+      },
+     "NODE_0000191":{
+       "MG94xREV with separate rates for branch sets":0.001101483426367566,
+       "Nucleotide GTR":0.001087850495452294,
+       "RELAX alternative":0.001101431092385326,
+       "RELAX null":0.001101361914456522
+      },
+     "NODE_0000194":{
+       "MG94xREV with separate rates for branch sets":0.001110490009124381,
+       "Nucleotide GTR":0.00110356695118863,
+       "RELAX alternative":0.001112849630917176,
+       "RELAX null":0.001112777636282275
+      },
+     "NODE_0000198":{
+       "MG94xREV with separate rates for branch sets":0.001113911807066358,
+       "Nucleotide GTR":0.001102170889449291,
+       "RELAX alternative":0.00111254242814684,
+       "RELAX null":0.00111246683320834
+      },
+     "NODE_0000200":{
+       "MG94xREV with separate rates for branch sets":0.003355127208810487,
+       "Nucleotide GTR":0.003320154933409775,
+       "RELAX alternative":0.00336110608041637,
+       "RELAX null":0.003361906552545878
+      },
+     "NODE_0000235":{
+       "MG94xREV with separate rates for branch sets":0.001111863011275623,
+       "Nucleotide GTR":0.001102564576858188,
+       "RELAX alternative":0.001111521754483594,
+       "RELAX null":0.001111447922857196
+      },
+     "NODE_0000278":{
+       "MG94xREV with separate rates for branch sets":0.001126292630699049,
+       "Nucleotide GTR":0.00111429439090638,
+       "RELAX alternative":0.001127060759942042,
+       "RELAX null":0.001126980516881438
+      },
+     "NODE_0000287":{
+       "MG94xREV with separate rates for branch sets":0.00112486259575291,
+       "Nucleotide GTR":0.001113696133732888,
+       "RELAX alternative":0.001127147127714799,
+       "RELAX null":0.001127068295327428
+      },
+     "NODE_0000295":{
+       "MG94xREV with separate rates for branch sets":0.005631406259340727,
+       "Nucleotide GTR":0.00555206665421084,
+       "RELAX alternative":0.005642709517806124,
+       "RELAX null":0.005642014138228211
+      },
+     "NODE_0000297":{
+       "MG94xREV with separate rates for branch sets":0.002245410308914081,
+       "Nucleotide GTR":0.002216357835917592,
+       "RELAX alternative":0.00224841333476095,
+       "RELAX null":0.00224947285349902
+      },
+     "NODE_0000298":{
+       "MG94xREV with separate rates for branch sets":0.002241690290521852,
+       "Nucleotide GTR":0.002216478729591537,
+       "RELAX alternative":0.00224636679732622,
+       "RELAX null":0.002247488111086504
+      },
+     "NODE_0000326":{
+       "MG94xREV with separate rates for branch sets":0.006728236050412392,
+       "Nucleotide GTR":0.006658264702201972,
+       "RELAX alternative":0.006734329297554781,
+       "RELAX null":0.006738945177929387
+      },
+     "NODE_0000331":{
+       "MG94xREV with separate rates for branch sets":0.004545794851606917,
+       "Nucleotide GTR":0.004464962417782964,
+       "RELAX alternative":0.004573114941835196,
+       "RELAX null":0.004573294319726419
+      },
+     "NODE_0000334":{
+       "MG94xREV with separate rates for branch sets":0.0006425193782538068,
+       "Nucleotide GTR":0.0006252119612062904,
+       "RELAX alternative":0.0006460641890977502,
+       "RELAX null":0.0006532238306511887
+      },
+     "NODE_0000349":{
+       "MG94xREV with separate rates for branch sets":0.01020511847533854,
+       "Nucleotide GTR":0.01010273115248411,
+       "RELAX alternative":0.01021505145256071,
+       "RELAX null":0.01021775631239737
+      },
+     "NODE_0000364":{
+       "MG94xREV with separate rates for branch sets":0.003349340193389832,
+       "Nucleotide GTR":0.003314064334192075,
+       "RELAX alternative":0.003359302808779878,
+       "RELAX null":0.003360135329843843
+      },
+     "NODE_0000367":{
+       "MG94xREV with separate rates for branch sets":0.004451130940987777,
+       "Nucleotide GTR":0.004407305155643372,
+       "RELAX alternative":0.00446656542216803,
+       "RELAX null":0.004466800877404805
+      },
+     "NODE_0000404":{
+       "MG94xREV with separate rates for branch sets":0.005596581000615171,
+       "Nucleotide GTR":0.005523209467526054,
+       "RELAX alternative":0.005595933985347445,
+       "RELAX null":0.005595264689740404
+      },
+     "NODE_0000410":{
+       "MG94xREV with separate rates for branch sets":0.007937137050239166,
+       "Nucleotide GTR":0.007811272094022421,
+       "RELAX alternative":0.007976505266434182,
+       "RELAX null":0.007980478376642409
+      },
+     "NODE_0000411":{
+       "MG94xREV with separate rates for branch sets":0.003304684903858608,
+       "Nucleotide GTR":0.003291100207420056,
+       "RELAX alternative":0.003311652261531416,
+       "RELAX null":0.003312458844874124
+      },
+     "NODE_0000433":{
+       "MG94xREV with separate rates for branch sets":0.004552255927400504,
+       "Nucleotide GTR":0.004474642556152379,
+       "RELAX alternative":0.004579999682491491,
+       "RELAX null":0.004580171961190602
+      },
+     "NODE_0000434":{
+       "MG94xREV with separate rates for branch sets":0.00451568250307388,
+       "Nucleotide GTR":0.004459989940698482,
+       "RELAX alternative":0.004537954173149227,
+       "RELAX null":0.004538148053323064
+      },
+     "NODE_0000436":{
+       "MG94xREV with separate rates for branch sets":0.001117513591156234,
+       "Nucleotide GTR":0.001107858450357173,
+       "RELAX alternative":0.001119267877506947,
+       "RELAX null":0.001119191320806771
+      },
+     "NODE_0000441":{
+       "MG94xREV with separate rates for branch sets":0.001114628947566189,
+       "Nucleotide GTR":0.001106451509478218,
+       "RELAX alternative":0.00111673569144613,
+       "RELAX null":0.001116660411611152
+      },
+     "NODE_0000445":{
+       "MG94xREV with separate rates for branch sets":0.001116616024516846,
+       "Nucleotide GTR":0.001107575553111528,
+       "RELAX alternative":0.001116507866979538,
+       "RELAX null":0.001116430892440296
+      },
+     "NODE_0000457":{
+       "MG94xREV with separate rates for branch sets":0.002267238188893382,
+       "Nucleotide GTR":0.002231140989397789,
+       "RELAX alternative":0.002271737439540465,
+       "RELAX null":0.002270848978811869
+      },
+     "NODE_0000458":{
+       "MG94xREV with separate rates for branch sets":0.001118063976815566,
+       "Nucleotide GTR":0.00110596819119829,
+       "RELAX alternative":0.001118097288641303,
+       "RELAX null":0.001118019404628048
+      },
+     "NODE_0000484":{
+       "MG94xREV with separate rates for branch sets":0.001116727667240605,
+       "Nucleotide GTR":0.00110576004731604,
+       "RELAX alternative":0.001118892909109658,
+       "RELAX null":0.001118816139374985
+      },
+     "NODE_0000533":{
+       "MG94xREV with separate rates for branch sets":0.003099764857501818,
+       "Nucleotide GTR":0.002930201088733439,
+       "RELAX alternative":0.003106996504527236,
+       "RELAX null":0.003107881614873085
+      },
+     "NODE_0000704":{
+       "MG94xREV with separate rates for branch sets":0.0129725942612265,
+       "Nucleotide GTR":0.01272259383594879,
+       "RELAX alternative":0.01300670406001657,
+       "RELAX null":0.01300678199503455
+      },
+     "NODE_0000725":{
+       "MG94xREV with separate rates for branch sets":0.002249730367305979,
+       "Nucleotide GTR":0.002220059338189645,
+       "RELAX alternative":0.002254455401882694,
+       "RELAX null":0.002253527188809868
+      },
+     "NODE_0000732":{
+       "MG94xREV with separate rates for branch sets":0.001121688003612515,
+       "Nucleotide GTR":0.001107607529138951,
+       "RELAX alternative":0.001120952604273324,
+       "RELAX null":0.001120877223777113
+      },
+     "NODE_0000755":{
+       "MG94xREV with separate rates for branch sets":0.001121279181916114,
+       "Nucleotide GTR":0.001109957020475967,
+       "RELAX alternative":0.001120865927937095,
+       "RELAX null":0.001120789977634537
+      },
+     "NODE_0000759":{
+       "MG94xREV with separate rates for branch sets":0.00112059086755278,
+       "Nucleotide GTR":0.001106485425926241,
+       "RELAX alternative":0.001118958643558148,
+       "RELAX null":0.00111888308544162
+      },
+     "NODE_0000760":{
+       "MG94xREV with separate rates for branch sets":0.002250130919455817,
+       "Nucleotide GTR":0.002218129234358694,
+       "RELAX alternative":0.002251168419355814,
+       "RELAX null":0.00225220309111241
+      },
+     "NODE_0000761":{
+       "MG94xREV with separate rates for branch sets":0.002239714433008226,
+       "Nucleotide GTR":0.002219703400090993,
+       "RELAX alternative":0.002246462131572514,
+       "RELAX null":0.002247507006003149
+      },
+     "NODE_0000769":{
+       "MG94xREV with separate rates for branch sets":0.007981065319242125,
+       "Nucleotide GTR":0.007853097805543311,
+       "RELAX alternative":0.00804252521677448,
+       "RELAX null":0.008046849636441865
+      },
+     "NODE_0000770":{
+       "MG94xREV with separate rates for branch sets":0.002271289118833834,
+       "Nucleotide GTR":0.002228745120303583,
+       "RELAX alternative":0.002274260165190618,
+       "RELAX null":0.002273373640905785
+      },
+     "NODE_0000817":{
+       "MG94xREV with separate rates for branch sets":0.007897220962287611,
+       "Nucleotide GTR":0.007795308095209056,
+       "RELAX alternative":0.007951872137566238,
+       "RELAX null":0.007955885106306335
+      },
+     "NODE_0000818":{
+       "MG94xREV with separate rates for branch sets":0.002235013661989071,
+       "Nucleotide GTR":0.00221080530804465,
+       "RELAX alternative":0.002233783755239919,
+       "RELAX null":0.002234817174579856
+      },
+     "NODE_0000833":{
+       "MG94xREV with separate rates for branch sets":0.001116828817536985,
+       "Nucleotide GTR":0.001106135610975274,
+       "RELAX alternative":0.001118792251990016,
+       "RELAX null":0.001118720211561825
+      },
+     "NODE_0001006":{
+       "MG94xREV with separate rates for branch sets":0.02305279271587514,
+       "Nucleotide GTR":0.02294550974779581,
+       "RELAX alternative":0.02333345325352432,
+       "RELAX null":0.02334060416970976
+      },
+     "NODE_0001007":{
+       "MG94xREV with separate rates for branch sets":0.002274847458211853,
+       "Nucleotide GTR":0.002265977263814894,
+       "RELAX alternative":0.00227323327442675,
+       "RELAX null":0.002274280197543783
+      },
+     "NODE_0001009":{
+       "MG94xREV with separate rates for branch sets":0.001050250085375787,
+       "Nucleotide GTR":0.001042833050669763,
+       "RELAX alternative":0.001051767729636722,
+       "RELAX null":0.001051180377741657
+      },
+     "NODE_0001544":{
+       "MG94xREV with separate rates for branch sets":0.002481184860233079,
+       "Nucleotide GTR":0.002455837657730897,
+       "RELAX alternative":0.002495312444449217,
+       "RELAX null":0.002496350535512575
+      },
+     "NODE_0001569":{
+       "MG94xREV with separate rates for branch sets":0.001115705237376482,
+       "Nucleotide GTR":0.0011024279586902,
+       "RELAX alternative":0.001115335978214356,
+       "RELAX null":0.001117528756531993
+      },
+     "NODE_0001582":{
+       "MG94xREV with separate rates for branch sets":0.01381065633525985,
+       "Nucleotide GTR":0.01378681385890594,
+       "RELAX alternative":0.0138865983699456,
+       "RELAX null":0.01388582651084319
+      },
+     "NODE_0001585":{
+       "MG94xREV with separate rates for branch sets":0.002255253250179743,
+       "Nucleotide GTR":0.002231533924123377,
+       "RELAX alternative":0.002255125474785006,
+       "RELAX null":0.002267115759454689
+      },
+     "NODE_0001587":{
+       "MG94xREV with separate rates for branch sets":0.0005564113812349973,
+       "Nucleotide GTR":0.0004138954502853499,
+       "RELAX alternative":0.0005510765878649221,
+       "RELAX null":0.0007993769594488945
+      },
+     "NODE_0001588":{
+       "MG94xREV with separate rates for branch sets":0.001121532308055331,
+       "Nucleotide GTR":0.001111437598860663,
+       "RELAX alternative":0.001122056521355928,
+       "RELAX null":0.00112590542049907
+      },
+     "NODE_0001595":{
+       "MG94xREV with separate rates for branch sets":0.001119196266499687,
+       "Nucleotide GTR":0.001110804659239071,
+       "RELAX alternative":0.001119797907101489,
+       "RELAX null":0.001125547100852358
+      },
+     "NODE_0001598":{
+       "MG94xREV with separate rates for branch sets":0.001121553542227821,
+       "Nucleotide GTR":0.001112386377499522,
+       "RELAX alternative":0.001121788310655359,
+       "RELAX null":0.0011269125713476
+      },
+     "NODE_0001625":{
+       "MG94xREV with separate rates for branch sets":0.004669644070715242,
+       "Nucleotide GTR":0.004771785131267474,
+       "RELAX alternative":0.004666447418272227,
+       "RELAX null":0.004666526809006805
+      },
+     "NODE_0001640":{
+       "MG94xREV with separate rates for branch sets":0.01609528717388114,
+       "Nucleotide GTR":0.01564225271399139,
+       "RELAX alternative":0.01622325430603822,
+       "RELAX null":0.01621885869126488
+      },
+     "NODE_0001644":{
+       "MG94xREV with separate rates for branch sets":0.003105341347904056,
+       "Nucleotide GTR":0.003041891635046731,
+       "RELAX alternative":0.003114604101416654,
+       "RELAX null":0.003115536448916233
+      },
+     "NODE_0001646":{
+       "MG94xREV with separate rates for branch sets":0.005682255137793944,
+       "Nucleotide GTR":0.005607551431056641,
+       "RELAX alternative":0.005706764722829666,
+       "RELAX null":0.005705881150142039
+      },
+     "NODE_0001667":{
+       "MG94xREV with separate rates for branch sets":0.0005580727540421738,
+       "Nucleotide GTR":0.0005393205792357006,
+       "RELAX alternative":0.0005597391256177791,
+       "RELAX null":0.0005214333031185871
+      },
+     "NODE_0001688":{
+       "MG94xREV with separate rates for branch sets":0.005566341159017662,
+       "Nucleotide GTR":0.005317581942574339,
+       "RELAX alternative":0.005581923190799161,
+       "RELAX null":0.005580551462460772
+      },
+     "NODE_0001700":{
+       "MG94xREV with separate rates for branch sets":0.00906798482925879,
+       "Nucleotide GTR":0.008953635569012941,
+       "RELAX alternative":0.009049886711422277,
+       "RELAX null":0.009053300982412714
+      },
+     "NODE_0001702":{
+       "MG94xREV with separate rates for branch sets":0.001120234884197906,
+       "Nucleotide GTR":0.001108945644519228,
+       "RELAX alternative":0.00112059924264598,
+       "RELAX null":0.001120525489316061
+      },
+     "NODE_0001705":{
+       "MG94xREV with separate rates for branch sets":0.006723294203410859,
+       "Nucleotide GTR":0.00666098335340854,
+       "RELAX alternative":0.006782549948397002,
+       "RELAX null":0.006786886668083169
+      },
+     "NODE_0001714":{
+       "MG94xREV with separate rates for branch sets":0.001125835292170012,
+       "Nucleotide GTR":0.00111362027487975,
+       "RELAX alternative":0.001125058651898095,
+       "RELAX null":0.001124981440590017
+      },
+     "NODE_0001742":{
+       "MG94xREV with separate rates for branch sets":0.00112620191290856,
+       "Nucleotide GTR":0.001112984121536116,
+       "RELAX alternative":0.001126011701706204,
+       "RELAX null":0.001125934343786906
+      },
+     "NODE_0001744":{
+       "MG94xREV with separate rates for branch sets":0.0002295670450279091,
+       "Nucleotide GTR":0.0002572495344155711,
+       "RELAX alternative":0.0001836350668339448,
+       "RELAX null":0.0001308458907836746
+      },
+     "NODE_0001828":{
+       "MG94xREV with separate rates for branch sets":0.001150034959286178,
+       "Nucleotide GTR":0.001169240369007191,
+       "RELAX alternative":0.001149679414289744,
+       "RELAX null":0.001149590249003504
+      },
+     "NODE_0001833":{
+       "MG94xREV with separate rates for branch sets":0.005661734456901719,
+       "Nucleotide GTR":0.005756379602369836,
+       "RELAX alternative":0.005698039054246335,
+       "RELAX null":0.005694196864142135
+      },
+     "NODE_0001837":{
+       "MG94xREV with separate rates for branch sets":0.004468217372130282,
+       "Nucleotide GTR":0.004434079937701119,
+       "RELAX alternative":0.004473577048917648,
+       "RELAX null":0.004473809276909236
+      },
+     "NODE_0001839":{
+       "MG94xREV with separate rates for branch sets":0.007894633420402265,
+       "Nucleotide GTR":0.007831217236152507,
+       "RELAX alternative":0.007928683085132482,
+       "RELAX null":0.007932815752500232
+      },
+     "NODE_0001842":{
+       "MG94xREV with separate rates for branch sets":0.001123235652570812,
+       "Nucleotide GTR":0.001113720496587189,
+       "RELAX alternative":0.001124841858450784,
+       "RELAX null":0.00112476593779676
+      },
+     "NODE_0001843":{
+       "MG94xREV with separate rates for branch sets":0.002239880055138914,
+       "Nucleotide GTR":0.002222763214136253,
+       "RELAX alternative":0.002246633051733336,
+       "RELAX null":0.00224768194765772
+      },
+     "NODE_0001844":{
+       "MG94xREV with separate rates for branch sets":0.001105853604510856,
+       "Nucleotide GTR":0.001104334043715744,
+       "RELAX alternative":0.001107644988975983,
+       "RELAX null":0.001107579788608584
+      },
+     "NODE_0001845":{
+       "MG94xREV with separate rates for branch sets":0.003338266874714341,
+       "Nucleotide GTR":0.00332651224046003,
+       "RELAX alternative":0.003348361492828915,
+       "RELAX null":0.003349280144601721
+      },
+     "NODE_0001860":{
+       "MG94xREV with separate rates for branch sets":0.002227357017361289,
+       "Nucleotide GTR":0.002214569637174543,
+       "RELAX alternative":0.002225288088301487,
+       "RELAX null":0.002226324376437019
+      },
+     "NODE_0001866":{
+       "MG94xREV with separate rates for branch sets":0.002220129807184458,
+       "Nucleotide GTR":0.002207004174588682,
+       "RELAX alternative":0.002226861079026045,
+       "RELAX null":0.002227925969000346
+      },
+     "NODE_0001872":{
+       "MG94xREV with separate rates for branch sets":0.002781745882003786,
+       "Nucleotide GTR":0.002762341319814539,
+       "RELAX alternative":0.002786769981502167,
+       "RELAX null":0.002787742564564996
+      },
+     "NODE_0001874":{
+       "MG94xREV with separate rates for branch sets":0.002784403957311573,
+       "Nucleotide GTR":0.002759362431690038,
+       "RELAX alternative":0.002783356445666406,
+       "RELAX null":0.002784350287984257
+      },
+     "NODE_0001882":{
+       "MG94xREV with separate rates for branch sets":0.002225427585559393,
+       "Nucleotide GTR":0.002204960757794299,
+       "RELAX alternative":0.002228209055219548,
+       "RELAX null":0.002227300805393304
+      },
+     "NODE_0001892":{
+       "MG94xREV with separate rates for branch sets":0.001110771776248442,
+       "Nucleotide GTR":0.00110490555917663,
+       "RELAX alternative":0.00111073592472981,
+       "RELAX null":0.001110666525101243
+      },
+     "NODE_0001906":{
+       "MG94xREV with separate rates for branch sets":0.01361157242755597,
+       "Nucleotide GTR":0.01325207802824521,
+       "RELAX alternative":0.01376382869220979,
+       "RELAX null":0.0137766211203682
+      },
+     "NODE_0001963":{
+       "MG94xREV with separate rates for branch sets":0.01951083939211796,
+       "Nucleotide GTR":0.01937792681620047,
+       "RELAX alternative":0.01961450685853289,
+       "RELAX null":0.01962466866632937
+      },
+     "NODE_0001964":{
+       "MG94xREV with separate rates for branch sets":0.001119515746822143,
+       "Nucleotide GTR":0.001108624326891935,
+       "RELAX alternative":0.001121727816676761,
+       "RELAX null":0.001121656453017914
+      },
+     "Yale_RSV_0001_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0001-1"
+      },
+     "Yale_RSV_0006_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0006-1"
+      },
+     "Yale_RSV_0007_1":{
+       "MG94xREV with separate rates for branch sets":0.002239727571554643,
+       "Nucleotide GTR":0.002211147617283625,
+       "RELAX alternative":0.002240477657874289,
+       "RELAX null":0.00224150982957667,
+       "original name":"Yale-RSV-0007-1"
+      },
+     "Yale_RSV_0020_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0020-1"
+      },
+     "Yale_RSV_0037_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0037-1"
+      },
+     "Yale_RSV_0043_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0043-1"
+      },
+     "Yale_RSV_0053_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0053-1"
+      },
+     "Yale_RSV_0061_1":{
+       "MG94xREV with separate rates for branch sets":0.001122043975062494,
+       "Nucleotide GTR":0.001110960433397995,
+       "RELAX alternative":0.001124265329378103,
+       "RELAX null":0.001124187710702803,
+       "original name":"Yale-RSV-0061-1"
+      },
+     "Yale_RSV_0075_1":{
+       "MG94xREV with separate rates for branch sets":0.0004778445128210137,
+       "Nucleotide GTR":0.0004822485357808061,
+       "RELAX alternative":0.0004754244185069531,
+       "RELAX null":0.0004682589988934952,
+       "original name":"Yale-RSV-0075-1"
+      },
+     "Yale_RSV_0076_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0076-1"
+      },
+     "Yale_RSV_0097_1":{
+       "MG94xREV with separate rates for branch sets":0.001136431478638281,
+       "Nucleotide GTR":0.001117654537555457,
+       "RELAX alternative":0.001135782513925707,
+       "RELAX null":0.001135703443363115,
+       "original name":"Yale-RSV-0097-1"
+      },
+     "Yale_RSV_0136_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0136-1"
+      },
+     "Yale_RSV_0140_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0140-1"
+      },
+     "Yale_RSV_0142_1":{
+       "MG94xREV with separate rates for branch sets":0.009079236171961162,
+       "Nucleotide GTR":0.008932116631318076,
+       "RELAX alternative":0.009148815356619966,
+       "RELAX null":0.009152291231036351,
+       "original name":"Yale-RSV-0142-1"
+      },
+     "Yale_RSV_0147_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0147-1"
+      },
+     "Yale_RSV_0160_1":{
+       "MG94xREV with separate rates for branch sets":0.005643657617007007,
+       "Nucleotide GTR":0.005567070073520392,
+       "RELAX alternative":0.005667758210234124,
+       "RELAX null":0.005666966119628265,
+       "original name":"Yale-RSV-0160-1"
+      },
+     "Yale_RSV_0161_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0161-1"
+      },
+     "Yale_RSV_0179_1":{
+       "MG94xREV with separate rates for branch sets":0.004488556942085542,
+       "Nucleotide GTR":0.004441941779967375,
+       "RELAX alternative":0.004520022612858763,
+       "RELAX null":0.004520247364456582,
+       "original name":"Yale-RSV-0179-1"
+      },
+     "Yale_RSV_0184_1":{
+       "MG94xREV with separate rates for branch sets":0.003428235129188475,
+       "Nucleotide GTR":0.003363054846564844,
+       "RELAX alternative":0.003435062452952117,
+       "RELAX null":0.003435838200773686,
+       "original name":"Yale-RSV-0184-1"
+      },
+     "Yale_RSV_0187_1":{
+       "MG94xREV with separate rates for branch sets":0.001117129377107442,
+       "Nucleotide GTR":0.001105069365614731,
+       "RELAX alternative":0.001115703768966312,
+       "RELAX null":0.00111562727800895,
+       "original name":"Yale-RSV-0187-1"
+      },
+     "Yale_RSV_0189_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0189-1"
+      },
+     "Yale_RSV_0208_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0208-1"
+      },
+     "Yale_RSV_0221_1":{
+       "MG94xREV with separate rates for branch sets":0.006779103841206051,
+       "Nucleotide GTR":0.006683193201124079,
+       "RELAX alternative":0.006807765245771513,
+       "RELAX null":0.006805713343364043,
+       "original name":"Yale-RSV-0221-1"
+      },
+     "Yale_RSV_0228_1":{
+       "MG94xREV with separate rates for branch sets":0.005611264059216916,
+       "Nucleotide GTR":0.005557193295556033,
+       "RELAX alternative":0.005601314656943055,
+       "RELAX null":0.005600632022705008,
+       "original name":"Yale-RSV-0228-1"
+      },
+     "Yale_RSV_0231_1":{
+       "MG94xREV with separate rates for branch sets":0.002211851409597918,
+       "Nucleotide GTR":0.002203926621055818,
+       "RELAX alternative":0.002216482577496215,
+       "RELAX null":0.002217526492734738,
+       "original name":"Yale-RSV-0231-1"
+      },
+     "Yale_RSV_0237_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0237-1"
+      },
+     "Yale_RSV_0251_1":{
+       "MG94xREV with separate rates for branch sets":0.002224695778305954,
+       "Nucleotide GTR":0.002201318517494839,
+       "RELAX alternative":0.002223241912201085,
+       "RELAX null":0.002224270933625568,
+       "original name":"Yale-RSV-0251-1"
+      },
+     "Yale_RSV_0252_1":{
+       "MG94xREV with separate rates for branch sets":0.0005508586568666339,
+       "Nucleotide GTR":0.0006863761233815842,
+       "RELAX alternative":0.0005568482103062731,
+       "RELAX null":0.0003121328103465727,
+       "original name":"Yale-RSV-0252-1"
+      },
+     "Yale_RSV_0254_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0254-1"
+      },
+     "Yale_RSV_0259_1":{
+       "MG94xREV with separate rates for branch sets":0.001115842870885324,
+       "Nucleotide GTR":0.001105069131014773,
+       "RELAX alternative":0.00111801489868265,
+       "RELAX null":0.001117940114072102,
+       "original name":"Yale-RSV-0259-1"
+      },
+     "Yale_RSV_0262_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0262-1"
+      },
+     "Yale_RSV_0277_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0277-1"
+      },
+     "Yale_RSV_0294_1":{
+       "MG94xREV with separate rates for branch sets":0.005585528725667053,
+       "Nucleotide GTR":0.005554983916678644,
+       "RELAX alternative":0.005614464865688556,
+       "RELAX null":0.005618834716368214,
+       "original name":"Yale-RSV-0294-1"
+      },
+     "Yale_RSV_0314_1":{
+       "MG94xREV with separate rates for branch sets":0.001116999953281332,
+       "Nucleotide GTR":0.001106075700068425,
+       "RELAX alternative":0.001117508759966642,
+       "RELAX null":0.001117434452919928,
+       "original name":"Yale-RSV-0314-1"
+      },
+     "Yale_RSV_0330_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0330-1"
+      },
+     "Yale_RSV_0367_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0367-1"
+      },
+     "Yale_RSV_0388_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0388-1"
+      },
+     "Yale_RSV_0428_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0428-1"
+      },
+     "Yale_RSV_0438_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0438-1"
+      },
+     "Yale_RSV_0461_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0461-1"
+      },
+     "Yale_RSV_0462_1":{
+       "MG94xREV with separate rates for branch sets":0.002246012316486409,
+       "Nucleotide GTR":0.002216098412359298,
+       "RELAX alternative":0.002248902475660165,
+       "RELAX null":0.002248013838609528,
+       "original name":"Yale-RSV-0462-1"
+      },
+     "Yale_RSV_0464_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0464-1"
+      },
+     "Yale_RSV_0468_1":{
+       "MG94xREV with separate rates for branch sets":0.003353971242128656,
+       "Nucleotide GTR":0.003321113452304392,
+       "RELAX alternative":0.003354435066728825,
+       "RELAX null":0.003355233356646008,
+       "original name":"Yale-RSV-0468-1"
+      },
+     "Yale_RSV_0469_1":{
+       "MG94xREV with separate rates for branch sets":0.001113149617331478,
+       "Nucleotide GTR":0.001101855158470404,
+       "RELAX alternative":0.001114723430787366,
+       "RELAX null":0.001114642573615919,
+       "original name":"Yale-RSV-0469-1"
+      },
+     "Yale_RSV_0475_1":{
+       "MG94xREV with separate rates for branch sets":0.01238829140409108,
+       "Nucleotide GTR":0.01205340485568436,
+       "RELAX alternative":0.01250508766181413,
+       "RELAX null":0.0125059875406631,
+       "original name":"Yale-RSV-0475-1"
+      },
+     "Yale_RSV_0483_1":{
+       "MG94xREV with separate rates for branch sets":0.006756716873655325,
+       "Nucleotide GTR":0.00667156688984862,
+       "RELAX alternative":0.006756687262176756,
+       "RELAX null":0.006761304370122507,
+       "original name":"Yale-RSV-0483-1"
+      },
+     "Yale_RSV_0484_1":{
+       "MG94xREV with separate rates for branch sets":0.001112567540946697,
+       "Nucleotide GTR":0.001103349738102557,
+       "RELAX alternative":0.001114169297843422,
+       "RELAX null":0.001114102480823336,
+       "original name":"Yale-RSV-0484-1"
+      },
+     "Yale_RSV_0486_1":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0486-1"
+      },
+     "Yale_RSV_0500_1":{
+       "MG94xREV with separate rates for branch sets":0.00224924797000053,
+       "Nucleotide GTR":0.002224473642401798,
+       "RELAX alternative":0.002248697016191229,
+       "RELAX null":0.002247832420609818,
+       "original name":"Yale-RSV-0500-1"
+      },
+     "Yale_RSV_0527_1":{
+       "MG94xREV with separate rates for branch sets":0.004506733713127871,
+       "Nucleotide GTR":0.004448227132378874,
+       "RELAX alternative":0.004495973756588651,
+       "RELAX null":0.004496164428194283,
+       "original name":"Yale-RSV-0527-1"
+      },
+     "Yale_RSV_0531_1":{
+       "MG94xREV with separate rates for branch sets":0.002237336790660983,
+       "Nucleotide GTR":0.002216430109304075,
+       "RELAX alternative":0.002240171290080889,
+       "RELAX null":0.002239265950255163,
+       "original name":"Yale-RSV-0531-1"
+      },
+     "Yale_RSV_0548_1":{
+       "MG94xREV with separate rates for branch sets":0.001104947801513947,
+       "Nucleotide GTR":0.001101239193299392,
+       "RELAX alternative":0.001105046667272442,
+       "RELAX null":0.001104980762104982,
+       "original name":"Yale-RSV-0548-1"
+      },
+     "Yale_RSV_0550_1":{
+       "MG94xREV with separate rates for branch sets":0.001114703219004773,
+       "Nucleotide GTR":0.001104534617140649,
+       "RELAX alternative":0.001116623809286987,
+       "RELAX null":0.001116554169017436,
+       "original name":"Yale-RSV-0550-1"
+      },
+     "Yale_RSV_0566_1":{
+       "MG94xREV with separate rates for branch sets":0.001119205614804738,
+       "Nucleotide GTR":0.001106767576256852,
+       "RELAX alternative":0.001120820315089053,
+       "RELAX null":0.001120749885569777,
+       "original name":"Yale-RSV-0566-1"
+      },
+     "Yale_RSV_0568_1":{
+       "MG94xREV with separate rates for branch sets":0.001116066162314112,
+       "Nucleotide GTR":0.001105917911321522,
+       "RELAX alternative":0.001117869773875344,
+       "RELAX null":0.001117798369245719,
+       "original name":"Yale-RSV-0568-1"
+      },
+     "Yale_RSV_0687":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0687"
+      },
+     "Yale_RSV_0688":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0688"
+      },
+     "Yale_RSV_0690":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0690"
+      },
+     "Yale_RSV_0694":{
+       "MG94xREV with separate rates for branch sets":0.01958020059269466,
+       "Nucleotide GTR":0.01922766210951125,
+       "RELAX alternative":0.01983319976134562,
+       "RELAX null":0.0198423468521453,
+       "original name":"Yale-RSV-0694"
+      },
+     "Yale_RSV_0697":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0697"
+      },
+     "Yale_RSV_0698":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0698"
+      },
+     "Yale_RSV_0700":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0700"
+      },
+     "Yale_RSV_0701":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0701"
+      },
+     "Yale_RSV_0702":{
+       "MG94xREV with separate rates for branch sets":0.001121559030145839,
+       "Nucleotide GTR":0.001109027528560004,
+       "RELAX alternative":0.001120686948454922,
+       "RELAX null":0.001120612015614259,
+       "original name":"Yale-RSV-0702"
+      },
+     "Yale_RSV_0706":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0706"
+      },
+     "Yale_RSV_0710":{
+       "MG94xREV with separate rates for branch sets":0.002252056555354401,
+       "Nucleotide GTR":0.002222734178505954,
+       "RELAX alternative":0.002251560693471423,
+       "RELAX null":0.002252595274380423,
+       "original name":"Yale-RSV-0710"
+      },
+     "Yale_RSV_0714":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0714"
+      },
+     "Yale_RSV_0721":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0721"
+      },
+     "Yale_RSV_0729":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0729"
+      },
+     "Yale_RSV_0731":{
+       "MG94xREV with separate rates for branch sets":0.001116470876504992,
+       "Nucleotide GTR":0.00110656976782304,
+       "RELAX alternative":0.001115827866386611,
+       "RELAX null":0.001115754278511314,
+       "original name":"Yale-RSV-0731"
+      },
+     "Yale_RSV_0735":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0735"
+      },
+     "Yale_RSV_0746":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0746"
+      },
+     "Yale_RSV_0751":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0751"
+      },
+     "Yale_RSV_0752":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0752"
+      },
+     "Yale_RSV_0753":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0753"
+      },
+     "Yale_RSV_0755":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0755"
+      },
+     "Yale_RSV_0756":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0756"
+      },
+     "Yale_RSV_0758":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0758"
+      },
+     "Yale_RSV_0759":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0759"
+      },
+     "Yale_RSV_0761":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0761"
+      },
+     "Yale_RSV_0762":{
+       "MG94xREV with separate rates for branch sets":0.001107742416594973,
+       "Nucleotide GTR":0.001108042724607726,
+       "RELAX alternative":0.001108352204956168,
+       "RELAX null":0.001108285512420553,
+       "original name":"Yale-RSV-0762"
+      },
+     "Yale_RSV_0764":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0764"
+      },
+     "Yale_RSV_0767":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0767"
+      },
+     "Yale_RSV_0768":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0768"
+      },
+     "Yale_RSV_0770":{
+       "MG94xREV with separate rates for branch sets":0.008996624959568759,
+       "Nucleotide GTR":0.008899121023011802,
+       "RELAX alternative":0.009066047800117263,
+       "RELAX null":0.009069917571348207,
+       "original name":"Yale-RSV-0770"
+      },
+     "Yale_RSV_0772":{
+       "MG94xREV with separate rates for branch sets":0.0005717669264932391,
+       "Nucleotide GTR":0.0005756452264460052,
+       "RELAX alternative":0.0005699635100428816,
+       "RELAX null":0.0006081929383541786,
+       "original name":"Yale-RSV-0772"
+      },
+     "Yale_RSV_0774":{
+       "MG94xREV with separate rates for branch sets":0.001110453315245994,
+       "Nucleotide GTR":0.001104489901449705,
+       "RELAX alternative":0.001112628595470099,
+       "RELAX null":0.001112560737039764,
+       "original name":"Yale-RSV-0774"
+      },
+     "Yale_RSV_0777":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0777"
+      },
+     "Yale_RSV_0778":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0778"
+      },
+     "Yale_RSV_0782":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0782"
+      },
+     "Yale_RSV_0787":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0787"
+      },
+     "Yale_RSV_0788":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0788"
+      },
+     "Yale_RSV_0792":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0792"
+      },
+     "Yale_RSV_0793":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0793"
+      },
+     "Yale_RSV_0796":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0796"
+      },
+     "Yale_RSV_0798":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0798"
+      },
+     "Yale_RSV_0804":{
+       "MG94xREV with separate rates for branch sets":0.001111971617544636,
+       "Nucleotide GTR":0.001106803756818895,
+       "RELAX alternative":0.001111637617479057,
+       "RELAX null":0.001111568477869691,
+       "original name":"Yale-RSV-0804"
+      },
+     "Yale_RSV_0805":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0805"
+      },
+     "Yale_RSV_0806":{
+       "MG94xREV with separate rates for branch sets":0.001127090766938557,
+       "Nucleotide GTR":0.001114012193825608,
+       "RELAX alternative":0.00112957660892856,
+       "RELAX null":0.001129472931606698,
+       "original name":"Yale-RSV-0806"
+      },
+     "Yale_RSV_0810":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0810"
+      },
+     "Yale_RSV_0811":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0811"
+      },
+     "Yale_RSV_0814":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0814"
+      },
+     "Yale_RSV_0815":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0815"
+      },
+     "Yale_RSV_0816":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0816"
+      },
+     "Yale_RSV_0818":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0818"
+      },
+     "Yale_RSV_0820":{
+       "MG94xREV with separate rates for branch sets":0.01131802474288653,
+       "Nucleotide GTR":0.01116286154296301,
+       "RELAX alternative":0.01133491497738582,
+       "RELAX null":0.0113367479164478,
+       "original name":"Yale-RSV-0820"
+      },
+     "Yale_RSV_0824":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0824"
+      },
+     "Yale_RSV_0825":{
+       "MG94xREV with separate rates for branch sets":0.001125431236024669,
+       "Nucleotide GTR":0.001116793838710786,
+       "RELAX alternative":0.001125611209718279,
+       "RELAX null":0.001125536622640909,
+       "original name":"Yale-RSV-0825"
+      },
+     "Yale_RSV_0831":{
+       "MG94xREV with separate rates for branch sets":0.001117607420627602,
+       "Nucleotide GTR":0.001105280168506661,
+       "RELAX alternative":0.001117494413020302,
+       "RELAX null":0.001117416873293266,
+       "original name":"Yale-RSV-0831"
+      },
+     "Yale_RSV_0832":{
+       "MG94xREV with separate rates for branch sets":0.004515733492930136,
+       "Nucleotide GTR":0.004459886709990857,
+       "RELAX alternative":0.004529041124105225,
+       "RELAX null":0.004529329183748379,
+       "original name":"Yale-RSV-0832"
+      },
+     "Yale_RSV_0836":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0836"
+      },
+     "Yale_RSV_0840":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0840"
+      },
+     "Yale_RSV_0841":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0841"
+      },
+     "Yale_RSV_0844":{
+       "MG94xREV with separate rates for branch sets":0.001105293602211515,
+       "Nucleotide GTR":0.001097522301990208,
+       "RELAX alternative":0.001107630998883367,
+       "RELAX null":0.001107561700615316,
+       "original name":"Yale-RSV-0844"
+      },
+     "Yale_RSV_0845":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0845"
+      },
+     "Yale_RSV_0849":{
+       "MG94xREV with separate rates for branch sets":0.001110260470925014,
+       "Nucleotide GTR":0.001101033928976415,
+       "RELAX alternative":0.001111788136856288,
+       "RELAX null":0.001112667559307646,
+       "original name":"Yale-RSV-0849"
+      },
+     "Yale_RSV_0854":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0854"
+      },
+     "Yale_RSV_0855":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0855"
+      },
+     "Yale_RSV_0856":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0856"
+      },
+     "Yale_RSV_0858":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0858"
+      },
+     "Yale_RSV_0860":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0860"
+      },
+     "Yale_RSV_0862":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0862"
+      },
+     "Yale_RSV_0863":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0863"
+      },
+     "Yale_RSV_0871":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0871"
+      },
+     "Yale_RSV_0874":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0874"
+      },
+     "Yale_RSV_0875":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0875"
+      },
+     "Yale_RSV_0878":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0878"
+      },
+     "Yale_RSV_0879":{
+       "MG94xREV with separate rates for branch sets":0.003334184055468368,
+       "Nucleotide GTR":0.003300527824320915,
+       "RELAX alternative":0.00334226188229113,
+       "RELAX null":0.003343071742332463,
+       "original name":"Yale-RSV-0879"
+      },
+     "Yale_RSV_0880":{
+       "MG94xREV with separate rates for branch sets":0.001118207384370143,
+       "Nucleotide GTR":0.001108911237818785,
+       "RELAX alternative":0.001119883339452549,
+       "RELAX null":0.001119806508799763,
+       "original name":"Yale-RSV-0880"
+      },
+     "Yale_RSV_0882":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0882"
+      },
+     "Yale_RSV_0884":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0884"
+      },
+     "Yale_RSV_0885":{
+       "MG94xREV with separate rates for branch sets":0.002268494607520169,
+       "Nucleotide GTR":0.00223928059108265,
+       "RELAX alternative":0.002266085817225547,
+       "RELAX null":0.002267118058565877,
+       "original name":"Yale-RSV-0885"
+      },
+     "Yale_RSV_0886":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0886"
+      },
+     "Yale_RSV_0887":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0887"
+      },
+     "Yale_RSV_0891":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0891"
+      },
+     "Yale_RSV_0896":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0896"
+      },
+     "Yale_RSV_0897":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0897"
+      },
+     "Yale_RSV_0899":{
+       "MG94xREV with separate rates for branch sets":0.002263064442740359,
+       "Nucleotide GTR":0.002231938486259533,
+       "RELAX alternative":0.002265895969074791,
+       "RELAX null":0.002264958451299725,
+       "original name":"Yale-RSV-0899"
+      },
+     "Yale_RSV_0901":{
+       "MG94xREV with separate rates for branch sets":0.001134050605634978,
+       "Nucleotide GTR":0.00111782889839053,
+       "RELAX alternative":0.001136310378428048,
+       "RELAX null":0.001136229562557736,
+       "original name":"Yale-RSV-0901"
+      },
+     "Yale_RSV_0902":{
+       "MG94xREV with separate rates for branch sets":0.002286991129945391,
+       "Nucleotide GTR":0.002263342657603983,
+       "RELAX alternative":0.002289967097655094,
+       "RELAX null":0.002290985460191,
+       "original name":"Yale-RSV-0902"
+      },
+     "Yale_RSV_0903":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0903"
+      },
+     "Yale_RSV_0905":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0905"
+      },
+     "Yale_RSV_0906":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0906"
+      },
+     "Yale_RSV_0908":{
+       "MG94xREV with separate rates for branch sets":0.003362244855076572,
+       "Nucleotide GTR":0.003332357543852244,
+       "RELAX alternative":0.003362076352763873,
+       "RELAX null":0.003380361484700581,
+       "original name":"Yale-RSV-0908"
+      },
+     "Yale_RSV_0909":{
+       "MG94xREV with separate rates for branch sets":0.003359669202089505,
+       "Nucleotide GTR":0.003325927096781546,
+       "RELAX alternative":0.003350814141165001,
+       "RELAX null":0.003351606367739978,
+       "original name":"Yale-RSV-0909"
+      },
+     "Yale_RSV_0910":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0910"
+      },
+     "Yale_RSV_0911":{
+       "MG94xREV with separate rates for branch sets":0.001109567550489024,
+       "Nucleotide GTR":0.001102572978352172,
+       "RELAX alternative":0.001111301217328403,
+       "RELAX null":0.001111232729879869,
+       "original name":"Yale-RSV-0911"
+      },
+     "Yale_RSV_0915":{
+       "MG94xREV with separate rates for branch sets":0.001114164926569871,
+       "Nucleotide GTR":0.001105352412013818,
+       "RELAX alternative":0.001116237195096217,
+       "RELAX null":0.001116164715790831,
+       "original name":"Yale-RSV-0915"
+      },
+     "Yale_RSV_0921":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0921"
+      },
+     "Yale_RSV_0924":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0924"
+      },
+     "Yale_RSV_0925":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0925"
+      },
+     "Yale_RSV_0926":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0926"
+      },
+     "Yale_RSV_0927":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0927"
+      },
+     "Yale_RSV_0929":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0929"
+      },
+     "Yale_RSV_0934":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0934"
+      },
+     "Yale_RSV_0935":{
+       "MG94xREV with separate rates for branch sets":0.001110372897203678,
+       "Nucleotide GTR":0.00110637076673974,
+       "RELAX alternative":0.00110950397816238,
+       "RELAX null":0.001109435723683642,
+       "original name":"Yale-RSV-0935"
+      },
+     "Yale_RSV_0943":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0943"
+      },
+     "Yale_RSV_0947":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0947"
+      },
+     "Yale_RSV_0950":{
+       "MG94xREV with separate rates for branch sets":0.001134042973642641,
+       "Nucleotide GTR":0.001117828660147106,
+       "RELAX alternative":0.001133834268933014,
+       "RELAX null":0.001133752248591406,
+       "original name":"Yale-RSV-0950"
+      },
+     "Yale_RSV_0952":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0952"
+      },
+     "Yale_RSV_0955":{
+       "MG94xREV with separate rates for branch sets":0.001133897567110374,
+       "Nucleotide GTR":0.001118214820711086,
+       "RELAX alternative":0.001135485957559135,
+       "RELAX null":0.001135388022038139,
+       "original name":"Yale-RSV-0955"
+      },
+     "Yale_RSV_0957":{
+       "MG94xREV with separate rates for branch sets":0.001128403554722381,
+       "Nucleotide GTR":0.001112978923590917,
+       "RELAX alternative":0.001130359370958905,
+       "RELAX null":0.001130281617374657,
+       "original name":"Yale-RSV-0957"
+      },
+     "Yale_RSV_0961":{
+       "MG94xREV with separate rates for branch sets":0.001130229717433933,
+       "Nucleotide GTR":0.001117443699186172,
+       "RELAX alternative":0.001132508525168707,
+       "RELAX null":0.00113243108101141,
+       "original name":"Yale-RSV-0961"
+      },
+     "Yale_RSV_0966":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0966"
+      },
+     "Yale_RSV_0967":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0967"
+      },
+     "Yale_RSV_0969":{
+       "MG94xREV with separate rates for branch sets":0.003348358741689518,
+       "Nucleotide GTR":0.003333186645572271,
+       "RELAX alternative":0.003365186701023606,
+       "RELAX null":0.003366005634831825,
+       "original name":"Yale-RSV-0969"
+      },
+     "Yale_RSV_0970":{
+       "MG94xREV with separate rates for branch sets":0.02267248338090623,
+       "Nucleotide GTR":0.02233172705259075,
+       "RELAX alternative":0.02289418107817922,
+       "RELAX null":0.022901647560347,
+       "original name":"Yale-RSV-0970"
+      },
+     "Yale_RSV_0971":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0971"
+      },
+     "Yale_RSV_0973":{
+       "MG94xREV with separate rates for branch sets":0.001117766306918497,
+       "Nucleotide GTR":0.001108012151393941,
+       "RELAX alternative":0.001117298528804884,
+       "RELAX null":0.001117223986014098,
+       "original name":"Yale-RSV-0973"
+      },
+     "Yale_RSV_0976":{
+       "MG94xREV with separate rates for branch sets":0.002233275386319235,
+       "Nucleotide GTR":0.002215440063127135,
+       "RELAX alternative":0.002236150741136463,
+       "RELAX null":0.002237192153062482,
+       "original name":"Yale-RSV-0976"
+      },
+     "Yale_RSV_0977":{
+       "MG94xREV with separate rates for branch sets":0.0033996767912314,
+       "Nucleotide GTR":0.003362677230712476,
+       "RELAX alternative":0.003403441775455066,
+       "RELAX null":0.003404226677939723,
+       "original name":"Yale-RSV-0977"
+      },
+     "Yale_RSV_0978":{
+       "MG94xREV with separate rates for branch sets":0.004292462699525646,
+       "Nucleotide GTR":0.004238029140555058,
+       "RELAX alternative":0.004294545456854268,
+       "RELAX null":0.004294864995657326,
+       "original name":"Yale-RSV-0978"
+      },
+     "Yale_RSV_0979":{
+       "MG94xREV with separate rates for branch sets":0.009327303320668221,
+       "Nucleotide GTR":0.009166168048166033,
+       "RELAX alternative":0.009385725286938295,
+       "RELAX null":0.009389058614257359,
+       "original name":"Yale-RSV-0979"
+      },
+     "Yale_RSV_0981":{
+       "MG94xREV with separate rates for branch sets":0.0008947075036301591,
+       "Nucleotide GTR":0.0008544811783467313,
+       "RELAX alternative":0.0009408008313183955,
+       "RELAX null":0.00099318261828791,
+       "original name":"Yale-RSV-0981"
+      },
+     "Yale_RSV_0982":{
+       "MG94xREV with separate rates for branch sets":0.004469044646869921,
+       "Nucleotide GTR":0.004449447190210365,
+       "RELAX alternative":0.004482081285167312,
+       "RELAX null":0.0044823322954698,
+       "original name":"Yale-RSV-0982"
+      },
+     "Yale_RSV_0984":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0984"
+      },
+     "Yale_RSV_0988":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0988"
+      },
+     "Yale_RSV_0990":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0990"
+      },
+     "Yale_RSV_0993":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0993"
+      },
+     "Yale_RSV_0995":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0995"
+      },
+     "Yale_RSV_0996":{
+       "MG94xREV with separate rates for branch sets":0.002261644148367111,
+       "Nucleotide GTR":0.002232808086074645,
+       "RELAX alternative":0.002264536218924084,
+       "RELAX null":0.002263627364222769,
+       "original name":"Yale-RSV-0996"
+      },
+     "Yale_RSV_0997":{
+       "MG94xREV with separate rates for branch sets":0.005634492558592039,
+       "Nucleotide GTR":0.005567980523081477,
+       "RELAX alternative":0.005640050969675847,
+       "RELAX null":0.005639140506796684,
+       "original name":"Yale-RSV-0997"
+      },
+     "Yale_RSV_0998":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-0998"
+      },
+     "Yale_RSV_1000":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1000"
+      },
+     "Yale_RSV_1003":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1003"
+      },
+     "Yale_RSV_1005":{
+       "MG94xREV with separate rates for branch sets":0.002255396915774982,
+       "Nucleotide GTR":0.002233991773376256,
+       "RELAX alternative":0.002258269273707108,
+       "RELAX null":0.002257355908950596,
+       "original name":"Yale-RSV-1005"
+      },
+     "Yale_RSV_1006":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1006"
+      },
+     "Yale_RSV_1007":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1007"
+      },
+     "Yale_RSV_1008":{
+       "MG94xREV with separate rates for branch sets":0.002237484318440887,
+       "Nucleotide GTR":0.002224662965950481,
+       "RELAX alternative":0.002238106474128222,
+       "RELAX null":0.002239138575733163,
+       "original name":"Yale-RSV-1008"
+      },
+     "Yale_RSV_1009":{
+       "MG94xREV with separate rates for branch sets":0.001128349422536082,
+       "Nucleotide GTR":0.001113487002335989,
+       "RELAX alternative":0.001129955728598352,
+       "RELAX null":0.001129873164927696,
+       "original name":"Yale-RSV-1009"
+      },
+     "Yale_RSV_1011":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1011"
+      },
+     "Yale_RSV_1015":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1015"
+      },
+     "Yale_RSV_1018":{
+       "MG94xREV with separate rates for branch sets":0.002240536808100146,
+       "Nucleotide GTR":0.00222882288448565,
+       "RELAX alternative":0.002245233346034002,
+       "RELAX null":0.002244308721466196,
+       "original name":"Yale-RSV-1018"
+      },
+     "Yale_RSV_1019":{
+       "MG94xREV with separate rates for branch sets":0.001128393265855454,
+       "Nucleotide GTR":0.001113487002558761,
+       "RELAX alternative":0.001127538798582538,
+       "RELAX null":0.00112746001946581,
+       "original name":"Yale-RSV-1019"
+      },
+     "Yale_RSV_1021":{
+       "MG94xREV with separate rates for branch sets":0.001107278434489613,
+       "Nucleotide GTR":0.001099723894402268,
+       "RELAX alternative":0.001107413634604653,
+       "RELAX null":0.001107340755962085,
+       "original name":"Yale-RSV-1021"
+      },
+     "Yale_RSV_1022":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1022"
+      },
+     "Yale_RSV_1026":{
+       "MG94xREV with separate rates for branch sets":0.001531452088222453,
+       "Nucleotide GTR":0.001515424741141109,
+       "RELAX alternative":0.001535243576309854,
+       "RELAX null":0.001535421966519482,
+       "original name":"Yale-RSV-1026"
+      },
+     "Yale_RSV_1029":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1029"
+      },
+     "Yale_RSV_1030":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1030"
+      },
+     "Yale_RSV_1033":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1033"
+      },
+     "Yale_RSV_1037":{
+       "MG94xREV with separate rates for branch sets":0.001106183101340147,
+       "Nucleotide GTR":0.001098579082087745,
+       "RELAX alternative":0.001106483935546668,
+       "RELAX null":0.001106411817775084,
+       "original name":"Yale-RSV-1037"
+      },
+     "Yale_RSV_1041":{
+       "MG94xREV with separate rates for branch sets":0.001125495001524649,
+       "Nucleotide GTR":0.001113025361562815,
+       "RELAX alternative":0.001124686358620987,
+       "RELAX null":0.001124609186676992,
+       "original name":"Yale-RSV-1041"
+      },
+     "Yale_RSV_1042":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1042"
+      },
+     "Yale_RSV_1044":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1044"
+      },
+     "Yale_RSV_1047":{
+       "MG94xREV with separate rates for branch sets":0.001104797820218414,
+       "Nucleotide GTR":0.001097372226449548,
+       "RELAX alternative":0.001107060222768925,
+       "RELAX null":0.001106990922682796,
+       "original name":"Yale-RSV-1047"
+      },
+     "Yale_RSV_1049":{
+       "MG94xREV with separate rates for branch sets":0.006758986585310662,
+       "Nucleotide GTR":0.006662375486296223,
+       "RELAX alternative":0.006754124438579989,
+       "RELAX null":0.006752276636875658,
+       "original name":"Yale-RSV-1049"
+      },
+     "Yale_RSV_1051":{
+       "MG94xREV with separate rates for branch sets":0.003354210862389205,
+       "Nucleotide GTR":0.003345198053379364,
+       "RELAX alternative":0.003371874417984745,
+       "RELAX null":0.003372756514104198,
+       "original name":"Yale-RSV-1051"
+      },
+     "Yale_RSV_1052":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1052"
+      },
+     "Yale_RSV_1056":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1056"
+      },
+     "Yale_RSV_1060":{
+       "MG94xREV with separate rates for branch sets":0.002246323410120178,
+       "Nucleotide GTR":0.002223462810734421,
+       "RELAX alternative":0.002247180313203606,
+       "RELAX null":0.002259543068916223,
+       "original name":"Yale-RSV-1060"
+      },
+     "Yale_RSV_1063":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1063"
+      },
+     "Yale_RSV_1064":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1064"
+      },
+     "Yale_RSV_1065":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1065"
+      },
+     "Yale_RSV_1066":{
+       "MG94xREV with separate rates for branch sets":0.001127936833968772,
+       "Nucleotide GTR":0.001116000092098176,
+       "RELAX alternative":0.001130220559277981,
+       "RELAX null":0.001130144166865436,
+       "original name":"Yale-RSV-1066"
+      },
+     "Yale_RSV_1068":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1068"
+      },
+     "Yale_RSV_1072":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1072"
+      },
+     "Yale_RSV_1073":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1073"
+      },
+     "Yale_RSV_1074":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1074"
+      },
+     "Yale_RSV_1077":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1077"
+      },
+     "Yale_RSV_1079":{
+       "MG94xREV with separate rates for branch sets":0.004554621279320481,
+       "Nucleotide GTR":0.004489405499576956,
+       "RELAX alternative":0.004564899796901516,
+       "RELAX null":0.004565076252933304,
+       "original name":"Yale-RSV-1079"
+      },
+     "Yale_RSV_1082":{
+       "MG94xREV with separate rates for branch sets":0.001129433877905032,
+       "Nucleotide GTR":0.001113703566926213,
+       "RELAX alternative":0.001131004754153809,
+       "RELAX null":0.001130903321722944,
+       "original name":"Yale-RSV-1082"
+      },
+     "Yale_RSV_1088":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1088"
+      },
+     "Yale_RSV_1089":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1089"
+      },
+     "Yale_RSV_1093":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1093"
+      },
+     "Yale_RSV_1096":{
+       "MG94xREV with separate rates for branch sets":0.001124556463753315,
+       "Nucleotide GTR":0.00111164257315118,
+       "RELAX alternative":0.001124133093095695,
+       "RELAX null":0.0011240564221763,
+       "original name":"Yale-RSV-1096"
+      },
+     "Yale_RSV_1098":{
+       "MG94xREV with separate rates for branch sets":0.001132959582911068,
+       "Nucleotide GTR":0.001116904805629586,
+       "RELAX alternative":0.001131336221291793,
+       "RELAX null":0.001131254308682996,
+       "original name":"Yale-RSV-1098"
+      },
+     "Yale_RSV_1100":{
+       "MG94xREV with separate rates for branch sets":0.001125249361898522,
+       "Nucleotide GTR":0.001113148320406481,
+       "RELAX alternative":0.001127463540367707,
+       "RELAX null":0.001127387999571593,
+       "original name":"Yale-RSV-1100"
+      },
+     "Yale_RSV_1101":{
+       "MG94xREV with separate rates for branch sets":0.001126940457002563,
+       "Nucleotide GTR":0.00111362927223762,
+       "RELAX alternative":0.001129195283724061,
+       "RELAX null":0.001129119146686752,
+       "original name":"Yale-RSV-1101"
+      },
+     "Yale_RSV_1103":{
+       "MG94xREV with separate rates for branch sets":0.003388306466130476,
+       "Nucleotide GTR":0.003345027303749291,
+       "RELAX alternative":0.003388817167148143,
+       "RELAX null":0.00338960727933078,
+       "original name":"Yale-RSV-1103"
+      },
+     "Yale_RSV_1106":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1106"
+      },
+     "Yale_RSV_1107":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1107"
+      },
+     "Yale_RSV_1108":{
+       "MG94xREV with separate rates for branch sets":0.002242322972884439,
+       "Nucleotide GTR":0.002220559703997535,
+       "RELAX alternative":0.002241962036313331,
+       "RELAX null":0.002242996963981059,
+       "original name":"Yale-RSV-1108"
+      },
+     "Yale_RSV_1109":{
+       "MG94xREV with separate rates for branch sets":0.002246565361170225,
+       "Nucleotide GTR":0.002224921430423986,
+       "RELAX alternative":0.002246067668983014,
+       "RELAX null":0.002255734087745094,
+       "original name":"Yale-RSV-1109"
+      },
+     "Yale_RSV_1112":{
+       "MG94xREV with separate rates for branch sets":0.005615935984017857,
+       "Nucleotide GTR":0.005558414468978861,
+       "RELAX alternative":0.005651192649551999,
+       "RELAX null":0.005647425797929683,
+       "original name":"Yale-RSV-1112"
+      },
+     "Yale_RSV_1116":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1116"
+      },
+     "Yale_RSV_1120":{
+       "MG94xREV with separate rates for branch sets":0.005635696499805712,
+       "Nucleotide GTR":0.005589368741569688,
+       "RELAX alternative":0.005636615475134142,
+       "RELAX null":0.005652940337344355,
+       "original name":"Yale-RSV-1120"
+      },
+     "Yale_RSV_1121":{
+       "MG94xREV with separate rates for branch sets":0.001114500228213183,
+       "Nucleotide GTR":0.001102509874176161,
+       "RELAX alternative":0.001113496062243212,
+       "RELAX null":0.001113420600600335,
+       "original name":"Yale-RSV-1121"
+      },
+     "Yale_RSV_1122":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1122"
+      },
+     "Yale_RSV_1124":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1124"
+      },
+     "Yale_RSV_1125":{
+       "MG94xREV with separate rates for branch sets":0.003368069719594309,
+       "Nucleotide GTR":0.003329767000032522,
+       "RELAX alternative":0.003382547056432934,
+       "RELAX null":0.003383264829618099,
+       "original name":"Yale-RSV-1125"
+      },
+     "Yale_RSV_1127":{
+       "MG94xREV with separate rates for branch sets":0.001114214423283065,
+       "Nucleotide GTR":0.001105428142096276,
+       "RELAX alternative":0.001115748697916564,
+       "RELAX null":0.001116631227909645,
+       "original name":"Yale-RSV-1127"
+      },
+     "Yale_RSV_1128":{
+       "MG94xREV with separate rates for branch sets":0.001106096084338083,
+       "Nucleotide GTR":0.001098467334145236,
+       "RELAX alternative":0.00110504371937038,
+       "RELAX null":0.001104970775044784,
+       "original name":"Yale-RSV-1128"
+      },
+     "Yale_RSV_1130":{
+       "MG94xREV with separate rates for branch sets":0.004497114576709289,
+       "Nucleotide GTR":0.004453914961397565,
+       "RELAX alternative":0.004493985106191481,
+       "RELAX null":0.004494187125153824,
+       "original name":"Yale-RSV-1130"
+      },
+     "Yale_RSV_1132":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1132"
+      },
+     "Yale_RSV_1133":{
+       "MG94xREV with separate rates for branch sets":0.001121560405928636,
+       "Nucleotide GTR":0.001108690106119527,
+       "RELAX alternative":0.001123311305430937,
+       "RELAX null":0.001123237336123209,
+       "original name":"Yale-RSV-1133"
+      },
+     "Yale_RSV_1134":{
+       "MG94xREV with separate rates for branch sets":0.001121220821568098,
+       "Nucleotide GTR":0.001110306709042085,
+       "RELAX alternative":0.001120067568202081,
+       "RELAX null":0.001119991212947003,
+       "original name":"Yale-RSV-1134"
+      },
+     "Yale_RSV_1136":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1136"
+      },
+     "Yale_RSV_1139":{
+       "MG94xREV with separate rates for branch sets":0.001114796512378927,
+       "Nucleotide GTR":0.001104458678310189,
+       "RELAX alternative":0.001116490533596796,
+       "RELAX null":0.001116418018168408,
+       "original name":"Yale-RSV-1139"
+      },
+     "Yale_RSV_1141":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1141"
+      },
+     "Yale_RSV_1142":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1142"
+      },
+     "Yale_RSV_1143":{
+       "MG94xREV with separate rates for branch sets":0.002467917835499773,
+       "Nucleotide GTR":0.00244565651153792,
+       "RELAX alternative":0.002463446235115618,
+       "RELAX null":0.002464461260570319,
+       "original name":"Yale-RSV-1143"
+      },
+     "Yale_RSV_1144":{
+       "MG94xREV with separate rates for branch sets":0.001103332278065341,
+       "Nucleotide GTR":0.001096417988542361,
+       "RELAX alternative":0.001105456860236747,
+       "RELAX null":0.001105388613519007,
+       "original name":"Yale-RSV-1144"
+      },
+     "Yale_RSV_1145":{
+       "MG94xREV with separate rates for branch sets":0.001124301307618159,
+       "Nucleotide GTR":0.001111843683376567,
+       "RELAX alternative":0.001126059886390302,
+       "RELAX null":0.001125984616374927,
+       "original name":"Yale-RSV-1145"
+      },
+     "Yale_RSV_1148":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1148"
+      },
+     "Yale_RSV_1150":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1150"
+      },
+     "Yale_RSV_1152":{
+       "MG94xREV with separate rates for branch sets":0.002227968703598774,
+       "Nucleotide GTR":0.00220451750263107,
+       "RELAX alternative":0.002227266238915604,
+       "RELAX null":0.002228303452273679,
+       "original name":"Yale-RSV-1152"
+      },
+     "Yale_RSV_1153":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1153"
+      },
+     "Yale_RSV_1156":{
+       "MG94xREV with separate rates for branch sets":0.0022362331915967,
+       "Nucleotide GTR":0.002212143640986396,
+       "RELAX alternative":0.002242844569903488,
+       "RELAX null":0.002241933518428005,
+       "original name":"Yale-RSV-1156"
+      },
+     "Yale_RSV_1164":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1164"
+      },
+     "Yale_RSV_1167":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1167"
+      },
+     "Yale_RSV_1169":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1169"
+      },
+     "Yale_RSV_1170":{
+       "MG94xREV with separate rates for branch sets":0.001110913784821189,
+       "Nucleotide GTR":0.001099683752187439,
+       "RELAX alternative":0.001110473553312933,
+       "RELAX null":0.001110400284918788,
+       "original name":"Yale-RSV-1170"
+      },
+     "Yale_RSV_1171":{
+       "MG94xREV with separate rates for branch sets":0.001110222474360602,
+       "Nucleotide GTR":0.001103686087651835,
+       "RELAX alternative":0.001110357272185086,
+       "RELAX null":0.001110284382812844,
+       "original name":"Yale-RSV-1171"
+      },
+     "Yale_RSV_1173":{
+       "MG94xREV with separate rates for branch sets":0.001107077217958839,
+       "Nucleotide GTR":0.00109790439324605,
+       "RELAX alternative":0.001106234303402488,
+       "RELAX null":0.001106161766864569,
+       "original name":"Yale-RSV-1173"
+      },
+     "Yale_RSV_1176":{
+       "MG94xREV with separate rates for branch sets":0.002269275076938803,
+       "Nucleotide GTR":0.002233510927518063,
+       "RELAX alternative":0.002267795201716734,
+       "RELAX null":0.002268826948813328,
+       "original name":"Yale-RSV-1176"
+      },
+     "Yale_RSV_1178":{
+       "MG94xREV with separate rates for branch sets":0.002235882959708178,
+       "Nucleotide GTR":0.002208358913862309,
+       "RELAX alternative":0.002243820996158717,
+       "RELAX null":0.002244859275831189,
+       "original name":"Yale-RSV-1178"
+      },
+     "Yale_RSV_1182":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1182"
+      },
+     "Yale_RSV_1194":{
+       "MG94xREV with separate rates for branch sets":0.001126957470973381,
+       "Nucleotide GTR":0.001113623002190229,
+       "RELAX alternative":0.001129219477302741,
+       "RELAX null":0.001129143100336471,
+       "original name":"Yale-RSV-1194"
+      },
+     "Yale_RSV_1199":{
+       "MG94xREV with separate rates for branch sets":0.005599484561852087,
+       "Nucleotide GTR":0.005532097468594551,
+       "RELAX alternative":0.005623630275713602,
+       "RELAX null":0.005619890017384116,
+       "original name":"Yale-RSV-1199"
+      },
+     "Yale_RSV_1204":{
+       "MG94xREV with separate rates for branch sets":0.002266610587442147,
+       "Nucleotide GTR":0.002236509729211659,
+       "RELAX alternative":0.002273314667955589,
+       "RELAX null":0.002272380016559678,
+       "original name":"Yale-RSV-1204"
+      },
+     "Yale_RSV_1207":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1207"
+      },
+     "Yale_RSV_1215":{
+       "MG94xREV with separate rates for branch sets":0.002228362165273496,
+       "Nucleotide GTR":0.00220406667712994,
+       "RELAX alternative":0.002231147192756132,
+       "RELAX null":0.002230229858613436,
+       "original name":"Yale-RSV-1215"
+      },
+     "Yale_RSV_1219":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1219"
+      },
+     "Yale_RSV_1223":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1223"
+      },
+     "Yale_RSV_1225":{
+       "MG94xREV with separate rates for branch sets":0.002218347133147184,
+       "Nucleotide GTR":0.002204929405959567,
+       "RELAX alternative":0.002225026197605905,
+       "RELAX null":0.002226066459618323,
+       "original name":"Yale-RSV-1225"
+      },
+     "Yale_RSV_1228":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1228"
+      },
+     "Yale_RSV_1230":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1230"
+      },
+     "Yale_RSV_1232":{
+       "MG94xREV with separate rates for branch sets":0.001125429018488264,
+       "Nucleotide GTR":0.001113035910495275,
+       "RELAX alternative":0.001127197453634108,
+       "RELAX null":0.001127122184274665,
+       "original name":"Yale-RSV-1232"
+      },
+     "Yale_RSV_1234":{
+       "MG94xREV with separate rates for branch sets":0.001110175827050271,
+       "Nucleotide GTR":0.001099683752204428,
+       "RELAX alternative":0.001111759146849817,
+       "RELAX null":0.001111682132235894,
+       "original name":"Yale-RSV-1234"
+      },
+     "Yale_RSV_1238":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "original name":"Yale-RSV-1238"
+      },
+     "Yale_RSV_1239":{
+       "MG94xREV with separate rates for branch sets":0.001126955783646537,
+       "Nucleotide GTR":0.001113940863721256,
+       "RELAX alternative":0.001126645342542379,
+       "RELAX null":0.001126567701115569,
+       "original name":"Yale-RSV-1239"
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "RELAX alternative":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "RELAX null":{
+       "attribute type":"branch length",
+       "display order":3
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301] 
+      ],
+     "name":"relax.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":12224.19350474499,
+     "Equilibrium frequencies":      [
+[0.06739640518038136],
+      [0.05378717805790868],
+      [0.01471062566606319],
+      [0.02042883077326342],
+      [0.08387422340942753],
+      [0.06693766198534452],
+      [0.01830724205995197],
+      [0.02542349716849377],
+      [0.02086502318886884],
+      [0.01665178898545715],
+      [0.00455421242162223],
+      [0.006324492035811083],
+      [0.0378672174119095],
+      [0.03022076266591154],
+      [0.008265284459477142],
+      [0.01147810442251092],
+      [0.02881591522259258],
+      [0.0229971726063271],
+      [0.006289655077745391],
+      [0.008734523066675501],
+      [0.03586114874611147],
+      [0.02861977560681125],
+      [0.007827419485462712],
+      [0.01087003582918684],
+      [0.008921020901911415],
+      [0.007119616223227163],
+      [0.001947192861338924],
+      [0.002704091202522249],
+      [0.01619045591135921],
+      [0.01292114813263799],
+      [0.003533893768331659],
+      [0.004907562696703286],
+      [0.01881720517725225],
+      [0.01501748294604428],
+      [0.004107234810272082],
+      [0.005703768608474132],
+      [0.02341784352969196],
+      [0.0186891232001561],
+      [0.005111416983587387],
+      [0.007098289015006657],
+      [0.005825554364839632],
+      [0.004649211320233257],
+      [0.001271544815025272],
+      [0.001765810267791519],
+      [0.01057259949732363],
+      [0.008437694713471723],
+      [0.002307683222956369],
+      [0.003204708699021034],
+      [0.02361547727266854],
+      [0.008969360473118524],
+      [0.03682531577610474],
+      [0.02938925023355157],
+      [0.008037868399167083],
+      [0.01116228888096572],
+      [0.007311035055826194],
+      [0.001999545315835932],
+      [0.002776793714146322],
+      [0.01662575439833211],
+      [0.01326854762916136],
+      [0.003628906448573631],
+      [0.005039508000053316] 
+      ],
+     "Log Likelihood":-5698.081855807704,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *Reference*":        [
+[0.4975827761086323, 1] 
+        ],
+       "non-synonymous/synonymous rate ratio for *Test*":        [
+[1.034291730098336, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":412
+    },
+   "Nucleotide GTR":{
+     "AIC-c":12569.23341172079,
+     "Equilibrium frequencies":      [
+[0.3994612822386148],
+      [0.3285461494347686],
+      [0.1074597581956588],
+      [0.1645328101309577] 
+      ],
+     "Log Likelihood":-5777.607012025012,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.105323153783895,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.1422058389388671,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":1.620471432961108,
+       "Substitution rate from nucleotide G to nucleotide T":0.2343110374035419
+      },
+     "display order":0,
+     "estimated parameters":506
+    },
+   "RELAX alternative":{
+     "AIC-c":12231.42404756694,
+     "Log Likelihood":-5697.657763614127,
+     "Rate Distributions":{
+       "Reference":{
+         "0":{
+           "omega":0.1504788920071837,
+           "proportion":0.09083627666409355
+          },
+         "1":{
+           "omega":0.436429059140707,
+           "proportion":0.8772597066244269
+          },
+         "2":{
+           "omega":3.300364211733857,
+           "proportion":0.03190401671147955
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":1,
+           "proportion":0.09083627666409355
+          },
+         "1":{
+           "omega":1,
+           "proportion":0.8772597066244269
+          },
+         "2":{
+           "omega":1,
+           "proportion":0.03190401671147955
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":416
+    },
+   "RELAX null":{
+     "AIC-c":12231.47163104948,
+     "Log Likelihood":-5698.691432131802,
+     "Rate Distributions":{
+       "Reference":{
+         "0":{
+           "omega":0.1842592600875453,
+           "proportion":0.0939491735145596
+          },
+         "1":{
+           "omega":0.4371802961080754,
+           "proportion":0.871823579836533
+          },
+         "2":{
+           "omega":3.283174667216279,
+           "proportion":0.03422724664890747
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0.1842592600875453,
+           "proportion":0.0939491735145596
+          },
+         "1":{
+           "omega":0.4371802961080754,
+           "proportion":0.871823579836533
+          },
+         "2":{
+           "omega":3.283174667216279,
+           "proportion":0.03422724664890747
+          }
+        }
+      },
+     "display order":3,
+     "estimated parameters":415
+    }
+  },
+ "input":{
+   "file name":"/Users/seth/Gits/YSPH_RSV/analysis/250830_selection_analysis/geneseqs/RSVA_G_codonaln_PGCOE_uq.fasta",
+   "number of sequences":281,
+   "number of sites":302,
+   "partition count":1,
+   "trees":{
+     "0":"(((Yale_RSV_0020_1,Yale_RSV_0330_1)NODE_0001007,(Yale_RSV_0548_1,Yale_RSV_0161_1,Yale_RSV_0231_1)NODE_0001009)NODE_0001006,(Yale_RSV_0475_1,((Yale_RSV_0097_1,Yale_RSV_0469_1)NODE_0001906,(Yale_RSV_1230,(Yale_RSV_0862,Yale_RSV_0886,Yale_RSV_1072)NODE_0001964)NODE_0001963,(((Yale_RSV_0825,Yale_RSV_1029)NODE_0001839,((Yale_RSV_0976,(Yale_RSV_0854,Yale_RSV_0935)NODE_0001844)NODE_0001843,(Yale_RSV_0753,Yale_RSV_0762)NODE_0001845)NODE_0001842,Yale_RSV_0969,Yale_RSV_0982,Yale_RSV_0925,(Yale_RSV_0824,Yale_RSV_0921,Yale_RSV_0804)NODE_0001860)NODE_0001837,(Yale_RSV_0262_1,Yale_RSV_0486_1)NODE_0001866,Yale_RSV_1018,(Yale_RSV_0984,(Yale_RSV_1152,Yale_RSV_1167,Yale_RSV_1068)NODE_0001874)NODE_0001872,(Yale_RSV_0189_1,Yale_RSV_0484_1,Yale_RSV_0550_1)NODE_0001882,Yale_RSV_0774,Yale_RSV_0688,(Yale_RSV_0875,Yale_RSV_0878)NODE_0001892,Yale_RSV_1007,Yale_RSV_0756,Yale_RSV_0856)NODE_0001833)NODE_0001828,(((Yale_RSV_0995,Yale_RSV_1132)NODE_0001585,(Yale_RSV_0252_1,Yale_RSV_1109)NODE_0001587,(Yale_RSV_0908,Yale_RSV_1120,(Yale_RSV_0778,Yale_RSV_0896)NODE_0001595,Yale_RSV_1107,Yale_RSV_1060,Yale_RSV_1223,(Yale_RSV_0811,Yale_RSV_1148)NODE_0001598)NODE_0001588)NODE_0001582,(Yale_RSV_1051,Yale_RSV_1079)NODE_0001625,((Yale_RSV_1124,Yale_RSV_1026)NODE_0001644,(Yale_RSV_0899,Yale_RSV_0787,Yale_RSV_0755,Yale_RSV_0996,Yale_RSV_1066,Yale_RSV_0961,Yale_RSV_0793,Yale_RSV_0714,Yale_RSV_0815,(Yale_RSV_0746,Yale_RSV_0772)NODE_0001667,Yale_RSV_1088)NODE_0001646)NODE_0001640,((Yale_RSV_1103,Yale_RSV_1101,Yale_RSV_1232,Yale_RSV_0832,Yale_RSV_0806,Yale_RSV_1145,Yale_RSV_0906,Yale_RSV_1041,(Yale_RSV_1063,Yale_RSV_1239)NODE_0001742,(Yale_RSV_0981,Yale_RSV_0966)NODE_0001744,Yale_RSV_1100,Yale_RSV_1056,Yale_RSV_1228,Yale_RSV_1194)NODE_0001714,Yale_RSV_0977,(Yale_RSV_1108,(Yale_RSV_1015,Yale_RSV_1112)NODE_0001702,(Yale_RSV_0911,Yale_RSV_0952)NODE_0001705)NODE_0001700)NODE_0001688)NODE_0001569)NODE_0001544,((Yale_RSV_1049,((Yale_RSV_0568_1,Yale_RSV_0702,Yale_RSV_0237_1,Yale_RSV_0701)NODE_0000818,(Yale_RSV_0254_1,Yale_RSV_1133,Yale_RSV_1153,Yale_RSV_0885)NODE_0000833,Yale_RSV_0997,Yale_RSV_0367_1,Yale_RSV_0461_1,Yale_RSV_0438_1,Yale_RSV_0136_1)NODE_0000817,Yale_RSV_0710,(Yale_RSV_0388_1,Yale_RSV_0208_1)NODE_0000725,Yale_RSV_0221_1,Yale_RSV_0462_1,(Yale_RSV_1096,Yale_RSV_0277_1,Yale_RSV_0160_1)NODE_0000732,(Yale_RSV_0001_1,Yale_RSV_0043_1)NODE_0000755,((Yale_RSV_0500_1,(Yale_RSV_1011,Yale_RSV_1093)NODE_0000761)NODE_0000760,Yale_RSV_0721)NODE_0000759,Yale_RSV_0483_1,Yale_RSV_0527_1,(Yale_RSV_1005,(Yale_RSV_1150,Yale_RSV_0957,Yale_RSV_0967,Yale_RSV_1019,Yale_RSV_0882,Yale_RSV_1009,Yale_RSV_1207)NODE_0000770)NODE_0000769,Yale_RSV_0979,Yale_RSV_0179_1)NODE_0000704,((((Yale_RSV_0971,Yale_RSV_1219)NODE_0000021,Yale_RSV_0978,(Yale_RSV_1225,(Yale_RSV_0909,Yale_RSV_1143)NODE_0000025)NODE_0000024)NODE_0000019,(((Yale_RSV_1022,Yale_RSV_1082)NODE_0000040,(Yale_RSV_1098,Yale_RSV_1176,Yale_RSV_1204,Yale_RSV_0897,Yale_RSV_0845,Yale_RSV_0840,Yale_RSV_1052,Yale_RSV_0901,Yale_RSV_0955,Yale_RSV_0950)NODE_0000042)NODE_0000037,(Yale_RSV_1130,(Yale_RSV_1134,(Yale_RSV_0731,(Yale_RSV_0988,Yale_RSV_0887,Yale_RSV_0998)NODE_0000090)NODE_0000089)NODE_0000082,(Yale_RSV_1238,Yale_RSV_0973)NODE_0000076,Yale_RSV_0531_1,(Yale_RSV_0871,(Yale_RSV_1077,Yale_RSV_1122)NODE_0000081)NODE_0000078)NODE_0000069)NODE_0000026)NODE_0000011,(Yale_RSV_0053_1,Yale_RSV_0314_1)NODE_0000121,(((Yale_RSV_0924,Yale_RSV_0990)NODE_0000135,((Yale_RSV_1033,Yale_RSV_0891)NODE_0000138,(Yale_RSV_1139,Yale_RSV_1030)NODE_0000139,(Yale_RSV_1127,Yale_RSV_0915,Yale_RSV_0947,Yale_RSV_1156)NODE_0000145,(Yale_RSV_0814,(Yale_RSV_0700,Yale_RSV_0993,(Yale_RSV_1065,Yale_RSV_1073)NODE_0000153)NODE_0000151)NODE_0000149)NODE_0000136)NODE_0000133,((Yale_RSV_0468_1,(Yale_RSV_0294_1,(Yale_RSV_0879,(Yale_RSV_0690,Yale_RSV_0943)NODE_0000164,Yale_RSV_0752,Yale_RSV_0758,Yale_RSV_1074,Yale_RSV_1144,Yale_RSV_0792,Yale_RSV_0805,Yale_RSV_0841,Yale_RSV_0844,Yale_RSV_0759,(Yale_RSV_0735,(Yale_RSV_0761,Yale_RSV_0934)NODE_0000177)NODE_0000175,Yale_RSV_0777,Yale_RSV_0855,Yale_RSV_1047)NODE_0000162)NODE_0000161)NODE_0000156,(Yale_RSV_0228_1,Yale_RSV_1008,(Yale_RSV_1164,Yale_RSV_1000,Yale_RSV_1171)NODE_0000194)NODE_0000191,(Yale_RSV_0902,(Yale_RSV_0768,Yale_RSV_0798,Yale_RSV_0782,Yale_RSV_1121,Yale_RSV_1215,Yale_RSV_0849,(Yale_RSV_0927,Yale_RSV_1003,Yale_RSV_1089)NODE_0000235,Yale_RSV_1234,Yale_RSV_1170,Yale_RSV_1006,Yale_RSV_1178)NODE_0000200)NODE_0000198)NODE_0000155)NODE_0000125,(Yale_RSV_0820,Yale_RSV_0970,((Yale_RSV_0566_1,(Yale_RSV_0147_1,Yale_RSV_0464_1)NODE_0000297,(Yale_RSV_1125,Yale_RSV_0007_1,Yale_RSV_0140_1,Yale_RSV_0037_1,Yale_RSV_0428_1,Yale_RSV_0187_1,Yale_RSV_0259_1)NODE_0000298)NODE_0000295,Yale_RSV_0142_1,Yale_RSV_0770)NODE_0000287)NODE_0000278,((Yale_RSV_0006_1,Yale_RSV_0061_1,(Yale_RSV_0076_1,Yale_RSV_0075_1)NODE_0000334)NODE_0000331,Yale_RSV_0184_1,Yale_RSV_0694,(Yale_RSV_1182,Yale_RSV_1142,Yale_RSV_1136,Yale_RSV_1141)NODE_0000349)NODE_0000326,((Yale_RSV_1173,Yale_RSV_0860,Yale_RSV_0905,Yale_RSV_1044)NODE_0000367,Yale_RSV_0251_1,Yale_RSV_1199,(Yale_RSV_1042,Yale_RSV_0926,Yale_RSV_1106,Yale_RSV_0910)NODE_0000404,((Yale_RSV_1037,Yale_RSV_1116,Yale_RSV_0706,Yale_RSV_0816,Yale_RSV_0874,Yale_RSV_1021,Yale_RSV_0929,Yale_RSV_1128,Yale_RSV_1064)NODE_0000411,((Yale_RSV_0788,(Yale_RSV_0687,Yale_RSV_0767,(Yale_RSV_0818,Yale_RSV_0858)NODE_0000441,Yale_RSV_0729,(Yale_RSV_0796,Yale_RSV_0764,Yale_RSV_0863,Yale_RSV_0880)NODE_0000445)NODE_0000436)NODE_0000434,(Yale_RSV_1169,(Yale_RSV_0698,Yale_RSV_0903,Yale_RSV_0831,Yale_RSV_0751,Yale_RSV_0836,Yale_RSV_0884,(Yale_RSV_0697,Yale_RSV_0810)NODE_0000484)NODE_0000458)NODE_0000457)NODE_0000433)NODE_0000410)NODE_0000364)NODE_0000008)NODE_0000533)"
+    }
+  },
+ "runtime":"2.5.75",
+ "test results":{
+   "LRT":2.067337035348828,
+   "p-value":0.1504840788452161,
+   "relaxation or intensification parameter":0
+  },
+ "tested":{
+   "0":{
+     "NODE_0000008":"Reference",
+     "NODE_0000011":"Reference",
+     "NODE_0000019":"Reference",
+     "NODE_0000021":"Reference",
+     "NODE_0000024":"Reference",
+     "NODE_0000025":"Reference",
+     "NODE_0000026":"Reference",
+     "NODE_0000037":"Reference",
+     "NODE_0000040":"Reference",
+     "NODE_0000042":"Reference",
+     "NODE_0000069":"Reference",
+     "NODE_0000076":"Reference",
+     "NODE_0000078":"Reference",
+     "NODE_0000081":"Reference",
+     "NODE_0000082":"Reference",
+     "NODE_0000089":"Reference",
+     "NODE_0000090":"Reference",
+     "NODE_0000121":"Reference",
+     "NODE_0000125":"Reference",
+     "NODE_0000133":"Reference",
+     "NODE_0000135":"Reference",
+     "NODE_0000136":"Reference",
+     "NODE_0000138":"Reference",
+     "NODE_0000139":"Reference",
+     "NODE_0000145":"Reference",
+     "NODE_0000149":"Reference",
+     "NODE_0000151":"Reference",
+     "NODE_0000153":"Reference",
+     "NODE_0000155":"Reference",
+     "NODE_0000156":"Reference",
+     "NODE_0000161":"Reference",
+     "NODE_0000162":"Reference",
+     "NODE_0000164":"Reference",
+     "NODE_0000175":"Reference",
+     "NODE_0000177":"Reference",
+     "NODE_0000191":"Reference",
+     "NODE_0000194":"Reference",
+     "NODE_0000198":"Reference",
+     "NODE_0000200":"Reference",
+     "NODE_0000235":"Reference",
+     "NODE_0000278":"Reference",
+     "NODE_0000287":"Reference",
+     "NODE_0000295":"Reference",
+     "NODE_0000297":"Reference",
+     "NODE_0000298":"Reference",
+     "NODE_0000326":"Reference",
+     "NODE_0000331":"Reference",
+     "NODE_0000334":"Reference",
+     "NODE_0000349":"Reference",
+     "NODE_0000364":"Reference",
+     "NODE_0000367":"Reference",
+     "NODE_0000404":"Reference",
+     "NODE_0000410":"Reference",
+     "NODE_0000411":"Reference",
+     "NODE_0000433":"Reference",
+     "NODE_0000434":"Reference",
+     "NODE_0000436":"Reference",
+     "NODE_0000441":"Reference",
+     "NODE_0000445":"Reference",
+     "NODE_0000457":"Reference",
+     "NODE_0000458":"Reference",
+     "NODE_0000484":"Reference",
+     "NODE_0000533":"Reference",
+     "NODE_0000704":"Reference",
+     "NODE_0000725":"Reference",
+     "NODE_0000732":"Reference",
+     "NODE_0000755":"Reference",
+     "NODE_0000759":"Reference",
+     "NODE_0000760":"Reference",
+     "NODE_0000761":"Reference",
+     "NODE_0000769":"Reference",
+     "NODE_0000770":"Reference",
+     "NODE_0000817":"Reference",
+     "NODE_0000818":"Reference",
+     "NODE_0000833":"Reference",
+     "NODE_0001006":"Reference",
+     "NODE_0001007":"Reference",
+     "NODE_0001009":"Reference",
+     "NODE_0001544":"Reference",
+     "NODE_0001569":"Reference",
+     "NODE_0001582":"Reference",
+     "NODE_0001585":"Test",
+     "NODE_0001587":"Test",
+     "NODE_0001588":"Test",
+     "NODE_0001595":"Test",
+     "NODE_0001598":"Test",
+     "NODE_0001625":"Reference",
+     "NODE_0001640":"Reference",
+     "NODE_0001644":"Reference",
+     "NODE_0001646":"Reference",
+     "NODE_0001667":"Reference",
+     "NODE_0001688":"Reference",
+     "NODE_0001700":"Reference",
+     "NODE_0001702":"Reference",
+     "NODE_0001705":"Reference",
+     "NODE_0001714":"Reference",
+     "NODE_0001742":"Reference",
+     "NODE_0001744":"Reference",
+     "NODE_0001828":"Reference",
+     "NODE_0001833":"Reference",
+     "NODE_0001837":"Reference",
+     "NODE_0001839":"Reference",
+     "NODE_0001842":"Reference",
+     "NODE_0001843":"Reference",
+     "NODE_0001844":"Reference",
+     "NODE_0001845":"Reference",
+     "NODE_0001860":"Reference",
+     "NODE_0001866":"Reference",
+     "NODE_0001872":"Reference",
+     "NODE_0001874":"Reference",
+     "NODE_0001882":"Reference",
+     "NODE_0001892":"Reference",
+     "NODE_0001906":"Reference",
+     "NODE_0001963":"Reference",
+     "NODE_0001964":"Reference",
+     "Yale_RSV_0001_1":"Reference",
+     "Yale_RSV_0006_1":"Reference",
+     "Yale_RSV_0007_1":"Reference",
+     "Yale_RSV_0020_1":"Reference",
+     "Yale_RSV_0037_1":"Reference",
+     "Yale_RSV_0043_1":"Reference",
+     "Yale_RSV_0053_1":"Reference",
+     "Yale_RSV_0061_1":"Reference",
+     "Yale_RSV_0075_1":"Reference",
+     "Yale_RSV_0076_1":"Reference",
+     "Yale_RSV_0097_1":"Reference",
+     "Yale_RSV_0136_1":"Reference",
+     "Yale_RSV_0140_1":"Reference",
+     "Yale_RSV_0142_1":"Reference",
+     "Yale_RSV_0147_1":"Reference",
+     "Yale_RSV_0160_1":"Reference",
+     "Yale_RSV_0161_1":"Reference",
+     "Yale_RSV_0179_1":"Reference",
+     "Yale_RSV_0184_1":"Reference",
+     "Yale_RSV_0187_1":"Reference",
+     "Yale_RSV_0189_1":"Reference",
+     "Yale_RSV_0208_1":"Reference",
+     "Yale_RSV_0221_1":"Reference",
+     "Yale_RSV_0228_1":"Reference",
+     "Yale_RSV_0231_1":"Reference",
+     "Yale_RSV_0237_1":"Reference",
+     "Yale_RSV_0251_1":"Reference",
+     "Yale_RSV_0252_1":"Test",
+     "Yale_RSV_0254_1":"Reference",
+     "Yale_RSV_0259_1":"Reference",
+     "Yale_RSV_0262_1":"Reference",
+     "Yale_RSV_0277_1":"Reference",
+     "Yale_RSV_0294_1":"Reference",
+     "Yale_RSV_0314_1":"Reference",
+     "Yale_RSV_0330_1":"Reference",
+     "Yale_RSV_0367_1":"Reference",
+     "Yale_RSV_0388_1":"Reference",
+     "Yale_RSV_0428_1":"Reference",
+     "Yale_RSV_0438_1":"Reference",
+     "Yale_RSV_0461_1":"Reference",
+     "Yale_RSV_0462_1":"Reference",
+     "Yale_RSV_0464_1":"Reference",
+     "Yale_RSV_0468_1":"Reference",
+     "Yale_RSV_0469_1":"Reference",
+     "Yale_RSV_0475_1":"Reference",
+     "Yale_RSV_0483_1":"Reference",
+     "Yale_RSV_0484_1":"Reference",
+     "Yale_RSV_0486_1":"Reference",
+     "Yale_RSV_0500_1":"Reference",
+     "Yale_RSV_0527_1":"Reference",
+     "Yale_RSV_0531_1":"Reference",
+     "Yale_RSV_0548_1":"Reference",
+     "Yale_RSV_0550_1":"Reference",
+     "Yale_RSV_0566_1":"Reference",
+     "Yale_RSV_0568_1":"Reference",
+     "Yale_RSV_0687":"Reference",
+     "Yale_RSV_0688":"Reference",
+     "Yale_RSV_0690":"Reference",
+     "Yale_RSV_0694":"Reference",
+     "Yale_RSV_0697":"Reference",
+     "Yale_RSV_0698":"Reference",
+     "Yale_RSV_0700":"Reference",
+     "Yale_RSV_0701":"Reference",
+     "Yale_RSV_0702":"Reference",
+     "Yale_RSV_0706":"Reference",
+     "Yale_RSV_0710":"Reference",
+     "Yale_RSV_0714":"Reference",
+     "Yale_RSV_0721":"Reference",
+     "Yale_RSV_0729":"Reference",
+     "Yale_RSV_0731":"Reference",
+     "Yale_RSV_0735":"Reference",
+     "Yale_RSV_0746":"Reference",
+     "Yale_RSV_0751":"Reference",
+     "Yale_RSV_0752":"Reference",
+     "Yale_RSV_0753":"Reference",
+     "Yale_RSV_0755":"Reference",
+     "Yale_RSV_0756":"Reference",
+     "Yale_RSV_0758":"Reference",
+     "Yale_RSV_0759":"Reference",
+     "Yale_RSV_0761":"Reference",
+     "Yale_RSV_0762":"Reference",
+     "Yale_RSV_0764":"Reference",
+     "Yale_RSV_0767":"Reference",
+     "Yale_RSV_0768":"Reference",
+     "Yale_RSV_0770":"Reference",
+     "Yale_RSV_0772":"Reference",
+     "Yale_RSV_0774":"Reference",
+     "Yale_RSV_0777":"Reference",
+     "Yale_RSV_0778":"Test",
+     "Yale_RSV_0782":"Reference",
+     "Yale_RSV_0787":"Reference",
+     "Yale_RSV_0788":"Reference",
+     "Yale_RSV_0792":"Reference",
+     "Yale_RSV_0793":"Reference",
+     "Yale_RSV_0796":"Reference",
+     "Yale_RSV_0798":"Reference",
+     "Yale_RSV_0804":"Reference",
+     "Yale_RSV_0805":"Reference",
+     "Yale_RSV_0806":"Reference",
+     "Yale_RSV_0810":"Reference",
+     "Yale_RSV_0811":"Test",
+     "Yale_RSV_0814":"Reference",
+     "Yale_RSV_0815":"Reference",
+     "Yale_RSV_0816":"Reference",
+     "Yale_RSV_0818":"Reference",
+     "Yale_RSV_0820":"Reference",
+     "Yale_RSV_0824":"Reference",
+     "Yale_RSV_0825":"Reference",
+     "Yale_RSV_0831":"Reference",
+     "Yale_RSV_0832":"Reference",
+     "Yale_RSV_0836":"Reference",
+     "Yale_RSV_0840":"Reference",
+     "Yale_RSV_0841":"Reference",
+     "Yale_RSV_0844":"Reference",
+     "Yale_RSV_0845":"Reference",
+     "Yale_RSV_0849":"Reference",
+     "Yale_RSV_0854":"Reference",
+     "Yale_RSV_0855":"Reference",
+     "Yale_RSV_0856":"Reference",
+     "Yale_RSV_0858":"Reference",
+     "Yale_RSV_0860":"Reference",
+     "Yale_RSV_0862":"Reference",
+     "Yale_RSV_0863":"Reference",
+     "Yale_RSV_0871":"Reference",
+     "Yale_RSV_0874":"Reference",
+     "Yale_RSV_0875":"Reference",
+     "Yale_RSV_0878":"Reference",
+     "Yale_RSV_0879":"Reference",
+     "Yale_RSV_0880":"Reference",
+     "Yale_RSV_0882":"Reference",
+     "Yale_RSV_0884":"Reference",
+     "Yale_RSV_0885":"Reference",
+     "Yale_RSV_0886":"Reference",
+     "Yale_RSV_0887":"Reference",
+     "Yale_RSV_0891":"Reference",
+     "Yale_RSV_0896":"Test",
+     "Yale_RSV_0897":"Reference",
+     "Yale_RSV_0899":"Reference",
+     "Yale_RSV_0901":"Reference",
+     "Yale_RSV_0902":"Reference",
+     "Yale_RSV_0903":"Reference",
+     "Yale_RSV_0905":"Reference",
+     "Yale_RSV_0906":"Reference",
+     "Yale_RSV_0908":"Test",
+     "Yale_RSV_0909":"Reference",
+     "Yale_RSV_0910":"Reference",
+     "Yale_RSV_0911":"Reference",
+     "Yale_RSV_0915":"Reference",
+     "Yale_RSV_0921":"Reference",
+     "Yale_RSV_0924":"Reference",
+     "Yale_RSV_0925":"Reference",
+     "Yale_RSV_0926":"Reference",
+     "Yale_RSV_0927":"Reference",
+     "Yale_RSV_0929":"Reference",
+     "Yale_RSV_0934":"Reference",
+     "Yale_RSV_0935":"Reference",
+     "Yale_RSV_0943":"Reference",
+     "Yale_RSV_0947":"Reference",
+     "Yale_RSV_0950":"Reference",
+     "Yale_RSV_0952":"Reference",
+     "Yale_RSV_0955":"Reference",
+     "Yale_RSV_0957":"Reference",
+     "Yale_RSV_0961":"Reference",
+     "Yale_RSV_0966":"Reference",
+     "Yale_RSV_0967":"Reference",
+     "Yale_RSV_0969":"Reference",
+     "Yale_RSV_0970":"Reference",
+     "Yale_RSV_0971":"Reference",
+     "Yale_RSV_0973":"Reference",
+     "Yale_RSV_0976":"Reference",
+     "Yale_RSV_0977":"Reference",
+     "Yale_RSV_0978":"Reference",
+     "Yale_RSV_0979":"Reference",
+     "Yale_RSV_0981":"Reference",
+     "Yale_RSV_0982":"Reference",
+     "Yale_RSV_0984":"Reference",
+     "Yale_RSV_0988":"Reference",
+     "Yale_RSV_0990":"Reference",
+     "Yale_RSV_0993":"Reference",
+     "Yale_RSV_0995":"Test",
+     "Yale_RSV_0996":"Reference",
+     "Yale_RSV_0997":"Reference",
+     "Yale_RSV_0998":"Reference",
+     "Yale_RSV_1000":"Reference",
+     "Yale_RSV_1003":"Reference",
+     "Yale_RSV_1005":"Reference",
+     "Yale_RSV_1006":"Reference",
+     "Yale_RSV_1007":"Reference",
+     "Yale_RSV_1008":"Reference",
+     "Yale_RSV_1009":"Reference",
+     "Yale_RSV_1011":"Reference",
+     "Yale_RSV_1015":"Reference",
+     "Yale_RSV_1018":"Reference",
+     "Yale_RSV_1019":"Reference",
+     "Yale_RSV_1021":"Reference",
+     "Yale_RSV_1022":"Reference",
+     "Yale_RSV_1026":"Reference",
+     "Yale_RSV_1029":"Reference",
+     "Yale_RSV_1030":"Reference",
+     "Yale_RSV_1033":"Reference",
+     "Yale_RSV_1037":"Reference",
+     "Yale_RSV_1041":"Reference",
+     "Yale_RSV_1042":"Reference",
+     "Yale_RSV_1044":"Reference",
+     "Yale_RSV_1047":"Reference",
+     "Yale_RSV_1049":"Reference",
+     "Yale_RSV_1051":"Reference",
+     "Yale_RSV_1052":"Reference",
+     "Yale_RSV_1056":"Reference",
+     "Yale_RSV_1060":"Test",
+     "Yale_RSV_1063":"Reference",
+     "Yale_RSV_1064":"Reference",
+     "Yale_RSV_1065":"Reference",
+     "Yale_RSV_1066":"Reference",
+     "Yale_RSV_1068":"Reference",
+     "Yale_RSV_1072":"Reference",
+     "Yale_RSV_1073":"Reference",
+     "Yale_RSV_1074":"Reference",
+     "Yale_RSV_1077":"Reference",
+     "Yale_RSV_1079":"Reference",
+     "Yale_RSV_1082":"Reference",
+     "Yale_RSV_1088":"Reference",
+     "Yale_RSV_1089":"Reference",
+     "Yale_RSV_1093":"Reference",
+     "Yale_RSV_1096":"Reference",
+     "Yale_RSV_1098":"Reference",
+     "Yale_RSV_1100":"Reference",
+     "Yale_RSV_1101":"Reference",
+     "Yale_RSV_1103":"Reference",
+     "Yale_RSV_1106":"Reference",
+     "Yale_RSV_1107":"Test",
+     "Yale_RSV_1108":"Reference",
+     "Yale_RSV_1109":"Test",
+     "Yale_RSV_1112":"Reference",
+     "Yale_RSV_1116":"Reference",
+     "Yale_RSV_1120":"Test",
+     "Yale_RSV_1121":"Reference",
+     "Yale_RSV_1122":"Reference",
+     "Yale_RSV_1124":"Reference",
+     "Yale_RSV_1125":"Reference",
+     "Yale_RSV_1127":"Reference",
+     "Yale_RSV_1128":"Reference",
+     "Yale_RSV_1130":"Reference",
+     "Yale_RSV_1132":"Test",
+     "Yale_RSV_1133":"Reference",
+     "Yale_RSV_1134":"Reference",
+     "Yale_RSV_1136":"Reference",
+     "Yale_RSV_1139":"Reference",
+     "Yale_RSV_1141":"Reference",
+     "Yale_RSV_1142":"Reference",
+     "Yale_RSV_1143":"Reference",
+     "Yale_RSV_1144":"Reference",
+     "Yale_RSV_1145":"Reference",
+     "Yale_RSV_1148":"Test",
+     "Yale_RSV_1150":"Reference",
+     "Yale_RSV_1152":"Reference",
+     "Yale_RSV_1153":"Reference",
+     "Yale_RSV_1156":"Reference",
+     "Yale_RSV_1164":"Reference",
+     "Yale_RSV_1167":"Reference",
+     "Yale_RSV_1169":"Reference",
+     "Yale_RSV_1170":"Reference",
+     "Yale_RSV_1171":"Reference",
+     "Yale_RSV_1173":"Reference",
+     "Yale_RSV_1176":"Reference",
+     "Yale_RSV_1178":"Reference",
+     "Yale_RSV_1182":"Reference",
+     "Yale_RSV_1194":"Reference",
+     "Yale_RSV_1199":"Reference",
+     "Yale_RSV_1204":"Reference",
+     "Yale_RSV_1207":"Reference",
+     "Yale_RSV_1215":"Reference",
+     "Yale_RSV_1219":"Reference",
+     "Yale_RSV_1223":"Test",
+     "Yale_RSV_1225":"Reference",
+     "Yale_RSV_1228":"Reference",
+     "Yale_RSV_1230":"Reference",
+     "Yale_RSV_1232":"Reference",
+     "Yale_RSV_1234":"Reference",
+     "Yale_RSV_1238":"Reference",
+     "Yale_RSV_1239":"Reference"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":111
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":22
+    },
+   "RELAX alternative model fitting":{
+     "order":3,
+     "timer":77
+    },
+   "RELAX null model fitting":{
+     "order":4,
+     "timer":12
+    }
+  }
+}

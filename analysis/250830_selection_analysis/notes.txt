@@ -1,0 +1,7 @@
+nextclade dataset list --only-names | grep rsv
+
+nextclade dataset get --name 'nextstrain/rsv/a/EPI_ISL_412866' --output-dir 'nextclade/RSVA/'
+nextclade dataset get --name 'nextstrain/rsv/b/EPI_ISL_1653999' --output-dir 'nextclade/RSVB/'
+
+nextclade run --input-dataset 'nextclade/RSVA' --output-tsv 'RSVA_nextclade.tsv' --output-tree 'RSVA_nextclade_tree.json' inputs/RSVA_filtered.fasta
+nextclade run --input-dataset 'nextclade/RSVB' --output-tsv 'RSVB_nextclade.tsv' --output-tree 'RSVB_nextclade_tree.json' inputs/RSVB_filtered.fasta
