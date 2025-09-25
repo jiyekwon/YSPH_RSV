@@ -314,10 +314,21 @@ def run_busted(codontrimf, treefile, bustedout, tmpdir=None):
     ]
     with open(errfile, "w") as errfile, open(outfile, "w") as outfile:
         print(" ".join(command))
-        #subprocess.run(command, check=True,stderr=errfile, stdout=outfile)
-        subprocess.run(command, check=True,stderr=errfile)
+        subprocess.run(command, check=True,stderr=errfile, stdout=outfile)
+        #subprocess.run(command, check=True,stderr=errfile)
 
-
+def parse_busted_json(busted_json_file):
+    """
+    Parse BUSTED JSON output and extract relevant test results.
+    Returns a tuple of (LR, p).
+    """
+    with open(busted_json_file) as f:
+        data = json.load(f)
+    test_results = data.get('test results', {})
+    LR = test_results.get('LRT')
+    p = test_results.get('p-value')
+    print(test_results)
+    return LR, p
 
 def main():
     parser = argparse.ArgumentParser(description="Run HyPhy RELAX analysis on a codon alignment with clade annotation.")
@@ -370,23 +381,29 @@ def main():
     ntips = annotate_tree(wgstrim,wgsclade,clades,clade=clade,strategy="path")
     
 
-    outcsv = f"{prefix}_{target}_{gene}_{clade}_relax.csv"               #RELAX output csv
+    outcsv = f"{prefix}_{target}_{gene}_{clade}_selection.csv"               #RELAX output csv
 
     if(ntips >= 5):
         #hyphy outputs
         outjson = f"{prefix}_{target}_{gene}_{clade}_relax.json"               #RELAX output json
         run_relax(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
-        LR, p, K = parse_relax_json(outjson)
         outjson = f"{prefix}_{target}_{gene}_{clade}_busted.json"               #BUSTED output json
         run_busted(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
 
-        results = pd.DataFrame([[target, gene, clade, ntips, LR, p, K]], 
-                                columns=["target","gene","clade","n_tips","LR","p","K"]) 
+        rLR, rp, rK = parse_relax_json(outjson)
+        rpos = "R-intensified" if (rp is not None and rp < 0.05 and rK is not None and rK > 1) else ("R-relaxed" if (rp is not None and rp < 0.05 and rK is not None and rK < 1) else "NS")
+
+        bLR, bp = parse_busted_json(outjson)
+        bpos = "B-diversifying" if (bp is not None and bp < 0.05) else "NS"
+        
+        results = pd.DataFrame([[target, gene, clade, ntips, rLR, rp, rK, rpos, bLR, bp, bpos]], 
+                                columns=["target","gene","clade","n_tips","rLR","rp","rK","rpos","bLR","bp","bpos"]) 
+
     else: 
         print(f"Skipping {target} {gene} {clade} with {ntips} tips")
-        LR, p, K = None, None, None
-        results = pd.DataFrame([[target, gene, clade, ntips, LR, p, K]], 
-                                columns=["target","gene","clade","n_tips","LR","p","K"]) 
+        rLR, rp, rK, bLR, bp, bpos = None, None, None, None, None, None
+        results = pd.DataFrame([[target, gene, clade, ntips, rLR, rp, rK, bLR, bp, bpos]], 
+                                columns=["target","gene","clade","n_tips","rLR","rp","rK","bLR","bp","bpos" ]) 
     results.to_csv(outcsv, index=False)
 
 
