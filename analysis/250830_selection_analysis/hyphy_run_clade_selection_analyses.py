@@ -166,6 +166,9 @@ def remove_duplicate_sequences(fasta_file, output_file):
 
 # %%
 def all_descendants(clade):
+    """
+    Recursively get all descendant clades of a given clade.
+    """
     descendants = []
     for child_clade in clade.clades:
         descendants.append(child_clade)
@@ -175,6 +178,15 @@ def all_descendants(clade):
 
 #annotate tree with clade assignments
 def annotate_tree(treefile,outtree,clades,clade=None,strategy="MRCA"):
+    """
+    Annotate a tree with clade assignments.
+    Args:
+        treefile (str): Path to the input tree file (Newick format).
+        outtree (str): Path to write the annotated tree.
+        clades (dict): Dictionary mapping clade names to lists of tip names.
+        clade (str, optional): Specific clade to annotate. If None, all clades are annotated.
+        strategy (str): Strategy for annotation. Options are "MRCA", "tips", "path", "all".
+    """
     tree = Phylo.read(treefile, "newick")
     if clade is not None: cladenames = [clade]
     else: cladenames = clades.keys()
@@ -224,6 +236,15 @@ def annotate_tree(treefile,outtree,clades,clade=None,strategy="MRCA"):
 
 # Define a function to find the path from a tip to an ancestor
 def get_path_to_ancestor(tree, tip, ancestor):
+    """
+    Get the path from a tip to a specified ancestor in the tree.
+    Args:
+        tree (Bio.Phylo.BaseTree.Tree): The phylogenetic tree.
+        tip (str): The name of the tip node.
+        ancestor (Bio.Phylo.BaseTree.Clade): The ancestor clade.
+    Returns:
+        list: List of clades from the tip to the ancestor.
+    """
     path_to_root = tree.get_path(tip)
     path_to_mrca = []
     # Iterate through the path from root and stop at the ancestor
@@ -293,7 +314,8 @@ def run_busted(codontrimf, treefile, bustedout, tmpdir=None):
     ]
     with open(errfile, "w") as errfile, open(outfile, "w") as outfile:
         print(" ".join(command))
-        subprocess.run(command, check=True,stderr=errfile, stdout=outfile)
+        #subprocess.run(command, check=True,stderr=errfile, stdout=outfile)
+        subprocess.run(command, check=True,stderr=errfile)
 
 
 
@@ -353,10 +375,9 @@ def main():
     if(ntips >= 5):
         #hyphy outputs
         outjson = f"{prefix}_{target}_{gene}_{clade}_relax.json"               #RELAX output json
-        #run_relax(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
-        #LR, p, K = parse_relax_json(outjson)
-        LR, p, K = None, None, None
-
+        run_relax(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
+        LR, p, K = parse_relax_json(outjson)
+        
         outjson = f"{prefix}_{target}_{gene}_{clade}_busted.json"               #BUSTED output json
         run_busted(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
 
