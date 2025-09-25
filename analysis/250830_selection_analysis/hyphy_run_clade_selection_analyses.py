@@ -310,7 +310,7 @@ def run_busted(codontrimf, treefile, bustedout, tmpdir=None):
         "--alignment", codontrimf,
         "--tree", treefile,
         "--output", bustedout,
-        "--test", "Foreground"
+        "--branches", "Foreground"
     ]
     with open(errfile, "w") as errfile, open(outfile, "w") as outfile:
         print(" ".join(command))
@@ -377,7 +377,6 @@ def main():
         outjson = f"{prefix}_{target}_{gene}_{clade}_relax.json"               #RELAX output json
         run_relax(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
         LR, p, K = parse_relax_json(outjson)
-        
         outjson = f"{prefix}_{target}_{gene}_{clade}_busted.json"               #BUSTED output json
         run_busted(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
 
