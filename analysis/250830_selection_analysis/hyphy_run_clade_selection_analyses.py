@@ -356,14 +356,14 @@ def main():
     tmpdir = tempfile.TemporaryDirectory()
     print(f"Temporary directory created at: {tmpdir.name}")
 
-    # Optionally, you can use tmpdir.name to construct paths for temp files
+    # Use tmpdir.name to construct paths for temp files
     codonfuniq = os.path.join(tmpdir.name, os.path.basename(codonf).replace(".fasta", "_uniq.fasta"))
     wgstrim = os.path.join(tmpdir.name, os.path.basename(wgstree).replace(".nwk", "_uniq.nwk"))
     wgsclade = os.path.join(tmpdir.name, os.path.basename(wgstrim).replace(".nwk", f"_{clade}.nwk"))
 
 
 
-    # The rest of the analysis code would go here, using these variables
+    # get clade assignments reading from nextclade output
     df_clades = pd.read_csv(nextcladeF, usecols=['seqName', 'clade', 'qc.overallStatus'], sep="\t")
 
     # Add 'majorclade' column by removing everything after the second '.' in 'clade'
@@ -387,12 +387,11 @@ def main():
         #hyphy outputs
         outjson = f"{prefix}_{target}_{gene}_{clade}_relax.json"               #RELAX output json
         run_relax(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
-        outjson = f"{prefix}_{target}_{gene}_{clade}_busted.json"               #BUSTED output json
-        run_busted(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
-
         rLR, rp, rK = parse_relax_json(outjson)
         rpos = "R-intensified" if (rp is not None and rp < 0.05 and rK is not None and rK > 1) else ("R-relaxed" if (rp is not None and rp < 0.05 and rK is not None and rK < 1) else "NS")
 
+        outjson = f"{prefix}_{target}_{gene}_{clade}_busted.json"               #BUSTED output json
+        run_busted(codonfuniq, wgsclade, outjson, tmpdir=tmpdir)
         bLR, bp = parse_busted_json(outjson)
         bpos = "B-diversifying" if (bp is not None and bp < 0.05) else "NS"
         
