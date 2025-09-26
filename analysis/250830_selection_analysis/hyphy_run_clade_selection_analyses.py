@@ -400,9 +400,9 @@ def main():
 
     else: 
         print(f"Skipping {target} {gene} {clade} with {ntips} tips")
-        rLR, rp, rK, bLR, bp, bpos = None, None, None, None, None, None
-        results = pd.DataFrame([[target, gene, clade, ntips, rLR, rp, rK, bLR, bp, bpos]], 
-                                columns=["target","gene","clade","n_tips","rLR","rp","rK","bLR","bp","bpos" ]) 
+        rLR, rp, rK, rpos, bLR, bp, bpos = None, None, None, None, None, None, None
+        results = pd.DataFrame([[target, gene, clade, ntips, rLR, rp, rK, rpos, bLR, bp, bpos]], 
+                                columns=["target","gene","clade","n_tips","rLR","rp","rK","rpos","bLR","bp","bpos" ]) 
     results.to_csv(outcsv, index=False)
 
 
