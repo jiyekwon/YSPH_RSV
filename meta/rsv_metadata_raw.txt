@@ -1,0 +1,2058 @@
+"specimen"	"date"	"agestr"	"rsv ct"	"method"	"rsv plate"	"tubecode"	"location"	"age"
+"Nasopharynx"	"2023-10-02"	"1 yr"	"28.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621214"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-02"	"66 yrs"	"19"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621205"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2023-10-03"	"5 mos"	"19.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621230"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-04"	"2 yrs"	"18.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621221"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-05"	"4 yrs"	"29.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621246"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-06"	"2 yrs"	"19.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621237"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-07"	"7 mos"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621262"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2023-10-08"	"73 yrs"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621253"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2023-10-09"	"3 yrs"	"23.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621278"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-09"	"2 yrs"	"22.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621269"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-06"	"47 yrs"	"22.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621294"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2023-10-06"	"7 mos"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621285"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2023-10-06"	"1 yr"	"26.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621215"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-06"	"4 yrs"	"29.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621206"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-10"	"2 yrs"	"25.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621231"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-10"	"11 mos"	"24.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621222"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-10"	"3 yrs"	"18.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621247"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-11"	"3 yrs"	"23.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621238"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-11"	"79 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621263"	"North America / USA / Connecticut"	79
+"Nasopharynx"	"2023-10-12"	"3 yrs"	"26.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621254"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-12"	"6 mos"	"24.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621279"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-10-12"	"23 dys"	"18.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621270"	"North America / USA / Connecticut"	0.063
+"Nasopharynx"	"2023-10-12"	"52 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621295"	"North America / USA / Connecticut"	52
+"Nasopharynx"	"2023-10-12"	"1 yr"	"25.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621286"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-13"	"30 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621216"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2023-10-14"	"1 yr"	"20.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621207"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-14"	"9 mos"	"34.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621232"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-10-15"	"5 mos"	"17.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621223"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-15"	"1 yr"	"29.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621248"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-15"	"3 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621239"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-15"	"11 mos"	"25"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621264"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-15"	"5 mos"	"19.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621255"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-15"	"13 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621280"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2023-10-13"	"11 mos"	"26.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621271"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-13"	"8 yrs"	"30.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621296"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2023-10-14"	"3 mos"	"20.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621287"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2023-10-14"	"87 yrs"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621217"	"North America / USA / Connecticut"	87
+"Nasopharynx"	"2023-10-15"	"5 yrs"	"24.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621208"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-10-15"	"8 mos"	"18.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621233"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-10-16"	"1 yr"	"22.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621224"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-17"	"29 yrs"	"24"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621249"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2023-10-18"	"85 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621240"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2023-10-18"	"23 yrs"	"26.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621265"	"North America / USA / Connecticut"	23
+"Nasopharynx"	"2023-10-19"	"3 yrs"	"19.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621256"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-19"	"6 mos"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621281"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-10-19"	"27 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621272"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2023-10-19"	"11 mos"	"17.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621297"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-19"	"9 mos"	"29.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621288"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-10-19"	"34 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624455"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2023-10-20"	"20 yrs"	"23.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621209"	"North America / USA / Connecticut"	20
+"Nasopharynx"	"2023-10-21"	"9 yrs"	"31.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624439"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2023-10-21"	"4 yrs"	"26"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621225"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-22"	"4 yrs"	"29.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624423"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-22"	"11 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621241"	"North America / USA / Connecticut"	11
+"Nasopharynx"	"2023-10-22"	"1 yr"	"20.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624407"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-22"	"3 yrs"	"22.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4621257"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-22"	"2 yrs"	"29.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624391"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-19"	"66 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621273"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2023-10-19"	"72 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4624376"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2023-10-20"	"6 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4621289"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2023-10-20"	"10 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4624454"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2023-10-20"	"8 mos"	"19.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4615918"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-10-20"	"8 mos"	"19.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624438"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-10-23"	"6 mos"	"20.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624447"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-10-22"	"1 yr"	"18.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624422"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-23"	"5 mos"	"36.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624431"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-23"	"67 yrs"	"30"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624406"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2023-10-23"	"5 yrs"	"31.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624415"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-10-23"	"70 yrs"	"19.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624390"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2023-10-23"	"8 mos"	"36.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624399"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-10-23"	"10 mos"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624375"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-10-23"	"1 yr"	"18.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624384"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-24"	"1 yr"	"20.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624453"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-24"	"38 yrs"	"21.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624462"	"North America / USA / Connecticut"	38
+"Nasopharynx"	"2023-10-24"	"5 mos"	"17.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624437"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-24"	"1 yr"	"17.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624446"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-24"	"67 yrs"	"28.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624421"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2023-10-24"	"5 yrs"	"24.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624430"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-10-24"	"1 yr"	"25.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624405"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-24"	"1 yr"	"28.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624414"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-25"	"58 yrs"	"28.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624389"	"North America / USA / Connecticut"	58
+"Sputum"	"2023-10-24"	"86 yrs"	"18.7"	"YH MANUAL METHOD"	"RSV1"	"A4624398"	"North America / USA / Connecticut"	86
+"Nasopharynx"	"2023-10-24"	"2 mos"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4624374"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-10-25"	"4 yrs"	"24.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624383"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-25"	"1 yr"	"29.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624452"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-25"	"10 mos"	"23.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624461"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-10-25"	"2 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4624436"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-25"	"61 yrs"	"33.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624445"	"North America / USA / Connecticut"	61
+"Nasopharynx"	"2023-10-25"	"38 yrs"	"25.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624420"	"North America / USA / Connecticut"	38
+"Nasopharynx"	"2023-10-26"	"11 mos"	"19.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624429"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-26"	"79 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV1"	"A4624404"	"North America / USA / Connecticut"	79
+"Nasopharynx"	"2023-10-26"	"1 yr"	"19.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624413"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-26"	"7 mos"	"33"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4615917"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2023-10-26"	"37 yrs"	"21.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624397"	"North America / USA / Connecticut"	37
+"Nasopharynx"	"2023-10-26"	"3 yrs"	"33.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624373"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-26"	"4 yrs"	"18.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV1"	"A4624382"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-26"	"3 yrs"	"31.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630419"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-26"	"1 yr"	"27.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630427"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-26"	"2 yrs"	"23.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630435"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-26"	"4 yrs"	"20.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630443"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-26"	"8 mos"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630451"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-10-27"	"3 yrs"	"21.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630459"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-27"	"52 yrs"	"36.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630467"	"North America / USA / Connecticut"	52
+"Nasopharynx"	"2023-10-27"	"5 yrs"	"20.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630475"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-10-28"	"5 mos"	"27.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630483"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-10-28"	"11 mos"	"27.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630491"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-10-28"	"3 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630499"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-28"	"9 mos"	"21.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630507"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-10-28"	"2 yrs"	"32.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630420"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-29"	"1 yr"	"20.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630428"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-29"	"9 mos"	"21.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630436"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-10-29"	"3 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630444"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-28"	"10 mos"	"24.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630452"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-10-30"	"9 mos"	"21.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630460"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-10-30"	"6 yrs"	"27.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630468"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2023-10-30"	"4 yrs"	"23.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630476"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-10-30"	"3 yrs"	"31.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630484"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-10-31"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630492"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-31"	"1 yr"	"21.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630500"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-10-31"	"2 yrs"	"31.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630508"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-10-31"	"87 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4630421"	"North America / USA / Connecticut"	87
+"Nasopharynx"	"2023-11-01"	"1 yr"	"20.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630429"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-01"	"1 yr"	"24.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630437"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-01"	"58 yrs"	"26.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630445"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2023-11-02"	"2 yrs"	"23.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630453"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-02"	"48 yrs"	"21.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630461"	"North America / USA / Connecticut"	48
+"Nasopharynx"	"2023-11-02"	"37 dys"	"22.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630469"	"North America / USA / Connecticut"	0.101
+"Nasopharynx"	"2023-11-02"	"56 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4630477"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2023-11-02"	"54 dys"	"23.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630485"	"North America / USA / Connecticut"	0.148
+"Nasopharynx"	"2023-11-03"	"2 yrs"	"21.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630493"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-03"	"4 yrs"	"27.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630501"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-11-03"	"4 mos"	"18.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630509"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-11-03"	"57 dys"	"NULL"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630422"	"North America / USA / Connecticut"	0.156
+"Nasopharynx"	"2023-11-03"	"66 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4630430"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2023-11-03"	"2 mos"	"19.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630438"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-11-03"	"72 yrs"	"37.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630331"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2023-11-03"	"1 yr"	"23.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630454"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-03"	"12 yrs"	"22.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630462"	"North America / USA / Connecticut"	12
+"Nasopharynx"	"2023-11-03"	"37 yrs"	"20.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630470"	"North America / USA / Connecticut"	37
+"Nasopharynx"	"2023-11-04"	"28 yrs"	"36.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630478"	"North America / USA / Connecticut"	28
+"Nasopharynx"	"2023-11-04"	"2 yrs"	"19.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630486"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-06"	"21 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4630494"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2023-11-06"	"33 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4630502"	"North America / USA / Connecticut"	33
+"Nasopharynx"	"2023-11-06"	"3 yrs"	"25.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4630510"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-06"	"1 yr"	"25.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632238"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-07"	"35 yrs"	"31.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632246"	"North America / USA / Connecticut"	35
+"Nasopharynx"	"2023-11-07"	"7 mos"	"35.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632254"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2023-11-07"	"2 yrs"	"19.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632262"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-07"	"6 mos"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632270"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-11-08"	"28 yrs"	"30.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632278"	"North America / USA / Connecticut"	28
+"Nasopharynx"	"2023-11-08"	"5 yrs"	"27.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632286"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-11-08"	"2 yrs"	"33"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632294"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-08"	"37 yrs"	"29.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632302"	"North America / USA / Connecticut"	37
+"Bronchial Wash"	"2023-11-08"	"41 yrs"	"24.6"	"YH MANUAL METHOD
+MODEL MANUAL METHOD"	"RSV2"	"A4632310"	"North America / USA / Connecticut"	41
+"Nasopharynx"	"2023-11-08"	"2 yrs"	"23.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632318"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-08"	"2 yrs"	"24.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632326"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-09"	"9 mos"	"20.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632239"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-11-09"	"1 yr"	"25.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632247"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-10"	"1 yr"	"24.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632255"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-10"	"2 yrs"	"16.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632263"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-11"	"1 yr"	"29.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632271"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-11"	"2 yrs"	"31.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632279"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-12"	"1 yr"	"19.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632287"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-12"	"8 mos"	"20.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632295"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-11-12"	"10 mos"	"24.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632303"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-12"	"7 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632311"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2023-11-12"	"49 dys"	"18.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632319"	"North America / USA / Connecticut"	0.134
+"Nasopharynx"	"2023-11-12"	"11 mos"	"31.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632327"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-11-12"	"4 yrs"	"19.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632240"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-11-13"	"2 yrs"	"18.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632248"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-13"	"45 yrs"	"29.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632256"	"North America / USA / Connecticut"	45
+"Nasopharynx"	"2023-11-13"	"40 dys"	"20.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632272"	"North America / USA / Connecticut"	0.11
+"Nasopharynx"	"2023-11-13"	"10 mos"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632280"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-14"	"66 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4648775"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2023-11-14"	"8 mos"	"22.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632288"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-11-14"	"3 yrs"	"18.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632296"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-14"	"3 yrs"	"21.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632304"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-14"	"10 mos"	"26.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632312"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-15"	"11 mos"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632320"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-11-15"	"8 mos"	"25.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632328"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-11-15"	"4 yrs"	"30.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632241"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-11-16"	"2 yrs"	"30.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632249"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-16"	"6 mos"	"17"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632257"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-11-16"	"2 yrs"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632265"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-16"	"47 yrs"	"29"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632273"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2023-11-18"	"93 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4632281"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2023-11-18"	"78 yrs"	"36"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632289"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2023-11-18"	"4 mos"	"19.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632297"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-11-17"	"1 yr"	"35"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632305"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-17"	"6 mos"	"21.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632313"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-11-16"	"78 yrs"	"35.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV2"	"A4632321"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2023-11-16"	"23 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV2"	"A4632329"	"North America / USA / Connecticut"	23
+"Nasopharynx"	"2023-11-18"	"2 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630382"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-18"	"1 yr"	"22.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630379"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-18"	"3 mos"	"17.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630368"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2023-11-18"	"10 mos"	"24.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630387"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-19"	"3 yrs"	"36.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630396"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-20"	"1 yr"	"25.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630405"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-20"	"7 yrs"	"30.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630395"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2023-11-20"	"1 yr"	"28.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630386"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-20"	"73 yrs"	"17.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630393"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2023-11-21"	"1 yr"	"29.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630409"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-21"	"84 yrs"	"25.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630410"	"North America / USA / Connecticut"	84
+"Nasopharynx"	"2023-11-21"	"41 yrs"	"31.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630400"	"North America / USA / Connecticut"	41
+"Nasopharynx"	"2023-11-21"	"6 yrs"	"23.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630390"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2023-11-21"	"5 mos"	"24.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630380"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-11-20"	"3 yrs"	"21.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630378"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-21"	"3 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630389"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-21"	"13 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630398"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2023-11-24"	"41 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630406"	"North America / USA / Connecticut"	41
+"Nasopharynx"	"2023-11-24"	"69 yrs"	"25"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630403"	"North America / USA / Connecticut"	69
+"Nasopharynx"	"2023-11-22"	"4 yrs"	"17.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630394"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-11-22"	"10 mos"	"22.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630384"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-22"	"22 yrs"	"34.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630402"	"North America / USA / Connecticut"	22
+"Nasopharynx"	"2023-11-22"	"2 yrs"	"21.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630411"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-22"	"3 yrs"	"25.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630371"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-22"	"51 yrs"	"27.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630339"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2023-11-22"	"4 mos"	"34.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630345"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-11-22"	"3 yrs"	"24.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631383"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-22"	"1 yr"	"19"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630350"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-23"	"84 yrs"	"31.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630347"	"North America / USA / Connecticut"	84
+"Nasopharynx"	"2023-11-23"	"73 yrs"	"18.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630336"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2023-11-23"	"3 yrs"	"21.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630358"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-23"	"1 yr"	"28.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630355"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-23"	"16 yrs"	"32.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630361"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2023-11-26"	"8 yrs"	"28"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630364"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2023-11-27"	"1 yr"	"27"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630352"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-27"	"2 yrs"	"22.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630377"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-11-27"	"84 yrs"	"27.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630341"	"North America / USA / Connecticut"	84
+"Nasopharynx"	"2023-11-27"	"55 yrs"	"31.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630338"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2023-11-28"	"1 yr"	"23.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631399"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-28"	"10 mos"	"17.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631398"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-28"	"3 yrs"	"34.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630348"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-11-29"	"86 yrs"	"22.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630346"	"North America / USA / Connecticut"	86
+"Nasopharynx"	"2023-11-29"	"16 dys"	"23"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631406"	"North America / USA / Connecticut"	0.044
+"Nasopharynx"	"2023-11-29"	"4 mos"	"21.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630357"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-11-29"	"10 mos"	"35.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630354"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-11-30"	"1 yr"	"16.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630366"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-30"	"1 yr"	"31.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630362"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-11-30"	"77 yrs"	"19.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630370"	"North America / USA / Connecticut"	77
+"Nasopharynx"	"2023-11-30"	"9 mos"	"25.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633139"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-12-02"	"68 yrs"	"25.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633107"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2023-12-02"	"4 mos"	"23.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633115"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-12-03"	"2 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633130"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-03"	"68 yrs"	"35.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633138"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2023-12-03"	"1 yr"	"17.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633114"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-03"	"46 dys"	"27.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633122"	"North America / USA / Connecticut"	0.126
+"Nasopharynx"	"2023-12-03"	"9 mos"	"17.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633106"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-12-03"	"2 mos"	"25.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630332"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-12-03"	"9 yrs"	"34.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630334"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2023-12-01"	"1 yr"	"27"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631382"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-01"	"6 mos"	"20"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630342"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-12-01"	"3 yrs"	"32.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633109"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-12-04"	"46 yrs"	"24.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633117"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2023-12-04"	"2 yrs"	"32.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633124"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-04"	"1 yr"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633132"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-04"	"6 mos"	"20.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633108"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-12-06"	"64 yrs"	"32.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633116"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2023-12-06"	"2 mos"	"33.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633123"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-12-06"	"4 mos"	"25.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633131"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-12-06"	"4 yrs"	"29.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630325"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-12-07"	"5 mos"	"25"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4630326"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-12-07"	"11 yrs"	"31.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4615888"	"North America / USA / Connecticut"	11
+"Nasopharynx"	"2023-12-07"	"20 yrs"	"31"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4631390"	"North America / USA / Connecticut"	20
+"Nasopharynx"	"2023-12-07"	"68 yrs"	"30"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633125"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2023-12-09"	"3 mos"	"32.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4648823"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2023-12-08"	"68 yrs"	"37.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633141"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2023-12-09"	"45 yrs"	"31.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633140"	"North America / USA / Connecticut"	45
+"Nasopharynx"	"2023-12-09"	"8 mos"	"21.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622554"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-12-09"	"2 mos"	"16.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622562"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-12-09"	"2 yrs"	"21.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633147"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-09"	"2 mos"	"31.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4633146"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-12-09"	"3 mos"	"19.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622547"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2023-12-10"	"10 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622546"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2023-12-10"	"1 yr"	"22.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622549"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-10"	"6 yrs"	"26.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622548"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2023-12-10"	"7 yrs"	"29.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622556"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2023-12-10"	"13 yrs"	"21.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622555"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2023-12-11"	"13 yrs"	"35.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622564"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2023-12-11"	"14 yrs"	"24.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622563"	"North America / USA / Connecticut"	14
+"Nasopharynx"	"2023-12-11"	"85 yrs"	"27.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622557"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2023-12-05"	"33 yrs"	"29.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622565"	"North America / USA / Connecticut"	33
+"Nasopharynx"	"2023-12-05"	"35 dys"	"25.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622571"	"North America / USA / Connecticut"	0.096
+"Nasopharynx"	"2023-12-05"	"6 yrs"	"34.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622570"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2023-12-05"	"1 yr"	"31.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622573"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-12"	"2 mos"	"19.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622572"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2023-12-12"	"1 yr"	"20.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622579"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-12"	"2 yrs"	"27.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 3"	"A4622578"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-12"	"1 yr"	"29.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633295"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-13"	"11 mos"	"28.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633303"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2023-12-13"	"24 yrs"	"33.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633311"	"North America / USA / Connecticut"	24
+"Nasopharynx"	"2023-12-13"	"8 mos"	"19.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633319"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2023-12-13"	"80 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633327"	"North America / USA / Connecticut"	80
+"Nasopharynx"	"2023-12-13"	"3 yrs"	"26.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633335"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2023-12-14"	"4 yrs"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633343"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2023-12-14"	"1 yr"	"32.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633351"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-14"	"46 yrs"	"31.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633359"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2023-12-14"	"1 yr"	"25.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633367"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-15"	"1 yr"	"18.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633375"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-15"	"2 yrs"	"20.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633383"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-15"	"31 yrs"	"24.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633296"	"North America / USA / Connecticut"	31
+"Nasopharynx"	"2023-12-15"	"1 yr"	"25.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633304"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-17"	"37 dys"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633312"	"North America / USA / Connecticut"	0.101
+"Nasopharynx"	"2023-12-17"	"7 mos"	"20.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633320"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2023-12-16"	"1 yr"	"20"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633328"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-15"	"9 mos"	"18.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633336"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2023-12-16"	"30 yrs"	"30.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633344"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2023-12-17"	"5 yrs"	"33.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633352"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2023-12-17"	"1 yr"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633360"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-18"	"10 mos"	"23.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633368"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2023-12-18"	"30 yrs"	"28.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633376"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2023-12-18"	"56 yrs"	"25.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633384"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2023-12-18"	"1 yr"	"30.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633297"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2023-12-19"	"41 yrs"	"33.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633305"	"North America / USA / Connecticut"	41
+"Nasopharynx"	"2023-12-19"	"4 mos"	"23.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633313"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-12-19"	"5 mos"	"25.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633321"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2023-12-18"	"6 mos"	"26.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633329"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2023-12-20"	"81 yrs"	"17.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633337"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2023-12-20"	"54 yrs"	"34"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633345"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2023-12-20"	"4 mos"	"16.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633353"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2023-12-20"	"17 yrs"	"31.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633361"	"North America / USA / Connecticut"	17
+"Nasopharynx"	"2023-12-20"	"7 yrs"	"22.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633369"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2023-12-20"	"2 yrs"	"37.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633377"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2023-12-20"	"82 yrs"	"22.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633385"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2023-12-20"	"1 yr"	"24.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633298"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-05"	"68 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633306"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2024-01-05"	"63 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633314"	"North America / USA / Connecticut"	63
+"Nasopharynx"	"2024-01-05"	"89 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633322"	"North America / USA / Connecticut"	89
+"Nasopharynx"	"2024-01-05"	"82 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633330"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2024-01-04"	"59 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633338"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-01-05"	"51 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633346"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2024-01-05"	"31 yrs"	"32.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633354"	"North America / USA / Connecticut"	31
+"Nasopharynx"	"2024-01-05"	"1 yr"	"21.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633362"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-05"	"6 mos"	"26.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633370"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-01-05"	"86 yrs"	"24.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633378"	"North America / USA / Connecticut"	86
+"Nasopharynx"	"2024-01-05"	"9 mos"	"28.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633386"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-01-05"	"56 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633299"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2024-01-05"	"13 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633307"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-01-05"	"11 yrs"	"25.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633315"	"North America / USA / Connecticut"	11
+"Nasopharynx"	"2024-01-05"	"1 yr"	"28.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633323"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-06"	"11 mos"	"24.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633331"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-01-06"	"59 yrs"	"24.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633339"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-01-06"	"72 yrs"	"34.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633347"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2024-01-06"	"3 yrs"	"34.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633355"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-01-07"	"3 mos"	"16.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633363"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-01-07"	"1 yr"	"26.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633371"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-07"	"1 yr"	"17.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633379"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-07"	"40 dys"	"17.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633387"	"North America / USA / Connecticut"	0.11
+"Nasopharynx"	"2024-01-07"	"1 yr"	"25.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633300"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-14"	"4 yrs"	"18.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633309"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-01-14"	"4 yrs"	"29.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633317"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-01-14"	"6 yrs"	"29.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633325"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-01-14"	"2 yrs"	"21.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633333"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-01-14"	"47 yrs"	"NULL"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633341"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2024-01-14"	"1 yr"	"28.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633349"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-14"	"57 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633357"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-01-14"	"2 yrs"	"17.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633365"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-01-16"	"11 mos"	"26.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633373"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-01-16"	"65 yrs"	"22"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633381"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2024-01-16"	"3 mos"	"24.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4615870"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-01-15"	"52 dys"	"32"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633774"	"North America / USA / Connecticut"	0.142
+"Nasopharynx"	"2024-01-16"	"71 yrs"	"29.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633782"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2024-01-15"	"63 yrs"	"18.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633316"	"North America / USA / Connecticut"	63
+"Nasopharynx"	"2024-01-15"	"86 yrs"	"30.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633324"	"North America / USA / Connecticut"	86
+"Nasopharynx"	"2024-01-15"	"1 yr"	"29.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633332"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-15"	"36 yrs"	"20.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633340"	"North America / USA / Connecticut"	36
+"Nasopharynx"	"2024-01-15"	"34 yrs"	"25.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633348"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-01-18"	"1 yr"	"26.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633356"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-18"	"5 mos"	"29.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633364"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-01-18"	"76 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 4"	"A4633372"	"North America / USA / Connecticut"	76
+"Nasopharynx"	"2024-01-18"	"8 yrs"	"30.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633380"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-01-18"	"55 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633388"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2024-01-18"	"1 yr"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633301"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-17"	"95 yrs"	"NULL"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633308"	"North America / USA / Connecticut"	95
+"Nasopharynx"	"2024-01-17"	"3 mos"	"34.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633790"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-01-17"	"88 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633798"	"North America / USA / Connecticut"	88
+"Nasopharynx"	"2024-01-17"	"1 yr"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633806"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-17"	"93 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633814"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2024-01-17"	"91 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633822"	"North America / USA / Connecticut"	91
+"Nasopharynx"	"2024-01-17"	"71 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633830"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2024-01-19"	"75 yrs"	"29.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633838"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2024-01-19"	"13 yrs"	"25.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633846"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-01-20"	"12 yrs"	"28.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633854"	"North America / USA / Connecticut"	12
+"Nasopharynx"	"2024-01-21"	"5 mos"	"20"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 4"	"A4633862"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-01-21"	"80 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751543"	"North America / USA / Connecticut"	80
+"Nasopharynx"	"2024-01-18"	"10 mos"	"24.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751551"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-01-18"	"60 yrs"	"25.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751559"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2024-01-18"	"15 yrs"	"22.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751567"	"North America / USA / Connecticut"	15
+"Nasopharynx"	"2024-01-17"	"78 yrs"	"27.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751575"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2024-01-20"	"2 yrs"	"23"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751583"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-01-18"	"74 yrs"	"23.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751591"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-01-18"	"9 yrs"	"18.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751599"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2024-01-22"	"3 yrs"	"20.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751607"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-01-21"	"74 yrs"	"31.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751615"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-01-21"	"1 yr"	"18.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751623"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-22"	"46 yrs"	"30.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751631"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2024-01-22"	"5 yrs"	"28.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753935"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-01-23"	"85 yrs"	"31.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753943"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2024-01-23"	"4 yrs"	"20.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753951"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-01-23"	"83 yrs"	"19"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753959"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-01-23"	"21 yrs"	"20.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753967"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2024-01-23"	"30 yrs"	"35.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753975"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2024-01-23"	"34 yrs"	"31.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751320"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-01-23"	"59 yrs"	"30.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753991"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-01-24"	"90 yrs"	"22.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753999"	"North America / USA / Connecticut"	90
+"Nasopharynx"	"2024-01-25"	"4 mos"	"33.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754007"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-01-25"	"17 yrs"	"32.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754015"	"North America / USA / Connecticut"	17
+"Nasopharynx"	"2024-01-25"	"28 dys"	"18.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754023"	"North America / USA / Connecticut"	0.077
+"Nasopharynx"	"2024-01-27"	"9 mos"	"20.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753936"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-01-27"	"61 yrs"	"27"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753944"	"North America / USA / Connecticut"	61
+"Nasopharynx"	"2024-01-27"	"21 yrs"	"29.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753952"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2024-01-25"	"11 mos"	"27.7"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753960"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-01-25"	"12 yrs"	"30.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753968"	"North America / USA / Connecticut"	12
+"Nasopharynx"	"2024-01-28"	"32 yrs"	"32.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753976"	"North America / USA / Connecticut"	32
+"Nasopharynx"	"2024-01-28"	"1 yr"	"27.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753984"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-28"	"54 yrs"	"26.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753992"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2024-01-26"	"29 yrs"	"21.7"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754000"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-01-26"	"1 yr"	"30.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754008"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-26"	"57 yrs"	"28.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754016"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-01-27"	"10 mos"	"24.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754024"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-01-29"	"24 yrs"	"29.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4749398"	"North America / USA / Connecticut"	24
+"Nasopharynx"	"2024-01-29"	"82 yrs"	"21.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753945"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2024-01-29"	"5 yrs"	"20.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753953"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-01-29"	"82 yrs"	"20.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753961"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2024-01-30"	"7 yrs"	"22.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753969"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-01-29"	"39 yrs"	"24.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753977"	"North America / USA / Connecticut"	39
+"Nasopharynx"	"2024-01-29"	"16 yrs"	"32"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4741343"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2024-01-29"	"10 yrs"	"25.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753993"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2024-01-31"	"100 yrs"	"35.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754001"	"North America / USA / Connecticut"	100
+"Nasopharynx"	"2024-01-30"	"2 yrs"	"25.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754009"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-01-30"	"1 yr"	"20.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754017"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-01-30"	"9 mos"	"27.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754025"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-01-31"	"16 yrs"	"26.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753938"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2024-02-01"	"59 yrs"	"21.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753946"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-01"	"47 yrs"	"32.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753954"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2024-02-01"	"3 mos"	"23.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753962"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-02-01"	"4 yrs"	"22.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753970"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-02-02"	"4 yrs"	"20.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4751304"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-02-02"	"53 yrs"	"30.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753986"	"North America / USA / Connecticut"	53
+"Nasopharynx"	"2024-02-02"	"70 yrs"	"21.7"	"YH GENPROBE PANTHER 2
+SMC CEPHEID GENEXPERT"	"RSV 5"	"A4753994"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2024-02-02"	"14 yrs"	"27.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754002"	"North America / USA / Connecticut"	14
+"Nasopharynx"	"2024-02-02"	"6 yrs"	"36"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754010"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-02-04"	"11 yrs"	"22.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754018"	"North America / USA / Connecticut"	11
+"Sputum"	"2024-02-02"	"83 yrs"	"27.5"	"YH MANUAL METHOD"	"RSV 5"	"A4754026"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-02-03"	"10 mos"	"28.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753939"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-02-03"	"8 mos"	"25.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753947"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-02-03"	"1 yr"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753955"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-04"	"68 yrs"	"36.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753963"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2024-02-05"	"37 yrs"	"24.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753971"	"North America / USA / Connecticut"	37
+"Nasopharynx"	"2024-02-05"	"71 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 5"	"A4753979"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2024-02-04"	"52 yrs"	"26.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753987"	"North America / USA / Connecticut"	52
+"Nasopharynx"	"2024-02-05"	"28 yrs"	"31.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753995"	"North America / USA / Connecticut"	28
+"Nasopharynx"	"2024-02-05"	"4 mos"	"20.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754003"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-02-05"	"1 yr"	"19"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754011"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-05"	"10 yrs"	"23.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754019"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2024-02-05"	"29 yrs"	"21.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754027"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-02-05"	"8 yrs"	"23.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753940"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-02-07"	"1 yr"	"16"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753948"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-06"	"2 yrs"	"18"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753956"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-02-06"	"29 yrs"	"26"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753964"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-02-06"	"39 yrs"	"25.5"	"YH GENPROBE PANTHER 2
+MODEL MANUAL METHOD"	"RSV 5"	"A4753972"	"North America / USA / Connecticut"	39
+"Nasopharynx"	"2024-02-07"	"16 yrs"	"27"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753980"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2024-02-07"	"23 yrs"	"31.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753988"	"North America / USA / Connecticut"	23
+"Nasopharynx"	"2024-02-07"	"55 yrs"	"25.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753996"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2024-02-07"	"7 yrs"	"26.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754004"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-02-09"	"60 yrs"	"35.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754012"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2024-02-09"	"57 yrs"	"35.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754020"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-02-08"	"63 yrs"	"16.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754028"	"North America / USA / Connecticut"	63
+"Nasopharynx"	"2024-02-08"	"93 yrs"	"23"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753941"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2024-02-08"	"3 yrs"	"23.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753949"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-02-08"	"84 yrs"	"28.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753957"	"North America / USA / Connecticut"	84
+"Nasopharynx"	"2024-02-10"	"59 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 5"	"A4753965"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-10"	"85 yrs"	"29.8"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753973"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2024-02-08"	"19 yrs"	"33.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753981"	"North America / USA / Connecticut"	19
+"Nasopharynx"	"2024-02-08"	"45 yrs"	"27.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753989"	"North America / USA / Connecticut"	45
+"Nasopharynx"	"2024-02-08"	"84 yrs"	"29.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4753997"	"North America / USA / Connecticut"	84
+"Nasopharynx"	"2024-02-08"	"17 yrs"	"22.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754005"	"North America / USA / Connecticut"	17
+"Nasopharynx"	"2024-02-12"	"6 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754013"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-02-11"	"81 yrs"	"23"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754021"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2024-02-12"	"88 yrs"	"28.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 5"	"A4754029"	"North America / USA / Connecticut"	88
+"Nasopharynx"	"2024-02-13"	"59 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753942"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-13"	"40 yrs"	"25"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753950"	"North America / USA / Connecticut"	40
+"Nasopharynx"	"2024-02-14"	"83 yrs"	"20.9"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753958"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-02-14"	"2 yrs"	"21.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753966"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-02-14"	"64 yrs"	"23.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753974"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2024-02-14"	"75 yrs"	"24.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753982"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2024-02-14"	"1 yr"	"20.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753990"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-14"	"1 yr"	"25.6"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4753998"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-15"	"1 yr"	"30.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4754006"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-15"	"42 yrs"	"23.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4754014"	"North America / USA / Connecticut"	42
+"Nasopharynx"	"2024-02-15"	"57 yrs"	"20.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4754022"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-02-15"	"44 dys"	"17.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4754030"	"North America / USA / Connecticut"	0.121
+"Nasopharynx"	"2024-02-15"	"23 yrs"	"26.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4741312"	"North America / USA / Connecticut"	23
+"Nasopharynx"	"2024-02-15"	"86 yrs"	"18.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755959"	"North America / USA / Connecticut"	86
+"Nasopharynx"	"2024-02-15"	"64 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755967"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2024-02-16"	"57 yrs"	"32.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755975"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-02-16"	"44 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755983"	"North America / USA / Connecticut"	44
+"Nasopharynx"	"2024-02-17"	"29 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755991"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-02-17"	"1 yr"	"16.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755999"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-17"	"25 yrs"	"30.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756007"	"North America / USA / Connecticut"	25
+"Nasopharynx"	"2024-02-18"	"2 yrs"	"24.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756015"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-02-18"	"59 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756023"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-19"	"59 yrs"	"24.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756031"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-19"	"77 yrs"	"29"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756039"	"North America / USA / Connecticut"	77
+"Nasopharynx"	"2024-02-19"	"6 mos"	"19.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755952"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-02-20"	"12 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755960"	"North America / USA / Connecticut"	12
+"Nasopharynx"	"2024-02-20"	"83 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755968"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-02-20"	"4 mos"	"29.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755976"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-02-21"	"3 yrs"	"26.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755984"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-02-20"	"60 yrs"	"23.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755992"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2024-02-20"	"20 yrs"	"25.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756000"	"North America / USA / Connecticut"	20
+"Nasopharynx"	"2024-02-20"	"15 yrs"	"28.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756008"	"North America / USA / Connecticut"	15
+"Nasopharynx"	"2024-02-21"	"81 yrs"	"28.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756016"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2024-02-21"	"2 mos"	"18.5"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756024"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2024-02-21"	"4 yrs"	"NULL"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756032"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-02-20"	"29 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756040"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-02-23"	"2 yrs"	"18.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755953"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-02-24"	"9 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755961"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2024-02-24"	"2 yrs"	"25.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755969"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-02-22"	"1 yr"	"19.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755977"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-24"	"72 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755985"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2024-02-23"	"78 yrs"	"26.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755993"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2024-02-23"	"52 dys"	"30.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756001"	"North America / USA / Connecticut"	0.142
+"Nasopharynx"	"2024-02-22"	"65 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756009"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2024-02-26"	"1 yr"	"21"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756017"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-26"	"8 mos"	"19.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756025"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-02-27"	"90 yrs"	"32.3"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756033"	"North America / USA / Connecticut"	90
+"Nasopharynx"	"2024-02-27"	"74 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756041"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-02-27"	"73 yrs"	"29"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755954"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2024-02-27"	"31 yrs"	"33.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755962"	"North America / USA / Connecticut"	31
+"Nasopharynx"	"2024-02-28"	"35 yrs"	"33.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755970"	"North America / USA / Connecticut"	35
+"Nasopharynx"	"2024-02-28"	"59 yrs"	"25.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755978"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-02-29"	"7 yrs"	"19.6"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755986"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-02-29"	"1 yr"	"17.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755994"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-02-29"	"41 yrs"	"35.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756002"	"North America / USA / Connecticut"	41
+"Nasopharynx"	"2024-03-03"	"20 yrs"	"26.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756010"	"North America / USA / Connecticut"	20
+"Nasopharynx"	"2024-03-02"	"58 yrs"	"27"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756018"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2024-03-02"	"1 yr"	"27.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756026"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-03-02"	"62 yrs"	"26.3"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756034"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2024-03-02"	"2 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756042"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-03-01"	"6 yrs"	"24.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755955"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-03-01"	"43 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755963"	"North America / USA / Connecticut"	43
+"Nasopharynx"	"2024-03-04"	"39 yrs"	"27.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755971"	"North America / USA / Connecticut"	39
+"Nasopharynx"	"2024-03-03"	"6 mos"	"23.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755979"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-03-04"	"6 mos"	"17.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755987"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-03-04"	"51 yrs"	"24.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755995"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2024-03-05"	"16 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756003"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2024-03-04"	"5 yrs"	"25.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756011"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-03-04"	"4 yrs"	"34.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756019"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-03-06"	"10 mos"	"21.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756027"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-03-06"	"4 yrs"	"25.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756035"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-03-07"	"43 yrs"	"24.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756043"	"North America / USA / Connecticut"	43
+"Nasopharynx"	"2024-03-07"	"30 yrs"	"28.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755956"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2024-03-06"	"48 yrs"	"34.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755964"	"North America / USA / Connecticut"	48
+"Nasopharynx"	"2024-03-08"	"85 yrs"	"24.5"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755972"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2024-03-10"	"65 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755980"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2024-03-09"	"90 yrs"	"N/A"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755988"	"North America / USA / Connecticut"	90
+"Nasopharynx"	"2024-03-08"	"77 yrs"	"22.4"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755996"	"North America / USA / Connecticut"	77
+"Nasopharynx"	"2024-03-08"	"46 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4756004"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2024-03-07"	"3 mos"	"20.8"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756012"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-03-10"	"19 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756020"	"North America / USA / Connecticut"	19
+"Nasopharynx"	"2024-03-11"	"8 mos"	"18.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756028"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-03-11"	"63 yrs"	"20.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756036"	"North America / USA / Connecticut"	63
+"Nasopharynx"	"2024-03-11"	"15 yrs"	"25.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756044"	"North America / USA / Connecticut"	15
+"Nasopharynx"	"2024-03-12"	"78 yrs"	"26.4"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755957"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2024-03-12"	"56 yrs"	"23.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755965"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2024-03-13"	"5 yrs"	"30"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755973"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-03-13"	"90 yrs"	"27.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4755981"	"North America / USA / Connecticut"	90
+"Tracheal Aspirate"	"2024-03-13"	"67 yrs"	"25.4"	"YH MANUAL METHOD"	"RSV 6"	"A4755989"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2024-03-14"	"74 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 6"	"A4755997"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-03-16"	"67 yrs"	"21.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756005"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2024-03-17"	"34 yrs"	"30.7"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756013"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-03-18"	"2 mos"	"32.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756021"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2024-03-18"	"2 yrs"	"20.1"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756029"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-03-19"	"34 yrs"	"26.8"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756037"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-03-22"	"96 yrs"	"18.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 6"	"A4756045"	"North America / USA / Connecticut"	96
+"Nasopharynx"	"2024-03-23"	"30 yrs"	"28.2"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4688217"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2024-03-24"	"56 yrs"	"30.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740424"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2024-03-28"	"5 yrs"	"19.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4756074"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-03-25"	"74 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 7"	"A4740440"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-03-25"	"78 yrs"	"26.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740448"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2024-03-25"	"3 mos"	"18.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740456"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-03-26"	"87 yrs"	"33.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740464"	"North America / USA / Connecticut"	87
+"Nasopharynx"	"2024-03-28"	"90 yrs"	"34.2"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740472"	"North America / USA / Connecticut"	90
+"Nasopharynx"	"2024-03-28"	"81 yrs"	"36.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740480"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2024-03-30"	"80 yrs"	"19"	"YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740488"	"North America / USA / Connecticut"	80
+"Nasopharynx"	"2024-04-01"	"36 yrs"	"34"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740496"	"North America / USA / Connecticut"	36
+"Nasopharynx"	"2024-04-09"	"3 yrs"	"25.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4740504"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-04-09"	"54 yrs"	"19.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751344"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2024-04-09"	"36 yrs"	"29"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751352"	"North America / USA / Connecticut"	36
+"Nasopharynx"	"2024-04-09"	"1 yr"	"22"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4756137"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-04-11"	"73 yrs"	"21.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751368"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2024-04-13"	"75 yrs"	"N/A"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE
+YH LUMINEX VERIGENE"	"RSV 7"	"A4751376"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2024-04-13"	"59 yrs"	"26.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751384"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-06-08"	"60 yrs"	"17.8"	"SRC Cepheid Genexpert"	"RSV 7"	"A4751392"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2024-06-17"	"75 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751400"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2024-09-26"	"6 yrs"	"24.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751408"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-09-27"	"4 yrs"	"24.1"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751416"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-10-01"	"1 yr"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751424"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-10-04"	"3 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751432"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-10-09"	"62 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751345"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2024-10-14"	"35 dys"	"21.5"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751353"	"North America / USA / Connecticut"	0.096
+"Nasopharynx"	"2024-10-17"	"3 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751361"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-10-22"	"11 mos"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751369"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-10-24"	"1 yr"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751385"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-10-29"	"6 mos"	"33.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751377"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-10-25"	"1 yr"	"21.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751393"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-10-26"	"3 yrs"	"24.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751401"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-10-26"	"2 yrs"	"28.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751409"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-10-26"	"39 yrs"	"29.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751417"	"North America / USA / Connecticut"	39
+"Nasopharynx"	"2024-10-27"	"5 yrs"	"29.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751425"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-10-28"	"2 mos"	"22.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751433"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2024-10-28"	"2 yrs"	"20.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751346"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-10-28"	"10 yrs"	"34.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751354"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2024-10-29"	"1 yr"	"37.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751362"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-10-29"	"2 mos"	"21.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751370"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2024-10-29"	"9 yrs"	"38"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751378"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2024-10-29"	"7 mos"	"31.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751386"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-10-30"	"5 yrs"	"23.4"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751394"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-10-31"	"5 mos"	"21.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751402"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-10-31"	"62 yrs"	"28.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751410"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2024-11-01"	"1 yr"	"19.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751418"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-01"	"2 yrs"	"22.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751426"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-02"	"29 dys"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751434"	"North America / USA / Connecticut"	0.079
+"Nasopharynx"	"2024-11-02"	"4 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751347"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-03"	"83 yrs"	"31.7"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751355"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-11-03"	"34 yrs"	"27"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751363"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-11-04"	"2 yrs"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751371"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-04"	"3 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751379"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-05"	"7 mos"	"21.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751387"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-11-05"	"92 yrs"	"19.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751395"	"North America / USA / Connecticut"	92
+"Nasopharynx"	"2024-11-06"	"9 mos"	"29.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751403"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-11-06"	"65 yrs"	"21.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751411"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2024-11-06"	"2 yrs"	"15.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751419"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-06"	"8 yrs"	"21.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751427"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-11-07"	"28 dys"	"19.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751435"	"North America / USA / Connecticut"	0.077
+"Nasopharynx"	"2024-11-08"	"10 mos"	"21.4"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751348"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-11-08"	"2 yrs"	"21.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751356"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-08"	"2 yrs"	"18.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751364"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-08"	"3 mos"	"26.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751372"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-11-09"	"5 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751380"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-11-09"	"1 yr"	"21"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751388"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-09"	"1 yr"	"31.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751396"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-09"	"5 mos"	"18.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751404"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-11-09"	"3 yrs"	"28.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751412"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-10"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751420"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-10"	"15 yrs"	"27.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4741318"	"North America / USA / Connecticut"	15
+"Nasopharynx"	"2024-11-10"	"3 yrs"	"22.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751436"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-11"	"6 mos"	"26.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751349"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-11-11"	"4 yrs"	"29.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751447"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-11"	"6 yrs"	"29.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751365"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-11-12"	"9 yrs"	"22.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751373"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2024-11-12"	"10 mos"	"20.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751381"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-11-12"	"61 yrs"	"27.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751389"	"North America / USA / Connecticut"	61
+"Nasopharynx"	"2024-11-12"	"59 yrs"	"26.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751397"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-11-12"	"28 yrs"	"26.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751405"	"North America / USA / Connecticut"	28
+"Nasopharynx"	"2024-11-12"	"1 yr"	"21"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751413"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-13"	"2 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751421"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-13"	"3 yrs"	"29.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751429"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-13"	"8 mos"	"26.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751437"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-11-13"	"2 yrs"	"20.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751350"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-13"	"40 yrs"	"27.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 7"	"A4751358"	"North America / USA / Connecticut"	40
+"Nasopharynx"	"2024-11-13"	"73 yrs"	"23.5"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751366"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2024-11-14"	"4 mos"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751374"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-11-14"	"8 mos"	"27.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751382"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-11-14"	"13 yrs"	"22.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751390"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-11-14"	"21 yrs"	"31.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751398"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2024-11-16"	"8 mos"	"19.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751406"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-11-16"	"3 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751414"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-15"	"55 yrs"	"29"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 7"	"A4751422"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2024-11-15"	"1 yr"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751430"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-15"	"2 yrs"	"25.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 7"	"A4751438"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-15"	"1 yr"	"22.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751351"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-17"	"70 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751359"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2024-11-16"	"3 yrs"	"28.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751367"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-16"	"8 mos"	"24.4"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751375"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-11-17"	"4 mos"	"32.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751383"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-11-17"	"55 yrs"	"26.5"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751391"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2024-11-18"	"4 yrs"	"31.2"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751399"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-18"	"76 yrs"	"29.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751407"	"North America / USA / Connecticut"	76
+"Nasopharynx"	"2024-11-18"	"21 yrs"	"30.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751415"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2024-11-18"	"1 yr"	"18.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751423"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-18"	"78 yrs"	"28.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751431"	"North America / USA / Connecticut"	78
+"Nasopharynx"	"2024-11-19"	"3 yrs"	"20.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751439"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-19"	"62 yrs"	"18.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751536"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2024-11-19"	"49 dys"	"19.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751544"	"North America / USA / Connecticut"	0.134
+"Nasopharynx"	"2024-11-20"	"4 yrs"	"22.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751552"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-20"	"1 yr"	"21"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751560"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-20"	"59 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751568"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-11-20"	"52 dys"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751576"	"North America / USA / Connecticut"	0.142
+"Nasopharynx"	"2024-11-20"	"68 yrs"	"31.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751584"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2024-11-20"	"68 yrs"	"21.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4741326"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2024-11-19"	"2 yrs"	"22.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751600"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-21"	"3 yrs"	"28.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751608"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-21"	"7 yrs"	"30.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751616"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-11-20"	"1 yr"	"27.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751624"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-21"	"3 mos"	"24.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751537"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-11-21"	"4 yrs"	"18.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751545"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-21"	"4 yrs"	"25.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751553"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-21"	"9 mos"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751561"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-11-21"	"16 yrs"	"30.1"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751569"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2024-11-21"	"46 yrs"	"30.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751577"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2024-11-22"	"10 mos"	"17"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751585"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-11-22"	"3 mos"	"20.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751593"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-11-21"	"48 yrs"	"22.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751601"	"North America / USA / Connecticut"	48
+"Nasopharynx"	"2024-11-21"	"4 yrs"	"28.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751609"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-21"	"2 yrs"	"25.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751617"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-21"	"66 yrs"	"28.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751625"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2024-11-22"	"3 yrs"	"22.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4749378"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-22"	"2 yrs"	"23.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751546"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-22"	"5 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751554"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-11-22"	"1 yr"	"19"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751562"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-23"	"3 mos"	"23.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751570"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-11-23"	"3 yrs"	"21.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751578"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-11-22"	"10 mos"	"27"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751586"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-11-24"	"6 yrs"	"22.7"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751594"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-11-24"	"1 yr"	"17.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751602"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-25"	"13 yrs"	"26.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751610"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-11-25"	"4 yrs"	"20.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751618"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-25"	"5 yrs"	"26.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751626"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-11-25"	"13 yrs"	"25"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4749332"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-11-26"	"59 dys"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751547"	"North America / USA / Connecticut"	0.162
+"Nasopharynx"	"2024-11-26"	"4 yrs"	"21.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751555"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-11-26"	"47 yrs"	"21.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751563"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2024-11-26"	"4 mos"	"17.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751571"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-11-26"	"57 yrs"	"25.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751579"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-11-26"	"6 yrs"	"27.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751587"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-11-27"	"13 yrs"	"19.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751595"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2024-11-27"	"43 yrs"	"23.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751603"	"North America / USA / Connecticut"	43
+"Nasopharynx"	"2024-11-27"	"2 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751611"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-11-28"	"11 mos"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751619"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-11-28"	"1 yr"	"22.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751627"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-29"	"2 mos"	"16.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4749373"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2024-11-29"	"1 yr"	"26.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751548"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-29"	"7 mos"	"26"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751556"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-11-29"	"74 yrs"	"28.9"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751564"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2024-11-29"	"5 yrs"	"28.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751572"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-11-29"	"1 yr"	"27.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751580"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-11-30"	"9 yrs"	"20.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751588"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2024-11-29"	"34 yrs"	"28.4"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751596"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-11-29"	"17 yrs"	"26.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751604"	"North America / USA / Connecticut"	17
+"Nasopharynx"	"2024-11-30"	"6 mos"	"20.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751612"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-11-30"	"6 yrs"	"29.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751620"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-11-30"	"29 yrs"	"26"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751628"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-11-30"	"4 mos"	"28.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751541"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-12-01"	"50 yrs"	"29.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751549"	"North America / USA / Connecticut"	50
+"Nasopharynx"	"2024-12-02"	"1 yr"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751557"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-02"	"4 yrs"	"27.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751565"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-02"	"1 yr"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751573"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-02"	"2 yrs"	"24.5"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 8"	"A4751581"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-03"	"22 yrs"	"26.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751589"	"North America / USA / Connecticut"	22
+"Nasopharynx"	"2024-12-03"	"6 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751597"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-12-03"	"33 dys"	"19.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751605"	"North America / USA / Connecticut"	0.09
+"Nasopharynx"	"2024-12-03"	"2 yrs"	"19.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751613"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-03"	"7 mos"	"20.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751621"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-12-04"	"6 mos"	"19.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751629"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2024-12-04"	"5 yrs"	"27.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751542"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-12-04"	"85 yrs"	"26.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751550"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2024-12-04"	"8 yrs"	"32.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751558"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-12-04"	"7 yrs"	"24.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751566"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-12-05"	"4 yrs"	"25.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751574"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-05"	"2 yrs"	"19.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751582"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-05"	"42 dys"	"23.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751590"	"North America / USA / Connecticut"	0.115
+"Nasopharynx"	"2024-12-04"	"83 yrs"	"23.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751598"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2024-12-04"	"1 yr"	"28.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751606"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-08"	"3 yrs"	"24.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751614"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-08"	"8 yrs"	"24.8"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 8"	"A4751622"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-12-08"	"11 mos"	"25.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 8"	"A4751630"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-12-07"	"9 mos"	"22.7"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627738"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-12-07"	"4 yrs"	"22.9"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627729"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-08"	"3 yrs"	"23.7"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627754"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-08"	"9 mos"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627745"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-12-08"	"2 yrs"	"24.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627770"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-08"	"34 dys"	"22.8"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627761"	"North America / USA / Connecticut"	0.093
+"Nasopharynx"	"2024-12-08"	"3 yrs"	"26.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627786"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-08"	"34 yrs"	"24.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627777"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2024-12-08"	"22 yrs"	"28.9"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627802"	"North America / USA / Connecticut"	22
+"Nasopharynx"	"2024-12-08"	"4 mos"	"19.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627793"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-12-08"	"45 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627818"	"North America / USA / Connecticut"	45
+"Nasopharynx"	"2024-12-09"	"1 yr"	"20.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627809"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-08"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627739"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-09"	"3 yrs"	"20.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627730"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-09"	"3 yrs"	"18.6"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627755"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-09"	"47 yrs"	"24.3"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627746"	"North America / USA / Connecticut"	47
+"Nasopharynx"	"2024-12-10"	"25 dys"	"22.7"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627771"	"North America / USA / Connecticut"	0.068
+"Nasopharynx"	"2024-12-10"	"1 yr"	"25.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627762"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-10"	"4 mos"	"22.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627787"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-12-10"	"3 yrs"	"25.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627778"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-10"	"44 yrs"	"24.4"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627803"	"North America / USA / Connecticut"	44
+"Nasopharynx"	"2024-12-11"	"1 yr"	"20.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627794"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-11"	"1 yr"	"16.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627819"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-11"	"5 mos"	"20.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627810"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-12-11"	"9 mos"	"25.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627740"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-12-11"	"3 yrs"	"21.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627731"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-12"	"3 yrs"	"29.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627756"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-12"	"1 yr"	"21.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627747"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-12"	"6 yrs"	"21.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627772"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2024-12-12"	"11 mos"	"21.7"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627763"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-12-12"	"1 yr"	"26.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627788"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-14"	"2 yrs"	"21.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627779"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-15"	"7 mos"	"21.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627804"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-12-14"	"5 mos"	"26.9"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627795"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-12-14"	"9 mos"	"17.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627820"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2024-12-14"	"1 yr"	"17.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627811"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-15"	"1 yr"	"20.7"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627741"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-14"	"2 yrs"	"20"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627732"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-15"	"7 mos"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627757"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-12-15"	"11 mos"	"21.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627748"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2024-12-14"	"7 yrs"	"32.4"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627773"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-12-14"	"1 yr"	"22.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627764"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-14"	"1 yr"	"26.9"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627789"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-15"	"54 yrs"	"23.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627780"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2024-12-14"	"1 yr"	"24.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627805"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-14"	"7 yrs"	"16.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627796"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-12-15"	"4 yrs"	"23.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627821"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-15"	"7 yrs"	"30.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627812"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-12-16"	"2 yrs"	"17.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627742"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-16"	"3 mos"	"27.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627733"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2024-12-16"	"3 yrs"	"20.8"	"YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627758"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-16"	"28 yrs"	"32.1"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627749"	"North America / USA / Connecticut"	28
+"Nasopharynx"	"2024-12-17"	"93 yrs"	"18.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627774"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2024-12-17"	"2 yrs"	"24.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627765"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-17"	"59 yrs"	"23.8"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627790"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2024-12-17"	"1 yr"	"21.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627781"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-17"	"62 yrs"	"22.8"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627806"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2024-12-17"	"2 yrs"	"18.6"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627797"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-17"	"1 yr"	"19.7"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627822"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-17"	"4 yrs"	"20.8"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627813"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-18"	"3 yrs"	"20.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628119"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-19"	"5 yrs"	"21.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627734"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2024-12-19"	"4 mos"	"19.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628135"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2024-12-19"	"7 yrs"	"24.9"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4627750"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2024-12-19"	"1 yr"	"26.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4720223"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-19"	"46 yrs"	"30.6"	"YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4627766"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2024-12-19"	"8 mos"	"29.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628167"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2024-12-19"	"44 yrs"	"27.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627782"	"North America / USA / Connecticut"	44
+"Nasopharynx"	"2024-12-19"	"4 yrs"	"28.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628183"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-19"	"4 yrs"	"26.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627798"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-19"	"7 mos"	"19.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628199"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2024-12-19"	"2 yrs"	"26.3"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4627814"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-19"	"3 yrs"	"21.6"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628120"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-19"	"1 yr"	"23.7"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628111"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-20"	"3 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628136"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-20"	"5 mos"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628127"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2024-12-20"	"3 yrs"	"22"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628152"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2024-12-20"	"4 yrs"	"27.4"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628143"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-20"	"65 yrs"	"27.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4628168"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2024-12-20"	"27 yrs"	"25.1"	"YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628159"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2024-12-20"	"35 yrs"	"21.1"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628184"	"North America / USA / Connecticut"	35
+"Nasopharynx"	"2024-12-28"	"1 yr"	"31.9"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628175"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-28"	"1 yr"	"28"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628200"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-28"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628191"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-28"	"68 yrs"	"30.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628121"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2024-12-29"	"2 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628112"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-29"	"29 yrs"	"28.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628137"	"North America / USA / Connecticut"	29
+"Nasopharynx"	"2024-12-29"	"4 yrs"	"27.3"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628128"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2024-12-29"	"29 dys"	"19.5"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628153"	"North America / USA / Connecticut"	0.079
+"Nasopharynx"	"2024-12-30"	"8 yrs"	"27.6"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628144"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2024-12-30"	"76 yrs"	"24.5"	"YH GENPROBE PANTHER 2
+ YH GENPROBE PANTHER 1
+ YH CEPHEID GENEXPERT INFINITY"	"RSV 9"	"A4628169"	"North America / USA / Connecticut"	76
+"Nasopharynx"	"2024-12-30"	"1 yr"	"20.2"	"YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4628160"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2024-12-30"	"2 yrs"	"26.2"	"YH GENPROBE PANTHER 1
+ YH BIOMERIEUX BIOFIRE"	"RSV 9"	"A4628185"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2024-12-31"	"57 yrs"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628176"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2024-12-31"	"10 mos"	"21.5"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628201"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2024-12-31"	"87 yrs"	"20.2"	"YH CEPHEID GENEXPERT INFINITY
+ YH GENPROBE PANTHER 1"	"RSV 9"	"A4628192"	"North America / USA / Connecticut"	87
+"Nasopharynx"	"2024-12-31"	"9 mos"	"24.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624660"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-01-01"	"7 mos"	"17.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624668"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-01-01"	"11 mos"	"23.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624676"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2025-01-01"	"1 yr"	"22.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624684"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-01"	"4 mos"	"18.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624692"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2025-01-02"	"73 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4624700"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2025-01-02"	"44 yrs"	"31.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4624708"	"North America / USA / Connecticut"	44
+"Nasopharynx"	"2025-01-02"	"1 yr"	"22.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624716"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-02"	"1 yr"	"18.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624724"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-04"	"3 yrs"	"17.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624732"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-04"	"2 mos"	"25.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624740"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2025-01-05"	"1 yr"	"20.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624748"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-05"	"71 yrs"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624661"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2025-01-05"	"1 yr"	"16.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624669"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-05"	"24 yrs"	"29"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624677"	"North America / USA / Connecticut"	24
+"Nasopharynx"	"2025-01-05"	"89 yrs"	"31.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624685"	"North America / USA / Connecticut"	89
+"Nasopharynx"	"2025-01-05"	"4 yrs"	"25.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624693"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-01-05"	"2 yrs"	"27"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624701"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-05"	"4 mos"	"29.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624709"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2025-01-05"	"24 dys"	"25.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624717"	"North America / USA / Connecticut"	0.066
+"Nasopharynx"	"2025-01-05"	"2 yrs"	"25.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624725"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-06"	"3 mos"	"23.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624733"	"North America / USA / Connecticut"	0.25
+"Nasopharynx"	"2025-01-06"	"7 mos"	"20.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624741"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-01-06"	"83 yrs"	"25.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624749"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2025-01-06"	"70 yrs"	"25.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4624662"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2025-01-07"	"91 yrs"	"21.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624670"	"North America / USA / Connecticut"	91
+"Nasopharynx"	"2025-01-07"	"1 yr"	"29.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624678"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-07"	"64 yrs"	"18"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624686"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2025-01-07"	"98 yrs"	"16.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624694"	"North America / USA / Connecticut"	98
+"Nasopharynx"	"2025-01-08"	"11 mos"	"25.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624702"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2025-01-08"	"26 yrs"	"31"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624710"	"North America / USA / Connecticut"	26
+"Nasopharynx"	"2025-01-08"	"10 mos"	"31"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624718"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2025-01-08"	"5 mos"	"22.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624726"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2025-01-09"	"4 mos"	"21.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624734"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2025-01-09"	"64 yrs"	"26.9"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4624742"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2025-01-09"	"30 yrs"	"19.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4624750"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2025-01-09"	"62 yrs"	"23.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4633739"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2025-01-11"	"68 yrs"	"22.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633682"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2025-01-11"	"6 yrs"	"30.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633692"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2025-01-11"	"4 yrs"	"26.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633771"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-01-11"	"1 yr"	"19.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633731"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-12"	"89 yrs"	"26.8"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4633714"	"North America / USA / Connecticut"	89
+"Nasopharynx"	"2025-01-12"	"3 yrs"	"21.7"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4633724"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-12"	"9 mos"	"30.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633707"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-01-12"	"34 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633746"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2025-01-13"	"4 yrs"	"28.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633730"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-01-13"	"4 mos"	"18.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633699"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2025-01-13"	"1 yr"	"25.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633691"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-13"	"7 mos"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633698"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-01-13"	"9 yrs"	"24.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4633740"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2025-01-14"	"2 yrs"	"22.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633755"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-14"	"46 yrs"	"25"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633762"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2025-01-14"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4633723"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-14"	"62 yrs"	"23"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633715"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2025-01-14"	"3 yrs"	"21.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633683"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-14"	"6 mos"	"26.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4633708"	"North America / USA / Connecticut"	0.5
+"Nasopharynx"	"2025-01-14"	"2 yrs"	"33"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622994"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-15"	"14 yrs"	"23.8"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4623002"	"North America / USA / Connecticut"	14
+"Nasopharynx"	"2025-01-15"	"1 yr"	"22.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4623010"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-15"	"2 yrs"	"29.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4623018"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-16"	"56 yrs"	"30"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622931"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2025-01-16"	"59 yrs"	"17.5"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"Plate 10"	"A4622939"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2025-01-17"	"69 yrs"	"31"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622947"	"North America / USA / Connecticut"	69
+"Nasopharynx"	"2025-01-17"	"23 yrs"	"21.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622955"	"North America / USA / Connecticut"	23
+"Nasopharynx"	"2025-01-17"	"43 yrs"	"22.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622963"	"North America / USA / Connecticut"	43
+"Nasopharynx"	"2025-01-18"	"60 yrs"	"27.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622971"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2025-01-18"	"25 yrs"	"21.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622979"	"North America / USA / Connecticut"	25
+"Nasopharynx"	"2025-01-18"	"2 mos"	"19.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622987"	"North America / USA / Connecticut"	0.167
+"Nasopharynx"	"2025-01-18"	"8 yrs"	"21.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622995"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-01-19"	"3 yrs"	"25.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4623003"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-19"	"75 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4623011"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2025-01-19"	"1 yr"	"24.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4623019"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-19"	"73 yrs"	"29.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622932"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2025-01-20"	"10 mos"	"19.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622940"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2025-01-20"	"89 yrs"	"27.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622948"	"North America / USA / Connecticut"	89
+"Nasopharynx"	"2025-01-20"	"71 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622956"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2025-01-20"	"53 yrs"	"24.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622964"	"North America / USA / Connecticut"	53
+"Nasopharynx"	"2025-01-20"	"5 mos"	"20.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622972"	"North America / USA / Connecticut"	0.417
+"Nasopharynx"	"2025-01-20"	"27 yrs"	"26.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622980"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2025-01-20"	"13 yrs"	"30.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622988"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2025-01-21"	"5 yrs"	"18.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622996"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2025-01-21"	"2 yrs"	"23.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4623004"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-21"	"8 mos"	"20.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4623012"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2025-01-22"	"3 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4623020"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-22"	"54 yrs"	"30.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622933"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2025-01-22"	"37 yrs"	"25.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622941"	"North America / USA / Connecticut"	37
+"Nasopharynx"	"2025-01-22"	"52 yrs"	"28.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622949"	"North America / USA / Connecticut"	52
+"Nasopharynx"	"2025-01-22"	"1 yr"	"21.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"Plate 10"	"A4622957"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-23"	"2 yrs"	"21.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"Plate 10"	"A4622965"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-23"	"2 yrs"	"22.5"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	NA	"A4622973"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-24"	"1 yr"	"23.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	NA	"A4622981"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-24"	"21 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	NA	"A4622989"	"North America / USA / Connecticut"	21
+"Nasopharynx"	"2025-01-24"	"72 yrs"	"24.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	NA	"A4622997"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2025-01-24"	"2 yrs"	"19.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	NA	"A4623005"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-25"	"7 yrs"	"22.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	NA	"A4623013"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2025-01-25"	"7 mos"	"17.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	NA	"A4623021"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-01-25"	"2 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631001"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-26"	"11 yrs"	"20.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4630992"	"North America / USA / Connecticut"	11
+"Nasopharynx"	"2025-01-26"	"17 yrs"	"25.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631017"	"North America / USA / Connecticut"	17
+"Nasopharynx"	"2025-01-26"	"2 yrs"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631008"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-26"	"2 yrs"	"26.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631033"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-27"	"69 yrs"	"21.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631024"	"North America / USA / Connecticut"	69
+"Nasopharynx"	"2025-01-27"	"2 yrs"	"24.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631049"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-27"	"2 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631040"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-27"	"43 dys"	"22"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631065"	"North America / USA / Connecticut"	0.118
+"Nasopharynx"	"2025-01-27"	"1 yr"	"19.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631056"	"North America / USA / Connecticut"	1
+"Sputum"	"2025-01-28"	"85 yrs"	"28.4"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4631081"	"North America / USA / Connecticut"	85
+"Nasopharynx"	"2025-01-28"	"2 yrs"	"17.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631072"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-28"	"46 yrs"	"24.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631002"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2025-01-29"	"71 yrs"	"23.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4630993"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2025-01-29"	"2 yrs"	"18.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631018"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-01-29"	"56 yrs"	"20"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631009"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2025-01-29"	"9 mos"	"30.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631034"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-01-29"	"4 mos"	"22.4"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631025"	"North America / USA / Connecticut"	0.333
+"Nasopharynx"	"2025-01-29"	"1 yr"	"16.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631050"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-30"	"4 yrs"	"16.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631041"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-01-30"	"60 yrs"	"28"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631066"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2025-02-01"	"64 yrs"	"21.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631057"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2025-02-02"	"8 yrs"	"25.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631082"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-02-02"	"2 yrs"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631073"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-02"	"46 yrs"	"31.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631003"	"North America / USA / Connecticut"	46
+"Nasopharynx"	"2025-01-30"	"102 yrs"	"24.7"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4615910"	"North America / USA / Connecticut"	102
+"Nasopharynx"	"2025-01-30"	"1 yr"	"18.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631019"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-01-31"	"44 yrs"	"30.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631010"	"North America / USA / Connecticut"	44
+"Nasopharynx"	"2025-01-31"	"3 yrs"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4630775"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-31"	"93 yrs"	"28.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631026"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2025-01-31"	"3 yrs"	"24"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631051"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-01-31"	"71 yrs"	"24.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631042"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2025-01-31"	"55 yrs"	"26.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631067"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2025-02-03"	"88 yrs"	"17.7"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4631058"	"North America / USA / Connecticut"	88
+"Nasopharynx"	"2025-02-03"	"20 yrs"	"21.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631083"	"North America / USA / Connecticut"	20
+"Nasopharynx"	"2025-02-03"	"55 yrs"	"24.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631074"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2025-02-03"	"2 yrs"	"26.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631004"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-03"	"9 mos"	"21.1"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4615896"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-02-03"	"75 yrs"	"30.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631020"	"North America / USA / Connecticut"	75
+"Nasopharynx"	"2025-02-03"	"1 yr"	"21.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631011"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-03"	"66 yrs"	"21.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631036"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2025-02-04"	"54 yrs"	"28.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4630759"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2025-02-04"	"19 yrs"	"28.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631052"	"North America / USA / Connecticut"	19
+"Nasopharynx"	"2025-02-04"	"90 yrs"	"25.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631043"	"North America / USA / Connecticut"	90
+"Nasopharynx"	"2025-02-04"	"36 yrs"	"27.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631068"	"North America / USA / Connecticut"	36
+"Nasopharynx"	"2025-02-05"	"51 yrs"	"31.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631059"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2025-02-06"	"99 yrs"	"20.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631084"	"North America / USA / Connecticut"	99
+"Nasopharynx"	"2025-02-06"	"58 yrs"	"23.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631075"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2025-02-06"	"61 yrs"	"22.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631005"	"North America / USA / Connecticut"	61
+"Tracheal Aspirate"	"2025-02-09"	"83 yrs"	"28.7"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4630996"	"North America / USA / Connecticut"	83
+"Nasopharynx"	"2025-02-09"	"66 yrs"	"25.4"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4631021"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2025-02-09"	"54 yrs"	"29.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631012"	"North America / USA / Connecticut"	54
+"Nasopharynx"	"2025-02-06"	"11 mos"	"20.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631037"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2025-02-07"	"1 yr"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631028"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-07"	"27 yrs"	"24.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631053"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2025-02-07"	"71 yrs"	"22.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631044"	"North America / USA / Connecticut"	71
+"Nasopharynx"	"2025-02-07"	"34 yrs"	"21.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631069"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2025-02-07"	"60 yrs"	"22.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631060"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2025-02-08"	"1 yr"	"21.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631085"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-08"	"65 yrs"	"19.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631076"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2025-02-08"	"13 yrs"	"22"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622746"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2025-02-09"	"64 yrs"	"27.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4630997"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2025-02-10"	"30 yrs"	"32.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631013"	"North America / USA / Connecticut"	30
+"Nasopharynx"	"2025-02-11"	"14 dys"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622762"	"North America / USA / Connecticut"	0.038
+"Nasopharynx"	"2025-02-11"	"5 yrs"	"25.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622778"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2025-02-11"	"34 yrs"	"23.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4631029"	"North America / USA / Connecticut"	34
+"Nasopharynx"	"2025-02-11"	"58 yrs"	"25.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622794"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2025-02-11"	"3 yrs"	"21.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631045"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-02-11"	"2 yrs"	"28.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622810"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-12"	"5 yrs"	"24.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4631061"	"North America / USA / Connecticut"	5
+"Nasopharynx"	"2025-02-12"	"1 yr"	"18.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622826"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-12"	"3 yrs"	"25.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4631077"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-02-13"	"4 yrs"	"25.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622747"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-02-13"	"69 yrs"	"26.1"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4622738"	"North America / USA / Connecticut"	69
+"Nasopharynx"	"2025-02-13"	"82 yrs"	"24.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622763"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2025-02-14"	"2 yrs"	"33.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622754"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-14"	"64 yrs"	"25.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622779"	"North America / USA / Connecticut"	64
+"Nasopharynx"	"2025-02-14"	"7 mos"	"26.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622770"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-02-14"	"70 yrs"	"29.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622795"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2025-02-14"	"3 yrs"	"28.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622786"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-02-14"	"57 yrs"	"28.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622811"	"North America / USA / Connecticut"	57
+"Nasopharynx"	"2025-02-14"	"93 yrs"	"21.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622802"	"North America / USA / Connecticut"	93
+"Nasopharynx"	"2025-02-15"	"2 yrs"	"17.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622827"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-16"	"7 yrs"	"28.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622818"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2025-02-16"	"1 yr"	"21.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622748"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-16"	"60 yrs"	"26.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622739"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2025-02-16"	"54 yrs"	"28"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 11"	"A4622764"	"North America / USA / Connecticut"	54
+"Sputum"	"2025-02-16"	"51 yrs"	"18.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4622755"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2025-02-16"	"39 yrs"	"20.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4622780"	"North America / USA / Connecticut"	39
+"Nasopharynx"	"2025-02-17"	"67 yrs"	"28.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 11"	"A4622771"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2025-02-17"	"9 mos"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622796"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-02-18"	"2 yrs"	"27.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622787"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-19"	"4 yrs"	"19"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622812"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-02-19"	"89 yrs"	"24.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622803"	"North America / USA / Connecticut"	89
+"Nasopharynx"	"2025-02-19"	"68 yrs"	"25.9"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622828"	"North America / USA / Connecticut"	68
+"Nasopharynx"	"2025-02-19"	"2 yrs"	"20.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 11"	"A4622819"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-20"	"69 yrs"	"22.1"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4623230"	"North America / USA / Connecticut"	69
+"Nasopharynx"	"2025-02-19"	"4 yrs"	"34.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623221"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-02-20"	"1 yr"	"21.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623246"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-20"	"8 mos"	"21.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623237"	"North America / USA / Connecticut"	0.667
+"Nasopharynx"	"2025-02-20"	"10 yrs"	"28.8"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623262"	"North America / USA / Connecticut"	10
+"Nasopharynx"	"2025-02-20"	"62 yrs"	"24.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623253"	"North America / USA / Connecticut"	62
+"Nasopharynx"	"2025-02-23"	"10 mos"	"28.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623278"	"North America / USA / Connecticut"	0.833
+"Nasopharynx"	"2025-02-23"	"50 yrs"	"32.7"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4623269"	"North America / USA / Connecticut"	50
+"Nasopharynx"	"2025-02-21"	"8 yrs"	"22.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623294"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-02-22"	"1 yr"	"23.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623285"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-21"	"26 yrs"	"22.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623310"	"North America / USA / Connecticut"	26
+"Nasopharynx"	"2025-02-22"	"67 yrs"	"20"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623301"	"North America / USA / Connecticut"	67
+"Nasopharynx"	"2025-02-22"	"48 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623231"	"North America / USA / Connecticut"	48
+"Nasopharynx"	"2025-02-22"	"3 yrs"	"23.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623222"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-02-23"	"1 yr"	"23"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623247"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-23"	"9 yrs"	"30.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623238"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2025-02-24"	"11 mos"	"24.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623263"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2025-02-24"	"7 yrs"	"24.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623254"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2025-02-24"	"80 yrs"	"24.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623279"	"North America / USA / Connecticut"	80
+"Nasopharynx"	"2025-02-24"	"59 yrs"	"23.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4622804"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2025-02-25"	"4 yrs"	"21.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623295"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-02-25"	"2 yrs"	"18.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623286"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-02-25"	"73 yrs"	"21.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623311"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2025-02-26"	"11 mos"	"18.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623302"	"North America / USA / Connecticut"	0.917
+"Nasopharynx"	"2025-02-26"	"7 mos"	"20.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623232"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-02-26"	"63 yrs"	"35.5"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623223"	"North America / USA / Connecticut"	63
+"Nasopharynx"	"2025-02-26"	"1 yr"	"28.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623248"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-02-27"	"82 yrs"	"26.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623239"	"North America / USA / Connecticut"	82
+"Nasopharynx"	"2025-02-27"	"3 yrs"	"18.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623264"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-02-27"	"55 yrs"	"24.3"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623255"	"North America / USA / Connecticut"	55
+"Nasopharynx"	"2025-02-27"	"44 yrs"	"30.4"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4623280"	"North America / USA / Connecticut"	44
+"Sputum"	"2025-02-27"	"32 yrs"	"28.4"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4620996"	"North America / USA / Connecticut"	32
+"Nasopharynx"	"2025-02-27"	"8 yrs"	"31.6"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623296"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-02-28"	"58 yrs"	"29.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623287"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2025-02-28"	"58 yrs"	"27.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623312"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2025-03-01"	"9 yrs"	"35"	"YH GENPROBE PANTHER 2
+YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623303"	"North America / USA / Connecticut"	9
+"Nasopharynx"	"2025-03-02"	"72 yrs"	"20.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623233"	"North America / USA / Connecticut"	72
+"Nasopharynx"	"2025-03-03"	"7 mos"	"22.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623224"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-03-03"	"24 yrs"	"28.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623249"	"North America / USA / Connecticut"	24
+"Nasopharynx"	"2025-03-03"	"56 yrs"	"30.1"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623240"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2025-03-03"	"8 yrs"	"24.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623265"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-03-03"	"58 yrs"	"30.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623256"	"North America / USA / Connecticut"	58
+"Nasopharynx"	"2025-03-03"	"66 yrs"	"30.9"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623281"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2025-03-04"	"70 yrs"	"34.8"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623272"	"North America / USA / Connecticut"	70
+"Nasopharynx"	"2025-03-04"	"81 yrs"	"35"	"YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4623297"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2025-03-04"	"81 yrs"	"23.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623288"	"North America / USA / Connecticut"	81
+"Nasopharynx"	"2025-03-04"	"19 yrs"	"20.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623313"	"North America / USA / Connecticut"	19
+"Nasopharynx"	"2025-03-04"	"12 yrs"	"21.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623304"	"North America / USA / Connecticut"	12
+"Nasopharynx"	"2025-03-05"	"2 yrs"	"25.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620922"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-03-05"	"3 yrs"	"21.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623225"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-03-05"	"7 mos"	"17.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH BIOMERIEUX BIOFIRE"	"RSV 12"	"A4620938"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-03-05"	"73 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623241"	"North America / USA / Connecticut"	73
+"Nasopharynx"	"2025-03-05"	"7 mos"	"19.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620954"	"North America / USA / Connecticut"	0.583
+"Nasopharynx"	"2025-03-05"	"1 yr"	"19.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623257"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-06"	"27 yrs"	"31.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620970"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2025-03-06"	"1 yr"	"34.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4623273"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-06"	"51 yrs"	"22.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620986"	"North America / USA / Connecticut"	51
+"Nasopharynx"	"2025-03-06"	"4 yrs"	"27.9"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623289"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-03-06"	"3 yrs"	"19.9"	"YH GENPROBE PANTHER 2
+YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4621002"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-03-07"	"16 yrs"	"36.5"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4623305"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2025-03-08"	"8 yrs"	"29.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620923"	"North America / USA / Connecticut"	8
+"Nasopharynx"	"2025-03-08"	"7 yrs"	"36.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620914"	"North America / USA / Connecticut"	7
+"Nasopharynx"	"2025-03-09"	"1 yr"	"22.4"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620939"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-09"	"1 yr"	"33.8"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620930"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-10"	"1 yr"	"22.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620955"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-10"	"74 yrs"	"29.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620946"	"North America / USA / Connecticut"	74
+"Nasopharynx"	"2025-03-10"	"16 yrs"	"21.7"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620971"	"North America / USA / Connecticut"	16
+"Nasopharynx"	"2025-03-11"	"3 yrs"	"23.3"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620962"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-03-12"	"56 yrs"	"25.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620987"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2025-03-13"	"61 yrs"	"31.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620978"	"North America / USA / Connecticut"	61
+"Nasopharynx"	"2025-03-13"	"56 yrs"	"22.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4621003"	"North America / USA / Connecticut"	56
+"Nasopharynx"	"2025-03-13"	"60 yrs"	"22"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620994"	"North America / USA / Connecticut"	60
+"Nasopharynx"	"2025-03-13"	"9 mos"	"23.4"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620924"	"North America / USA / Connecticut"	0.75
+"Nasopharynx"	"2025-03-13"	"6 yrs"	"23.7"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620915"	"North America / USA / Connecticut"	6
+"Nasopharynx"	"2025-03-14"	"3 yrs"	"28.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620940"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-03-14"	"4 yrs"	"25.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620931"	"North America / USA / Connecticut"	4
+"Nasopharynx"	"2025-03-15"	"27 yrs"	"26.7"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620956"	"North America / USA / Connecticut"	27
+"Nasopharynx"	"2025-03-14"	"1 yr"	"21.5"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620947"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-14"	"3 yrs"	"22.5"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620972"	"North America / USA / Connecticut"	3
+"Nasopharynx"	"2025-03-14"	"65 yrs"	"33.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620963"	"North America / USA / Connecticut"	65
+"Nasopharynx"	"2025-03-15"	"66 yrs"	"20.1"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620988"	"North America / USA / Connecticut"	66
+"Nasopharynx"	"2025-03-17"	"52 yrs"	"28.2"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620979"	"North America / USA / Connecticut"	52
+"Nasopharynx"	"2025-03-17"	"2 yrs"	"23"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4621004"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-03-17"	"59 yrs"	"29"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620995"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2025-03-17"	"2 yrs"	"19.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620925"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-03-18"	"22 dys"	"19.6"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620916"	"North America / USA / Connecticut"	0.06
+"Nasopharynx"	"2025-03-18"	"2 yrs"	"23.1"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620941"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-03-18"	"1 yr"	"25.8"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620932"	"North America / USA / Connecticut"	1
+"Nasopharynx"	"2025-03-19"	"55 dys"	"29.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620957"	"North America / USA / Connecticut"	0.151
+"Nasopharynx"	"2025-03-21"	"42 yrs"	"29.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620948"	"North America / USA / Connecticut"	42
+"Nasopharynx"	"2025-03-22"	"91 yrs"	"25.6"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4620973"	"North America / USA / Connecticut"	91
+"Nasopharynx"	"2025-03-22"	"59 yrs"	"N/A"	"YH BIOMERIEUX BIOFIRE
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620964"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2025-03-23"	"2 yrs"	"23.9"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620989"	"North America / USA / Connecticut"	2
+"Nasopharynx"	"2025-03-23"	"13 yrs"	"23.2"	"YH CEPHEID GENEXPERT INFINITY
+YH GENPROBE PANTHER 1"	"RSV 12"	"A4620980"	"North America / USA / Connecticut"	13
+"Nasopharynx"	"2025-03-23"	"59 yrs"	"27.3"	"YH GENPROBE PANTHER 2
+YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4621005"	"North America / USA / Connecticut"	59
+"Nasopharynx"	"2025-03-24"	"17 yrs"	"29.2"	"YH GENPROBE PANTHER 1
+YH CEPHEID GENEXPERT INFINITY"	"RSV 12"	"A4630600"	"North America / USA / Connecticut"	17
