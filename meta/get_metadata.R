@@ -74,7 +74,7 @@ meta$date <- as.Date(meta$date, "%Y-%m-%d")
 clade_assignments<-  rbind(read.table("RSVA_nextclade.tsv",sep="\t",header=TRUE,stringsAsFactors=FALSE),
       read.table("RSVB_nextclade.tsv",sep="\t",header=TRUE,stringsAsFactors=FALSE)) %>%
   select(c("seqName","clade"))
-meta_cl <- View(merge(meta,clade_assignments,by.x="name",by.y="seqName",all.x=T))
+meta_cl <- merge(meta,clade_assignments,by.x="name",by.y="seqName",all.x=T)
 # ------------------------------------------------------------
 #write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 write.table(meta_cl,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
