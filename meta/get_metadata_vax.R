@@ -76,6 +76,13 @@ meta <- merge(plates,allmeta,by="tubecode")%>%
 #write.table(meta,file="rsv_metadata.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 write.table(meta,file="rsv_metadata_vax.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
+
+clade_assignments<-  rbind(read.table("RSVA_nextclade.tsv",sep="\t",header=TRUE,stringsAsFactors=FALSE),
+                           read.table("RSVB_nextclade.tsv",sep="\t",header=TRUE,stringsAsFactors=FALSE)) %>%
+  select(c("seqName","clade"))
+meta_cl <- merge(meta,clade_assignments,by.x="name",by.y="seqName",all.x=T)
+
+
 mainmeta <- read.table("./rsv_metadata.txt",header=T,sep="\t",stringsAsFactors = F) %>%
   mutate(date = as.Date(date, "%Y-%m-%d"))
 
