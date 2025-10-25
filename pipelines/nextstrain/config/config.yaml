@@ -1,0 +1,10 @@
+inputs: '/vast/palmer/pi/grubaugh/datasets/pgcoe/RSV/'
+background: '/vast/palmer/pi/grubaugh/datasets/pgcoe/RSV/background/pathoplexus/'
+
+meta:    '../../meta/rsv_metadata_vax_combined.txt'
+
+refs:    '../../refs/refs.txt'
+refsdir: '../../refs/'
+outdir: 'results' 
+
+

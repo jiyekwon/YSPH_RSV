@@ -1,0 +1,457 @@
+configfile: "config/config.yaml"
+TARGETS = ['RSVA','RSVB']
+
+wildcard_constraints:
+    target="RSVA|RSVB"
+    #target="[^_]+",
+
+
+localrules: nextstrain_all, cp_inputs, merge_metadata #cp_meta
+
+rule nextstrain_all:
+    input:
+        nextstrain=expand('results/{target}_auspice.json',target=TARGETS),
+        vaxescapes=expand('results/escapes/{target}_escape_calls.txt',target=TARGETS)
+        
+
+
+#container: "docker://nextstrain/base:build-20240501T170101Z"
+container: "docker://nextstrain/base"
+
+
+rule cp_inputs:
+    input:
+        inputs=config['inputs'],
+        refs=config['refsdir'],
+        backgrounds=config['background'],
+        meta=config['meta'],
+    output:
+        background = 'results/background/{target}.fasta',
+        bgmeta = 'results/background/{target}_meta.tsv',
+        bgkills = 'results/background/{target}.kill',
+        inputs = 'results/input/{target}.fasta',
+        meta = 'results/input/{target}_meta.tsv',
+        samples = 'results/input/{target}.samples',
+        ref = "results/refs/{target}.fasta",
+        gff3 = "results/refs/{target}.gff3"
+    log:
+        log = "logs/datacopy/cat_{target}_inputs.log"
+    group: 'cplocal'
+    resources:
+        mem_mb="2G",
+        cpus_per_task=1,
+        runtime=60
+    container: None
+    shell:"""
+        cat {input.backgrounds}/{wildcards.target}*.fasta > {output.background}
+        cat {input.backgrounds}/{wildcards.target}*.kill > {output.bgkills}
+        cat {input.backgrounds}/{wildcards.target}*.tsv > {output.bgmeta}
+        cat {input.inputs}/*/summary/{wildcards.target}_consensus.fasta > {output.inputs}
+
+        cat {input.inputs}/*/summary/final_calls.txt | grep {wildcards.target} | cut -f 1  > {output.samples}
+
+        cp -LR {input.refs}/{wildcards.target}* results/refs/
+
+        cp {input.meta} {output.meta}
+        
+        """
+
+
+rule merge_metadata:
+    input:
+        bgmeta = 'results/background/{target}_meta.tsv',
+        inmeta = 'results/input/{target}_meta.tsv',
+    output:
+        meta = 'results/combined/{target}_meta.tsv',
+    log:
+        log = "logs/datacopy/{target}_mergemeta.log"
+    resources:
+        mem_mb="2G",
+        cpus_per_task=1,
+        runtime=60
+    container: None
+    run:
+        import pandas as pd
+        bgdf = pd.read_csv(input.bgmeta, sep='\t')
+        bgdf = bgdf[['accessionVersion', 'sampleCollectionDate', 'geoLocCountry']]
+        bgdf = bgdf.rename(columns={
+            'accessionVersion': 'name',
+            'sampleCollectionDate': 'date',
+            'geoLocCountry': 'country'
+        })
+        bgdf['age'] = ''
+        bgdf['agecat'] = ''
+        bgdf['project'] = 'background'
+
+        indf = pd.read_csv(input.inmeta, sep='\t')
+        indf = indf[['name', 'date', 'location', 'age', 'agecat','project']]
+        indf = indf.rename(columns={'location':'country'})
+        indf['country'] = indf['country'].str.replace("North America / USA / Connecticut", 
+                                                        'USA', regex=False)
+        indf['name'] = indf['name'].str.replace('_1', '-1', regex=False)
+
+        df = pd.concat([bgdf, indf], ignore_index=True)
+        df.to_csv(output.meta, sep='\t', index=False)
+
+
+
+
+rule next_index:
+    input:
+        fastas='{fastafile}.fasta'
+    output:
+        index=temp('{fastafile}_index.tsv'),
+    resources:
+        mem_mb=4000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nsindexfilter"
+    log:
+        err="logs/{fastafile}.err"
+    shell:
+        """
+        augur index \
+            --sequences {input.fastas} \
+            --output {output.index} >> {log.err}
+        """
+
+rule next_filter_background:
+    input:
+        fastas='results/background/{target}.fasta',
+        index='results/background/{target}_index.tsv',
+        kill='results/background/{target}.kill',
+        metadata="results/combined/{target}_meta.tsv",
+    output:
+        filtered=temporary('results/background/{target}_filtered.fasta'),
+    resources:
+        mem_mb=4000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    log:
+        stdout="logs/filter_background_{target}.out",
+        stderr="logs/filter_background_{target}.err"
+    group: "nsindexfilter"
+    params:
+        mindate=2000,
+        seq_per_group=10,
+        maxseqs=2000,
+        group_by = "country year month",
+        idcols = "Seq-ID Original-ID name accessionVersion"
+    shell:
+        """
+        augur filter \
+            --sequences {input.fastas} \
+            --sequence-index {input.index} \
+            --metadata {input.metadata} \
+            --subsample-max-sequences {params.maxseqs} \
+            --metadata-id-columns {params.idcols} \
+            --exclude {input.kill} \
+            --group-by {params.group_by} \
+            --min-date {params.mindate} \
+            --output-sequences {output.filtered} 1> {log.stdout} 2> {log.stderr}
+
+#            --sequences-per-group {params.seq_per_group} \
+
+         """
+
+
+
+
+rule next_filter_input:
+    input:
+        fastas='results/input/{target}.fasta',
+        index='results/input/{target}_index.tsv',
+	    includes='results/input/{target}.samples',
+        metadata="results/combined/{target}_meta.tsv",
+    output:
+        filtered='results/input/{target}_filtered.fasta',
+    resources:
+        mem_mb=4000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nsindexfilter"
+    log:
+        stdout="logs/filter_{target}.out",
+        stderr="logs/filter_{target}.err"
+    params:
+        idcols = "Seq-ID Original-ID name accessionVersion"
+    shell:
+        """
+        augur filter \
+            --sequences {input.fastas} \
+            --sequence-index {input.index} \
+            --metadata {input.metadata} \
+            --include {input.includes} \
+            --exclude-all \
+            --output-sequences {output.filtered} 1> {log.stdout} 2> {log.stderr}
+         """
+
+rule cat_fasta:
+    input:
+        background='results/background/{target}_filtered.fasta',
+        consensus='results/input/{target}_filtered.fasta',
+    output:
+        all='results/combined/{target}.fasta',
+    resources:
+        mem_mb=8000,
+        runtime=600,
+    #container: "docker://nextstrain/base"
+    group: "nsindexfilter"
+    log:
+        stderr="logs/filter_{target}.err"
+    params:
+        mindate=2000,
+        seq_per_group=50,
+    shell:
+        """
+        cat {input.background} {input.consensus} > {output.all}
+        """
+
+
+rule next_align:
+    input:
+        filtered='results/combined/{target}.fasta',
+        ref="results/refs/{target}.fasta",
+        index='results/combined/{target}_index.tsv',
+    output:
+        aligned='results/combined/{target}_all_aligned.fasta',
+    resources:
+        mem_mb=8000,
+        runtime=600,
+        cpus_per_task=8,
+    #container: "docker://nextstrain/base"
+    #group: "nextstrain"
+    log:
+        stderr="logs/filter_{target}.err"
+    shell:
+        """
+        augur align \
+            --sequences {input.filtered} \
+            --reference-sequence {input.ref} \
+            --nthreads {resources.cpus_per_task} \
+            --output {output.aligned} \
+            --fill-gaps
+        """
+
+
+rule next_tree:
+    input:
+        aligned='results/combined/{target}_all_aligned.fasta',
+        index='results/combined/{target}_all_aligned_index.tsv',
+    output:
+        tree='results/combined/{target}_raw.nwk',
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nexttree"
+    log:
+        stderr="logs/tree_{target}.err"
+    shell:
+        """
+        augur tree \
+        --alignment {input.aligned} \
+        --output {output.tree}
+        """
+
+
+rule next_refine:
+    input:
+        tree='results/combined/{target}_raw.nwk',
+        aligned='results/combined/{target}_all_aligned.fasta',
+	    metadata="results/combined/{target}_meta.tsv"
+    output:
+        tree = "results/{target}_tree.nwk",
+        node_data = "results/nextstrain/{target}_branchlens.json"
+    params:
+        coalescent = "opt",
+        date_inference = "marginal",
+        clock_filter_iqd = 4,
+        idcols = "Seq-ID Original-ID name"
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nexttree"
+    log:
+        stdout="logs/{target}_refine.out",
+        stderr="logs/{target}_refine.err"
+    shell:
+        """
+        augur refine \
+            --tree {input.tree} \
+            --alignment {input.aligned} \
+            --metadata {input.metadata} \
+            --output-tree {output.tree} \
+            --output-node-data {output.node_data} \
+            --timetree \
+            --keep-polytomies \
+            --coalescent {params.coalescent} \
+            --date-confidence \
+            --date-inference {params.date_inference} \
+            --clock-filter-iqd {params.clock_filter_iqd} \
+            --metadata-id-columns {params.idcols} \
+        1> {log.stdout} 2> {log.stderr}
+        """
+
+rule next_ancestral:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        alignment = 'results/combined/{target}_all_aligned.fasta',
+    output:
+        node_data = "results/nextstrain/{target}_ntmuts.json"
+    params:
+        inference = "joint"
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nexttree"
+    shell:
+        """
+        augur ancestral \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --output-node-data {output.node_data} \
+            --inference {params.inference}
+        """
+
+rule next_traits:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        metadata="results/combined/{target}_meta.tsv",
+    output:
+        node_data = "results/nextstrain/{target}_traits.json"
+    params:
+        idcols = "Seq-ID Original-ID name",
+	    cols = "country",
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nextstrain"
+    shell:
+        """
+        augur traits \
+            --tree {input.tree} \
+            --metadata {input.metadata} \
+            --output-node-data {output.node_data} \
+            --metadata-id-columns {params.idcols} \
+            --columns {params.cols} \
+            --confidence
+        """
+
+
+
+rule next_translate:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        ancestral = "results/nextstrain/{target}_ntmuts.json",
+        alignment = 'results/combined/{target}_all_aligned.fasta',
+        gff3 = 'results/refs/{target}.gff3',
+    output:
+        node_data = "results/nextstrain/{target}_aamuts.json"
+    params:
+        inference = "joint"
+    #container: "docker://nextstrain/base"
+    group: "nextstrain"
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.ancestral} \
+            --reference-sequence {input.gff3} \
+            --output-node-data {output.node_data}
+        """
+
+
+
+rule next_export:
+    input:
+        tree =  "results/{target}_tree.nwk",
+        branch_lengths = "results/nextstrain/{target}_branchlens.json",
+        traits = "results/nextstrain/{target}_traits.json",
+        nt_muts = "results/nextstrain/{target}_ntmuts.json",
+        aa_muts = "results/nextstrain/{target}_aamuts.json",
+        metadata="results/combined/{target}_meta.tsv",
+
+    output:
+        auspice_json = "results/{target}_auspice.json",
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    #container: "docker://nextstrain/base"
+    group: "nextstrain"
+    params:
+        colors = "nsconfig/colors.txt",
+        lat_longs = "nsconfig/latlongs.txt",
+        traits = "nsconfig/traits.txt",
+        auspice_config = "nsconfig/auspice_config.json",
+	    idcols = "Seq-ID Original-ID name"
+    shell:
+        """
+        augur export v2 \
+            --tree {input.tree} \
+            --metadata {input.metadata} \
+            --node-data {input.branch_lengths} {input.traits} {input.nt_muts} {input.aa_muts} \
+            --auspice-config {params.auspice_config} \
+            --include-root-sequence \
+            --lat-longs {params.lat_longs} \
+            --output {output.auspice_json}
+            
+            
+            # --colors {params.colors} \
+    
+        """
+
+rule get_aamuts_F:
+    input:
+        tree = 'results/{target}_tree.nwk',
+        ancestral = "results/nextstrain/{target}_ntmuts.json",
+        alignment = 'results/combined/{target}_all_aligned.fasta',
+        gff3 = 'results/refs/{target}.gff3',
+    output:
+        node_data = "results/escapes/{target}_aamuts_F.fasta"
+    params:
+        inference = "joint"
+    #container: "docker://nextstrain/base"
+    group: "escapes"
+    resources:
+        mem_mb=8000,
+        runtime=120,
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.ancestral} \
+            --reference-sequence {input.gff3} \
+            --genes F \
+            --alignment-output results/escapes/{wildcards.target}_aamuts_%GENE.fasta
+        """
+
+rule parse_escapes_F:
+    input:
+        fasta="results/escapes/{target}_aamuts_F.fasta",
+        samples="results/input/{target}.samples"
+    output:
+        calls="results/escapes/{target}_escape_calls.txt",
+        alleles="results/escapes/{target}_escape_alleles.txt",
+        freqs="results/escapes/{target}_escape_allele_frequencies.txt"                
+    group: "escapes"
+    params:
+        outprefix="results/escapes/{target}_escape",
+        panel="RSV_mAb_escape_mutations.tsv"
+    resources:
+        mem_mb=2000,
+        runtime=60,
+    shell:
+        """
+        python scripts/pull_escapes.py \
+            -p {params.panel} \
+            -f {input.fasta} \
+            -s {input.samples} \
+            -o {params.outprefix}
+        """
