@@ -22,6 +22,11 @@
       "key": "project",
       "title": "project",
       "type": "categorical"
+    },
+    {
+      "key": "clade",
+      "title": "lineage",
+      "type": "categorical"
     }
   ],
   "geo_resolutions": [
