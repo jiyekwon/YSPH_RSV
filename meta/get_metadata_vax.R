@@ -90,8 +90,8 @@ meta$age = "NA"
 meta$agecat = "NA"
 meta$project = "VAXesc"
 mainmeta$project = "PGCOE"
-commoncols <- intersect(colnames(meta),colnames(mainmeta))
+commoncols <- intersect(colnames(meta_cl),colnames(mainmeta))
 
-write.table(rbind(mainmeta[,commoncols],meta[,commoncols]),
+write.table(rbind(mainmeta[,commoncols],meta_cl[,commoncols]),
             file="rsv_metadata_vax_combined.txt",sep="\t",quote=T,row.names = F,col.names = T,fileEncoding="UTF-8")
 
