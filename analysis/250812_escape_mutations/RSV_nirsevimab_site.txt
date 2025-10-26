@@ -1,0 +1,26 @@
+Ref	Site	Alt	Mutation	Affected Antibody	Subtype	Effect
+S	62			Nirsevimab	RSV-A/B	
+N	63			Nirsevimab	RSV-A/B	
+I	64			Nirsevimab	RSV-A/B	
+K	65			Nirsevimab	RSV-A/B	
+E	66			Nirsevimab	RSV-A/B	
+N	67	I	N67I	Nirsevimab	RSV-A/B	
+K	68	N	K68N	Nirsevimab	RSV-A/B	
+C	69			Nirsevimab	RSV-A/B	
+K	196			Nirsevimab	RSV-A/B	
+N	197			Nirsevimab	RSV-A/B	
+Y	198			Nirsevimab	RSV-A/B	
+I	199			Nirsevimab	RSV-A/B	
+D	200			Nirsevimab	RSV-A/B	
+K	201	S	N201S	Nirsevimab	RSV-A/B	
+Q	202			Nirsevimab	RSV-A/B	
+L	203			Nirsevimab	RSV-A/B	
+L	204			Nirsevimab	RSV-A/B	
+P	205			Nirsevimab	RSV-A/B	
+I	206	M	I206M	Nirsevimab	RSV-A/B	"Increased susceptibility"
+V	207			Nirsevimab	RSV-A/B	
+N	208	S/Y/D	N208S/Y/D	Nirsevimab	RSV-A/B	
+K	209	R	Q209R	Nirsevimab	RSV-A/B	"Increased susceptibility"
+Q	210			Nirsevimab	RSV-A/B	
+S	211			Nirsevimab	RSV-A/B	
+C	212			Nirsevimab	RSV-A/B	

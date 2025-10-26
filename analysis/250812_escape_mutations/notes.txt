@@ -1,0 +1,17 @@
+cat RSV?_escape_alleles.txt | cut -f 1,1 | sort -u | grep Yale-RV > vaxesc_samples.txt
+cat RSV?_escape_alleles.txt | cut -f 1,1 | sort -u | grep Yale-RSV > pgcoe_samples.txt
+
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVA_escape -s samples.txt -f RSVA_aamuts_F.fasta
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVB_escape -s samples.txt -f RSVB_aamuts_F.fasta
+
+
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVA_escape_vaxesc -s vaxesc_samples.txt -f RSVA_aamuts_F.fasta
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVA_escape_pgcoe -s pgcoe_samples.txt -f RSVA_aamuts_F.fasta
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVB_escape_vaxesc -s vaxesc_samples.txt -f RSVB_aamuts_F.fasta
+python pull_escapes.py -p RSV_mAb_escape_mutations.tsv -o RSVB_escape_pgcoe -s pgcoe_samples.txt -f RSVB_aamuts_F.fasta
+
+
+python pull_escapes.py -p RSV_nirsevimab_site.txt -o RSVA_all_vaxesc -s vaxesc_samples.txt -f RSVA_aamuts_F.fasta
+python pull_escapes.py -p RSV_nirsevimab_site.txt -o RSVA_all_pgcoe -s pgcoe_samples.txt -f RSVA_aamuts_F.fasta
+python pull_escapes.py -p RSV_nirsevimab_site.txt -o RSVB_all_vaxesc -s vaxesc_samples.txt -f RSVB_aamuts_F.fasta
+python pull_escapes.py -p RSV_nirsevimab_site.txt -o RSVB_all_pgcoe -s pgcoe_samples.txt -f RSVB_aamuts_F.fasta
