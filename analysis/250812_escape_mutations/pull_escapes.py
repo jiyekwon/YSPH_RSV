@@ -1,1 +1,0 @@
-../../pipelines/nextstrain/scripts/pull_escapes.py
