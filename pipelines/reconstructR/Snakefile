@@ -1,0 +1,146 @@
+import os
+import sys
+
+configfile: "config/config.yaml"
+include:    "rules/common.py"
+container:  "docker://sethnr/pgcoe_bacseq:0.01"
+
+TARGETS = [line.strip() for line in open(config['refs'], 'r')]
+CALLFILE='results/summary/final_calls.txt'        
+
+wildcard_constraints:
+    sample="[^_]+",
+    target="[^_]+"
+
+localrules: all, collect_files
+
+rule all:
+    input:
+       expand('results/recondata/{target}/completed.txt',target=['RSVB','RSVA'])
+
+
+include: "rules/cplocal.smk"
+
+include: "rules/stats.smk"
+
+rule bcf_call_one:
+    input:
+        tocall = 'results/ivar/{sample}_{target}_itrim.bam',
+        indexed = "results/ivar/{sample}_{target}_itrim.bam.bai",
+        ref="results/refs/{target}.fasta"
+    output:
+        pileup=temporary('results/recondata/{sample}_{target}_pileup.vcf'),
+        unfilt=temporary('results/recondata/{sample}_{target}_unfilt.vcf'),
+        vcf='results/recondata/{target}/input_data/vcf/{sample}.vcf'
+    resources:
+        mem_mb=24000,
+        runtime=240,
+        cpus_per_task=4,
+    container: "docker://sethnr/pgcoe_processing:0.01"
+    group: "callone"
+    params:
+        threads=3
+    log:
+        stderr="logs/ivar/bcf_call_{sample}_{target}.err"
+    message: "Calling variants for all samples"
+    shell:
+        """
+        bcftools mpileup -Ov --threads {params.threads} -o {output.pileup} -f {input.ref} {input.tocall}
+        bcftools call --threads {params.threads} --ploidy 1 -A -vcO v -o {output.unfilt} {output.pileup}
+        bcftools filter -o {output.vcf} -i 'QUAL>10 & DP>10' {output.unfilt}
+        """
+
+
+rule lofreq_call_one:
+    input:
+        tocall = 'results/ivar/{sample}_{target}_itrim.bam',
+        indexed = "results/ivar/{sample}_{target}_itrim.bam.bai",
+        ref="results/refs/{target}.fasta"
+    output:
+        vcf='results/recondata/{target}/input_data/vcf/{sample}.lofreq.vcf'
+    resources:
+        mem_mb=24000,
+        runtime=240,
+        cpus_per_task=4,
+    container: "docker://andreaswilm/lofreq:v2.1.2"
+    group: "callone"
+    params:
+        threads=3
+    log:
+        stderr="logs/ivar/lofreq_call_{sample}_{target}.err"
+    message: "Calling variants with LoFreq for all samples"
+    shell:
+        """
+        lofreq call-parallel --pp-threads {params.threads} -f {input.ref} -o {output.vcf} {input.tocall} 2> {log.stderr}
+        """
+
+rule align_fastas:
+    input:
+        ref="results/refs/{target}.fasta",
+        callfile='results/summary/final_calls.txt',
+        fastas = lambda wildcards: expand('results/ivar/{sample}_{{target}}_consensus.fa',sample=get_called_target_samples(wildcards,CALLFILE)),
+    output:
+        consensus='results/recondata/{target}_consensus.fasta',
+        aligned = 'results/recondata/{target}/input_data/aligned.fasta',
+    container: "docker://sethnr/pgcoe_processing:0.01"
+    shell:
+        """
+        cat {input.fastas} > {output.consensus}
+
+        mafft --6merpair --keeplength --addfragments {output.consensus} {input.ref} > {output.aligned}
+        """
+
+rule get_depth_dates:
+    input:
+        metadata = '../../meta/rsv_metadata_plates.txt',
+    output:
+        date = temporary('results/recondata/{target}/date.csv'),
+    container: "docker://sethnr/pgcoe_analysis:0.01"        
+    shell:
+        """ 
+        touch {output.date}
+        """
+
+
+
+rule collect_files:
+    input:
+        metadata="../../meta/rsv_metadata_plates.txt",
+        ref="results/refs/{target}.fasta",
+        aligned = 'results/recondata/{target}/input_data/aligned.fasta',
+        date = 'results/recondata/{target}/date.csv',
+        depths = lambda wildcards: expand('results/ivar/{sample}_{{target}}_depth.txt',sample=get_called_target_samples(wildcards,CALLFILE)),
+        vcfs = lambda wildcards: expand('results/recondata/{{target}}/input_data/vcf/{sample}.vcf',sample=get_called_target_samples(wildcards,CALLFILE)),
+    output:
+        ref = 'results/recondata/{target}/input_data/ref.fasta',
+        samples='results/recondata/{target}/samples.txt',
+        depth = 'results/recondata/{target}/input_data/depth.csv',
+        date = 'results/recondata/{target}/input_data/date.csv',
+        complete=temporary('results/recondata/{target}/completed.txt'),
+    container: None
+    params:
+        samples=lambda wildcards: get_called_target_samples(wildcards,CALLFILE)
+    shell:
+        """ 
+        echo {params.samples} > {output.samples}
+
+        cp {input.ref} {output.ref}
+
+        python scripts/get_dates.py -s {output.samples} -m {input.metadata} -o {output.date}
+
+        python scripts/depth_combine.py -s {output.samples} -t {wildcards.target} -o {output.depth}
+
+        touch {output.complete}
+        """
+
+
+
+
+
+
+def get_called_target_samples(wildcards,callfile):
+    print("calls: requesting samples for "+wildcards.target+" from "+callfile,file=sys.stderr)  
+    with open(callfile, 'r') as f:
+        calls = f.read().splitlines()
+    mysamples = [L.split("\t")[0] for L in calls if L.split("\t")[2]==wildcards.target]
+    return mysamples

@@ -1,0 +1,6 @@
+snakemake --cores 4 --slurm -j 30 --latency-wait 180 \
+   --use-singularity --singularity-args "-B ${SCRATCH}" \
+   --group-components cplocal=5 mashcall=20 \
+   --retries 3 --keep-going \
+   --rerun-trigger mtime --rerun-incomplete
+snakemake --cores 4 --slurm -j 30 --latency-wait 180 --use-singularity --singularity-args -B /vast/palmer/scratch/grubaugh/snr28 --group-components bcf_call_one=5 --keep-going --rerun-trigger mtime --rerun-incomplete
