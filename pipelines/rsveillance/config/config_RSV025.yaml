@@ -1,0 +1,18 @@
+#samples: '../../testdata/test_samples.txt'
+#readdir: '../../testdata/'
+samples: '/home/jk2666/project_pi_dmw63/jk2666/rsv_yale/RSV025_samples.txt'
+readdir: '/home/jk2666/scratch_pi_dmw63/jk2666/RSV025_rawdata'
+runname: 'RSV025'
+refs:    '../../refs/refs.txt'
+refsdir: '../../refs/'
+ampsdir: '../../ampschemes'
+outdir: 'results'
+maxfq_gb: 1
+
+
+nsmetadata: '../../meta/rsv_combined_meta.txt'
+nsdropped: '../../meta/dropped.txt'
+nscolors: '../../meta/colors.txt'
+nslatlongs: '../../meta/latlongs.txt'
+nstraits: '../../meta/traits.txt'
+nsconfig: '../../meta/auspice_config.json'
