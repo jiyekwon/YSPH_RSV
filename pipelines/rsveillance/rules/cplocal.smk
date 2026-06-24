@@ -8,7 +8,7 @@ rule cp_local_fq:
         log = "logs/datacopy/{sample}.log"
     group: "cplocal"
     resources:
-        mem_mb="2G",
+        mem_mb=2000,
         cpus_per_task=1,
         runtime=30
     container: None
@@ -37,7 +37,7 @@ rule cp_local_data:
     log:
         log = "logs/datacopy/copyrefs.log"
     resources:
-        mem_mb="2G",
+        mem_mb=2000,
         cpus_per_task=1,
         runtime=60
     params:

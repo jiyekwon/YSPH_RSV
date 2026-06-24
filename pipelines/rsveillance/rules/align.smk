@@ -17,7 +17,7 @@ rule bwa_index:
     params:
         idx_script = "scripts/indexer.sh",
     resources:
-        mem_mb="40G",
+        mem_mb=40000,
         cpus_per_task=4,
         runtime=300
     container: "docker://sethnr/pgcoe_anypipe:0.01"

@@ -18,7 +18,7 @@ rule mash_index:
         localfastas=expand("{target}.fasta",target=TARGETS)
     resources:
         partition="day",
-        mem_mb="40G",
+        mem_mb=40000,
         cpus_per_task=4,
         runtime=300
     container: "docker://sethnr/pgcoe_anypipe:0.01"
@@ -42,7 +42,7 @@ rule mash_call:
         mashout=temporary("results/mash/{sample}_mash.txt"),
     resources:
         partition="day",
-        mem_mb="4G",
+        mem_mb=4000,
         cpus_per_task=1,
         runtime=10
     container: "docker://sethnr/pgcoe_anypipe:0.01"
