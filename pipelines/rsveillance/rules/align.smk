@@ -41,7 +41,7 @@ rule bwa_align:
         ref="results/refs/{target}.fasta",
     resources:
         runtime=180,
-        mem_mb=lambda wc, input: max(2 * input.size_mb, 8000),
+        mem_mb=16000,
         cpus_per_task=4,
         cores=1,
     log:

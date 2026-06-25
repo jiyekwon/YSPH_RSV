@@ -61,7 +61,7 @@ rule ivar_consensus:
         prefix='results/ivar/{sample}_{target}_consensus'
     group: "ivar"
     resources:
-        mem_mb=lambda wc, input: max(10 * input.size_mb, 4000),
+        mem_mb=8000,
         runtime=120,
     log:
         stderr="logs/ivar/consensus_{sample}_{target}.err",
@@ -85,7 +85,7 @@ rule ivar_variants:
         prefix='results/ivar/{sample}_{target}_ivariants'
     group: "ivar"
     resources:
-        mem_mb=lambda wc, input: max(20 * input.size_mb, 4000),
+        mem_mb=16000,
         runtime=240,
     log:
         stderr="logs/ivar/{sample}_{target}_consensus.err"
