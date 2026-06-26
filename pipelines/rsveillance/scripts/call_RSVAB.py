@@ -42,7 +42,7 @@ alignstats['goodcovpc'] = alignstats['goodcov'] / alignstats['gsize']
 failedcov = len(alignstats[alignstats['goodcovpc'] < mingoodcov])
 print("removing {}/{} calls due to coverage below {}".format(failedcov,len(alignstats),mingoodcov),
       file=sys.stderr)
-alignstats = alignstats[alignstats['goodcovpc'] > mingoodcov]
+alignstats = alignstats[alignstats['goodcovpc'] >= mingoodcov]
 
 
 #identify single samples (align to only RSV A or B)
