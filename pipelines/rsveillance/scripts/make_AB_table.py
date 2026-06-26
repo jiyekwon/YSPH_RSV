@@ -61,13 +61,22 @@ def main():
             stats.setdefault(c[0], []).append((c[1], covpc, meandepth))
 
     # 3. final A/B/mixed calls
+    #    final_calls.txt cols: sample | call | mashcall
+    #    - coinfections store 'RSVA/B' in 'call', 'mashcall' blank
+    #    - single-type samples store the type in 'mashcall', 'call' blank
+    #    So the final type = call if present, else mashcall.
     calls = {}
     with open(os.path.join(summary_dir, "final_calls.txt")) as f:
         next(f, None)  # skip header
         for line in f:
             c = line.rstrip("\n").split("\t")
-            if len(c) >= 2 and c[0]:
-                calls[c[0]] = c[1]
+            if not c or not c[0]:
+                continue
+            call = (c[1] if len(c) > 1 and c[1]
+                    else c[2] if len(c) > 2 and c[2]
+                    else "")
+            if call:
+                calls[c[0]] = call
 
     # 4. one tidy row per sample
     writer = csv.writer(sys.stdout, delimiter="\t")
