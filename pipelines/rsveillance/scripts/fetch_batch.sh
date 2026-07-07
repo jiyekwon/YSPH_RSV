@@ -132,10 +132,11 @@ else
         curl -f -L -C - -o "$TARBALL" "$SRC"     # -f fail on errors, -L redirects, -C - resume
         ;;
       wgetdir)
-        # Reject index/robots pages rather than -A '*.fastq.gz': YCGA directory
-        # listings have no .html extension, so -A discards them before wget can
-        # follow links into the Sample_*/ subdirs -> 0 fastqs. -R lets it traverse.
-        wget -e robots=off -r -np -nH -R 'index.html*,robots.txt,*.tmp' -P "$BATCHDIR/download" "$SRC"
+        # Recursively pull fastqs from a YCGA HTTP directory listing. Matches the
+        # invocation known to work by hand:
+        #   wget -r -np -nH --cut-dirs=1 -A '*.fastq.gz' <url>
+        # (a bad/empty link yields 0 fastqs -> caught by the "no *.fastq.gz" check below).
+        wget -e robots=off -r -np -nH --cut-dirs=1 -A '*.fastq.gz' -P "$BATCHDIR/download" "$SRC"
         ;;
     esac
 fi
