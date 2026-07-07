@@ -132,7 +132,10 @@ else
         curl -f -L -C - -o "$TARBALL" "$SRC"     # -f fail on errors, -L redirects, -C - resume
         ;;
       wgetdir)
-        wget -e robots=off -r -np -nH -A '*.fastq.gz' -P "$BATCHDIR/download" "$SRC"
+        # Reject index/robots pages rather than -A '*.fastq.gz': YCGA directory
+        # listings have no .html extension, so -A discards them before wget can
+        # follow links into the Sample_*/ subdirs -> 0 fastqs. -R lets it traverse.
+        wget -e robots=off -r -np -nH -R 'index.html*,robots.txt,*.tmp' -P "$BATCHDIR/download" "$SRC"
         ;;
     esac
 fi
