@@ -1,0 +1,13 @@
+# hMPV surveillance pipeline config.
+# samples / readdir / runname are rewritten per-run by scripts/fetch_batch.sh.
+samples: '/home/jk2666/project_pi_dmw63/jk2666/hmpv_yale/HMPV_samples.txt'
+readdir: '/home/jk2666/scratch_pi_dmw63/jk2666/HMPV_rawdata'
+runname: 'HMPV'
+
+# self-contained: refs/ and ampschemes/ live inside this pipeline dir
+# (relative to the dir snakemake runs from), so hMPV never touches the RSV refs.
+refs:    'refs/refs.txt'
+refsdir: 'refs/'
+ampsdir: 'ampschemes'
+outdir: 'results'
+maxfq_gb: 1
