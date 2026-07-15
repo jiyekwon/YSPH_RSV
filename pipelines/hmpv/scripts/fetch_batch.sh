@@ -135,8 +135,11 @@ else
         # Recursively pull fastqs from a YCGA HTTP directory listing. Matches the
         # invocation known to work by hand:
         #   wget -r -np -nH --cut-dirs=1 -A '*.fastq.gz' <url>
-        # (a bad/empty link yields 0 fastqs -> caught by the "no *.fastq.gz" check below).
-        wget -e robots=off -r -np -nH --cut-dirs=1 -A '*.fastq.gz' -P "$BATCHDIR/download" "$SRC"
+        # Recursive wget almost always exits non-zero (code 8: it hits the directory
+        # index pages during the walk) even when every fastq downloaded fine. Under
+        # `set -e` that would abort staging, so we ignore wget's exit code here and
+        # let the "no *.fastq.gz found" check in step 3 be the real guard.
+        wget -e robots=off -r -np -nH --cut-dirs=1 -A '*.fastq.gz' -P "$BATCHDIR/download" "$SRC" || true
         ;;
     esac
 fi
